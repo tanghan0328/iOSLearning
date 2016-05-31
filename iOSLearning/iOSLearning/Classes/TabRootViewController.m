@@ -74,7 +74,7 @@
     forth.tabBarItem = forthTabBar;
     
     
-    self.viewControllers = [[NSArray alloc]initWithObjects:fNav,sNav,tNav,forNav, nil];
+    self.viewControllers = [[NSArray alloc]initWithObjects:forNav,tNav,sNav,fNav, nil];
     //self.tabBar.translucent = NO;
 }
 
