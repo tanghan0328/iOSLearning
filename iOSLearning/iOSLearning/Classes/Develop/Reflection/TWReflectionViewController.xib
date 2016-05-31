@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TWReflectionViewController">
+            <connections>
+                <outlet property="layer" destination="Iqm-el-g4v" id="OJz-y0-PXI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iqm-el-g4v" customClass="TWImageView">
+                    <rect key="frame" x="200" y="100" width="200" height="200"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="223" translatesAutoresizingMaskIntoConstraints="NO" id="VaN-TA-8Hn">
+                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="VaN-TA-8Hn" firstAttribute="leading" secondItem="Iqm-el-g4v" secondAttribute="leading" id="7nt-qc-eFV"/>
+                        <constraint firstAttribute="width" constant="200" id="CCa-KS-7Qz"/>
+                        <constraint firstAttribute="height" constant="200" id="Ilm-00-P2l"/>
+                        <constraint firstAttribute="bottom" secondItem="VaN-TA-8Hn" secondAttribute="bottom" id="pJ9-dH-WmV"/>
+                        <constraint firstAttribute="trailing" secondItem="VaN-TA-8Hn" secondAttribute="trailing" id="rla-Kk-peb"/>
+                        <constraint firstItem="VaN-TA-8Hn" firstAttribute="top" secondItem="Iqm-el-g4v" secondAttribute="top" id="xli-Vn-cwF"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.2156862745" green="0.7843137255" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Iqm-el-g4v" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Iu5-gs-4bU"/>
+                <constraint firstItem="Iqm-el-g4v" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-100" id="mF5-Q6-jGw"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="223" width="100" height="100"/>
+    </resources>
+</document>

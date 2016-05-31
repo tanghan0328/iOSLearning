@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TWParticlesViewController">
+            <connections>
+                <outlet property="drawView" destination="CRj-DD-3wg" id="0iI-Yc-tth"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmP-Nb-5mB">
+                    <rect key="frame" x="40" y="85" width="75" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="UEF-Av-sm6"/>
+                        <constraint firstAttribute="width" constant="75" id="pce-X3-Vud"/>
+                    </constraints>
+                    <state key="normal" title="开始动画"/>
+                    <connections>
+                        <action selector="onAnimaStart:" destination="-1" eventType="touchUpInside" id="vMR-4l-RQA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAl-by-Rez">
+                    <rect key="frame" x="514" y="85" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="XMH-Nn-Kc5"/>
+                        <constraint firstAttribute="width" constant="46" id="g9L-e9-NhQ"/>
+                    </constraints>
+                    <state key="normal" title="重绘"/>
+                    <connections>
+                        <action selector="onReload:" destination="-1" eventType="touchUpInside" id="fgQ-tG-BLU"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CRj-DD-3wg" customClass="TWDrawView">
+                    <rect key="frame" x="0.0" y="129" width="600" height="471"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="dmP-Nb-5mB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-150" id="0cA-R8-iTO"/>
+                <constraint firstAttribute="trailing" secondItem="CRj-DD-3wg" secondAttribute="trailing" id="6bd-lX-N3f"/>
+                <constraint firstItem="CRj-DD-3wg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7by-8X-3nE"/>
+                <constraint firstAttribute="trailing" secondItem="cAl-by-Rez" secondAttribute="trailing" constant="40" id="Kjm-AT-dhL"/>
+                <constraint firstItem="dmP-Nb-5mB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="Lmk-Cf-wRN"/>
+                <constraint firstAttribute="bottom" secondItem="CRj-DD-3wg" secondAttribute="bottom" id="QTs-6w-FGH"/>
+                <constraint firstItem="CRj-DD-3wg" firstAttribute="top" secondItem="cAl-by-Rez" secondAttribute="bottom" constant="14" id="d23-3a-0Hd"/>
+                <constraint firstItem="dmP-Nb-5mB" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-200" id="mWx-J4-ewC"/>
+                <constraint firstItem="cAl-by-Rez" firstAttribute="baseline" secondItem="dmP-Nb-5mB" secondAttribute="baseline" id="xRz-xY-Gg1"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="0cA-R8-iTO"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

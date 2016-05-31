@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TimerViewController">
+            <connections>
+                <outlet property="dispathBtn" destination="J2f-dG-bkz" id="E7N-jn-OlE"/>
+                <outlet property="hiddenLabel" destination="jhT-QX-V3P" id="cEx-mZ-64v"/>
+                <outlet property="perfomerBtn" destination="hUX-NS-y7Z" id="6HP-Es-C3x"/>
+                <outlet property="timerBtn" destination="Tcd-Ur-u3t" id="b56-fu-ewT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUX-NS-y7Z">
+                    <rect key="frame" x="241" y="105" width="119" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="119" id="YTN-cr-IVI"/>
+                        <constraint firstAttribute="height" constant="30" id="yuK-ie-MNt"/>
+                    </constraints>
+                    <state key="normal" title="测试performance"/>
+                    <connections>
+                        <action selector="onPerformerBtn:" destination="-1" eventType="touchUpInside" id="wyA-PC-Iaf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tcd-Ur-u3t">
+                    <rect key="frame" x="267" y="225" width="66" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="3O4-IZ-1l5"/>
+                        <constraint firstAttribute="width" constant="66" id="V7v-Ju-qtU"/>
+                    </constraints>
+                    <state key="normal" title="测试timer"/>
+                    <connections>
+                        <action selector="onTimerBtnClick:" destination="-1" eventType="touchUpInside" id="A9G-cj-AR1"/>
+                    </connections>
+                </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我出现了，哈哈" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhT-QX-V3P">
+                    <rect key="frame" x="225" y="290" width="151" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="RfL-sf-Ma6"/>
+                        <constraint firstAttribute="width" constant="151" id="ZUa-P7-kKF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.74509803919999995" green="0.08235294118" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2f-dG-bkz">
+                    <rect key="frame" x="246" y="161" width="109" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="109" id="hgI-yc-ow0"/>
+                        <constraint firstAttribute="height" constant="30" id="rox-TZ-KU1"/>
+                    </constraints>
+                    <state key="normal" title="测试dispath"/>
+                    <connections>
+                        <action selector="onDispathBtnClick:" destination="-1" eventType="touchUpInside" id="eNw-aP-hb3"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="hUX-NS-y7Z" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-180" id="6ZQ-lQ-z9q"/>
+                <constraint firstItem="Tcd-Ur-u3t" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-60" id="BsZ-ec-Qhs"/>
+                <constraint firstItem="J2f-dG-bkz" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-124" id="Myh-7y-wuB"/>
+                <constraint firstItem="jhT-QX-V3P" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="X8r-kS-Q4h"/>
+                <constraint firstItem="J2f-dG-bkz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="aKP-we-vfG"/>
+                <constraint firstItem="Tcd-Ur-u3t" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="caQ-HX-ZQ0"/>
+                <constraint firstItem="jhT-QX-V3P" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fBi-Ac-erd"/>
+                <constraint firstItem="hUX-NS-y7Z" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="q2E-lt-xFB"/>
+            </constraints>
+        </view>
+        <viewController id="TjM-dq-jyU">
+            <layoutGuides>
+                <viewControllerLayoutGuide type="top" id="ICH-CM-hav"/>
+                <viewControllerLayoutGuide type="bottom" id="W20-fw-qzj"/>
+            </layoutGuides>
+            <view key="view" contentMode="scaleToFill" id="xjx-qg-ovZ">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            </view>
+        </viewController>
+    </objects>
+</document>
