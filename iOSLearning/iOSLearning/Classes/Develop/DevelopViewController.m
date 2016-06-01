@@ -18,6 +18,7 @@
 #import "TWParticlesViewController.h"
 #import "TWReflectionViewController.h"
 #import "TWElasticViewController.h"
+#import "TWFoldingViewController.h"
 
 @interface DevelopViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -43,9 +44,9 @@
                                              @"plist文件测试",
                                              @"plist文件读写测试",
                                              @"粒子效果测试",
-                                             @"倒影",
+                                             @"图片倒影",
                                              @"QQ弹性",
-                                             @"测试",
+                                             @"图片折叠",
                                              @"测试",
                                              @"测试",
                                              @"测试",
@@ -130,7 +131,7 @@
             selectedView = [[TWElasticViewController alloc]initWithTitle:self.nameList[indexPath.row]];
             break;
         case 11:
-            selectedView = [[TimerViewController alloc]initWithTitle:self.nameList[indexPath.row]];
+            selectedView = [[TWFoldingViewController alloc]initWithTitle:self.nameList[indexPath.row]];
             break;
         case 12:
             selectedView = [[TimerViewController alloc]initWithTitle:self.nameList[indexPath.row]];

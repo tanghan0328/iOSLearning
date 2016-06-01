@@ -245,6 +245,10 @@
 		242C403B1CFD3B63008DC625 /* TWElasticViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 242C40371CFD3B63008DC625 /* TWElasticViewController.xib */; };
 		242C40421CFD3DB8008DC625 /* TWGtoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 242C40411CFD3DB8008DC625 /* TWGtoView.m */; };
 		242C40431CFD3DB8008DC625 /* TWGtoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 242C40411CFD3DB8008DC625 /* TWGtoView.m */; };
+		243BC60A1CFE6F5A0065D6A0 /* TWFoldingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243BC6081CFE6F5A0065D6A0 /* TWFoldingViewController.m */; };
+		243BC60B1CFE6F5A0065D6A0 /* TWFoldingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243BC6081CFE6F5A0065D6A0 /* TWFoldingViewController.m */; };
+		243BC60C1CFE6F5A0065D6A0 /* TWFoldingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 243BC6091CFE6F5A0065D6A0 /* TWFoldingViewController.xib */; };
+		243BC60D1CFE6F5A0065D6A0 /* TWFoldingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 243BC6091CFE6F5A0065D6A0 /* TWFoldingViewController.xib */; };
 		2441D7681CB793CA00059B56 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2441D7661CB793CA00059B56 /* TimerViewController.m */; };
 		2441D7691CB793CA00059B56 /* TimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2441D7671CB793CA00059B56 /* TimerViewController.xib */; };
 		2441D76D1CB796E400059B56 /* PlistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2441D76B1CB796E400059B56 /* PlistViewController.m */; };
@@ -564,6 +568,9 @@
 		242C40371CFD3B63008DC625 /* TWElasticViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWElasticViewController.xib; sourceTree = "<group>"; };
 		242C40401CFD3DB8008DC625 /* TWGtoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWGtoView.h; sourceTree = "<group>"; };
 		242C40411CFD3DB8008DC625 /* TWGtoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWGtoView.m; sourceTree = "<group>"; };
+		243BC6071CFE6F5A0065D6A0 /* TWFoldingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWFoldingViewController.h; sourceTree = "<group>"; };
+		243BC6081CFE6F5A0065D6A0 /* TWFoldingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWFoldingViewController.m; sourceTree = "<group>"; };
+		243BC6091CFE6F5A0065D6A0 /* TWFoldingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWFoldingViewController.xib; sourceTree = "<group>"; };
 		2441D7651CB793CA00059B56 /* TimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
 		2441D7661CB793CA00059B56 /* TimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
 		2441D7671CB793CA00059B56 /* TimerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimerViewController.xib; sourceTree = "<group>"; };
@@ -594,9 +601,9 @@
 		248225BC1CC76A8100D7A8C4 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		248225BE1CC76A8100D7A8C4 /* DeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceViewController.h; sourceTree = "<group>"; };
 		248225BF1CC76A8100D7A8C4 /* DeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceViewController.m; sourceTree = "<group>"; };
-		248225C01CC76A8100D7A8C4 /* TableListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableListViewController.h; sourceTree = "<group>"; };
-		248225C11CC76A8100D7A8C4 /* TableListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableListViewController.m; sourceTree = "<group>"; };
-		248225C21CC76A8100D7A8C4 /* TableListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableListViewController.xib; sourceTree = "<group>"; };
+		248225C01CC76A8100D7A8C4 /* TableListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableListViewController.h; path = Basis/TableListViewController.h; sourceTree = "<group>"; };
+		248225C11CC76A8100D7A8C4 /* TableListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableListViewController.m; path = Basis/TableListViewController.m; sourceTree = "<group>"; };
+		248225C21CC76A8100D7A8C4 /* TableListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TableListViewController.xib; path = Basis/TableListViewController.xib; sourceTree = "<group>"; };
 		248225C41CC76A8100D7A8C4 /* ButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonViewController.h; sourceTree = "<group>"; };
 		248225C51CC76A8100D7A8C4 /* ButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonViewController.m; sourceTree = "<group>"; };
 		248225C71CC76A8100D7A8C4 /* ProdCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProdCollectionViewController.h; sourceTree = "<group>"; };
@@ -898,9 +905,6 @@
 				248225A91CC76A8100D7A8C4 /* AES */,
 				248225B01CC76A8100D7A8C4 /* Coredata */,
 				248225BD1CC76A8100D7A8C4 /* Device */,
-				248225C01CC76A8100D7A8C4 /* TableListViewController.h */,
-				248225C11CC76A8100D7A8C4 /* TableListViewController.m */,
-				248225C21CC76A8100D7A8C4 /* TableListViewController.xib */,
 				248225C31CC76A8100D7A8C4 /* UIButton */,
 				248225C61CC76A8100D7A8C4 /* UICollection */,
 				248225CD1CC76A8100D7A8C4 /* UIIndicator */,
@@ -929,6 +933,7 @@
 		240F1BE41CB4B6CB000AC902 /* Develop */ = {
 			isa = PBXGroup;
 			children = (
+				243BC6061CFE6F1B0065D6A0 /* Folding */,
 				242C40341CFD39CE008DC625 /* QQElastic */,
 				241F9E161CFC12BE00D26998 /* Reflection */,
 				241F9E0A1CFBDE0800D26998 /* Particles */,
@@ -987,6 +992,16 @@
 				242C40411CFD3DB8008DC625 /* TWGtoView.m */,
 			);
 			path = QQElastic;
+			sourceTree = "<group>";
+		};
+		243BC6061CFE6F1B0065D6A0 /* Folding */ = {
+			isa = PBXGroup;
+			children = (
+				243BC6071CFE6F5A0065D6A0 /* TWFoldingViewController.h */,
+				243BC6081CFE6F5A0065D6A0 /* TWFoldingViewController.m */,
+				243BC6091CFE6F5A0065D6A0 /* TWFoldingViewController.xib */,
+			);
+			path = Folding;
 			sourceTree = "<group>";
 		};
 		2441D7631CB793CA00059B56 /* plist */ = {
@@ -1283,6 +1298,9 @@
 				240F1BE41CB4B6CB000AC902 /* Develop */,
 				240F1BCC1CB4AC1C000AC902 /* Advanced */,
 				240F1BD41CB4AC1C000AC902 /* Basis */,
+				248225C01CC76A8100D7A8C4 /* TableListViewController.h */,
+				248225C11CC76A8100D7A8C4 /* TableListViewController.m */,
+				248225C21CC76A8100D7A8C4 /* TableListViewController.xib */,
 				240F1BD51CB4AC1C000AC902 /* Test */,
 				2466A2481C9929D000B5C155 /* BaseViewController.h */,
 				2466A2491C9929D000B5C155 /* BaseViewController.m */,
@@ -1699,6 +1717,7 @@
 				240F1B6F1CB4A5C3000AC902 /* btn_vdo_back_click@2x.png in Resources */,
 				240F1B701CB4A5C3000AC902 /* ugc_btn_time_click@2x.png in Resources */,
 				240F1B711CB4A5C3000AC902 /* btn_vdo_share@3x.png in Resources */,
+				243BC60D1CFE6F5A0065D6A0 /* TWFoldingViewController.xib in Resources */,
 				240F1B721CB4A5C3000AC902 /* Image_set@3x.png in Resources */,
 				240F1B731CB4A5C3000AC902 /* xi.png in Resources */,
 				240F1B741CB4A5C3000AC902 /* Image_font_small@3x.png in Resources */,
@@ -1907,6 +1926,7 @@
 				24BD77F91C9A3E6B000CC066 /* Image_focus@2x.png in Resources */,
 				24BD77911C9A3E6B000CC066 /* btn_drop@2x.png in Resources */,
 				24BD777D1C9A3E6B000CC066 /* btn_back.png in Resources */,
+				243BC60C1CFE6F5A0065D6A0 /* TWFoldingViewController.xib in Resources */,
 				24BD782B1C9A3E6B000CC066 /* Img_orange@3x.png in Resources */,
 				24ED56BD1C969AD1005405B4 /* Assets.xcassets in Resources */,
 				24BD78101C9A3E6B000CC066 /* Image_reg_user@2x.png in Resources */,
@@ -2028,6 +2048,7 @@
 				24D206CB1CDB3F860008790F /* TWPlistRWViewController.m in Sources */,
 				24EB62DB1CED8F0700BE6772 /* TWPDFReaderViewController.m in Sources */,
 				240F1BE81CB4B6E1000AC902 /* DevelopViewController.m in Sources */,
+				243BC60B1CFE6F5A0065D6A0 /* TWFoldingViewController.m in Sources */,
 				248225F81CC76A8100D7A8C4 /* Grade.m in Sources */,
 				241F9E0F1CFBDE8500D26998 /* TWParticlesViewController.m in Sources */,
 				2441D76E1CB796E400059B56 /* PlistViewController.m in Sources */,
@@ -2073,6 +2094,7 @@
 				241F9E0E1CFBDE8500D26998 /* TWParticlesViewController.m in Sources */,
 				242C40421CFD3DB8008DC625 /* TWGtoView.m in Sources */,
 				240F1BE71CB4B6E1000AC902 /* DevelopViewController.m in Sources */,
+				243BC60A1CFE6F5A0065D6A0 /* TWFoldingViewController.m in Sources */,
 				248225F71CC76A8100D7A8C4 /* Grade.m in Sources */,
 				241F9E141CFBE06900D26998 /* TWDrawView.m in Sources */,
 				24ED56B51C969AD1005405B4 /* AppDelegate.m in Sources */,

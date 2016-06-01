@@ -20,7 +20,7 @@
     if(self){
  //       [self setupBackButtonForNavigationBar];
         self.title = title;
-        self.view.backgroundColor = [UIColor whiteColor];
+        //self.view.backgroundColor = [UIColor whiteColor];
     }
     return self;
 }
