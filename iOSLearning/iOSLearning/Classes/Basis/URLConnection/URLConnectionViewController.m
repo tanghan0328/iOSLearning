@@ -8,7 +8,7 @@
 
 #import "URLConnectionViewController.h"
 
-@interface URLConnectionViewController ()
+@interface URLConnectionViewController ()<NSURLConnectionDataDelegate>
 
 @end
 
@@ -16,12 +16,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
-
+//按钮的点击事件与触动拖拽冲突 可以使用手势代替
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     [self post];

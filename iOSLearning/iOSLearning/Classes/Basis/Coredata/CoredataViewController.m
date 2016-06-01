@@ -21,6 +21,7 @@
 @implementation CoredataViewController
 
 - (void)viewDidLoad {
+    self.view.backgroundColor = [UIColor whiteColor];
     [super viewDidLoad];
     [self initWithBtn];
 }
