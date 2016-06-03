@@ -20,7 +20,12 @@
     if(self){
  //       [self setupBackButtonForNavigationBar];
         self.title = title;
-        //self.view.backgroundColor = [UIColor whiteColor];
+        self.view.backgroundColor = [UIColor whiteColor];
+        
+        if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+            //需要遵循一下手势的代理        self.navigationController.interactivePopGestureRecognizer.delegate = self;
+            self.navigationController.interactivePopGestureRecognizer.enabled = YES;
+        }
     }
     return self;
 }

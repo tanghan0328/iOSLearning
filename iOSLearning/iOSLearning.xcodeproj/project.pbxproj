@@ -243,6 +243,8 @@
 		242B4BF41D0124D600AD24A7 /* TWImageZoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 242B4BF11D0124D600AD24A7 /* TWImageZoomViewController.m */; };
 		242B4BF51D0124D600AD24A7 /* TWImageZoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 242B4BF21D0124D600AD24A7 /* TWImageZoomViewController.xib */; };
 		242B4BF61D0124D600AD24A7 /* TWImageZoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 242B4BF21D0124D600AD24A7 /* TWImageZoomViewController.xib */; };
+		242B4BF91D01608100AD24A7 /* TWBtnTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 242B4BF81D01608100AD24A7 /* TWBtnTestViewController.m */; };
+		242B4BFA1D01608100AD24A7 /* TWBtnTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 242B4BF81D01608100AD24A7 /* TWBtnTestViewController.m */; };
 		242C40381CFD3B63008DC625 /* TWElasticViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 242C40361CFD3B63008DC625 /* TWElasticViewController.m */; };
 		242C40391CFD3B63008DC625 /* TWElasticViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 242C40361CFD3B63008DC625 /* TWElasticViewController.m */; };
 		242C403A1CFD3B63008DC625 /* TWElasticViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 242C40371CFD3B63008DC625 /* TWElasticViewController.xib */; };
@@ -571,6 +573,8 @@
 		242B4BF01D0124D600AD24A7 /* TWImageZoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWImageZoomViewController.h; sourceTree = "<group>"; };
 		242B4BF11D0124D600AD24A7 /* TWImageZoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWImageZoomViewController.m; sourceTree = "<group>"; };
 		242B4BF21D0124D600AD24A7 /* TWImageZoomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWImageZoomViewController.xib; sourceTree = "<group>"; };
+		242B4BF71D01608100AD24A7 /* TWBtnTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWBtnTestViewController.h; sourceTree = "<group>"; };
+		242B4BF81D01608100AD24A7 /* TWBtnTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWBtnTestViewController.m; sourceTree = "<group>"; };
 		242C40351CFD3B63008DC625 /* TWElasticViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWElasticViewController.h; sourceTree = "<group>"; };
 		242C40361CFD3B63008DC625 /* TWElasticViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWElasticViewController.m; sourceTree = "<group>"; };
 		242C40371CFD3B63008DC625 /* TWElasticViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWElasticViewController.xib; sourceTree = "<group>"; };
@@ -1096,6 +1100,8 @@
 			children = (
 				248225C41CC76A8100D7A8C4 /* ButtonViewController.h */,
 				248225C51CC76A8100D7A8C4 /* ButtonViewController.m */,
+				242B4BF71D01608100AD24A7 /* TWBtnTestViewController.h */,
+				242B4BF81D01608100AD24A7 /* TWBtnTestViewController.m */,
 			);
 			path = UIButton;
 			sourceTree = "<group>";
@@ -2138,6 +2144,7 @@
 				240F1BE81CB4B6E1000AC902 /* DevelopViewController.m in Sources */,
 				243BC60B1CFE6F5A0065D6A0 /* TWFoldingViewController.m in Sources */,
 				248225F81CC76A8100D7A8C4 /* Grade.m in Sources */,
+				242B4BFA1D01608100AD24A7 /* TWBtnTestViewController.m in Sources */,
 				241F9E0F1CFBDE8500D26998 /* TWParticlesViewController.m in Sources */,
 				2441D76E1CB796E400059B56 /* PlistViewController.m in Sources */,
 				248225F01CC76A8100D7A8C4 /* NSString+AES.m in Sources */,
@@ -2223,6 +2230,7 @@
 				241A4B001CE08C7500D55665 /* NSString+TWJSONToString.m in Sources */,
 				2482261F1CC76A8100D7A8C4 /* ProdTabelViewController.m in Sources */,
 				240F1BDE1CB4AC66000AC902 /* AdvanceViewController.m in Sources */,
+				242B4BF91D01608100AD24A7 /* TWBtnTestViewController.m in Sources */,
 				2482260F1CC76A8100D7A8C4 /* LabelViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

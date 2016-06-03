@@ -37,7 +37,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"基础";
-    self.navigationController.hidesBottomBarWhenPushed = YES;
+    self.tableView.backgroundView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"226"]];
+    //设置成透明色的navigation
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
+                                                  forBarMetrics:UIBarMetricsDefault];
+    //给navigationBar设置一个空的背景图片即可实现透明，而且标题按钮都在
+    
+    self.navigationController.navigationBar.shadowImage = [UIImage new];
+    //其实这个线也是image控制的。设为空即可
+    
+    //navigationBar是一个复合视图，它是有许多个控件组成的，那么我们就可以从他的内部入手
+    [[self.navigationController.navigationBar subviews] objectAtIndex:0].alpha = 0;
+    //这里可以根据scrollView的偏移量来设置alpha就实现了渐变透明的效果
+    //在最顶层Controller手势依然有效，但是滑动后，并找不到返回的页面。造成软件卡顿，假死所以就要在rootViewController中让此手势失效。把下面的设为NO
+    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
+    
     UIBarButtonItem *backItem = [[UIBarButtonItem alloc] init];
     backItem.title = @"返回";
     self.navigationItem.backBarButtonItem = backItem;

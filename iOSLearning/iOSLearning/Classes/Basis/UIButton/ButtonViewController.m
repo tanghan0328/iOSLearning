@@ -7,6 +7,7 @@
 //
 
 #import "ButtonViewController.h"
+#import "TWBtnTestViewController.h"
 
 @interface ButtonViewController ()<UIAlertViewDelegate>
 
@@ -42,6 +43,11 @@
     [button addTarget:self action:@selector(onBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
     
+    UIButton *buttonTest = [[UIButton alloc]initWithFrame:CGRectMake(60, 200, 200, 30)];
+    buttonTest.backgroundColor = [UIColor greenColor];
+    [buttonTest setTitle:@"点击跳转到另外一页" forState:UIControlStateNormal];
+    [buttonTest addTarget:self action:@selector(onBtnTestClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:buttonTest];
 }
 
 - (void)onBtnClick:(id)action
@@ -51,6 +57,17 @@
     [alertView show];
 }
 
+- (void)onBtnTestClick:(UIButton *)btn
+{
+    TWBtnTestViewController *controller = [[TWBtnTestViewController alloc]init];
+    //UIModalTransitionStyleFlipHorizontal 翻转
+    //UIModalTransitionStyleCoverVertical 底部滑出
+    //UIModalTransitionStyleCrossDissolve 渐显
+    //UIModalTransitionStylePartialCurl 翻页
+    controller.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+   // [self presentViewController:controller animated:YES completion:nil];
+    [self.navigationController pushViewController:controller animated:YES];
+}
 //根据被点击按钮的索引处理点击事件
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
