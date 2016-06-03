@@ -93,6 +93,7 @@
     return value;
 }
 
+
 //磁盘总空间
 + (CGFloat)diskOfAllSizeMBytes{
     CGFloat size = 0.0;

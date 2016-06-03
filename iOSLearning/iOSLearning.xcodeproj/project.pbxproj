@@ -239,6 +239,10 @@
 		241F9E1D1CFC295C00D26998 /* TWReflectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 241F9E191CFC295C00D26998 /* TWReflectionViewController.xib */; };
 		241F9E201CFC2E7200D26998 /* TWImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 241F9E1F1CFC2E7200D26998 /* TWImageView.m */; };
 		241F9E211CFC2E7200D26998 /* TWImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 241F9E1F1CFC2E7200D26998 /* TWImageView.m */; };
+		242B4BF31D0124D600AD24A7 /* TWImageZoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 242B4BF11D0124D600AD24A7 /* TWImageZoomViewController.m */; };
+		242B4BF41D0124D600AD24A7 /* TWImageZoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 242B4BF11D0124D600AD24A7 /* TWImageZoomViewController.m */; };
+		242B4BF51D0124D600AD24A7 /* TWImageZoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 242B4BF21D0124D600AD24A7 /* TWImageZoomViewController.xib */; };
+		242B4BF61D0124D600AD24A7 /* TWImageZoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 242B4BF21D0124D600AD24A7 /* TWImageZoomViewController.xib */; };
 		242C40381CFD3B63008DC625 /* TWElasticViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 242C40361CFD3B63008DC625 /* TWElasticViewController.m */; };
 		242C40391CFD3B63008DC625 /* TWElasticViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 242C40361CFD3B63008DC625 /* TWElasticViewController.m */; };
 		242C403A1CFD3B63008DC625 /* TWElasticViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 242C40371CFD3B63008DC625 /* TWElasticViewController.xib */; };
@@ -531,6 +535,7 @@
 		24ED56BB1C969AD1005405B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24ED56B91C969AD1005405B4 /* Main.storyboard */; };
 		24ED56BD1C969AD1005405B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24ED56BC1C969AD1005405B4 /* Assets.xcassets */; };
 		24ED56D51C96B908005405B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24ED56D41C96B908005405B4 /* Images.xcassets */; };
+		4A3C9A5F53053E3625BE18FF /* libPods-iOSLearning.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA76C89798D463479A1BA09F /* libPods-iOSLearning.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -563,6 +568,9 @@
 		241F9E191CFC295C00D26998 /* TWReflectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWReflectionViewController.xib; sourceTree = "<group>"; };
 		241F9E1E1CFC2E7200D26998 /* TWImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWImageView.h; sourceTree = "<group>"; };
 		241F9E1F1CFC2E7200D26998 /* TWImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWImageView.m; sourceTree = "<group>"; };
+		242B4BF01D0124D600AD24A7 /* TWImageZoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWImageZoomViewController.h; sourceTree = "<group>"; };
+		242B4BF11D0124D600AD24A7 /* TWImageZoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWImageZoomViewController.m; sourceTree = "<group>"; };
+		242B4BF21D0124D600AD24A7 /* TWImageZoomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWImageZoomViewController.xib; sourceTree = "<group>"; };
 		242C40351CFD3B63008DC625 /* TWElasticViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWElasticViewController.h; sourceTree = "<group>"; };
 		242C40361CFD3B63008DC625 /* TWElasticViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWElasticViewController.m; sourceTree = "<group>"; };
 		242C40371CFD3B63008DC625 /* TWElasticViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWElasticViewController.xib; sourceTree = "<group>"; };
@@ -855,6 +863,9 @@
 		24ED56BC1C969AD1005405B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24ED56C11C969AD1005405B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24ED56D41C96B908005405B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		48E28CE1CB15FEB9B19B15F4 /* Pods-iOSLearning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearning.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearning/Pods-iOSLearning.release.xcconfig"; sourceTree = "<group>"; };
+		AA76C89798D463479A1BA09F /* libPods-iOSLearning.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSLearning.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E99DB7FA3EB0CFBC6628B7BE /* Pods-iOSLearning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearning.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearning/Pods-iOSLearning.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -873,6 +884,7 @@
 			files = (
 				24A5D6231CD333C2002573B3 /* libsqlite3.0.tbd in Frameworks */,
 				24CAB4031CB35B8300AFB56C /* CoreData.framework in Frameworks */,
+				4A3C9A5F53053E3625BE18FF /* libPods-iOSLearning.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -933,6 +945,7 @@
 		240F1BE41CB4B6CB000AC902 /* Develop */ = {
 			isa = PBXGroup;
 			children = (
+				242B4BEF1D0124BE00AD24A7 /* ImageZoom */,
 				243BC6061CFE6F1B0065D6A0 /* Folding */,
 				242C40341CFD39CE008DC625 /* QQElastic */,
 				241F9E161CFC12BE00D26998 /* Reflection */,
@@ -980,6 +993,16 @@
 				241F9E1F1CFC2E7200D26998 /* TWImageView.m */,
 			);
 			path = Reflection;
+			sourceTree = "<group>";
+		};
+		242B4BEF1D0124BE00AD24A7 /* ImageZoom */ = {
+			isa = PBXGroup;
+			children = (
+				242B4BF01D0124D600AD24A7 /* TWImageZoomViewController.h */,
+				242B4BF11D0124D600AD24A7 /* TWImageZoomViewController.m */,
+				242B4BF21D0124D600AD24A7 /* TWImageZoomViewController.xib */,
+			);
+			path = ImageZoom;
 			sourceTree = "<group>";
 		};
 		242C40341CFD39CE008DC625 /* QQElastic */ = {
@@ -1229,6 +1252,7 @@
 				24A5D6241CD333CD002573B3 /* libsqlite3.tbd */,
 				24A5D6221CD333C2002573B3 /* libsqlite3.0.tbd */,
 				24CAB4021CB35B8300AFB56C /* CoreData.framework */,
+				AA76C89798D463479A1BA09F /* libPods-iOSLearning.a */,
 			);
 			name = Frameworks;
 			path = iOSLearning/Frameworks;
@@ -1250,6 +1274,7 @@
 				24CAB4041CB35BB500AFB56C /* Frameworks */,
 				24ED56AE1C969AD1005405B4 /* Products */,
 				240F1BC21CB4A5C3000AC902 /* iOSLearning copy-Info.plist */,
+				DCBFF738E0684ED25E4BA796 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1265,11 +1290,11 @@
 		24ED56AF1C969AD1005405B4 /* iOSLearning */ = {
 			isa = PBXGroup;
 			children = (
-				24ED56C71C969D16005405B4 /* Classes */,
 				24ED56B31C969AD1005405B4 /* AppDelegate.h */,
 				24ED56B41C969AD1005405B4 /* AppDelegate.m */,
 				24ED56B61C969AD1005405B4 /* ViewController.h */,
 				24ED56B71C969AD1005405B4 /* ViewController.m */,
+				24ED56C71C969D16005405B4 /* Classes */,
 				24ED56B01C969AD1005405B4 /* Supporting Files */,
 			);
 			path = iOSLearning;
@@ -1511,6 +1536,15 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		DCBFF738E0684ED25E4BA796 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E99DB7FA3EB0CFBC6628B7BE /* Pods-iOSLearning.debug.xcconfig */,
+				48E28CE1CB15FEB9B19B15F4 /* Pods-iOSLearning.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1535,9 +1569,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24ED56C41C969AD1005405B4 /* Build configuration list for PBXNativeTarget "iOSLearning" */;
 			buildPhases = (
+				11B8BE1A43895985FBC5C47A /* 📦 Check Pods Manifest.lock */,
 				24ED56A91C969AD1005405B4 /* Sources */,
 				24ED56AA1C969AD1005405B4 /* Frameworks */,
 				24ED56AB1C969AD1005405B4 /* Resources */,
+				8E3A81D09F96C599B7205F00 /* 📦 Embed Pods Frameworks */,
+				286A567E896A11885174C004 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1735,6 +1772,7 @@
 				240F1B7F1CB4A5C3000AC902 /* Image_scan@3x.png in Resources */,
 				240F1B801CB4A5C3000AC902 /* Image_font_big.png in Resources */,
 				240F1B811CB4A5C3000AC902 /* btn_vdo_send.png in Resources */,
+				242B4BF61D0124D600AD24A7 /* TWImageZoomViewController.xib in Resources */,
 				240F1B821CB4A5C3000AC902 /* Image_arrow_down@2x.png in Resources */,
 				240F1B831CB4A5C3000AC902 /* btn_vdo_share_click@3x.png in Resources */,
 				240F1B841CB4A5C3000AC902 /* btn_more@2x.png in Resources */,
@@ -1830,6 +1868,7 @@
 				24BD77C91C9A3E6B000CC066 /* btn_vdo_back@3x.png in Resources */,
 				24BD780C1C9A3E6B000CC066 /* Image_online@2x.png in Resources */,
 				24BD77A51C9A3E6B000CC066 /* btn_nav_back_click.png in Resources */,
+				242B4BF51D0124D600AD24A7 /* TWImageZoomViewController.xib in Resources */,
 				241F9E101CFBDE8500D26998 /* TWParticlesViewController.xib in Resources */,
 				24BD779F1C9A3E6B000CC066 /* btn_live_selected.png in Resources */,
 				24D206CD1CDB42AE0008790F /* shops.plist in Resources */,
@@ -2018,6 +2057,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		11B8BE1A43895985FBC5C47A /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		286A567E896A11885174C004 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearning/Pods-iOSLearning-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E3A81D09F96C599B7205F00 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearning/Pods-iOSLearning-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		240F1AD61CB4A5C3000AC902 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -2036,6 +2123,7 @@
 				240F1ADA1CB4A5C3000AC902 /* ViewController.m in Sources */,
 				248226081CC76A8100D7A8C4 /* ProdCollectionViewController.m in Sources */,
 				248226001CC76A8100D7A8C4 /* DeviceViewController.m in Sources */,
+				242B4BF41D0124D600AD24A7 /* TWImageZoomViewController.m in Sources */,
 				248225F21CC76A8100D7A8C4 /* TestAESViewController.m in Sources */,
 				241F9E1B1CFC295C00D26998 /* TWReflectionViewController.m in Sources */,
 				248225FC1CC76A8100D7A8C4 /* Student+CoreDataProperties.m in Sources */,
@@ -2124,6 +2212,7 @@
 				2482261B1CC76A8100D7A8C4 /* StepperViewController.m in Sources */,
 				248225FD1CC76A8100D7A8C4 /* Student.m in Sources */,
 				248226211CC76A8100D7A8C4 /* TextFileViewController.m in Sources */,
+				242B4BF31D0124D600AD24A7 /* TWImageZoomViewController.m in Sources */,
 				24EB62DA1CED8F0700BE6772 /* TWPDFReaderViewController.m in Sources */,
 				248225F11CC76A8100D7A8C4 /* TestAESViewController.m in Sources */,
 				248225ED1CC76A8100D7A8C4 /* NSData+AES.m in Sources */,
@@ -2264,6 +2353,7 @@
 		};
 		24ED56C51C969AD1005405B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E99DB7FA3EB0CFBC6628B7BE /* Pods-iOSLearning.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -2281,6 +2371,7 @@
 		};
 		24ED56C61C969AD1005405B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48E28CE1CB15FEB9B19B15F4 /* Pods-iOSLearning.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

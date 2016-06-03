@@ -1,0 +1,7 @@
+platform :ios,'8.0'
+
+target 'iOSLearning' do
+pod 'JSONKit',       '~> 1.4'
+pod 'Reachability',  '~> 3.0'
+pod 'AFNetworking',  '~> 3.0.4'
+end

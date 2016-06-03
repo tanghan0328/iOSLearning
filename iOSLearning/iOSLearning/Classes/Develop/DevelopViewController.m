@@ -19,6 +19,7 @@
 #import "TWReflectionViewController.h"
 #import "TWElasticViewController.h"
 #import "TWFoldingViewController.h"
+#import "TWImageZoomViewController.h"
 
 @interface DevelopViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -47,7 +48,7 @@
                                              @"图片倒影",
                                              @"QQ弹性",
                                              @"图片折叠",
-                                             @"测试",
+                                             @"图片缩放",
                                              @"测试",
                                              @"测试",
                                              @"测试",
@@ -134,7 +135,7 @@
             selectedView = [[TWFoldingViewController alloc]initWithTitle:self.nameList[indexPath.row]];
             break;
         case 12:
-            selectedView = [[TimerViewController alloc]initWithTitle:self.nameList[indexPath.row]];
+            selectedView = [[TWImageZoomViewController alloc]initWithTitle:self.nameList[indexPath.row]];
             break;
         case 13:
             selectedView = [[TimerViewController alloc]initWithTitle:self.nameList[indexPath.row]];
