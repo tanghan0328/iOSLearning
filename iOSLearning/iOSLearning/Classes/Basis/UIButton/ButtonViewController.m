@@ -64,7 +64,7 @@
     //UIModalTransitionStyleCoverVertical 底部滑出
     //UIModalTransitionStyleCrossDissolve 渐显
     //UIModalTransitionStylePartialCurl 翻页
-    controller.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    controller.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
    // [self presentViewController:controller animated:YES completion:nil];
     [self.navigationController pushViewController:controller animated:YES];
 }

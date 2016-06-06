@@ -23,6 +23,7 @@
 #import "TestAESViewController.h"
 #import "CoredataViewController.h"
 #import "URLConnectionViewController.h"
+#import "TWUIWebViewController.h"
 
 
 @interface TableListViewController ()<UITableViewDataSource,UITableViewDelegate>
@@ -73,6 +74,7 @@
                        @"AES加密解密",
                        @"Coredata",
                        @"URLConnection",
+                       @"UIWebView",
                        nil];
 }
 
@@ -166,7 +168,7 @@
             viewCotroller = [[URLConnectionViewController alloc]initWithTitle:title];
             break;
         case 16:
-            viewCotroller = [[SliderViewController alloc]initWithTitle:title];
+            viewCotroller = [[TWUIWebViewController alloc]initWithTitle:title];
             break;
         case 17:
             viewCotroller = [[SliderViewController alloc]initWithTitle:title];

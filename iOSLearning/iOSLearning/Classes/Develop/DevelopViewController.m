@@ -20,6 +20,7 @@
 #import "TWElasticViewController.h"
 #import "TWFoldingViewController.h"
 #import "TWImageZoomViewController.h"
+#import "TWNotificationViewController.h"
 
 @interface DevelopViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -49,7 +50,7 @@
                                              @"QQ弹性",
                                              @"图片折叠",
                                              @"图片缩放",
-                                             @"测试",
+                                             @"通知测试",
                                              @"测试",
                                              @"测试",
                                              @"测试", nil];
@@ -138,7 +139,7 @@
             selectedView = [[TWImageZoomViewController alloc]initWithTitle:self.nameList[indexPath.row]];
             break;
         case 13:
-            selectedView = [[TimerViewController alloc]initWithTitle:self.nameList[indexPath.row]];
+            selectedView = [[TWNotificationViewController alloc]initWithTitle:self.nameList[indexPath.row]];
             break;
         case 14:
             selectedView = [[TimerViewController alloc]initWithTitle:self.nameList[indexPath.row]];

@@ -17,7 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"测试模态的跳转";
-    self.view.backgroundColor = [UIColor greenColor];
+    [self.view setBackgroundColor:[UIColor yellowColor]];
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT -64)];
+    imageView.image =[UIImage imageWithColor:[UIColor redColor]];
+    [self.view addSubview:imageView];
 }
 
 - (void)didReceiveMemoryWarning {

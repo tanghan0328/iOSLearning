@@ -21,6 +21,7 @@
     [super viewDidLoad];
     self.title = @"进阶";
     self.view.backgroundColor = [UIColor greenColor];
+    //设置UITableView的大小
     self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) style:UITableViewStyleGrouped];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
