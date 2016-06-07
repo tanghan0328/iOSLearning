@@ -16,9 +16,24 @@
 
 @implementation TWTestNotificationViewController
 
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    //[[NSNotificationCenter defaultCenter] removeObserver:self name:@"show" object:nil];//一般会在ViewControllerB的dealloc中调用
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"show" object:@"ShowViewController"];
+    NSLog(@"到了这里执行了吗？");
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(noticeTest:) name:@"wocaocaocaocaocao" object:nil];
+    NSLog(@"测试通知");
+    self.label.text = @"测试看看";
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,9 +41,6 @@
 
 }
 
-- (void)noticeTest:(NSNotification *)sender
-{
-    NSLog(@"通知的消息%@",sender);
-}
+
 
 @end

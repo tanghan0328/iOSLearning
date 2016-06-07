@@ -539,6 +539,12 @@
 		24BD78411C9A7B08000CC066 /* tag.png in Resources */ = {isa = PBXBuildFile; fileRef = 24BD78401C9A7B08000CC066 /* tag.png */; };
 		24BD78431C9A7EF5000CC066 /* max.png in Resources */ = {isa = PBXBuildFile; fileRef = 24BD78421C9A7EF5000CC066 /* max.png */; };
 		24CAB4031CB35B8300AFB56C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24CAB4021CB35B8300AFB56C /* CoreData.framework */; };
+		24CF635F1D06B4480067C16C /* TWNotificationtest01ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24CF635D1D06B4480067C16C /* TWNotificationtest01ViewController.m */; };
+		24CF63601D06B4480067C16C /* TWNotificationtest01ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24CF635D1D06B4480067C16C /* TWNotificationtest01ViewController.m */; };
+		24CF63611D06B4480067C16C /* TWNotificationtest01ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24CF635E1D06B4480067C16C /* TWNotificationtest01ViewController.xib */; };
+		24CF63621D06B4480067C16C /* TWNotificationtest01ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24CF635E1D06B4480067C16C /* TWNotificationtest01ViewController.xib */; };
+		24CF63651D06B9A50067C16C /* NSNotificationCenter+TWRmoveTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 24CF63641D06B9A50067C16C /* NSNotificationCenter+TWRmoveTest.m */; };
+		24CF63661D06B9A50067C16C /* NSNotificationCenter+TWRmoveTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 24CF63641D06B9A50067C16C /* NSNotificationCenter+TWRmoveTest.m */; };
 		24D206CA1CDB3F860008790F /* TWPlistRWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D206C91CDB3F860008790F /* TWPlistRWViewController.m */; };
 		24D206CB1CDB3F860008790F /* TWPlistRWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D206C91CDB3F860008790F /* TWPlistRWViewController.m */; };
 		24D206CD1CDB42AE0008790F /* shops.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24D206CC1CDB42AE0008790F /* shops.plist */; };
@@ -877,6 +883,11 @@
 		24BD78401C9A7B08000CC066 /* tag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tag.png; sourceTree = "<group>"; };
 		24BD78421C9A7EF5000CC066 /* max.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = max.png; sourceTree = "<group>"; };
 		24CAB4021CB35B8300AFB56C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		24CF635C1D06B4480067C16C /* TWNotificationtest01ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWNotificationtest01ViewController.h; sourceTree = "<group>"; };
+		24CF635D1D06B4480067C16C /* TWNotificationtest01ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWNotificationtest01ViewController.m; sourceTree = "<group>"; };
+		24CF635E1D06B4480067C16C /* TWNotificationtest01ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWNotificationtest01ViewController.xib; sourceTree = "<group>"; };
+		24CF63631D06B9A50067C16C /* NSNotificationCenter+TWRmoveTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+TWRmoveTest.h"; sourceTree = "<group>"; };
+		24CF63641D06B9A50067C16C /* NSNotificationCenter+TWRmoveTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+TWRmoveTest.m"; sourceTree = "<group>"; };
 		24D206C81CDB3F860008790F /* TWPlistRWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWPlistRWViewController.h; sourceTree = "<group>"; };
 		24D206C91CDB3F860008790F /* TWPlistRWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWPlistRWViewController.m; sourceTree = "<group>"; };
 		24D206CC1CDB42AE0008790F /* shops.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = shops.plist; sourceTree = "<group>"; };
@@ -1002,6 +1013,8 @@
 				241A4AFF1CE08C7400D55665 /* NSString+TWJSONToString.m */,
 				242B4BFB1D01755600AD24A7 /* UIImage+TWColor.h */,
 				242B4BFC1D01755600AD24A7 /* UIImage+TWColor.m */,
+				24CF63631D06B9A50067C16C /* NSNotificationCenter+TWRmoveTest.h */,
+				24CF63641D06B9A50067C16C /* NSNotificationCenter+TWRmoveTest.m */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -1063,6 +1076,9 @@
 				242B4C141D01848800AD24A7 /* TWTestNotificationViewController.h */,
 				242B4C151D01848800AD24A7 /* TWTestNotificationViewController.m */,
 				242B4C161D01848800AD24A7 /* TWTestNotificationViewController.xib */,
+				24CF635C1D06B4480067C16C /* TWNotificationtest01ViewController.h */,
+				24CF635D1D06B4480067C16C /* TWNotificationtest01ViewController.m */,
+				24CF635E1D06B4480067C16C /* TWNotificationtest01ViewController.xib */,
 			);
 			path = Notification;
 			sourceTree = "<group>";
@@ -1851,6 +1867,7 @@
 				242B4BF61D0124D600AD24A7 /* TWImageZoomViewController.xib in Resources */,
 				240F1B821CB4A5C3000AC902 /* Image_arrow_down@2x.png in Resources */,
 				240F1B831CB4A5C3000AC902 /* btn_vdo_share_click@3x.png in Resources */,
+				24CF63621D06B4480067C16C /* TWNotificationtest01ViewController.xib in Resources */,
 				240F1B841CB4A5C3000AC902 /* btn_more@2x.png in Resources */,
 				240F1B851CB4A5C3000AC902 /* Image_recommend@2x.png in Resources */,
 				240F1B861CB4A5C3000AC902 /* logo.png in Resources */,
@@ -1923,6 +1940,7 @@
 				24BD77DD1C9A3E6B000CC066 /* btn_vdo_send_click@2x.png in Resources */,
 				24BD77B81C9A3E6B000CC066 /* btn_task_refresh.png in Resources */,
 				24BD778F1C9A3E6B000CC066 /* btn_dismiss@2x.png in Resources */,
+				24CF63611D06B4480067C16C /* TWNotificationtest01ViewController.xib in Resources */,
 				24BD77FE1C9A3E6B000CC066 /* Image_font_small.png in Resources */,
 				24BD77B21C9A3E6B000CC066 /* btn_play@2x.png in Resources */,
 				24BD777E1C9A3E6B000CC066 /* btn_back@2x.png in Resources */,
@@ -2199,6 +2217,7 @@
 				248226161CC76A8100D7A8C4 /* MySlidersView.m in Sources */,
 				248225F61CC76A8100D7A8C4 /* Grade+CoreDataProperties.m in Sources */,
 				248226221CC76A8100D7A8C4 /* TextFileViewController.m in Sources */,
+				24CF63661D06B9A50067C16C /* NSNotificationCenter+TWRmoveTest.m in Sources */,
 				2498F6251CCA179D00368401 /* TWThreadSynchronizeViewController.m in Sources */,
 				2480A5B51D050F000041263A /* TWUIWebViewController.m in Sources */,
 				242B4C0D1D017BB800AD24A7 /* TWNotificationViewController.m in Sources */,
@@ -2228,6 +2247,7 @@
 				248225F41CC76A8100D7A8C4 /* CoredataViewController.m in Sources */,
 				240F1AE51CB4A5C3000AC902 /* AppDelegate.m in Sources */,
 				248226181CC76A8100D7A8C4 /* MySliderView.m in Sources */,
+				24CF63601D06B4480067C16C /* TWNotificationtest01ViewController.m in Sources */,
 				2400EB7C1CC8B42F00E76741 /* TWDateViewController.m in Sources */,
 				248225FA1CC76A8100D7A8C4 /* Model.xcdatamodeld in Sources */,
 				2482261C1CC76A8100D7A8C4 /* StepperViewController.m in Sources */,
@@ -2255,6 +2275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24CF63651D06B9A50067C16C /* NSNotificationCenter+TWRmoveTest.m in Sources */,
 				2441D7681CB793CA00059B56 /* TimerViewController.m in Sources */,
 				248226151CC76A8100D7A8C4 /* MySlidersView.m in Sources */,
 				248225EF1CC76A8100D7A8C4 /* NSString+AES.m in Sources */,
@@ -2276,6 +2297,7 @@
 				2400EB801CC8BA7800E76741 /* TWFileViewController.m in Sources */,
 				248226011CC76A8100D7A8C4 /* TableListViewController.m in Sources */,
 				241F9E1A1CFC295C00D26998 /* TWReflectionViewController.m in Sources */,
+				24CF635F1D06B4480067C16C /* TWNotificationtest01ViewController.m in Sources */,
 				2482260B1CC76A8100D7A8C4 /* RepeatCollectionViewCell.m in Sources */,
 				24ED56B21C969AD1005405B4 /* main.m in Sources */,
 				248225F91CC76A8100D7A8C4 /* Model.xcdatamodeld in Sources */,
