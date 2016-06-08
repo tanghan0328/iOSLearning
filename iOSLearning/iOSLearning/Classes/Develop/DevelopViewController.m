@@ -21,6 +21,7 @@
 #import "TWFoldingViewController.h"
 #import "TWImageZoomViewController.h"
 #import "TWNotificationViewController.h"
+#import "TWDelegateViewController.h"
 
 @interface DevelopViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -51,7 +52,7 @@
                                              @"图片折叠",
                                              @"图片缩放",
                                              @"通知测试",
-                                             @"测试",
+                                             @"代理测试",
                                              @"测试",
                                              @"测试", nil];
     self.tableview = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
@@ -142,7 +143,7 @@
             selectedView = [[TWNotificationViewController alloc]initWithTitle:self.nameList[indexPath.row]];
             break;
         case 14:
-            selectedView = [[TimerViewController alloc]initWithTitle:self.nameList[indexPath.row]];
+            selectedView = [[TWDelegateViewController alloc]initWithTitle:self.nameList[indexPath.row]];
             break;
         case 15:
             selectedView = [[TimerViewController alloc]initWithTitle:self.nameList[indexPath.row]];

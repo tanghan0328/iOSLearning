@@ -261,6 +261,18 @@
 		242C403B1CFD3B63008DC625 /* TWElasticViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 242C40371CFD3B63008DC625 /* TWElasticViewController.xib */; };
 		242C40421CFD3DB8008DC625 /* TWGtoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 242C40411CFD3DB8008DC625 /* TWGtoView.m */; };
 		242C40431CFD3DB8008DC625 /* TWGtoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 242C40411CFD3DB8008DC625 /* TWGtoView.m */; };
+		243884AC1D07B0C000D61198 /* TWDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243884AA1D07B0C000D61198 /* TWDelegateViewController.m */; };
+		243884AD1D07B0C000D61198 /* TWDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243884AA1D07B0C000D61198 /* TWDelegateViewController.m */; };
+		243884AE1D07B0C000D61198 /* TWDelegateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 243884AB1D07B0C000D61198 /* TWDelegateViewController.xib */; };
+		243884AF1D07B0C000D61198 /* TWDelegateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 243884AB1D07B0C000D61198 /* TWDelegateViewController.xib */; };
+		243884B31D07B5E300D61198 /* TWRegisteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243884B11D07B5E300D61198 /* TWRegisteViewController.m */; };
+		243884B41D07B5E300D61198 /* TWRegisteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243884B11D07B5E300D61198 /* TWRegisteViewController.m */; };
+		243884B51D07B5E300D61198 /* TWRegisteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 243884B21D07B5E300D61198 /* TWRegisteViewController.xib */; };
+		243884B61D07B5E300D61198 /* TWRegisteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 243884B21D07B5E300D61198 /* TWRegisteViewController.xib */; };
+		243884BA1D07B60100D61198 /* TWLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243884B81D07B60100D61198 /* TWLoginViewController.m */; };
+		243884BB1D07B60100D61198 /* TWLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243884B81D07B60100D61198 /* TWLoginViewController.m */; };
+		243884BC1D07B60100D61198 /* TWLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 243884B91D07B60100D61198 /* TWLoginViewController.xib */; };
+		243884BD1D07B60100D61198 /* TWLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 243884B91D07B60100D61198 /* TWLoginViewController.xib */; };
 		243BC60A1CFE6F5A0065D6A0 /* TWFoldingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243BC6081CFE6F5A0065D6A0 /* TWFoldingViewController.m */; };
 		243BC60B1CFE6F5A0065D6A0 /* TWFoldingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243BC6081CFE6F5A0065D6A0 /* TWFoldingViewController.m */; };
 		243BC60C1CFE6F5A0065D6A0 /* TWFoldingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 243BC6091CFE6F5A0065D6A0 /* TWFoldingViewController.xib */; };
@@ -608,6 +620,15 @@
 		242C40371CFD3B63008DC625 /* TWElasticViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWElasticViewController.xib; sourceTree = "<group>"; };
 		242C40401CFD3DB8008DC625 /* TWGtoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWGtoView.h; sourceTree = "<group>"; };
 		242C40411CFD3DB8008DC625 /* TWGtoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWGtoView.m; sourceTree = "<group>"; };
+		243884A91D07B0C000D61198 /* TWDelegateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWDelegateViewController.h; path = iOSLearning/Classes/common/TWDelegateViewController.h; sourceTree = SOURCE_ROOT; };
+		243884AA1D07B0C000D61198 /* TWDelegateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWDelegateViewController.m; path = iOSLearning/Classes/common/TWDelegateViewController.m; sourceTree = SOURCE_ROOT; };
+		243884AB1D07B0C000D61198 /* TWDelegateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TWDelegateViewController.xib; path = iOSLearning/Classes/common/TWDelegateViewController.xib; sourceTree = SOURCE_ROOT; };
+		243884B01D07B5E300D61198 /* TWRegisteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWRegisteViewController.h; path = iOSLearning/Classes/common/TWRegisteViewController.h; sourceTree = SOURCE_ROOT; };
+		243884B11D07B5E300D61198 /* TWRegisteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWRegisteViewController.m; path = iOSLearning/Classes/common/TWRegisteViewController.m; sourceTree = SOURCE_ROOT; };
+		243884B21D07B5E300D61198 /* TWRegisteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TWRegisteViewController.xib; path = iOSLearning/Classes/common/TWRegisteViewController.xib; sourceTree = SOURCE_ROOT; };
+		243884B71D07B60100D61198 /* TWLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWLoginViewController.h; path = iOSLearning/Classes/common/TWLoginViewController.h; sourceTree = SOURCE_ROOT; };
+		243884B81D07B60100D61198 /* TWLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWLoginViewController.m; path = iOSLearning/Classes/common/TWLoginViewController.m; sourceTree = SOURCE_ROOT; };
+		243884B91D07B60100D61198 /* TWLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TWLoginViewController.xib; path = iOSLearning/Classes/common/TWLoginViewController.xib; sourceTree = SOURCE_ROOT; };
 		243BC6071CFE6F5A0065D6A0 /* TWFoldingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWFoldingViewController.h; sourceTree = "<group>"; };
 		243BC6081CFE6F5A0065D6A0 /* TWFoldingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWFoldingViewController.m; sourceTree = "<group>"; };
 		243BC6091CFE6F5A0065D6A0 /* TWFoldingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWFoldingViewController.xib; sourceTree = "<group>"; };
@@ -1063,6 +1084,15 @@
 		242B4C001D017B3F00AD24A7 /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
+				243884A91D07B0C000D61198 /* TWDelegateViewController.h */,
+				243884AA1D07B0C000D61198 /* TWDelegateViewController.m */,
+				243884AB1D07B0C000D61198 /* TWDelegateViewController.xib */,
+				243884B01D07B5E300D61198 /* TWRegisteViewController.h */,
+				243884B11D07B5E300D61198 /* TWRegisteViewController.m */,
+				243884B21D07B5E300D61198 /* TWRegisteViewController.xib */,
+				243884B71D07B60100D61198 /* TWLoginViewController.h */,
+				243884B81D07B60100D61198 /* TWLoginViewController.m */,
+				243884B91D07B60100D61198 /* TWLoginViewController.xib */,
 			);
 			path = Delegate;
 			sourceTree = "<group>";
@@ -1792,6 +1822,7 @@
 				240F1B3D1CB4A5C3000AC902 /* btn_user_selected@3x.png in Resources */,
 				240F1B3E1CB4A5C3000AC902 /* btn_highlight@2x.png in Resources */,
 				240F1B3F1CB4A5C3000AC902 /* Image_ipad.png in Resources */,
+				243884AF1D07B0C000D61198 /* TWDelegateViewController.xib in Resources */,
 				240F1B401CB4A5C3000AC902 /* btn_home_selected.png in Resources */,
 				240F1B411CB4A5C3000AC902 /* btn_search_clicked.png in Resources */,
 				240F1B421CB4A5C3000AC902 /* btn_keyboard.png in Resources */,
@@ -1848,6 +1879,7 @@
 				240F1B711CB4A5C3000AC902 /* btn_vdo_share@3x.png in Resources */,
 				243BC60D1CFE6F5A0065D6A0 /* TWFoldingViewController.xib in Resources */,
 				240F1B721CB4A5C3000AC902 /* Image_set@3x.png in Resources */,
+				243884BD1D07B60100D61198 /* TWLoginViewController.xib in Resources */,
 				240F1B731CB4A5C3000AC902 /* xi.png in Resources */,
 				240F1B741CB4A5C3000AC902 /* Image_font_small@3x.png in Resources */,
 				240F1B751CB4A5C3000AC902 /* btn_normal@2x.png in Resources */,
@@ -1878,6 +1910,7 @@
 				240F1B8A1CB4A5C3000AC902 /* Image_arrow_right@3x.png in Resources */,
 				240F1B8B1CB4A5C3000AC902 /* btn_search.png in Resources */,
 				240F1B8C1CB4A5C3000AC902 /* Img_orange.png in Resources */,
+				243884B61D07B5E300D61198 /* TWRegisteViewController.xib in Resources */,
 				240F1B8D1CB4A5C3000AC902 /* btn_vdo_face.png in Resources */,
 				240F1B8E1CB4A5C3000AC902 /* Image_online.png in Resources */,
 				240F1B8F1CB4A5C3000AC902 /* btn_column_normal.png in Resources */,
@@ -2017,10 +2050,12 @@
 				24BD78061C9A3E6B000CC066 /* Image_ipad.png in Resources */,
 				24BD77961C9A3E6B000CC066 /* btn_home_selected.png in Resources */,
 				24BD77B31C9A3E6B000CC066 /* btn_search_clicked.png in Resources */,
+				243884AE1D07B0C000D61198 /* TWDelegateViewController.xib in Resources */,
 				24BD77991C9A3E6B000CC066 /* btn_keyboard.png in Resources */,
 				2441D76F1CB796E400059B56 /* PlistViewController.xib in Resources */,
 				24BD779B1C9A3E6B000CC066 /* btn_keyboard@3x.png in Resources */,
 				24BD78161C9A3E6B000CC066 /* Image_scan_click.png in Resources */,
+				243884BC1D07B60100D61198 /* TWLoginViewController.xib in Resources */,
 				24BD77DE1C9A3E6B000CC066 /* btn_vdo_send_click@3x.png in Resources */,
 				24BD77CE1C9A3E6B000CC066 /* btn_vdo_face@2x.png in Resources */,
 				24BD77981C9A3E6B000CC066 /* btn_home_selected@3x.png in Resources */,
@@ -2148,6 +2183,7 @@
 				24BD77BF1C9A3E6B000CC066 /* btn_user_normal@2x.png in Resources */,
 				24BD78231C9A3E6B000CC066 /* Image_white_light@2x.png in Resources */,
 				24BD77D81C9A3E6B000CC066 /* btn_vdo_gif_click@3x.png in Resources */,
+				243884B51D07B5E300D61198 /* TWRegisteViewController.xib in Resources */,
 				242B4C0E1D017BB800AD24A7 /* TWNotificationViewController.xib in Resources */,
 				24BD77CF1C9A3E6B000CC066 /* btn_vdo_face@3x.png in Resources */,
 			);
@@ -2210,6 +2246,7 @@
 			files = (
 				241F9E211CFC2E7200D26998 /* TWImageView.m in Sources */,
 				242C40391CFD3B63008DC625 /* TWElasticViewController.m in Sources */,
+				243884BB1D07B60100D61198 /* TWLoginViewController.m in Sources */,
 				248226201CC76A8100D7A8C4 /* ProdTabelViewController.m in Sources */,
 				248226141CC76A8100D7A8C4 /* SegmentViewController.m in Sources */,
 				248225EE1CC76A8100D7A8C4 /* NSData+AES.m in Sources */,
@@ -2231,9 +2268,11 @@
 				2482261E1CC76A8100D7A8C4 /* SwitchViewController.m in Sources */,
 				240F1BE31CB4ACBF000AC902 /* TestViewController.m in Sources */,
 				2498F61E1CCA013B00368401 /* TWPThreadViewController.m in Sources */,
+				243884B41D07B5E300D61198 /* TWRegisteViewController.m in Sources */,
 				248226281CC76BFA00D7A8C4 /* URLConnectionViewController.m in Sources */,
 				2498F6181CC9CF5200368401 /* TWWKWebViewController.m in Sources */,
 				2400EB811CC8BA7800E76741 /* TWFileViewController.m in Sources */,
+				243884AD1D07B0C000D61198 /* TWDelegateViewController.m in Sources */,
 				24D206CB1CDB3F860008790F /* TWPlistRWViewController.m in Sources */,
 				24EB62DB1CED8F0700BE6772 /* TWPDFReaderViewController.m in Sources */,
 				240F1BE81CB4B6E1000AC902 /* DevelopViewController.m in Sources */,
@@ -2277,10 +2316,12 @@
 			files = (
 				24CF63651D06B9A50067C16C /* NSNotificationCenter+TWRmoveTest.m in Sources */,
 				2441D7681CB793CA00059B56 /* TimerViewController.m in Sources */,
+				243884AC1D07B0C000D61198 /* TWDelegateViewController.m in Sources */,
 				248226151CC76A8100D7A8C4 /* MySlidersView.m in Sources */,
 				248225EF1CC76A8100D7A8C4 /* NSString+AES.m in Sources */,
 				241F9E201CFC2E7200D26998 /* TWImageView.m in Sources */,
 				248226051CC76A8100D7A8C4 /* ButtonViewController.m in Sources */,
+				243884B31D07B5E300D61198 /* TWRegisteViewController.m in Sources */,
 				2498F61D1CCA013B00368401 /* TWPThreadViewController.m in Sources */,
 				24ED56B81C969AD1005405B4 /* ViewController.m in Sources */,
 				240F1BE21CB4ACBF000AC902 /* TestViewController.m in Sources */,
@@ -2294,6 +2335,7 @@
 				24ED56B51C969AD1005405B4 /* AppDelegate.m in Sources */,
 				248226131CC76A8100D7A8C4 /* SegmentViewController.m in Sources */,
 				2498F6241CCA179D00368401 /* TWThreadSynchronizeViewController.m in Sources */,
+				243884BA1D07B60100D61198 /* TWLoginViewController.m in Sources */,
 				2400EB801CC8BA7800E76741 /* TWFileViewController.m in Sources */,
 				248226011CC76A8100D7A8C4 /* TableListViewController.m in Sources */,
 				241F9E1A1CFC295C00D26998 /* TWReflectionViewController.m in Sources */,
