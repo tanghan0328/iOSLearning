@@ -273,6 +273,18 @@
 		243884BB1D07B60100D61198 /* TWLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243884B81D07B60100D61198 /* TWLoginViewController.m */; };
 		243884BC1D07B60100D61198 /* TWLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 243884B91D07B60100D61198 /* TWLoginViewController.xib */; };
 		243884BD1D07B60100D61198 /* TWLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 243884B91D07B60100D61198 /* TWLoginViewController.xib */; };
+		243884C11D07F61400D61198 /* TWBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243884BF1D07F61400D61198 /* TWBlockViewController.m */; };
+		243884C21D07F61400D61198 /* TWBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243884BF1D07F61400D61198 /* TWBlockViewController.m */; };
+		243884C31D07F61400D61198 /* TWBlockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 243884C01D07F61400D61198 /* TWBlockViewController.xib */; };
+		243884C41D07F61400D61198 /* TWBlockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 243884C01D07F61400D61198 /* TWBlockViewController.xib */; };
+		243884C81D07F63700D61198 /* TWBlockRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243884C61D07F63700D61198 /* TWBlockRegisterViewController.m */; };
+		243884C91D07F63700D61198 /* TWBlockRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243884C61D07F63700D61198 /* TWBlockRegisterViewController.m */; };
+		243884CA1D07F63700D61198 /* TWBlockRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 243884C71D07F63700D61198 /* TWBlockRegisterViewController.xib */; };
+		243884CB1D07F63700D61198 /* TWBlockRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 243884C71D07F63700D61198 /* TWBlockRegisterViewController.xib */; };
+		243884CF1D07F64C00D61198 /* TWBlockLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243884CD1D07F64C00D61198 /* TWBlockLoginViewController.m */; };
+		243884D01D07F64C00D61198 /* TWBlockLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243884CD1D07F64C00D61198 /* TWBlockLoginViewController.m */; };
+		243884D11D07F64C00D61198 /* TWBlockLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 243884CE1D07F64C00D61198 /* TWBlockLoginViewController.xib */; };
+		243884D21D07F64C00D61198 /* TWBlockLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 243884CE1D07F64C00D61198 /* TWBlockLoginViewController.xib */; };
 		243BC60A1CFE6F5A0065D6A0 /* TWFoldingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243BC6081CFE6F5A0065D6A0 /* TWFoldingViewController.m */; };
 		243BC60B1CFE6F5A0065D6A0 /* TWFoldingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243BC6081CFE6F5A0065D6A0 /* TWFoldingViewController.m */; };
 		243BC60C1CFE6F5A0065D6A0 /* TWFoldingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 243BC6091CFE6F5A0065D6A0 /* TWFoldingViewController.xib */; };
@@ -629,6 +641,15 @@
 		243884B71D07B60100D61198 /* TWLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWLoginViewController.h; path = iOSLearning/Classes/common/TWLoginViewController.h; sourceTree = SOURCE_ROOT; };
 		243884B81D07B60100D61198 /* TWLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWLoginViewController.m; path = iOSLearning/Classes/common/TWLoginViewController.m; sourceTree = SOURCE_ROOT; };
 		243884B91D07B60100D61198 /* TWLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TWLoginViewController.xib; path = iOSLearning/Classes/common/TWLoginViewController.xib; sourceTree = SOURCE_ROOT; };
+		243884BE1D07F61400D61198 /* TWBlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWBlockViewController.h; path = iOSLearning/Classes/common/TWBlockViewController.h; sourceTree = SOURCE_ROOT; };
+		243884BF1D07F61400D61198 /* TWBlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWBlockViewController.m; path = iOSLearning/Classes/common/TWBlockViewController.m; sourceTree = SOURCE_ROOT; };
+		243884C01D07F61400D61198 /* TWBlockViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TWBlockViewController.xib; path = iOSLearning/Classes/common/TWBlockViewController.xib; sourceTree = SOURCE_ROOT; };
+		243884C51D07F63700D61198 /* TWBlockRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWBlockRegisterViewController.h; path = iOSLearning/Classes/common/TWBlockRegisterViewController.h; sourceTree = SOURCE_ROOT; };
+		243884C61D07F63700D61198 /* TWBlockRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWBlockRegisterViewController.m; path = iOSLearning/Classes/common/TWBlockRegisterViewController.m; sourceTree = SOURCE_ROOT; };
+		243884C71D07F63700D61198 /* TWBlockRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TWBlockRegisterViewController.xib; path = iOSLearning/Classes/common/TWBlockRegisterViewController.xib; sourceTree = SOURCE_ROOT; };
+		243884CC1D07F64C00D61198 /* TWBlockLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TWBlockLoginViewController.h; path = iOSLearning/Classes/common/TWBlockLoginViewController.h; sourceTree = SOURCE_ROOT; };
+		243884CD1D07F64C00D61198 /* TWBlockLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TWBlockLoginViewController.m; path = iOSLearning/Classes/common/TWBlockLoginViewController.m; sourceTree = SOURCE_ROOT; };
+		243884CE1D07F64C00D61198 /* TWBlockLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TWBlockLoginViewController.xib; path = iOSLearning/Classes/common/TWBlockLoginViewController.xib; sourceTree = SOURCE_ROOT; };
 		243BC6071CFE6F5A0065D6A0 /* TWFoldingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWFoldingViewController.h; sourceTree = "<group>"; };
 		243BC6081CFE6F5A0065D6A0 /* TWFoldingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWFoldingViewController.m; sourceTree = "<group>"; };
 		243BC6091CFE6F5A0065D6A0 /* TWFoldingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWFoldingViewController.xib; sourceTree = "<group>"; };
@@ -1077,6 +1098,15 @@
 		242B4BFF1D017B3F00AD24A7 /* Block */ = {
 			isa = PBXGroup;
 			children = (
+				243884BE1D07F61400D61198 /* TWBlockViewController.h */,
+				243884BF1D07F61400D61198 /* TWBlockViewController.m */,
+				243884C01D07F61400D61198 /* TWBlockViewController.xib */,
+				243884C51D07F63700D61198 /* TWBlockRegisterViewController.h */,
+				243884C61D07F63700D61198 /* TWBlockRegisterViewController.m */,
+				243884C71D07F63700D61198 /* TWBlockRegisterViewController.xib */,
+				243884CC1D07F64C00D61198 /* TWBlockLoginViewController.h */,
+				243884CD1D07F64C00D61198 /* TWBlockLoginViewController.m */,
+				243884CE1D07F64C00D61198 /* TWBlockLoginViewController.xib */,
 			);
 			path = Block;
 			sourceTree = "<group>";
@@ -1776,6 +1806,7 @@
 				240F1B111CB4A5C3000AC902 /* btn_vdo_send_click.png in Resources */,
 				240F1B121CB4A5C3000AC902 /* btn_column_normal@3x.png in Resources */,
 				240F1B131CB4A5C3000AC902 /* Image_history@3x.png in Resources */,
+				243884CB1D07F63700D61198 /* TWBlockRegisterViewController.xib in Resources */,
 				240F1B141CB4A5C3000AC902 /* btn_more@3x.png in Resources */,
 				240F1B151CB4A5C3000AC902 /* btn_nav_back_click@3x.png in Resources */,
 				240F1B161CB4A5C3000AC902 /* btn_vdo_send@3x.png in Resources */,
@@ -1851,6 +1882,7 @@
 				240F1B561CB4A5C3000AC902 /* btn_task.png in Resources */,
 				240F1B571CB4A5C3000AC902 /* btn_vdo_full_click@3x.png in Resources */,
 				240F1B581CB4A5C3000AC902 /* btn_user_selected@2x.png in Resources */,
+				243884C41D07F61400D61198 /* TWBlockViewController.xib in Resources */,
 				240F1B591CB4A5C3000AC902 /* Image_set@2x.png in Resources */,
 				240F1B5A1CB4A5C3000AC902 /* btn_del_code@2x.png in Resources */,
 				240F1B5B1CB4A5C3000AC902 /* btn_play_set@3x.png in Resources */,
@@ -1859,6 +1891,7 @@
 				240F1B5E1CB4A5C3000AC902 /* btn_nav_back@2x.png in Resources */,
 				240F1B5F1CB4A5C3000AC902 /* Image_remind.png in Resources */,
 				240F1B601CB4A5C3000AC902 /* Image_arrow_right@2x.png in Resources */,
+				243884D21D07F64C00D61198 /* TWBlockLoginViewController.xib in Resources */,
 				240F1B611CB4A5C3000AC902 /* Img_avatar_Default.png in Resources */,
 				240F1B621CB4A5C3000AC902 /* line_launch.png in Resources */,
 				240F1B631CB4A5C3000AC902 /* Img_default@2x.png in Resources */,
@@ -2002,6 +2035,7 @@
 				24D206CD1CDB42AE0008790F /* shops.plist in Resources */,
 				24BD77DC1C9A3E6B000CC066 /* btn_vdo_send_click.png in Resources */,
 				24BD77881C9A3E6B000CC066 /* btn_column_normal@3x.png in Resources */,
+				243884D11D07F64C00D61198 /* TWBlockLoginViewController.xib in Resources */,
 				24BD78051C9A3E6B000CC066 /* Image_history@3x.png in Resources */,
 				24BD77A41C9A3E6B000CC066 /* btn_more@3x.png in Resources */,
 				24BD77A71C9A3E6B000CC066 /* btn_nav_back_click@3x.png in Resources */,
@@ -2082,10 +2116,12 @@
 				24BD77931C9A3E6B000CC066 /* btn_home_normal.png in Resources */,
 				24BD77E51C9A3E6B000CC066 /* btn_vdo_share.png in Resources */,
 				24BD77A91C9A3E6B000CC066 /* btn_nav_back@2x.png in Resources */,
+				243884CA1D07F63700D61198 /* TWBlockRegisterViewController.xib in Resources */,
 				24BD78111C9A3E6B000CC066 /* Image_remind.png in Resources */,
 				24BD77F41C9A3E6B000CC066 /* Image_arrow_right@2x.png in Resources */,
 				24BD78241C9A3E6B000CC066 /* Img_avatar_Default.png in Resources */,
 				24BD78311C9A3E6B000CC066 /* line_launch.png in Resources */,
+				243884C31D07F61400D61198 /* TWBlockViewController.xib in Resources */,
 				24BD78261C9A3E6B000CC066 /* Img_default@2x.png in Resources */,
 				24BD77EA1C9A3E6B000CC066 /* Image_alpha_big.png in Resources */,
 				24BD77AE1C9A3E6B000CC066 /* btn_play_back@3x.png in Resources */,
@@ -2251,6 +2287,7 @@
 				248226141CC76A8100D7A8C4 /* SegmentViewController.m in Sources */,
 				248225EE1CC76A8100D7A8C4 /* NSData+AES.m in Sources */,
 				248226121CC76A8100D7A8C4 /* ProgressViewController.m in Sources */,
+				243884C21D07F61400D61198 /* TWBlockViewController.m in Sources */,
 				248226161CC76A8100D7A8C4 /* MySlidersView.m in Sources */,
 				248225F61CC76A8100D7A8C4 /* Grade+CoreDataProperties.m in Sources */,
 				248226221CC76A8100D7A8C4 /* TextFileViewController.m in Sources */,
@@ -2276,6 +2313,7 @@
 				24D206CB1CDB3F860008790F /* TWPlistRWViewController.m in Sources */,
 				24EB62DB1CED8F0700BE6772 /* TWPDFReaderViewController.m in Sources */,
 				240F1BE81CB4B6E1000AC902 /* DevelopViewController.m in Sources */,
+				243884C91D07F63700D61198 /* TWBlockRegisterViewController.m in Sources */,
 				243BC60B1CFE6F5A0065D6A0 /* TWFoldingViewController.m in Sources */,
 				248225F81CC76A8100D7A8C4 /* Grade.m in Sources */,
 				242B4BFA1D01608100AD24A7 /* TWBtnTestViewController.m in Sources */,
@@ -2297,6 +2335,7 @@
 				248226061CC76A8100D7A8C4 /* ButtonViewController.m in Sources */,
 				240F1AF21CB4A5C3000AC902 /* BaseViewController.m in Sources */,
 				240F1BDF1CB4AC66000AC902 /* AdvanceViewController.m in Sources */,
+				243884D01D07F64C00D61198 /* TWBlockLoginViewController.m in Sources */,
 				2482260C1CC76A8100D7A8C4 /* RepeatCollectionViewCell.m in Sources */,
 				248225FE1CC76A8100D7A8C4 /* Student.m in Sources */,
 				248226021CC76A8100D7A8C4 /* TableListViewController.m in Sources */,
@@ -2320,6 +2359,7 @@
 				248226151CC76A8100D7A8C4 /* MySlidersView.m in Sources */,
 				248225EF1CC76A8100D7A8C4 /* NSString+AES.m in Sources */,
 				241F9E201CFC2E7200D26998 /* TWImageView.m in Sources */,
+				243884C81D07F63700D61198 /* TWBlockRegisterViewController.m in Sources */,
 				248226051CC76A8100D7A8C4 /* ButtonViewController.m in Sources */,
 				243884B31D07B5E300D61198 /* TWRegisteViewController.m in Sources */,
 				2498F61D1CCA013B00368401 /* TWPThreadViewController.m in Sources */,
@@ -2344,6 +2384,7 @@
 				24ED56B21C969AD1005405B4 /* main.m in Sources */,
 				248225F91CC76A8100D7A8C4 /* Model.xcdatamodeld in Sources */,
 				248225F31CC76A8100D7A8C4 /* CoredataViewController.m in Sources */,
+				243884C11D07F61400D61198 /* TWBlockViewController.m in Sources */,
 				248226271CC76BFA00D7A8C4 /* URLConnectionViewController.m in Sources */,
 				2482261D1CC76A8100D7A8C4 /* SwitchViewController.m in Sources */,
 				2441D76D1CB796E400059B56 /* PlistViewController.m in Sources */,
@@ -2352,6 +2393,7 @@
 				242C40381CFD3B63008DC625 /* TWElasticViewController.m in Sources */,
 				248226191CC76A8100D7A8C4 /* SliderViewController.m in Sources */,
 				241A4AFB1CE05ABE00D55665 /* TWUser.m in Sources */,
+				243884CF1D07F64C00D61198 /* TWBlockLoginViewController.m in Sources */,
 				248226171CC76A8100D7A8C4 /* MySliderView.m in Sources */,
 				242B4BFD1D01755600AD24A7 /* UIImage+TWColor.m in Sources */,
 				2400EB7B1CC8B42F00E76741 /* TWDateViewController.m in Sources */,
