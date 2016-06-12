@@ -573,6 +573,10 @@
 		24D206CB1CDB3F860008790F /* TWPlistRWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D206C91CDB3F860008790F /* TWPlistRWViewController.m */; };
 		24D206CD1CDB42AE0008790F /* shops.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24D206CC1CDB42AE0008790F /* shops.plist */; };
 		24D206CE1CDB42AE0008790F /* shops.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24D206CC1CDB42AE0008790F /* shops.plist */; };
+		24DE82A81D0D3D6100191C35 /* TWSignatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE82A61D0D3D6100191C35 /* TWSignatureViewController.m */; };
+		24DE82A91D0D3D6100191C35 /* TWSignatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE82A61D0D3D6100191C35 /* TWSignatureViewController.m */; };
+		24DE82AA1D0D3D6100191C35 /* TWSignatureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24DE82A71D0D3D6100191C35 /* TWSignatureViewController.xib */; };
+		24DE82AB1D0D3D6100191C35 /* TWSignatureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24DE82A71D0D3D6100191C35 /* TWSignatureViewController.xib */; };
 		24EB62DA1CED8F0700BE6772 /* TWPDFReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EB62D91CED8F0700BE6772 /* TWPDFReaderViewController.m */; };
 		24EB62DB1CED8F0700BE6772 /* TWPDFReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EB62D91CED8F0700BE6772 /* TWPDFReaderViewController.m */; };
 		24ED56B21C969AD1005405B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ED56B11C969AD1005405B4 /* main.m */; };
@@ -933,6 +937,9 @@
 		24D206C81CDB3F860008790F /* TWPlistRWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWPlistRWViewController.h; sourceTree = "<group>"; };
 		24D206C91CDB3F860008790F /* TWPlistRWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWPlistRWViewController.m; sourceTree = "<group>"; };
 		24D206CC1CDB42AE0008790F /* shops.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = shops.plist; sourceTree = "<group>"; };
+		24DE82A51D0D3D6100191C35 /* TWSignatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSignatureViewController.h; sourceTree = "<group>"; };
+		24DE82A61D0D3D6100191C35 /* TWSignatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSignatureViewController.m; sourceTree = "<group>"; };
+		24DE82A71D0D3D6100191C35 /* TWSignatureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWSignatureViewController.xib; sourceTree = "<group>"; };
 		24EB62D81CED8F0700BE6772 /* TWPDFReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWPDFReaderViewController.h; sourceTree = "<group>"; };
 		24EB62D91CED8F0700BE6772 /* TWPDFReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWPDFReaderViewController.m; sourceTree = "<group>"; };
 		24ED56AD1C969AD1005405B4 /* iOSLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1028,6 +1035,7 @@
 		240F1BE41CB4B6CB000AC902 /* Develop */ = {
 			isa = PBXGroup;
 			children = (
+				24DE82A41D0D3D3C00191C35 /* Signature */,
 				242B4BFF1D017B3F00AD24A7 /* Block */,
 				242B4C001D017B3F00AD24A7 /* Delegate */,
 				242B4C011D017B3F00AD24A7 /* Notification */,
@@ -1406,6 +1414,16 @@
 			);
 			name = Frameworks;
 			path = iOSLearning/Frameworks;
+			sourceTree = "<group>";
+		};
+		24DE82A41D0D3D3C00191C35 /* Signature */ = {
+			isa = PBXGroup;
+			children = (
+				24DE82A51D0D3D6100191C35 /* TWSignatureViewController.h */,
+				24DE82A61D0D3D6100191C35 /* TWSignatureViewController.m */,
+				24DE82A71D0D3D6100191C35 /* TWSignatureViewController.xib */,
+			);
+			path = Signature;
 			sourceTree = "<group>";
 		};
 		24EB62D71CED8EDD00BE6772 /* pdfReader */ = {
@@ -1991,6 +2009,7 @@
 				240F1BB61CB4A5C3000AC902 /* Img_viewer@2x.png in Resources */,
 				240F1BB71CB4A5C3000AC902 /* btn_search_clicked@3x.png in Resources */,
 				240F1BB81CB4A5C3000AC902 /* Img_user_register@2x.png in Resources */,
+				24DE82AB1D0D3D6100191C35 /* TWSignatureViewController.xib in Resources */,
 				240F1BB91CB4A5C3000AC902 /* btn_column_selected@3x.png in Resources */,
 				240F1BBA1CB4A5C3000AC902 /* btn_user_normal@2x.png in Resources */,
 				240F1BBB1CB4A5C3000AC902 /* Image_white_light@2x.png in Resources */,
@@ -2029,6 +2048,7 @@
 				24BD77C91C9A3E6B000CC066 /* btn_vdo_back@3x.png in Resources */,
 				24BD780C1C9A3E6B000CC066 /* Image_online@2x.png in Resources */,
 				24BD77A51C9A3E6B000CC066 /* btn_nav_back_click.png in Resources */,
+				24DE82AA1D0D3D6100191C35 /* TWSignatureViewController.xib in Resources */,
 				242B4BF51D0124D600AD24A7 /* TWImageZoomViewController.xib in Resources */,
 				241F9E101CFBDE8500D26998 /* TWParticlesViewController.xib in Resources */,
 				24BD779F1C9A3E6B000CC066 /* btn_live_selected.png in Resources */,
@@ -2331,6 +2351,7 @@
 				240F1AE71CB4A5C3000AC902 /* main.m in Sources */,
 				242C40431CFD3DB8008DC625 /* TWGtoView.m in Sources */,
 				2482260A1CC76A8100D7A8C4 /* RepeatCellViewController.m in Sources */,
+				24DE82A91D0D3D6100191C35 /* TWSignatureViewController.m in Sources */,
 				240F1BCB1CB4AAFA000AC902 /* TabRootViewController.m in Sources */,
 				248226061CC76A8100D7A8C4 /* ButtonViewController.m in Sources */,
 				240F1AF21CB4A5C3000AC902 /* BaseViewController.m in Sources */,
@@ -2371,6 +2392,7 @@
 				240F1BE71CB4B6E1000AC902 /* DevelopViewController.m in Sources */,
 				243BC60A1CFE6F5A0065D6A0 /* TWFoldingViewController.m in Sources */,
 				248225F71CC76A8100D7A8C4 /* Grade.m in Sources */,
+				24DE82A81D0D3D6100191C35 /* TWSignatureViewController.m in Sources */,
 				241F9E141CFBE06900D26998 /* TWDrawView.m in Sources */,
 				24ED56B51C969AD1005405B4 /* AppDelegate.m in Sources */,
 				248226131CC76A8100D7A8C4 /* SegmentViewController.m in Sources */,

@@ -25,7 +25,6 @@
 #import "URLConnectionViewController.h"
 #import "TWUIWebViewController.h"
 
-
 @interface TableListViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @property (retain, nonatomic)NSArray *tableArray;
@@ -57,6 +56,7 @@
     backItem.title = @"返回";
     self.navigationItem.backBarButtonItem = backItem;
     
+    
     self.tableArray = [NSArray arrayWithObjects:
                        @"UILabel",
                        @"UIButton",
@@ -83,7 +83,6 @@
 //    self.tabBarController.tabBar.hidden = NO;
 //    [super viewWillAppear:animated];
 //
-//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

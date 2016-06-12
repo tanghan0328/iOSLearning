@@ -23,6 +23,7 @@
 #import "TWNotificationViewController.h"
 #import "TWDelegateViewController.h"
 #import "TWBlockViewController.h"
+#import "TWSignatureViewController.h"
 
 @interface DevelopViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -55,7 +56,7 @@
                                              @"通知测试",
                                              @"代理测试",
                                              @"Block测试",
-                                             @"测试", nil];
+                                             @"签名的测试", nil];
     self.tableview = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
     [self.view addSubview:_tableview];
     self.tableview.delegate = self;
@@ -150,7 +151,7 @@
             selectedView = [[TWBlockViewController alloc]initWithTitle:self.nameList[indexPath.row]];
             break;
         case 16:
-            selectedView = [[TimerViewController alloc]initWithTitle:self.nameList[indexPath.row]];
+            selectedView = [[TWSignatureViewController alloc]initWithTitle:self.nameList[indexPath.row]];
             break;
     }
     if (selectedView != nil) {
