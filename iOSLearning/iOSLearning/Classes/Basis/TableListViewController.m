@@ -24,6 +24,8 @@
 #import "CoredataViewController.h"
 #import "URLConnectionViewController.h"
 #import "TWUIWebViewController.h"
+#import "TWPickerViewController.h"
+#import "TWDatePickerViewController.h"
 
 @interface TableListViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -75,6 +77,8 @@
                        @"Coredata",
                        @"URLConnection",
                        @"UIWebView",
+                       @"UIPickerView",
+                       @"UIDatePicker",
                        nil];
 }
 
@@ -170,10 +174,10 @@
             viewCotroller = [[TWUIWebViewController alloc]initWithTitle:title];
             break;
         case 17:
-            viewCotroller = [[SliderViewController alloc]initWithTitle:title];
+            viewCotroller = [[TWPickerViewController alloc]initWithTitle:title];
             break;
         case 18:
-            viewCotroller = [[SliderViewController alloc]initWithTitle:title];
+            viewCotroller = [[TWDatePickerViewController alloc]initWithTitle:title];
             break;
         default:
             break;

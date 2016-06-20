@@ -573,6 +573,18 @@
 		24D206CB1CDB3F860008790F /* TWPlistRWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D206C91CDB3F860008790F /* TWPlistRWViewController.m */; };
 		24D206CD1CDB42AE0008790F /* shops.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24D206CC1CDB42AE0008790F /* shops.plist */; };
 		24D206CE1CDB42AE0008790F /* shops.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24D206CC1CDB42AE0008790F /* shops.plist */; };
+		24DA5D721D178B2A00F4BD36 /* TWPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DA5D701D178B2A00F4BD36 /* TWPickerViewController.m */; };
+		24DA5D731D178B2A00F4BD36 /* TWPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DA5D701D178B2A00F4BD36 /* TWPickerViewController.m */; };
+		24DA5D741D178B2A00F4BD36 /* TWPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24DA5D711D178B2A00F4BD36 /* TWPickerViewController.xib */; };
+		24DA5D751D178B2A00F4BD36 /* TWPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24DA5D711D178B2A00F4BD36 /* TWPickerViewController.xib */; };
+		24DA5D771D178E0500F4BD36 /* provinces.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24DA5D761D178E0500F4BD36 /* provinces.plist */; };
+		24DA5D781D178E0500F4BD36 /* provinces.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24DA5D761D178E0500F4BD36 /* provinces.plist */; };
+		24DA5D7B1D178E9800F4BD36 /* TWProvince.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DA5D7A1D178E9800F4BD36 /* TWProvince.m */; };
+		24DA5D7C1D178E9800F4BD36 /* TWProvince.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DA5D7A1D178E9800F4BD36 /* TWProvince.m */; };
+		24DA5D811D17E51C00F4BD36 /* TWDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DA5D7F1D17E51C00F4BD36 /* TWDatePickerViewController.m */; };
+		24DA5D821D17E51C00F4BD36 /* TWDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DA5D7F1D17E51C00F4BD36 /* TWDatePickerViewController.m */; };
+		24DA5D831D17E51C00F4BD36 /* TWDatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24DA5D801D17E51C00F4BD36 /* TWDatePickerViewController.xib */; };
+		24DA5D841D17E51C00F4BD36 /* TWDatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24DA5D801D17E51C00F4BD36 /* TWDatePickerViewController.xib */; };
 		24DE82A81D0D3D6100191C35 /* TWSignatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE82A61D0D3D6100191C35 /* TWSignatureViewController.m */; };
 		24DE82A91D0D3D6100191C35 /* TWSignatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE82A61D0D3D6100191C35 /* TWSignatureViewController.m */; };
 		24DE82AA1D0D3D6100191C35 /* TWSignatureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24DE82A71D0D3D6100191C35 /* TWSignatureViewController.xib */; };
@@ -937,6 +949,15 @@
 		24D206C81CDB3F860008790F /* TWPlistRWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWPlistRWViewController.h; sourceTree = "<group>"; };
 		24D206C91CDB3F860008790F /* TWPlistRWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWPlistRWViewController.m; sourceTree = "<group>"; };
 		24D206CC1CDB42AE0008790F /* shops.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = shops.plist; sourceTree = "<group>"; };
+		24DA5D6F1D178B2A00F4BD36 /* TWPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWPickerViewController.h; sourceTree = "<group>"; };
+		24DA5D701D178B2A00F4BD36 /* TWPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWPickerViewController.m; sourceTree = "<group>"; };
+		24DA5D711D178B2A00F4BD36 /* TWPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWPickerViewController.xib; sourceTree = "<group>"; };
+		24DA5D761D178E0500F4BD36 /* provinces.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = provinces.plist; sourceTree = "<group>"; };
+		24DA5D791D178E9800F4BD36 /* TWProvince.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWProvince.h; sourceTree = "<group>"; };
+		24DA5D7A1D178E9800F4BD36 /* TWProvince.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWProvince.m; sourceTree = "<group>"; };
+		24DA5D7E1D17E51C00F4BD36 /* TWDatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWDatePickerViewController.h; sourceTree = "<group>"; };
+		24DA5D7F1D17E51C00F4BD36 /* TWDatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWDatePickerViewController.m; sourceTree = "<group>"; };
+		24DA5D801D17E51C00F4BD36 /* TWDatePickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWDatePickerViewController.xib; sourceTree = "<group>"; };
 		24DE82A51D0D3D6100191C35 /* TWSignatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSignatureViewController.h; sourceTree = "<group>"; };
 		24DE82A61D0D3D6100191C35 /* TWSignatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSignatureViewController.m; sourceTree = "<group>"; };
 		24DE82A71D0D3D6100191C35 /* TWSignatureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWSignatureViewController.xib; sourceTree = "<group>"; };
@@ -1002,6 +1023,8 @@
 		240F1BD41CB4AC1C000AC902 /* Basis */ = {
 			isa = PBXGroup;
 			children = (
+				24DA5D7D1D17E4FF00F4BD36 /* UIDatePicker */,
+				24DA5D6E1D178B0300F4BD36 /* UIPickerView */,
 				2480A5B01D050EE30041263A /* UIWebView */,
 				248226241CC76ADB00D7A8C4 /* URLConnection */,
 				248225A91CC76A8100D7A8C4 /* AES */,
@@ -1416,6 +1439,28 @@
 			path = iOSLearning/Frameworks;
 			sourceTree = "<group>";
 		};
+		24DA5D6E1D178B0300F4BD36 /* UIPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				24DA5D6F1D178B2A00F4BD36 /* TWPickerViewController.h */,
+				24DA5D701D178B2A00F4BD36 /* TWPickerViewController.m */,
+				24DA5D711D178B2A00F4BD36 /* TWPickerViewController.xib */,
+				24DA5D791D178E9800F4BD36 /* TWProvince.h */,
+				24DA5D7A1D178E9800F4BD36 /* TWProvince.m */,
+			);
+			path = UIPickerView;
+			sourceTree = "<group>";
+		};
+		24DA5D7D1D17E4FF00F4BD36 /* UIDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				24DA5D7E1D17E51C00F4BD36 /* TWDatePickerViewController.h */,
+				24DA5D7F1D17E51C00F4BD36 /* TWDatePickerViewController.m */,
+				24DA5D801D17E51C00F4BD36 /* TWDatePickerViewController.xib */,
+			);
+			path = UIDatePicker;
+			sourceTree = "<group>";
+		};
 		24DE82A41D0D3D3C00191C35 /* Signature */ = {
 			isa = PBXGroup;
 			children = (
@@ -1471,6 +1516,7 @@
 		24ED56B01C969AD1005405B4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				24DA5D761D178E0500F4BD36 /* provinces.plist */,
 				24ED56C91C969D16005405B4 /* images */,
 				24ED56BC1C969AD1005405B4 /* Assets.xcassets */,
 				24ED56D41C96B908005405B4 /* Images.xcassets */,
@@ -1889,6 +1935,7 @@
 				240F1B4C1CB4A5C3000AC902 /* btn_vdo_face_click@2x.png in Resources */,
 				242C403B1CFD3B63008DC625 /* TWElasticViewController.xib in Resources */,
 				240F1B4D1CB4A5C3000AC902 /* zhi.png in Resources */,
+				24DA5D841D17E51C00F4BD36 /* TWDatePickerViewController.xib in Resources */,
 				240F1B4E1CB4A5C3000AC902 /* btn_vdo_share_click.png in Resources */,
 				240F1B4F1CB4A5C3000AC902 /* btn_column_normal@2x.png in Resources */,
 				240F1B501CB4A5C3000AC902 /* btn_vdo_back.png in Resources */,
@@ -1935,6 +1982,7 @@
 				240F1B741CB4A5C3000AC902 /* Image_font_small@3x.png in Resources */,
 				240F1B751CB4A5C3000AC902 /* btn_normal@2x.png in Resources */,
 				248226041CC76A8100D7A8C4 /* TableListViewController.xib in Resources */,
+				24DA5D781D178E0500F4BD36 /* provinces.plist in Resources */,
 				240F1B761CB4A5C3000AC902 /* Image_font_big@2x.png in Resources */,
 				240F1B771CB4A5C3000AC902 /* Image_bright_bg@2x.png in Resources */,
 				240F1B781CB4A5C3000AC902 /* btn_home_normal@2x.png in Resources */,
@@ -1955,6 +2003,7 @@
 				240F1B851CB4A5C3000AC902 /* Image_recommend@2x.png in Resources */,
 				240F1B861CB4A5C3000AC902 /* logo.png in Resources */,
 				241F9E111CFBDE8500D26998 /* TWParticlesViewController.xib in Resources */,
+				24DA5D751D178B2A00F4BD36 /* TWPickerViewController.xib in Resources */,
 				240F1B871CB4A5C3000AC902 /* btn_clock@3x.png in Resources */,
 				240F1B881CB4A5C3000AC902 /* Image_volume@2x.png in Resources */,
 				240F1B891CB4A5C3000AC902 /* btn_vdo_gif_click.png in Resources */,
@@ -2033,6 +2082,7 @@
 				24BD781C1C9A3E6B000CC066 /* Image_set.png in Resources */,
 				24BD77CC1C9A3E6B000CC066 /* btn_vdo_face_click@3x.png in Resources */,
 				24BD77F81C9A3E6B000CC066 /* Image_focus.png in Resources */,
+				24DA5D831D17E51C00F4BD36 /* TWDatePickerViewController.xib in Resources */,
 				24BD782A1C9A3E6B000CC066 /* Img_orange@2x.png in Resources */,
 				24BD778E1C9A3E6B000CC066 /* btn_dismiss.png in Resources */,
 				24BD77FA1C9A3E6B000CC066 /* Image_focus@3x.png in Resources */,
@@ -2108,6 +2158,7 @@
 				24BD77991C9A3E6B000CC066 /* btn_keyboard.png in Resources */,
 				2441D76F1CB796E400059B56 /* PlistViewController.xib in Resources */,
 				24BD779B1C9A3E6B000CC066 /* btn_keyboard@3x.png in Resources */,
+				24DA5D771D178E0500F4BD36 /* provinces.plist in Resources */,
 				24BD78161C9A3E6B000CC066 /* Image_scan_click.png in Resources */,
 				243884BC1D07B60100D61198 /* TWLoginViewController.xib in Resources */,
 				24BD77DE1C9A3E6B000CC066 /* btn_vdo_send_click@3x.png in Resources */,
@@ -2157,6 +2208,7 @@
 				24BD78101C9A3E6B000CC066 /* Image_reg_user@2x.png in Resources */,
 				24BD77C51C9A3E6B000CC066 /* btn_vdo_back_click@2x.png in Resources */,
 				2466A24C1C992C2C00B5C155 /* ugc_btn_time_click@2x.png in Resources */,
+				24DA5D741D178B2A00F4BD36 /* TWPickerViewController.xib in Resources */,
 				24BD77E71C9A3E6B000CC066 /* btn_vdo_share@3x.png in Resources */,
 				24BD781E1C9A3E6B000CC066 /* Image_set@3x.png in Resources */,
 				24BD78361C9A3E6B000CC066 /* xi.png in Resources */,
@@ -2313,12 +2365,15 @@
 				248226221CC76A8100D7A8C4 /* TextFileViewController.m in Sources */,
 				24CF63661D06B9A50067C16C /* NSNotificationCenter+TWRmoveTest.m in Sources */,
 				2498F6251CCA179D00368401 /* TWThreadSynchronizeViewController.m in Sources */,
+				24DA5D7C1D178E9800F4BD36 /* TWProvince.m in Sources */,
 				2480A5B51D050F000041263A /* TWUIWebViewController.m in Sources */,
 				242B4C0D1D017BB800AD24A7 /* TWNotificationViewController.m in Sources */,
 				240F1ADA1CB4A5C3000AC902 /* ViewController.m in Sources */,
 				248226081CC76A8100D7A8C4 /* ProdCollectionViewController.m in Sources */,
 				248226001CC76A8100D7A8C4 /* DeviceViewController.m in Sources */,
 				242B4BF41D0124D600AD24A7 /* TWImageZoomViewController.m in Sources */,
+				24DA5D731D178B2A00F4BD36 /* TWPickerViewController.m in Sources */,
+				24DA5D821D17E51C00F4BD36 /* TWDatePickerViewController.m in Sources */,
 				248225F21CC76A8100D7A8C4 /* TestAESViewController.m in Sources */,
 				241F9E1B1CFC295C00D26998 /* TWReflectionViewController.m in Sources */,
 				248225FC1CC76A8100D7A8C4 /* Student+CoreDataProperties.m in Sources */,
@@ -2389,6 +2444,7 @@
 				248225FF1CC76A8100D7A8C4 /* DeviceViewController.m in Sources */,
 				241F9E0E1CFBDE8500D26998 /* TWParticlesViewController.m in Sources */,
 				242C40421CFD3DB8008DC625 /* TWGtoView.m in Sources */,
+				24DA5D721D178B2A00F4BD36 /* TWPickerViewController.m in Sources */,
 				240F1BE71CB4B6E1000AC902 /* DevelopViewController.m in Sources */,
 				243BC60A1CFE6F5A0065D6A0 /* TWFoldingViewController.m in Sources */,
 				248225F71CC76A8100D7A8C4 /* Grade.m in Sources */,
@@ -2427,8 +2483,10 @@
 				2480A5B41D050F000041263A /* TWUIWebViewController.m in Sources */,
 				2482261B1CC76A8100D7A8C4 /* StepperViewController.m in Sources */,
 				248225FD1CC76A8100D7A8C4 /* Student.m in Sources */,
+				24DA5D7B1D178E9800F4BD36 /* TWProvince.m in Sources */,
 				248226211CC76A8100D7A8C4 /* TextFileViewController.m in Sources */,
 				242B4BF31D0124D600AD24A7 /* TWImageZoomViewController.m in Sources */,
+				24DA5D811D17E51C00F4BD36 /* TWDatePickerViewController.m in Sources */,
 				24EB62DA1CED8F0700BE6772 /* TWPDFReaderViewController.m in Sources */,
 				248225F11CC76A8100D7A8C4 /* TestAESViewController.m in Sources */,
 				248225ED1CC76A8100D7A8C4 /* NSData+AES.m in Sources */,

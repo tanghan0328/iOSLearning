@@ -61,6 +61,9 @@
     [self.view addSubview:_tableview];
     self.tableview.delegate = self;
     self.tableview.dataSource = self;
+    //测试断言
+//    Boolean flag = false;
+//    NSAssert(flag, @"测试=====》", self.tableview);
 }
 
 //- (void)viewWillAppear:(BOOL)animated
@@ -151,7 +154,7 @@
             selectedView = [[TWBlockViewController alloc]initWithTitle:self.nameList[indexPath.row]];
             break;
         case 16:
-            selectedView = [[TWSignatureViewController alloc]initWithTitle:self.nameList[indexPath.row]];
+           // selectedView = [[TWSignatureViewController alloc]initWithTitle:self.nameList[indexPath.row]];
             break;
     }
     if (selectedView != nil) {
