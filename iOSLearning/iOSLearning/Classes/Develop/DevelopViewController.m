@@ -24,6 +24,7 @@
 #import "TWDelegateViewController.h"
 #import "TWBlockViewController.h"
 #import "TWSignatureViewController.h"
+#import "TWKVOViewController.h"
 
 @interface DevelopViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -56,7 +57,9 @@
                                              @"通知测试",
                                              @"代理测试",
                                              @"Block测试",
-                                             @"签名的测试", nil];
+                                             //@"签名的测试",
+                                             @"KVO的测试",
+                                             nil];
     self.tableview = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
     [self.view addSubview:_tableview];
     self.tableview.delegate = self;
@@ -155,6 +158,7 @@
             break;
         case 16:
            // selectedView = [[TWSignatureViewController alloc]initWithTitle:self.nameList[indexPath.row]];
+            selectedView = [[TWKVOViewController alloc]initWithTitle:self.nameList[indexPath.row]];
             break;
     }
     if (selectedView != nil) {

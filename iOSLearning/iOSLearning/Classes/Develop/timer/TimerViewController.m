@@ -58,7 +58,11 @@
                                    userInfo:@"hello I'm the info to send"
                                     repeats:NO];
 
-    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+   // [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+    
+//    NSTimer *myTimer = [NSTimer  timerWithTimeInterval:3.0 target:selfselector:@selector(sendBroadcast:)userInfo:nilrepeats:NO];
+//    
+//    [[NSRunLoop  currentRunLoop] addTimer:myTimerforMode:NSDefaultRunLoopMode];
 }
 
 -(void)sendBroadcast: (NSTimer *)timer {
