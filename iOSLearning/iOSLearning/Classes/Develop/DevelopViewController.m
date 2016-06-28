@@ -17,7 +17,7 @@
 #import "TWPlistRWViewController.h"
 #import "TWParticlesViewController.h"
 #import "TWReflectionViewController.h"
-#import "TWElasticViewController.h"
+#import "TWElasticViewController.h" 
 #import "TWFoldingViewController.h"
 #import "TWImageZoomViewController.h"
 #import "TWNotificationViewController.h"
@@ -25,6 +25,8 @@
 #import "TWBlockViewController.h"
 #import "TWSignatureViewController.h"
 #import "TWKVOViewController.h"
+#import "TWGoldZoneViewController.h"
+
 
 @interface DevelopViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -59,6 +61,7 @@
                                              @"Block测试",
                                              //@"签名的测试",
                                              @"KVO的测试",
+                                             @"刮刮乐",
                                              nil];
     self.tableview = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
     [self.view addSubview:_tableview];
@@ -160,6 +163,8 @@
            // selectedView = [[TWSignatureViewController alloc]initWithTitle:self.nameList[indexPath.row]];
             selectedView = [[TWKVOViewController alloc]initWithTitle:self.nameList[indexPath.row]];
             break;
+        case 17:
+            selectedView =[[TWGoldZoneViewController alloc] initWithTitle:self.nameList[indexPath.row]];
     }
     if (selectedView != nil) {
         //隐藏tabbar

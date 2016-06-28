@@ -13,6 +13,10 @@
 		2400EB811CC8BA7800E76741 /* TWFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2400EB7E1CC8BA7800E76741 /* TWFileViewController.m */; };
 		2400EB821CC8BA7800E76741 /* TWFileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2400EB7F1CC8BA7800E76741 /* TWFileViewController.xib */; };
 		2400EB831CC8BA7800E76741 /* TWFileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2400EB7F1CC8BA7800E76741 /* TWFileViewController.xib */; };
+		2408B71F1D226F2300C48D7D /* TWGoldZoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2408B71D1D226F2300C48D7D /* TWGoldZoneViewController.m */; };
+		2408B7201D226F2300C48D7D /* TWGoldZoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2408B71D1D226F2300C48D7D /* TWGoldZoneViewController.m */; };
+		2408B7211D226F2300C48D7D /* TWGoldZoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2408B71E1D226F2300C48D7D /* TWGoldZoneViewController.xib */; };
+		2408B7221D226F2300C48D7D /* TWGoldZoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2408B71E1D226F2300C48D7D /* TWGoldZoneViewController.xib */; };
 		240F1ADA1CB4A5C3000AC902 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ED56B71C969AD1005405B4 /* ViewController.m */; };
 		240F1AE51CB4A5C3000AC902 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ED56B41C969AD1005405B4 /* AppDelegate.m */; };
 		240F1AE71CB4A5C3000AC902 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ED56B11C969AD1005405B4 /* main.m */; };
@@ -612,6 +616,9 @@
 		2400EB7D1CC8BA7800E76741 /* TWFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWFileViewController.h; sourceTree = "<group>"; };
 		2400EB7E1CC8BA7800E76741 /* TWFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWFileViewController.m; sourceTree = "<group>"; };
 		2400EB7F1CC8BA7800E76741 /* TWFileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWFileViewController.xib; sourceTree = "<group>"; };
+		2408B71C1D226F2300C48D7D /* TWGoldZoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWGoldZoneViewController.h; sourceTree = "<group>"; };
+		2408B71D1D226F2300C48D7D /* TWGoldZoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWGoldZoneViewController.m; sourceTree = "<group>"; };
+		2408B71E1D226F2300C48D7D /* TWGoldZoneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWGoldZoneViewController.xib; sourceTree = "<group>"; };
 		240F1BC11CB4A5C3000AC902 /* iOSLearning Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOSLearning Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		240F1BC81CB4AAFA000AC902 /* TabRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabRootViewController.h; sourceTree = "<group>"; };
 		240F1BC91CB4AAFA000AC902 /* TabRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabRootViewController.m; sourceTree = "<group>"; };
@@ -1020,6 +1027,16 @@
 			path = dateTime;
 			sourceTree = "<group>";
 		};
+		2408B7171D226ED300C48D7D /* GoldZone */ = {
+			isa = PBXGroup;
+			children = (
+				2408B71C1D226F2300C48D7D /* TWGoldZoneViewController.h */,
+				2408B71D1D226F2300C48D7D /* TWGoldZoneViewController.m */,
+				2408B71E1D226F2300C48D7D /* TWGoldZoneViewController.xib */,
+			);
+			path = GoldZone;
+			sourceTree = "<group>";
+		};
 		240F1BCC1CB4AC1C000AC902 /* Advanced */ = {
 			isa = PBXGroup;
 			children = (
@@ -1068,6 +1085,7 @@
 		240F1BE41CB4B6CB000AC902 /* Develop */ = {
 			isa = PBXGroup;
 			children = (
+				2408B7171D226ED300C48D7D /* GoldZone */,
 				24D029401D1BC06D002CAF14 /* KVO */,
 				24DE82A41D0D3D3C00191C35 /* Signature */,
 				242B4BFF1D017B3F00AD24A7 /* Block */,
@@ -2017,6 +2035,7 @@
 				240F1B7E1CB4A5C3000AC902 /* btn_play_back@2x.png in Resources */,
 				240F1B7F1CB4A5C3000AC902 /* Image_scan@3x.png in Resources */,
 				240F1B801CB4A5C3000AC902 /* Image_font_big.png in Resources */,
+				2408B7221D226F2300C48D7D /* TWGoldZoneViewController.xib in Resources */,
 				240F1B811CB4A5C3000AC902 /* btn_vdo_send.png in Resources */,
 				242B4BF61D0124D600AD24A7 /* TWImageZoomViewController.xib in Resources */,
 				240F1B821CB4A5C3000AC902 /* Image_arrow_down@2x.png in Resources */,
@@ -2157,6 +2176,7 @@
 				24BD77C61C9A3E6B000CC066 /* btn_vdo_back_click@3x.png in Resources */,
 				24BD780F1C9A3E6B000CC066 /* Image_recommend@3x.png in Resources */,
 				24BD779A1C9A3E6B000CC066 /* btn_keyboard@2x.png in Resources */,
+				2408B7211D226F2300C48D7D /* TWGoldZoneViewController.xib in Resources */,
 				24BD77FD1C9A3E6B000CC066 /* Image_font_big@3x.png in Resources */,
 				24BD777F1C9A3E6B000CC066 /* btn_back@3x.png in Resources */,
 				24BD779C1C9A3E6B000CC066 /* btn_live_normal.png in Resources */,
@@ -2428,6 +2448,7 @@
 				2400EB7C1CC8B42F00E76741 /* TWDateViewController.m in Sources */,
 				248225FA1CC76A8100D7A8C4 /* Model.xcdatamodeld in Sources */,
 				2482261C1CC76A8100D7A8C4 /* StepperViewController.m in Sources */,
+				2408B7201D226F2300C48D7D /* TWGoldZoneViewController.m in Sources */,
 				240F1AE71CB4A5C3000AC902 /* main.m in Sources */,
 				242C40431CFD3DB8008DC625 /* TWGtoView.m in Sources */,
 				2482260A1CC76A8100D7A8C4 /* RepeatCellViewController.m in Sources */,
@@ -2462,6 +2483,7 @@
 				248225EF1CC76A8100D7A8C4 /* NSString+AES.m in Sources */,
 				241F9E201CFC2E7200D26998 /* TWImageView.m in Sources */,
 				243884C81D07F63700D61198 /* TWBlockRegisterViewController.m in Sources */,
+				2408B71F1D226F2300C48D7D /* TWGoldZoneViewController.m in Sources */,
 				248226051CC76A8100D7A8C4 /* ButtonViewController.m in Sources */,
 				243884B31D07B5E300D61198 /* TWRegisteViewController.m in Sources */,
 				2498F61D1CCA013B00368401 /* TWPThreadViewController.m in Sources */,
