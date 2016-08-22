@@ -7,6 +7,7 @@
 //
 
 #import "AdvanceViewController.h"
+#import "TWPDFReaderViewController.h"
 
 @interface AdvanceViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -25,6 +26,13 @@
     self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) style:UITableViewStyleGrouped];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    [self.view addSubview:_tableView];
+    [self initWithStringArray];
+}
+//初始化字符串数组
+- (void)initWithStringArray
+{
+    self.stringArray = [[NSArray alloc]initWithObjects:@"测试PDF文件", nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -62,12 +70,14 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UIViewController *selectedView = nil;
+    NSString *title  = self.stringArray[indexPath.row];
     switch (indexPath.row) {
-        case 0: break;
+        case 0: selectedView = [[TWPDFReaderViewController alloc] initWithTitle:title];
+            break;
         case 1:break;
     }
     if(selectedView){
-        [self.navigationController popToViewController:selectedView animated:YES];
+        [self.navigationController pushViewController:selectedView animated:YES];
         self.hidesBottomBarWhenPushed=YES;//要显示的viewController设置
     }
 }
