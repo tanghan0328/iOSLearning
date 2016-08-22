@@ -599,6 +599,8 @@
 		24DE82A91D0D3D6100191C35 /* TWSignatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE82A61D0D3D6100191C35 /* TWSignatureViewController.m */; };
 		24DE82AA1D0D3D6100191C35 /* TWSignatureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24DE82A71D0D3D6100191C35 /* TWSignatureViewController.xib */; };
 		24DE82AB1D0D3D6100191C35 /* TWSignatureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24DE82A71D0D3D6100191C35 /* TWSignatureViewController.xib */; };
+		24E157561D485F66004E72D1 /* TWLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E157551D485F66004E72D1 /* TWLabelViewController.m */; };
+		24E157571D485F66004E72D1 /* TWLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E157551D485F66004E72D1 /* TWLabelViewController.m */; };
 		24EB62DA1CED8F0700BE6772 /* TWPDFReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EB62D91CED8F0700BE6772 /* TWPDFReaderViewController.m */; };
 		24EB62DB1CED8F0700BE6772 /* TWPDFReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EB62D91CED8F0700BE6772 /* TWPDFReaderViewController.m */; };
 		24ED56B21C969AD1005405B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ED56B11C969AD1005405B4 /* main.m */; };
@@ -978,6 +980,8 @@
 		24DE82A51D0D3D6100191C35 /* TWSignatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSignatureViewController.h; sourceTree = "<group>"; };
 		24DE82A61D0D3D6100191C35 /* TWSignatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSignatureViewController.m; sourceTree = "<group>"; };
 		24DE82A71D0D3D6100191C35 /* TWSignatureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWSignatureViewController.xib; sourceTree = "<group>"; };
+		24E157541D485F66004E72D1 /* TWLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWLabelViewController.h; sourceTree = "<group>"; };
+		24E157551D485F66004E72D1 /* TWLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWLabelViewController.m; sourceTree = "<group>"; };
 		24EB62D81CED8F0700BE6772 /* TWPDFReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWPDFReaderViewController.h; sourceTree = "<group>"; };
 		24EB62D91CED8F0700BE6772 /* TWPDFReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWPDFReaderViewController.m; sourceTree = "<group>"; };
 		24ED56AD1C969AD1005405B4 /* iOSLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1085,6 +1089,7 @@
 		240F1BE41CB4B6CB000AC902 /* Develop */ = {
 			isa = PBXGroup;
 			children = (
+				24E157531D485F43004E72D1 /* ToolTest */,
 				2408B7171D226ED300C48D7D /* GoldZone */,
 				24D029401D1BC06D002CAF14 /* KVO */,
 				24DE82A41D0D3D3C00191C35 /* Signature */,
@@ -1512,6 +1517,15 @@
 			path = Signature;
 			sourceTree = "<group>";
 		};
+		24E157531D485F43004E72D1 /* ToolTest */ = {
+			isa = PBXGroup;
+			children = (
+				24E157541D485F66004E72D1 /* TWLabelViewController.h */,
+				24E157551D485F66004E72D1 /* TWLabelViewController.m */,
+			);
+			path = ToolTest;
+			sourceTree = "<group>";
+		};
 		24EB62D71CED8EDD00BE6772 /* pdfReader */ = {
 			isa = PBXGroup;
 			children = (
@@ -1823,12 +1837,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24ED56C41C969AD1005405B4 /* Build configuration list for PBXNativeTarget "iOSLearning" */;
 			buildPhases = (
-				11B8BE1A43895985FBC5C47A /* 📦 Check Pods Manifest.lock */,
+				11B8BE1A43895985FBC5C47A /* [CP] Check Pods Manifest.lock */,
 				24ED56A91C969AD1005405B4 /* Sources */,
 				24ED56AA1C969AD1005405B4 /* Frameworks */,
 				24ED56AB1C969AD1005405B4 /* Resources */,
-				8E3A81D09F96C599B7205F00 /* 📦 Embed Pods Frameworks */,
-				286A567E896A11885174C004 /* 📦 Copy Pods Resources */,
+				8E3A81D09F96C599B7205F00 /* [CP] Embed Pods Frameworks */,
+				286A567E896A11885174C004 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2344,14 +2358,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		11B8BE1A43895985FBC5C47A /* 📦 Check Pods Manifest.lock */ = {
+		11B8BE1A43895985FBC5C47A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2359,14 +2373,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		286A567E896A11885174C004 /* 📦 Copy Pods Resources */ = {
+		286A567E896A11885174C004 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2374,14 +2388,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearning/Pods-iOSLearning-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8E3A81D09F96C599B7205F00 /* 📦 Embed Pods Frameworks */ = {
+		8E3A81D09F96C599B7205F00 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2428,6 +2442,7 @@
 				243884B41D07B5E300D61198 /* TWRegisteViewController.m in Sources */,
 				248226281CC76BFA00D7A8C4 /* URLConnectionViewController.m in Sources */,
 				2498F6181CC9CF5200368401 /* TWWKWebViewController.m in Sources */,
+				24E157571D485F66004E72D1 /* TWLabelViewController.m in Sources */,
 				2400EB811CC8BA7800E76741 /* TWFileViewController.m in Sources */,
 				243884AD1D07B0C000D61198 /* TWDelegateViewController.m in Sources */,
 				24D206CB1CDB3F860008790F /* TWPlistRWViewController.m in Sources */,
@@ -2526,6 +2541,7 @@
 				242B4BFD1D01755600AD24A7 /* UIImage+TWColor.m in Sources */,
 				2400EB7B1CC8B42F00E76741 /* TWDateViewController.m in Sources */,
 				248225FB1CC76A8100D7A8C4 /* Student+CoreDataProperties.m in Sources */,
+				24E157561D485F66004E72D1 /* TWLabelViewController.m in Sources */,
 				248226071CC76A8100D7A8C4 /* ProdCollectionViewController.m in Sources */,
 				248226111CC76A8100D7A8C4 /* ProgressViewController.m in Sources */,
 				242B4C0C1D017BB800AD24A7 /* TWNotificationViewController.m in Sources */,
@@ -2607,7 +2623,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = NO;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
@@ -2650,7 +2666,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = NO;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;

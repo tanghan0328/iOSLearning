@@ -49,7 +49,7 @@
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context
 {
     if([keyPath isEqualToString:@"age"] && object == _student){
-        NSLog(@"age:%ld", _student.age);
+        NSLog(@"age:%ld", (long)_student.age);
         NSLog(@"old age:%@", [change objectForKey:@"old"]);
         NSLog(@"new age:%@", [change objectForKey:@"new"]);
     }
