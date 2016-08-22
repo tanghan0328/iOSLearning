@@ -78,7 +78,7 @@
     }
     if(selectedView){
         [self.navigationController pushViewController:selectedView animated:YES];
-        self.hidesBottomBarWhenPushed=YES;//要显示的viewController设置
+        //self.hidesBottomBarWhenPushed=YES;//要显示的viewController设置
     }
 }
 

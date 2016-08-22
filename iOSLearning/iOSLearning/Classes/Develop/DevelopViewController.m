@@ -106,6 +106,7 @@
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     cell.textLabel.font = [UIFont systemFontOfSize:13.0];
+    cell.backgroundColor = [self randomColor];
     return cell;
 }
 
@@ -166,19 +167,31 @@
             selectedView = [[TWKVOViewController alloc]initWithTitle:self.nameList[indexPath.row]];
             break;
         case 17:
-            selectedView =[[TWGoldZoneViewController alloc] initWithTitle:self.nameList[indexPath.row]];
-        case 18:
+            NSLog(@"测试====》selectedView    %d",17);
             selectedView =[[TWLabelViewController alloc] initWithTitle:self.nameList[indexPath.row]];
+            break;
+        case 18:
+            NSLog(@"测试====》selectedView    %d",18);
+            selectedView =[[TWGoldZoneViewController alloc] initWithTitle:self.nameList[indexPath.row]];
             
     }
     if (selectedView != nil) {
         //隐藏tabbar
-        self.hidesBottomBarWhenPushed=YES;//要显示的viewController设置
+        //self.hidesBottomBarWhenPushed=YES;//要显示的viewController设置
         [self.navigationController pushViewController:selectedView animated:YES];
-        self.hidesBottomBarWhenPushed = NO;
+        //self.hidesBottomBarWhenPushed = NO;
     }
 }
 
+
+- (UIColor *)randomColor
+{
+    CGFloat r = arc4random_uniform(255);
+    CGFloat g = arc4random_uniform(255);
+    CGFloat b = arc4random_uniform(255);
+    
+    return [UIColor colorWithRed:(r / 255.0) green:(g / 255.0) blue:(b / 255.0) alpha:1];
+}
 
 
 @end

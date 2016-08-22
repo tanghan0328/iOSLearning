@@ -139,7 +139,6 @@
 		240F1B6A1CB4A5C3000AC902 /* btn_drop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24BD76D21C9A3E6B000CC066 /* btn_drop@2x.png */; };
 		240F1B6B1CB4A5C3000AC902 /* btn_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 24BD76BE1C9A3E6B000CC066 /* btn_back.png */; };
 		240F1B6C1CB4A5C3000AC902 /* Img_orange@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24BD776C1C9A3E6B000CC066 /* Img_orange@3x.png */; };
-		240F1B6D1CB4A5C3000AC902 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24ED56BC1C969AD1005405B4 /* Assets.xcassets */; };
 		240F1B6E1CB4A5C3000AC902 /* Image_reg_user@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24BD77511C9A3E6B000CC066 /* Image_reg_user@2x.png */; };
 		240F1B6F1CB4A5C3000AC902 /* btn_vdo_back_click@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24BD77061C9A3E6B000CC066 /* btn_vdo_back_click@2x.png */; };
 		240F1B701CB4A5C3000AC902 /* ugc_btn_time_click@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2466A24B1C992C2C00B5C155 /* ugc_btn_time_click@2x.png */; };
@@ -607,7 +606,6 @@
 		24ED56B51C969AD1005405B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ED56B41C969AD1005405B4 /* AppDelegate.m */; };
 		24ED56B81C969AD1005405B4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ED56B71C969AD1005405B4 /* ViewController.m */; };
 		24ED56BB1C969AD1005405B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24ED56B91C969AD1005405B4 /* Main.storyboard */; };
-		24ED56BD1C969AD1005405B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24ED56BC1C969AD1005405B4 /* Assets.xcassets */; };
 		24ED56D51C96B908005405B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24ED56D41C96B908005405B4 /* Images.xcassets */; };
 		4A3C9A5F53053E3625BE18FF /* libPods-iOSLearning.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA76C89798D463479A1BA09F /* libPods-iOSLearning.a */; };
 /* End PBXBuildFile section */
@@ -991,7 +989,6 @@
 		24ED56B61C969AD1005405B4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		24ED56B71C969AD1005405B4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		24ED56BA1C969AD1005405B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		24ED56BC1C969AD1005405B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24ED56C11C969AD1005405B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24ED56D41C96B908005405B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		48E28CE1CB15FEB9B19B15F4 /* Pods-iOSLearning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearning.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearning/Pods-iOSLearning.release.xcconfig"; sourceTree = "<group>"; };
@@ -1572,7 +1569,6 @@
 			children = (
 				24DA5D761D178E0500F4BD36 /* provinces.plist */,
 				24ED56C91C969D16005405B4 /* images */,
-				24ED56BC1C969AD1005405B4 /* Assets.xcassets */,
 				24ED56D41C96B908005405B4 /* Images.xcassets */,
 				24ED56B91C969AD1005405B4 /* Main.storyboard */,
 				24D206CC1CDB42AE0008790F /* shops.plist */,
@@ -2025,7 +2021,6 @@
 				240F1B6A1CB4A5C3000AC902 /* btn_drop@2x.png in Resources */,
 				240F1B6B1CB4A5C3000AC902 /* btn_back.png in Resources */,
 				240F1B6C1CB4A5C3000AC902 /* Img_orange@3x.png in Resources */,
-				240F1B6D1CB4A5C3000AC902 /* Assets.xcassets in Resources */,
 				240F1B6E1CB4A5C3000AC902 /* Image_reg_user@2x.png in Resources */,
 				240F1B6F1CB4A5C3000AC902 /* btn_vdo_back_click@2x.png in Resources */,
 				240F1B701CB4A5C3000AC902 /* ugc_btn_time_click@2x.png in Resources */,
@@ -2262,7 +2257,6 @@
 				24BD777D1C9A3E6B000CC066 /* btn_back.png in Resources */,
 				243BC60C1CFE6F5A0065D6A0 /* TWFoldingViewController.xib in Resources */,
 				24BD782B1C9A3E6B000CC066 /* Img_orange@3x.png in Resources */,
-				24ED56BD1C969AD1005405B4 /* Assets.xcassets in Resources */,
 				24BD78101C9A3E6B000CC066 /* Image_reg_user@2x.png in Resources */,
 				24BD77C51C9A3E6B000CC066 /* btn_vdo_back_click@2x.png in Resources */,
 				2466A24C1C992C2C00B5C155 /* ugc_btn_time_click@2x.png in Resources */,
