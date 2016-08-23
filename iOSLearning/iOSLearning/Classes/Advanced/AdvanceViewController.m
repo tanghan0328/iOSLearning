@@ -8,6 +8,8 @@
 
 #import "AdvanceViewController.h"
 #import "TWPDFReaderViewController.h"
+#import "TWImageSenderViewController.h"
+#import "TWMoreImagesViewController.h"
 
 @interface AdvanceViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -32,7 +34,9 @@
 //初始化字符串数组
 - (void)initWithStringArray
 {
-    self.stringArray = [[NSArray alloc]initWithObjects:@"测试PDF文件", nil];
+    self.stringArray = [[NSArray alloc]initWithObjects:@"测试PDF文件",
+                        @"测试从相机取图片",
+                        @"测试多张相机照片",nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -49,6 +53,11 @@
     return _stringArray.count;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 1.0f;
+}
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 44.0f;
@@ -63,6 +72,7 @@
     }
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.textLabel.font = [UIFont systemFontOfSize:13.0f];
     cell.textLabel.text = self.stringArray[indexPath.row];
     return cell;
 }
@@ -74,7 +84,9 @@
     switch (indexPath.row) {
         case 0: selectedView = [[TWPDFReaderViewController alloc] initWithTitle:title];
             break;
-        case 1:break;
+        case 1: selectedView = [[TWImageSenderViewController alloc] initWithTitle:title];
+            break;
+        case 2: selectedView = [[TWMoreImagesViewController alloc] initWithTitle:title];
     }
     if(selectedView){
         [self.navigationController pushViewController:selectedView animated:YES];
