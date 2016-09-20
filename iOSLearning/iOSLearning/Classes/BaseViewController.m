@@ -18,6 +18,7 @@
 {
     self = [super init];
     if(self){
+        self.view.backgroundColor = [UIColor whiteColor];
  //       [self setupBackButtonForNavigationBar];
         self.title = title;
         self.view.backgroundColor = [UIColor whiteColor];
@@ -32,6 +33,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController.navigationBar setHidden:NO];
 }
 
 - (void)didReceiveMemoryWarning {

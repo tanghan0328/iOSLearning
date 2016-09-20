@@ -10,6 +10,7 @@
 #import "TWPDFReaderViewController.h"
 #import "TWImageSenderViewController.h"
 #import "TWMoreImagesViewController.h"
+#import "TWAFNetWorkingController.h"
 
 @interface AdvanceViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -36,7 +37,8 @@
 {
     self.stringArray = [[NSArray alloc]initWithObjects:@"测试PDF文件",
                         @"测试从相机取图片",
-                        @"测试多张相机照片",nil];
+                        @"测试多张相机照片",
+                        @"测试透明头",nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -87,6 +89,9 @@
         case 1: selectedView = [[TWImageSenderViewController alloc] initWithTitle:title];
             break;
         case 2: selectedView = [[TWMoreImagesViewController alloc] initWithTitle:title];
+            break;
+        case 3: selectedView = [[TWAFNetWorkingController alloc] init];
+            break;
     }
     if(selectedView){
         [self.navigationController pushViewController:selectedView animated:YES];

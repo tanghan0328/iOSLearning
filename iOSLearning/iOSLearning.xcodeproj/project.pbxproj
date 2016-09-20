@@ -604,6 +604,14 @@
 		24DE82AB1D0D3D6100191C35 /* TWSignatureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24DE82A71D0D3D6100191C35 /* TWSignatureViewController.xib */; };
 		24E157561D485F66004E72D1 /* TWLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E157551D485F66004E72D1 /* TWLabelViewController.m */; };
 		24E157571D485F66004E72D1 /* TWLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E157551D485F66004E72D1 /* TWLabelViewController.m */; };
+		24E9637A1D9116420059D484 /* TWAFNetWorkingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E963751D9116420059D484 /* TWAFNetWorkingController.m */; };
+		24E9637B1D9116420059D484 /* TWAFNetWorkingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E963751D9116420059D484 /* TWAFNetWorkingController.m */; };
+		24E9637C1D9116420059D484 /* TWAlphaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E963771D9116420059D484 /* TWAlphaViewController.m */; };
+		24E9637D1D9116420059D484 /* TWAlphaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E963771D9116420059D484 /* TWAlphaViewController.m */; };
+		24E9637E1D9116420059D484 /* TWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E963791D9116420059D484 /* TWBaseViewController.m */; };
+		24E9637F1D9116420059D484 /* TWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E963791D9116420059D484 /* TWBaseViewController.m */; };
+		24E963821D9116DC0059D484 /* TWNavigationBarHiddenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E963811D9116DC0059D484 /* TWNavigationBarHiddenController.m */; };
+		24E963831D9116DC0059D484 /* TWNavigationBarHiddenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E963811D9116DC0059D484 /* TWNavigationBarHiddenController.m */; };
 		24EB62DA1CED8F0700BE6772 /* TWPDFReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EB62D91CED8F0700BE6772 /* TWPDFReaderViewController.m */; };
 		24EB62DB1CED8F0700BE6772 /* TWPDFReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EB62D91CED8F0700BE6772 /* TWPDFReaderViewController.m */; };
 		24ED56B21C969AD1005405B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ED56B11C969AD1005405B4 /* main.m */; };
@@ -988,6 +996,14 @@
 		24DE82A71D0D3D6100191C35 /* TWSignatureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWSignatureViewController.xib; sourceTree = "<group>"; };
 		24E157541D485F66004E72D1 /* TWLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWLabelViewController.h; sourceTree = "<group>"; };
 		24E157551D485F66004E72D1 /* TWLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWLabelViewController.m; sourceTree = "<group>"; };
+		24E963741D9116420059D484 /* TWAFNetWorkingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWAFNetWorkingController.h; sourceTree = "<group>"; };
+		24E963751D9116420059D484 /* TWAFNetWorkingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWAFNetWorkingController.m; sourceTree = "<group>"; };
+		24E963761D9116420059D484 /* TWAlphaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWAlphaViewController.h; sourceTree = "<group>"; };
+		24E963771D9116420059D484 /* TWAlphaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWAlphaViewController.m; sourceTree = "<group>"; };
+		24E963781D9116420059D484 /* TWBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWBaseViewController.h; sourceTree = "<group>"; };
+		24E963791D9116420059D484 /* TWBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWBaseViewController.m; sourceTree = "<group>"; };
+		24E963801D9116DC0059D484 /* TWNavigationBarHiddenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWNavigationBarHiddenController.h; sourceTree = "<group>"; };
+		24E963811D9116DC0059D484 /* TWNavigationBarHiddenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWNavigationBarHiddenController.m; sourceTree = "<group>"; };
 		24EB62D81CED8F0700BE6772 /* TWPDFReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWPDFReaderViewController.h; sourceTree = "<group>"; };
 		24EB62D91CED8F0700BE6772 /* TWPDFReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWPDFReaderViewController.m; sourceTree = "<group>"; };
 		24ED56AD1C969AD1005405B4 /* iOSLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1049,6 +1065,8 @@
 		240F1BCC1CB4AC1C000AC902 /* Advanced */ = {
 			isa = PBXGroup;
 			children = (
+				24E963731D9116420059D484 /* Transparent */,
+				24358B131D8E797C00907B4B /* AFNet */,
 				243E5A131D6C367E00E4193A /* MoreImageChoose */,
 				243E5A0E1D6C264800E4193A /* ImageSender */,
 				24EB62D71CED8EDD00BE6772 /* PDFReader */,
@@ -1228,6 +1246,13 @@
 				242C40411CFD3DB8008DC625 /* TWGtoView.m */,
 			);
 			path = QQElastic;
+			sourceTree = "<group>";
+		};
+		24358B131D8E797C00907B4B /* AFNet */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AFNet;
 			sourceTree = "<group>";
 		};
 		243BC6061CFE6F1B0065D6A0 /* Folding */ = {
@@ -1554,6 +1579,21 @@
 			path = ToolTest;
 			sourceTree = "<group>";
 		};
+		24E963731D9116420059D484 /* Transparent */ = {
+			isa = PBXGroup;
+			children = (
+				24E963741D9116420059D484 /* TWAFNetWorkingController.h */,
+				24E963751D9116420059D484 /* TWAFNetWorkingController.m */,
+				24E963761D9116420059D484 /* TWAlphaViewController.h */,
+				24E963771D9116420059D484 /* TWAlphaViewController.m */,
+				24E963781D9116420059D484 /* TWBaseViewController.h */,
+				24E963791D9116420059D484 /* TWBaseViewController.m */,
+				24E963801D9116DC0059D484 /* TWNavigationBarHiddenController.h */,
+				24E963811D9116DC0059D484 /* TWNavigationBarHiddenController.m */,
+			);
+			path = Transparent;
+			sourceTree = "<group>";
+		};
 		24EB62D71CED8EDD00BE6772 /* PDFReader */ = {
 			isa = PBXGroup;
 			children = (
@@ -1616,9 +1656,9 @@
 			isa = PBXGroup;
 			children = (
 				241A4AFD1CE08BBC00D55665 /* common */,
+				240F1BD41CB4AC1C000AC902 /* Basis */,
 				240F1BE41CB4B6CB000AC902 /* Develop */,
 				240F1BCC1CB4AC1C000AC902 /* Advanced */,
-				240F1BD41CB4AC1C000AC902 /* Basis */,
 				240F1BD51CB4AC1C000AC902 /* Test */,
 				2466A2481C9929D000B5C155 /* BaseViewController.h */,
 				2466A2491C9929D000B5C155 /* BaseViewController.m */,
@@ -2436,6 +2476,7 @@
 				241F9E211CFC2E7200D26998 /* TWImageView.m in Sources */,
 				24D029451D1BC097002CAF14 /* TWKVOViewController.m in Sources */,
 				242C40391CFD3B63008DC625 /* TWElasticViewController.m in Sources */,
+				24E9637B1D9116420059D484 /* TWAFNetWorkingController.m in Sources */,
 				243884BB1D07B60100D61198 /* TWLoginViewController.m in Sources */,
 				248226201CC76A8100D7A8C4 /* ProdTabelViewController.m in Sources */,
 				248226141CC76A8100D7A8C4 /* SegmentViewController.m in Sources */,
@@ -2497,8 +2538,10 @@
 				240F1AF21CB4A5C3000AC902 /* BaseViewController.m in Sources */,
 				240F1BDF1CB4AC66000AC902 /* AdvanceViewController.m in Sources */,
 				243884D01D07F64C00D61198 /* TWBlockLoginViewController.m in Sources */,
+				24E9637D1D9116420059D484 /* TWAlphaViewController.m in Sources */,
 				2482260C1CC76A8100D7A8C4 /* RepeatCollectionViewCell.m in Sources */,
 				248225FE1CC76A8100D7A8C4 /* Student.m in Sources */,
+				24E963831D9116DC0059D484 /* TWNavigationBarHiddenController.m in Sources */,
 				248226021CC76A8100D7A8C4 /* TableListViewController.m in Sources */,
 				243E5A121D6C267400E4193A /* TWImageSenderViewController.m in Sources */,
 				24D0294B1D1BC0FF002CAF14 /* TWStudent.m in Sources */,
@@ -2508,6 +2551,7 @@
 				242B4BFE1D01755600AD24A7 /* UIImage+TWColor.m in Sources */,
 				241A4B011CE08C7B00D55665 /* NSString+TWJSONToString.m in Sources */,
 				248226101CC76A8100D7A8C4 /* LabelViewController.m in Sources */,
+				24E9637F1D9116420059D484 /* TWBaseViewController.m in Sources */,
 				242B4C181D01848800AD24A7 /* TWTestNotificationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2516,11 +2560,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24E9637A1D9116420059D484 /* TWAFNetWorkingController.m in Sources */,
 				24CF63651D06B9A50067C16C /* NSNotificationCenter+TWRmoveTest.m in Sources */,
 				2441D7681CB793CA00059B56 /* TimerViewController.m in Sources */,
 				243884AC1D07B0C000D61198 /* TWDelegateViewController.m in Sources */,
 				248226151CC76A8100D7A8C4 /* MySlidersView.m in Sources */,
 				248225EF1CC76A8100D7A8C4 /* NSString+AES.m in Sources */,
+				24E9637C1D9116420059D484 /* TWAlphaViewController.m in Sources */,
 				241F9E201CFC2E7200D26998 /* TWImageView.m in Sources */,
 				243884C81D07F63700D61198 /* TWBlockRegisterViewController.m in Sources */,
 				2408B71F1D226F2300C48D7D /* TWGoldZoneViewController.m in Sources */,
@@ -2569,6 +2615,7 @@
 				248225FB1CC76A8100D7A8C4 /* Student+CoreDataProperties.m in Sources */,
 				24E157561D485F66004E72D1 /* TWLabelViewController.m in Sources */,
 				248226071CC76A8100D7A8C4 /* ProdCollectionViewController.m in Sources */,
+				24E9637E1D9116420059D484 /* TWBaseViewController.m in Sources */,
 				248226111CC76A8100D7A8C4 /* ProgressViewController.m in Sources */,
 				242B4C0C1D017BB800AD24A7 /* TWNotificationViewController.m in Sources */,
 				2498F6171CC9CF5200368401 /* TWWKWebViewController.m in Sources */,
@@ -2584,6 +2631,7 @@
 				248225F11CC76A8100D7A8C4 /* TestAESViewController.m in Sources */,
 				248225ED1CC76A8100D7A8C4 /* NSData+AES.m in Sources */,
 				24D206CA1CDB3F860008790F /* TWPlistRWViewController.m in Sources */,
+				24E963821D9116DC0059D484 /* TWNavigationBarHiddenController.m in Sources */,
 				248226091CC76A8100D7A8C4 /* RepeatCellViewController.m in Sources */,
 				2482260D1CC76A8100D7A8C4 /* ActivityIndicatorViewController.m in Sources */,
 				2466A24A1C9929D000B5C155 /* BaseViewController.m in Sources */,
