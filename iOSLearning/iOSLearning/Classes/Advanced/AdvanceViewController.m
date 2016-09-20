@@ -11,6 +11,10 @@
 #import "TWImageSenderViewController.h"
 #import "TWMoreImagesViewController.h"
 #import "TWAFNetWorkingController.h"
+#import "TWImageRuntimeController.h"
+#import "TWSnakeViewController.h"
+
+
 
 @interface AdvanceViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -38,7 +42,9 @@
     self.stringArray = [[NSArray alloc]initWithObjects:@"测试PDF文件",
                         @"测试从相机取图片",
                         @"测试多张相机照片",
-                        @"测试透明头",nil];
+                        @"测试透明头",
+                        @"测试runtime",
+                        @"Snake测试问题",nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -91,6 +97,10 @@
         case 2: selectedView = [[TWMoreImagesViewController alloc] initWithTitle:title];
             break;
         case 3: selectedView = [[TWAFNetWorkingController alloc] init];
+            break;
+        case 4: selectedView = [[TWImageRuntimeController alloc]initWithTitle:title];
+            break;
+        case 5: selectedView = [[TWSnakeViewController alloc]initWithTitle:title];
             break;
     }
     if(selectedView){

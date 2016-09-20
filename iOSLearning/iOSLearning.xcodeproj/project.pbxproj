@@ -304,6 +304,10 @@
 		2441D7701CB796E400059B56 /* PlistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2441D76C1CB796E400059B56 /* PlistViewController.xib */; };
 		2466A24A1C9929D000B5C155 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2466A2491C9929D000B5C155 /* BaseViewController.m */; };
 		2466A24C1C992C2C00B5C155 /* ugc_btn_time_click@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2466A24B1C992C2C00B5C155 /* ugc_btn_time_click@2x.png */; };
+		247C033C1D9131C5002D7A53 /* TWSnake.m in Sources */ = {isa = PBXBuildFile; fileRef = 247C033B1D9131C5002D7A53 /* TWSnake.m */; };
+		247C033D1D9131C5002D7A53 /* TWSnake.m in Sources */ = {isa = PBXBuildFile; fileRef = 247C033B1D9131C5002D7A53 /* TWSnake.m */; };
+		247C03401D913204002D7A53 /* TWSnakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 247C033F1D913204002D7A53 /* TWSnakeViewController.m */; };
+		247C03411D913204002D7A53 /* TWSnakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 247C033F1D913204002D7A53 /* TWSnakeViewController.m */; };
 		2480A5B41D050F000041263A /* TWUIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2480A5B21D050F000041263A /* TWUIWebViewController.m */; };
 		2480A5B51D050F000041263A /* TWUIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2480A5B21D050F000041263A /* TWUIWebViewController.m */; };
 		2480A5B61D050F000041263A /* TWUIWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2480A5B31D050F000041263A /* TWUIWebViewController.xib */; };
@@ -612,6 +616,14 @@
 		24E9637F1D9116420059D484 /* TWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E963791D9116420059D484 /* TWBaseViewController.m */; };
 		24E963821D9116DC0059D484 /* TWNavigationBarHiddenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E963811D9116DC0059D484 /* TWNavigationBarHiddenController.m */; };
 		24E963831D9116DC0059D484 /* TWNavigationBarHiddenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E963811D9116DC0059D484 /* TWNavigationBarHiddenController.m */; };
+		24E963861D91207C0059D484 /* UIImage+TWImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E963851D91207C0059D484 /* UIImage+TWImage.m */; };
+		24E963871D91207C0059D484 /* UIImage+TWImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E963851D91207C0059D484 /* UIImage+TWImage.m */; };
+		24E9638B1D91218E0059D484 /* TWImageRuntimeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E9638A1D91218E0059D484 /* TWImageRuntimeController.m */; };
+		24E9638C1D91218E0059D484 /* TWImageRuntimeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E9638A1D91218E0059D484 /* TWImageRuntimeController.m */; };
+		24E9638F1D91229E0059D484 /* TWPersonA.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E9638E1D91229E0059D484 /* TWPersonA.m */; };
+		24E963901D91229E0059D484 /* TWPersonA.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E9638E1D91229E0059D484 /* TWPersonA.m */; };
+		24E963931D91257A0059D484 /* NSObject+TWObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E963921D91257A0059D484 /* NSObject+TWObject.m */; };
+		24E963941D91257A0059D484 /* NSObject+TWObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E963921D91257A0059D484 /* NSObject+TWObject.m */; };
 		24EB62DA1CED8F0700BE6772 /* TWPDFReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EB62D91CED8F0700BE6772 /* TWPDFReaderViewController.m */; };
 		24EB62DB1CED8F0700BE6772 /* TWPDFReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EB62D91CED8F0700BE6772 /* TWPDFReaderViewController.m */; };
 		24ED56B21C969AD1005405B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ED56B11C969AD1005405B4 /* main.m */; };
@@ -708,6 +720,10 @@
 		2466A2481C9929D000B5C155 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		2466A2491C9929D000B5C155 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		2466A24B1C992C2C00B5C155 /* ugc_btn_time_click@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ugc_btn_time_click@2x.png"; sourceTree = "<group>"; };
+		247C033A1D9131C5002D7A53 /* TWSnake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSnake.h; sourceTree = "<group>"; };
+		247C033B1D9131C5002D7A53 /* TWSnake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSnake.m; sourceTree = "<group>"; };
+		247C033E1D913204002D7A53 /* TWSnakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSnakeViewController.h; sourceTree = "<group>"; };
+		247C033F1D913204002D7A53 /* TWSnakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSnakeViewController.m; sourceTree = "<group>"; };
 		2480A5B11D050F000041263A /* TWUIWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWUIWebViewController.h; sourceTree = "<group>"; };
 		2480A5B21D050F000041263A /* TWUIWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWUIWebViewController.m; sourceTree = "<group>"; };
 		2480A5B31D050F000041263A /* TWUIWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWUIWebViewController.xib; sourceTree = "<group>"; };
@@ -1004,6 +1020,14 @@
 		24E963791D9116420059D484 /* TWBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWBaseViewController.m; sourceTree = "<group>"; };
 		24E963801D9116DC0059D484 /* TWNavigationBarHiddenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWNavigationBarHiddenController.h; sourceTree = "<group>"; };
 		24E963811D9116DC0059D484 /* TWNavigationBarHiddenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWNavigationBarHiddenController.m; sourceTree = "<group>"; };
+		24E963841D91207C0059D484 /* UIImage+TWImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TWImage.h"; sourceTree = "<group>"; };
+		24E963851D91207C0059D484 /* UIImage+TWImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TWImage.m"; sourceTree = "<group>"; };
+		24E963891D91218E0059D484 /* TWImageRuntimeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWImageRuntimeController.h; sourceTree = "<group>"; };
+		24E9638A1D91218E0059D484 /* TWImageRuntimeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWImageRuntimeController.m; sourceTree = "<group>"; };
+		24E9638D1D91229E0059D484 /* TWPersonA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWPersonA.h; sourceTree = "<group>"; };
+		24E9638E1D91229E0059D484 /* TWPersonA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWPersonA.m; sourceTree = "<group>"; };
+		24E963911D91257A0059D484 /* NSObject+TWObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+TWObject.h"; sourceTree = "<group>"; };
+		24E963921D91257A0059D484 /* NSObject+TWObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TWObject.m"; sourceTree = "<group>"; };
 		24EB62D81CED8F0700BE6772 /* TWPDFReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWPDFReaderViewController.h; sourceTree = "<group>"; };
 		24EB62D91CED8F0700BE6772 /* TWPDFReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWPDFReaderViewController.m; sourceTree = "<group>"; };
 		24ED56AD1C969AD1005405B4 /* iOSLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1065,6 +1089,8 @@
 		240F1BCC1CB4AC1C000AC902 /* Advanced */ = {
 			isa = PBXGroup;
 			children = (
+				247C03391D9131B5002D7A53 /* Snake */,
+				24E963881D9121670059D484 /* Runtime */,
 				24E963731D9116420059D484 /* Transparent */,
 				24358B131D8E797C00907B4B /* AFNet */,
 				243E5A131D6C367E00E4193A /* MoreImageChoose */,
@@ -1150,6 +1176,10 @@
 				242B4BFC1D01755600AD24A7 /* UIImage+TWColor.m */,
 				24CF63631D06B9A50067C16C /* NSNotificationCenter+TWRmoveTest.h */,
 				24CF63641D06B9A50067C16C /* NSNotificationCenter+TWRmoveTest.m */,
+				24E963841D91207C0059D484 /* UIImage+TWImage.h */,
+				24E963851D91207C0059D484 /* UIImage+TWImage.m */,
+				24E963911D91257A0059D484 /* NSObject+TWObject.h */,
+				24E963921D91257A0059D484 /* NSObject+TWObject.m */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -1305,6 +1335,17 @@
 				2441D7671CB793CA00059B56 /* TimerViewController.xib */,
 			);
 			path = timer;
+			sourceTree = "<group>";
+		};
+		247C03391D9131B5002D7A53 /* Snake */ = {
+			isa = PBXGroup;
+			children = (
+				247C033A1D9131C5002D7A53 /* TWSnake.h */,
+				247C033B1D9131C5002D7A53 /* TWSnake.m */,
+				247C033E1D913204002D7A53 /* TWSnakeViewController.h */,
+				247C033F1D913204002D7A53 /* TWSnakeViewController.m */,
+			);
+			path = Snake;
 			sourceTree = "<group>";
 		};
 		2480A5B01D050EE30041263A /* UIWebView */ = {
@@ -1592,6 +1633,17 @@
 				24E963811D9116DC0059D484 /* TWNavigationBarHiddenController.m */,
 			);
 			path = Transparent;
+			sourceTree = "<group>";
+		};
+		24E963881D9121670059D484 /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				24E963891D91218E0059D484 /* TWImageRuntimeController.h */,
+				24E9638A1D91218E0059D484 /* TWImageRuntimeController.m */,
+				24E9638D1D91229E0059D484 /* TWPersonA.h */,
+				24E9638E1D91229E0059D484 /* TWPersonA.m */,
+			);
+			path = Runtime;
 			sourceTree = "<group>";
 		};
 		24EB62D71CED8EDD00BE6772 /* PDFReader */ = {
@@ -2481,6 +2533,7 @@
 				248226201CC76A8100D7A8C4 /* ProdTabelViewController.m in Sources */,
 				248226141CC76A8100D7A8C4 /* SegmentViewController.m in Sources */,
 				248225EE1CC76A8100D7A8C4 /* NSData+AES.m in Sources */,
+				24E963901D91229E0059D484 /* TWPersonA.m in Sources */,
 				248226121CC76A8100D7A8C4 /* ProgressViewController.m in Sources */,
 				243884C21D07F61400D61198 /* TWBlockViewController.m in Sources */,
 				248226161CC76A8100D7A8C4 /* MySlidersView.m in Sources */,
@@ -2490,7 +2543,9 @@
 				24CF63661D06B9A50067C16C /* NSNotificationCenter+TWRmoveTest.m in Sources */,
 				2498F6251CCA179D00368401 /* TWThreadSynchronizeViewController.m in Sources */,
 				24DA5D7C1D178E9800F4BD36 /* TWProvince.m in Sources */,
+				24E9638C1D91218E0059D484 /* TWImageRuntimeController.m in Sources */,
 				2480A5B51D050F000041263A /* TWUIWebViewController.m in Sources */,
+				24E963871D91207C0059D484 /* UIImage+TWImage.m in Sources */,
 				242B4C0D1D017BB800AD24A7 /* TWNotificationViewController.m in Sources */,
 				240F1ADA1CB4A5C3000AC902 /* ViewController.m in Sources */,
 				248226081CC76A8100D7A8C4 /* ProdCollectionViewController.m in Sources */,
@@ -2526,9 +2581,11 @@
 				248226181CC76A8100D7A8C4 /* MySliderView.m in Sources */,
 				24CF63601D06B4480067C16C /* TWNotificationtest01ViewController.m in Sources */,
 				2400EB7C1CC8B42F00E76741 /* TWDateViewController.m in Sources */,
+				247C03411D913204002D7A53 /* TWSnakeViewController.m in Sources */,
 				248225FA1CC76A8100D7A8C4 /* Model.xcdatamodeld in Sources */,
 				2482261C1CC76A8100D7A8C4 /* StepperViewController.m in Sources */,
 				2408B7201D226F2300C48D7D /* TWGoldZoneViewController.m in Sources */,
+				24E963941D91257A0059D484 /* NSObject+TWObject.m in Sources */,
 				240F1AE71CB4A5C3000AC902 /* main.m in Sources */,
 				242C40431CFD3DB8008DC625 /* TWGtoView.m in Sources */,
 				2482260A1CC76A8100D7A8C4 /* RepeatCellViewController.m in Sources */,
@@ -2550,6 +2607,7 @@
 				241F9E151CFBE06900D26998 /* TWDrawView.m in Sources */,
 				242B4BFE1D01755600AD24A7 /* UIImage+TWColor.m in Sources */,
 				241A4B011CE08C7B00D55665 /* NSString+TWJSONToString.m in Sources */,
+				247C033D1D9131C5002D7A53 /* TWSnake.m in Sources */,
 				248226101CC76A8100D7A8C4 /* LabelViewController.m in Sources */,
 				24E9637F1D9116420059D484 /* TWBaseViewController.m in Sources */,
 				242B4C181D01848800AD24A7 /* TWTestNotificationViewController.m in Sources */,
@@ -2565,6 +2623,7 @@
 				2441D7681CB793CA00059B56 /* TimerViewController.m in Sources */,
 				243884AC1D07B0C000D61198 /* TWDelegateViewController.m in Sources */,
 				248226151CC76A8100D7A8C4 /* MySlidersView.m in Sources */,
+				24E963931D91257A0059D484 /* NSObject+TWObject.m in Sources */,
 				248225EF1CC76A8100D7A8C4 /* NSString+AES.m in Sources */,
 				24E9637C1D9116420059D484 /* TWAlphaViewController.m in Sources */,
 				241F9E201CFC2E7200D26998 /* TWImageView.m in Sources */,
@@ -2574,6 +2633,7 @@
 				243884B31D07B5E300D61198 /* TWRegisteViewController.m in Sources */,
 				2498F61D1CCA013B00368401 /* TWPThreadViewController.m in Sources */,
 				24ED56B81C969AD1005405B4 /* ViewController.m in Sources */,
+				24E9638B1D91218E0059D484 /* TWImageRuntimeController.m in Sources */,
 				24D0294A1D1BC0FF002CAF14 /* TWStudent.m in Sources */,
 				240F1BE21CB4ACBF000AC902 /* TestViewController.m in Sources */,
 				248225FF1CC76A8100D7A8C4 /* DeviceViewController.m in Sources */,
@@ -2582,6 +2642,7 @@
 				24DA5D721D178B2A00F4BD36 /* TWPickerViewController.m in Sources */,
 				240F1BE71CB4B6E1000AC902 /* DevelopViewController.m in Sources */,
 				243BC60A1CFE6F5A0065D6A0 /* TWFoldingViewController.m in Sources */,
+				247C03401D913204002D7A53 /* TWSnakeViewController.m in Sources */,
 				248225F71CC76A8100D7A8C4 /* Grade.m in Sources */,
 				24DE82A81D0D3D6100191C35 /* TWSignatureViewController.m in Sources */,
 				241F9E141CFBE06900D26998 /* TWDrawView.m in Sources */,
@@ -2594,6 +2655,8 @@
 				241F9E1A1CFC295C00D26998 /* TWReflectionViewController.m in Sources */,
 				24CF635F1D06B4480067C16C /* TWNotificationtest01ViewController.m in Sources */,
 				2482260B1CC76A8100D7A8C4 /* RepeatCollectionViewCell.m in Sources */,
+				24E963861D91207C0059D484 /* UIImage+TWImage.m in Sources */,
+				247C033C1D9131C5002D7A53 /* TWSnake.m in Sources */,
 				24ED56B21C969AD1005405B4 /* main.m in Sources */,
 				248225F91CC76A8100D7A8C4 /* Model.xcdatamodeld in Sources */,
 				248225F31CC76A8100D7A8C4 /* CoredataViewController.m in Sources */,
@@ -2611,6 +2674,7 @@
 				243884CF1D07F64C00D61198 /* TWBlockLoginViewController.m in Sources */,
 				248226171CC76A8100D7A8C4 /* MySliderView.m in Sources */,
 				242B4BFD1D01755600AD24A7 /* UIImage+TWColor.m in Sources */,
+				24E9638F1D91229E0059D484 /* TWPersonA.m in Sources */,
 				2400EB7B1CC8B42F00E76741 /* TWDateViewController.m in Sources */,
 				248225FB1CC76A8100D7A8C4 /* Student+CoreDataProperties.m in Sources */,
 				24E157561D485F66004E72D1 /* TWLabelViewController.m in Sources */,
