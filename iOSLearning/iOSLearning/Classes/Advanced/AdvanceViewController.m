@@ -15,6 +15,7 @@
 #import "TWSnakeViewController.h"
 #import "TWBlockTestController.h"
 #import "TWBezierViewController.h"
+#import "TWForestGlassViewController.h"
 
 
 @interface AdvanceViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -47,7 +48,9 @@
                         @"测试runtime",
                         @"Snake测试问题",
                         @"Block深究",
-                        @"三个小圆球",nil];
+                        @"三个小圆球",
+                        @"毛玻璃效果",
+                        nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -108,6 +111,8 @@
         case 6:selectedView = [[TWBlockTestController alloc] initWithTitle:title];
             break;
         case 7:selectedView = [[TWBezierViewController alloc]initWithTitle:title];
+            break;
+        case 8:selectedView = [[TWForestGlassViewController alloc]initWithTitle:title];
             break;
     }
     if(selectedView){

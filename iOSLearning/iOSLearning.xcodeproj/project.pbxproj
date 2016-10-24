@@ -246,6 +246,14 @@
 		2425F6AF1DBDA777006FEAFC /* TWBezierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2425F6AD1DBDA777006FEAFC /* TWBezierViewController.m */; };
 		2425F6B21DBDAF4E006FEAFC /* UIView+TWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2425F6B11DBDAF4E006FEAFC /* UIView+TWExtension.m */; };
 		2425F6B31DBDAF4E006FEAFC /* UIView+TWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2425F6B11DBDAF4E006FEAFC /* UIView+TWExtension.m */; };
+		2425F6B91DBDF134006FEAFC /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 2425F6B61DBDF134006FEAFC /* UIImage+ImageEffects.m */; };
+		2425F6BA1DBDF134006FEAFC /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 2425F6B61DBDF134006FEAFC /* UIImage+ImageEffects.m */; };
+		2425F6BB1DBDF134006FEAFC /* UIImageView+LBBlurredImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2425F6B81DBDF134006FEAFC /* UIImageView+LBBlurredImage.m */; };
+		2425F6BC1DBDF134006FEAFC /* UIImageView+LBBlurredImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2425F6B81DBDF134006FEAFC /* UIImageView+LBBlurredImage.m */; };
+		2425F6BF1DBDF149006FEAFC /* TWForestGlassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2425F6BE1DBDF149006FEAFC /* TWForestGlassViewController.m */; };
+		2425F6C01DBDF149006FEAFC /* TWForestGlassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2425F6BE1DBDF149006FEAFC /* TWForestGlassViewController.m */; };
+		2425F6C21DBDF239006FEAFC /* example.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2425F6C11DBDF239006FEAFC /* example.jpg */; };
+		2425F6C31DBDF239006FEAFC /* example.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2425F6C11DBDF239006FEAFC /* example.jpg */; };
 		242B4BF31D0124D600AD24A7 /* TWImageZoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 242B4BF11D0124D600AD24A7 /* TWImageZoomViewController.m */; };
 		242B4BF41D0124D600AD24A7 /* TWImageZoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 242B4BF11D0124D600AD24A7 /* TWImageZoomViewController.m */; };
 		242B4BF51D0124D600AD24A7 /* TWImageZoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 242B4BF21D0124D600AD24A7 /* TWImageZoomViewController.xib */; };
@@ -676,6 +684,13 @@
 		2425F6AD1DBDA777006FEAFC /* TWBezierViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWBezierViewController.m; sourceTree = "<group>"; };
 		2425F6B01DBDAF4E006FEAFC /* UIView+TWExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TWExtension.h"; sourceTree = "<group>"; };
 		2425F6B11DBDAF4E006FEAFC /* UIView+TWExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TWExtension.m"; sourceTree = "<group>"; };
+		2425F6B51DBDF134006FEAFC /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		2425F6B61DBDF134006FEAFC /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		2425F6B71DBDF134006FEAFC /* UIImageView+LBBlurredImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LBBlurredImage.h"; sourceTree = "<group>"; };
+		2425F6B81DBDF134006FEAFC /* UIImageView+LBBlurredImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LBBlurredImage.m"; sourceTree = "<group>"; };
+		2425F6BD1DBDF149006FEAFC /* TWForestGlassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWForestGlassViewController.h; sourceTree = "<group>"; };
+		2425F6BE1DBDF149006FEAFC /* TWForestGlassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWForestGlassViewController.m; sourceTree = "<group>"; };
+		2425F6C11DBDF239006FEAFC /* example.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = example.jpg; sourceTree = "<group>"; };
 		242B4BF01D0124D600AD24A7 /* TWImageZoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWImageZoomViewController.h; sourceTree = "<group>"; };
 		242B4BF11D0124D600AD24A7 /* TWImageZoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWImageZoomViewController.m; sourceTree = "<group>"; };
 		242B4BF21D0124D600AD24A7 /* TWImageZoomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWImageZoomViewController.xib; sourceTree = "<group>"; };
@@ -1101,6 +1116,7 @@
 		240F1BCC1CB4AC1C000AC902 /* Advanced */ = {
 			isa = PBXGroup;
 			children = (
+				2425F6B41DBDF115006FEAFC /* FrostedGlass */,
 				2425F6AB1DBDA744006FEAFC /* UIBezierPath */,
 				24927B931D92CFF400C72359 /* BlockTest */,
 				247C03391D9131B5002D7A53 /* Snake */,
@@ -1231,6 +1247,20 @@
 				2425F6B11DBDAF4E006FEAFC /* UIView+TWExtension.m */,
 			);
 			path = UIBezierPath;
+			sourceTree = "<group>";
+		};
+		2425F6B41DBDF115006FEAFC /* FrostedGlass */ = {
+			isa = PBXGroup;
+			children = (
+				2425F6C11DBDF239006FEAFC /* example.jpg */,
+				2425F6B51DBDF134006FEAFC /* UIImage+ImageEffects.h */,
+				2425F6B61DBDF134006FEAFC /* UIImage+ImageEffects.m */,
+				2425F6B71DBDF134006FEAFC /* UIImageView+LBBlurredImage.h */,
+				2425F6B81DBDF134006FEAFC /* UIImageView+LBBlurredImage.m */,
+				2425F6BD1DBDF149006FEAFC /* TWForestGlassViewController.h */,
+				2425F6BE1DBDF149006FEAFC /* TWForestGlassViewController.m */,
+			);
+			path = FrostedGlass;
 			sourceTree = "<group>";
 		};
 		242B4BEF1D0124BE00AD24A7 /* ImageZoom */ = {
@@ -2117,6 +2147,7 @@
 				240F1B371CB4A5C3000AC902 /* Image_arrow_right.png in Resources */,
 				240F1B381CB4A5C3000AC902 /* btn_clock.png in Resources */,
 				240F1B391CB4A5C3000AC902 /* Image_ipad@2x.png in Resources */,
+				2425F6C31DBDF239006FEAFC /* example.jpg in Resources */,
 				240F1B3A1CB4A5C3000AC902 /* Image_alpha_small@3x.png in Resources */,
 				240F1B3B1CB4A5C3000AC902 /* Img_user@2x.png in Resources */,
 				240F1B3C1CB4A5C3000AC902 /* btn_vdo_gif_click@2x.png in Resources */,
@@ -2418,6 +2449,7 @@
 				24DA5D741D178B2A00F4BD36 /* TWPickerViewController.xib in Resources */,
 				24BD77E71C9A3E6B000CC066 /* btn_vdo_share@3x.png in Resources */,
 				24BD781E1C9A3E6B000CC066 /* Image_set@3x.png in Resources */,
+				2425F6C21DBDF239006FEAFC /* example.jpg in Resources */,
 				24BD78361C9A3E6B000CC066 /* xi.png in Resources */,
 				24BD78001C9A3E6B000CC066 /* Image_font_small@3x.png in Resources */,
 				24BD77AB1C9A3E6B000CC066 /* btn_normal@2x.png in Resources */,
@@ -2590,6 +2622,7 @@
 				248225F21CC76A8100D7A8C4 /* TestAESViewController.m in Sources */,
 				241F9E1B1CFC295C00D26998 /* TWReflectionViewController.m in Sources */,
 				248225FC1CC76A8100D7A8C4 /* Student+CoreDataProperties.m in Sources */,
+				2425F6C01DBDF149006FEAFC /* TWForestGlassViewController.m in Sources */,
 				2482261E1CC76A8100D7A8C4 /* SwitchViewController.m in Sources */,
 				240F1BE31CB4ACBF000AC902 /* TestViewController.m in Sources */,
 				2498F61E1CCA013B00368401 /* TWPThreadViewController.m in Sources */,
@@ -2640,11 +2673,13 @@
 				243E5A121D6C267400E4193A /* TWImageSenderViewController.m in Sources */,
 				24D0294B1D1BC0FF002CAF14 /* TWStudent.m in Sources */,
 				241A4AFC1CE05ABE00D55665 /* TWUser.m in Sources */,
+				2425F6BC1DBDF134006FEAFC /* UIImageView+LBBlurredImage.m in Sources */,
 				2482260E1CC76A8100D7A8C4 /* ActivityIndicatorViewController.m in Sources */,
 				241F9E151CFBE06900D26998 /* TWDrawView.m in Sources */,
 				242B4BFE1D01755600AD24A7 /* UIImage+TWColor.m in Sources */,
 				241A4B011CE08C7B00D55665 /* NSString+TWJSONToString.m in Sources */,
 				247C033D1D9131C5002D7A53 /* TWSnake.m in Sources */,
+				2425F6BA1DBDF134006FEAFC /* UIImage+ImageEffects.m in Sources */,
 				248226101CC76A8100D7A8C4 /* LabelViewController.m in Sources */,
 				24E9637F1D9116420059D484 /* TWBaseViewController.m in Sources */,
 				242B4C181D01848800AD24A7 /* TWTestNotificationViewController.m in Sources */,
@@ -2674,6 +2709,7 @@
 				24E9638B1D91218E0059D484 /* TWImageRuntimeController.m in Sources */,
 				24D0294A1D1BC0FF002CAF14 /* TWStudent.m in Sources */,
 				240F1BE21CB4ACBF000AC902 /* TestViewController.m in Sources */,
+				2425F6BB1DBDF134006FEAFC /* UIImageView+LBBlurredImage.m in Sources */,
 				248225FF1CC76A8100D7A8C4 /* DeviceViewController.m in Sources */,
 				241F9E0E1CFBDE8500D26998 /* TWParticlesViewController.m in Sources */,
 				2425F6AE1DBDA777006FEAFC /* TWBezierViewController.m in Sources */,
@@ -2712,6 +2748,7 @@
 				24927B961D92D00F00C72359 /* TWBlockTestController.m in Sources */,
 				241A4AFB1CE05ABE00D55665 /* TWUser.m in Sources */,
 				243884CF1D07F64C00D61198 /* TWBlockLoginViewController.m in Sources */,
+				2425F6BF1DBDF149006FEAFC /* TWForestGlassViewController.m in Sources */,
 				248226171CC76A8100D7A8C4 /* MySliderView.m in Sources */,
 				242B4BFD1D01755600AD24A7 /* UIImage+TWColor.m in Sources */,
 				24E9638F1D91229E0059D484 /* TWPersonA.m in Sources */,
@@ -2734,6 +2771,7 @@
 				24EB62DA1CED8F0700BE6772 /* TWPDFReaderViewController.m in Sources */,
 				248225F11CC76A8100D7A8C4 /* TestAESViewController.m in Sources */,
 				248225ED1CC76A8100D7A8C4 /* NSData+AES.m in Sources */,
+				2425F6B91DBDF134006FEAFC /* UIImage+ImageEffects.m in Sources */,
 				24D206CA1CDB3F860008790F /* TWPlistRWViewController.m in Sources */,
 				24E963821D9116DC0059D484 /* TWNavigationBarHiddenController.m in Sources */,
 				248226091CC76A8100D7A8C4 /* RepeatCellViewController.m in Sources */,
