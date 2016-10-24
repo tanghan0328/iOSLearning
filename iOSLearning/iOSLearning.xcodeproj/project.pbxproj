@@ -242,6 +242,10 @@
 		241F9E1D1CFC295C00D26998 /* TWReflectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 241F9E191CFC295C00D26998 /* TWReflectionViewController.xib */; };
 		241F9E201CFC2E7200D26998 /* TWImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 241F9E1F1CFC2E7200D26998 /* TWImageView.m */; };
 		241F9E211CFC2E7200D26998 /* TWImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 241F9E1F1CFC2E7200D26998 /* TWImageView.m */; };
+		2425F6AE1DBDA777006FEAFC /* TWBezierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2425F6AD1DBDA777006FEAFC /* TWBezierViewController.m */; };
+		2425F6AF1DBDA777006FEAFC /* TWBezierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2425F6AD1DBDA777006FEAFC /* TWBezierViewController.m */; };
+		2425F6B21DBDAF4E006FEAFC /* UIView+TWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2425F6B11DBDAF4E006FEAFC /* UIView+TWExtension.m */; };
+		2425F6B31DBDAF4E006FEAFC /* UIView+TWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2425F6B11DBDAF4E006FEAFC /* UIView+TWExtension.m */; };
 		242B4BF31D0124D600AD24A7 /* TWImageZoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 242B4BF11D0124D600AD24A7 /* TWImageZoomViewController.m */; };
 		242B4BF41D0124D600AD24A7 /* TWImageZoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 242B4BF11D0124D600AD24A7 /* TWImageZoomViewController.m */; };
 		242B4BF51D0124D600AD24A7 /* TWImageZoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 242B4BF21D0124D600AD24A7 /* TWImageZoomViewController.xib */; };
@@ -368,6 +372,8 @@
 		248226221CC76A8100D7A8C4 /* TextFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 248225EC1CC76A8100D7A8C4 /* TextFileViewController.m */; };
 		248226271CC76BFA00D7A8C4 /* URLConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 248226261CC76BFA00D7A8C4 /* URLConnectionViewController.m */; };
 		248226281CC76BFA00D7A8C4 /* URLConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 248226261CC76BFA00D7A8C4 /* URLConnectionViewController.m */; };
+		24927B961D92D00F00C72359 /* TWBlockTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24927B951D92D00F00C72359 /* TWBlockTestController.m */; };
+		24927B971D92D00F00C72359 /* TWBlockTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24927B951D92D00F00C72359 /* TWBlockTestController.m */; };
 		2498F6171CC9CF5200368401 /* TWWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2498F6161CC9CF5200368401 /* TWWKWebViewController.m */; };
 		2498F6181CC9CF5200368401 /* TWWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2498F6161CC9CF5200368401 /* TWWKWebViewController.m */; };
 		2498F61D1CCA013B00368401 /* TWPThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2498F61B1CCA013B00368401 /* TWPThreadViewController.m */; };
@@ -666,6 +672,10 @@
 		241F9E191CFC295C00D26998 /* TWReflectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWReflectionViewController.xib; sourceTree = "<group>"; };
 		241F9E1E1CFC2E7200D26998 /* TWImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWImageView.h; sourceTree = "<group>"; };
 		241F9E1F1CFC2E7200D26998 /* TWImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWImageView.m; sourceTree = "<group>"; };
+		2425F6AC1DBDA777006FEAFC /* TWBezierViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWBezierViewController.h; sourceTree = "<group>"; };
+		2425F6AD1DBDA777006FEAFC /* TWBezierViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWBezierViewController.m; sourceTree = "<group>"; };
+		2425F6B01DBDAF4E006FEAFC /* UIView+TWExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TWExtension.h"; sourceTree = "<group>"; };
+		2425F6B11DBDAF4E006FEAFC /* UIView+TWExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TWExtension.m"; sourceTree = "<group>"; };
 		242B4BF01D0124D600AD24A7 /* TWImageZoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWImageZoomViewController.h; sourceTree = "<group>"; };
 		242B4BF11D0124D600AD24A7 /* TWImageZoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWImageZoomViewController.m; sourceTree = "<group>"; };
 		242B4BF21D0124D600AD24A7 /* TWImageZoomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWImageZoomViewController.xib; sourceTree = "<group>"; };
@@ -781,6 +791,8 @@
 		248225EC1CC76A8100D7A8C4 /* TextFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFileViewController.m; sourceTree = "<group>"; };
 		248226251CC76BFA00D7A8C4 /* URLConnectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLConnectionViewController.h; sourceTree = "<group>"; };
 		248226261CC76BFA00D7A8C4 /* URLConnectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLConnectionViewController.m; sourceTree = "<group>"; };
+		24927B941D92D00F00C72359 /* TWBlockTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWBlockTestController.h; sourceTree = "<group>"; };
+		24927B951D92D00F00C72359 /* TWBlockTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWBlockTestController.m; sourceTree = "<group>"; };
 		2498F6151CC9CF5200368401 /* TWWKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWWKWebViewController.h; sourceTree = "<group>"; };
 		2498F6161CC9CF5200368401 /* TWWKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWWKWebViewController.m; sourceTree = "<group>"; };
 		2498F61A1CCA013B00368401 /* TWPThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWPThreadViewController.h; sourceTree = "<group>"; };
@@ -1089,6 +1101,8 @@
 		240F1BCC1CB4AC1C000AC902 /* Advanced */ = {
 			isa = PBXGroup;
 			children = (
+				2425F6AB1DBDA744006FEAFC /* UIBezierPath */,
+				24927B931D92CFF400C72359 /* BlockTest */,
 				247C03391D9131B5002D7A53 /* Snake */,
 				24E963881D9121670059D484 /* Runtime */,
 				24E963731D9116420059D484 /* Transparent */,
@@ -1206,6 +1220,17 @@
 				241F9E1F1CFC2E7200D26998 /* TWImageView.m */,
 			);
 			path = Reflection;
+			sourceTree = "<group>";
+		};
+		2425F6AB1DBDA744006FEAFC /* UIBezierPath */ = {
+			isa = PBXGroup;
+			children = (
+				2425F6AC1DBDA777006FEAFC /* TWBezierViewController.h */,
+				2425F6AD1DBDA777006FEAFC /* TWBezierViewController.m */,
+				2425F6B01DBDAF4E006FEAFC /* UIView+TWExtension.h */,
+				2425F6B11DBDAF4E006FEAFC /* UIView+TWExtension.m */,
+			);
+			path = UIBezierPath;
 			sourceTree = "<group>";
 		};
 		242B4BEF1D0124BE00AD24A7 /* ImageZoom */ = {
@@ -1531,6 +1556,15 @@
 				248226261CC76BFA00D7A8C4 /* URLConnectionViewController.m */,
 			);
 			path = URLConnection;
+			sourceTree = "<group>";
+		};
+		24927B931D92CFF400C72359 /* BlockTest */ = {
+			isa = PBXGroup;
+			children = (
+				24927B941D92D00F00C72359 /* TWBlockTestController.h */,
+				24927B951D92D00F00C72359 /* TWBlockTestController.m */,
+			);
+			path = BlockTest;
 			sourceTree = "<group>";
 		};
 		2498F6141CC9CF3C00368401 /* WKWebView */ = {
@@ -2563,6 +2597,7 @@
 				248226281CC76BFA00D7A8C4 /* URLConnectionViewController.m in Sources */,
 				2498F6181CC9CF5200368401 /* TWWKWebViewController.m in Sources */,
 				24E157571D485F66004E72D1 /* TWLabelViewController.m in Sources */,
+				2425F6AF1DBDA777006FEAFC /* TWBezierViewController.m in Sources */,
 				2400EB811CC8BA7800E76741 /* TWFileViewController.m in Sources */,
 				243884AD1D07B0C000D61198 /* TWDelegateViewController.m in Sources */,
 				24D206CB1CDB3F860008790F /* TWPlistRWViewController.m in Sources */,
@@ -2581,6 +2616,7 @@
 				248226181CC76A8100D7A8C4 /* MySliderView.m in Sources */,
 				24CF63601D06B4480067C16C /* TWNotificationtest01ViewController.m in Sources */,
 				2400EB7C1CC8B42F00E76741 /* TWDateViewController.m in Sources */,
+				24927B971D92D00F00C72359 /* TWBlockTestController.m in Sources */,
 				247C03411D913204002D7A53 /* TWSnakeViewController.m in Sources */,
 				248225FA1CC76A8100D7A8C4 /* Model.xcdatamodeld in Sources */,
 				2482261C1CC76A8100D7A8C4 /* StepperViewController.m in Sources */,
@@ -2595,6 +2631,7 @@
 				240F1AF21CB4A5C3000AC902 /* BaseViewController.m in Sources */,
 				240F1BDF1CB4AC66000AC902 /* AdvanceViewController.m in Sources */,
 				243884D01D07F64C00D61198 /* TWBlockLoginViewController.m in Sources */,
+				2425F6B31DBDAF4E006FEAFC /* UIView+TWExtension.m in Sources */,
 				24E9637D1D9116420059D484 /* TWAlphaViewController.m in Sources */,
 				2482260C1CC76A8100D7A8C4 /* RepeatCollectionViewCell.m in Sources */,
 				248225FE1CC76A8100D7A8C4 /* Student.m in Sources */,
@@ -2619,6 +2656,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24E9637A1D9116420059D484 /* TWAFNetWorkingController.m in Sources */,
+				2425F6B21DBDAF4E006FEAFC /* UIView+TWExtension.m in Sources */,
 				24CF63651D06B9A50067C16C /* NSNotificationCenter+TWRmoveTest.m in Sources */,
 				2441D7681CB793CA00059B56 /* TimerViewController.m in Sources */,
 				243884AC1D07B0C000D61198 /* TWDelegateViewController.m in Sources */,
@@ -2638,6 +2676,7 @@
 				240F1BE21CB4ACBF000AC902 /* TestViewController.m in Sources */,
 				248225FF1CC76A8100D7A8C4 /* DeviceViewController.m in Sources */,
 				241F9E0E1CFBDE8500D26998 /* TWParticlesViewController.m in Sources */,
+				2425F6AE1DBDA777006FEAFC /* TWBezierViewController.m in Sources */,
 				242C40421CFD3DB8008DC625 /* TWGtoView.m in Sources */,
 				24DA5D721D178B2A00F4BD36 /* TWPickerViewController.m in Sources */,
 				240F1BE71CB4B6E1000AC902 /* DevelopViewController.m in Sources */,
@@ -2670,6 +2709,7 @@
 				242C40381CFD3B63008DC625 /* TWElasticViewController.m in Sources */,
 				248226191CC76A8100D7A8C4 /* SliderViewController.m in Sources */,
 				243E5A161D6C369100E4193A /* TWMoreImagesViewController.m in Sources */,
+				24927B961D92D00F00C72359 /* TWBlockTestController.m in Sources */,
 				241A4AFB1CE05ABE00D55665 /* TWUser.m in Sources */,
 				243884CF1D07F64C00D61198 /* TWBlockLoginViewController.m in Sources */,
 				248226171CC76A8100D7A8C4 /* MySliderView.m in Sources */,

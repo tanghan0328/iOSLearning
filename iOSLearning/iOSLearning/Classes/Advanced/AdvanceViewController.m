@@ -13,7 +13,8 @@
 #import "TWAFNetWorkingController.h"
 #import "TWImageRuntimeController.h"
 #import "TWSnakeViewController.h"
-
+#import "TWBlockTestController.h"
+#import "TWBezierViewController.h"
 
 
 @interface AdvanceViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -44,7 +45,9 @@
                         @"测试多张相机照片",
                         @"测试透明头",
                         @"测试runtime",
-                        @"Snake测试问题",nil];
+                        @"Snake测试问题",
+                        @"Block深究",
+                        @"三个小圆球",nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -101,6 +104,10 @@
         case 4: selectedView = [[TWImageRuntimeController alloc]initWithTitle:title];
             break;
         case 5: selectedView = [[TWSnakeViewController alloc]initWithTitle:title];
+            break;
+        case 6:selectedView = [[TWBlockTestController alloc] initWithTitle:title];
+            break;
+        case 7:selectedView = [[TWBezierViewController alloc]initWithTitle:title];
             break;
     }
     if(selectedView){
