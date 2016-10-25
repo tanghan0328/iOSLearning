@@ -16,6 +16,7 @@
 #import "TWBlockTestController.h"
 #import "TWBezierViewController.h"
 #import "TWForestGlassViewController.h"
+#import "TWTransitionsViewController.h"
 
 
 @interface AdvanceViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -50,6 +51,7 @@
                         @"Block深究",
                         @"三个小圆球",
                         @"毛玻璃效果",
+                        @"转场",
                         nil];
 }
 
@@ -114,8 +116,12 @@
             break;
         case 8:selectedView = [[TWForestGlassViewController alloc]initWithTitle:title];
             break;
+        case 9:selectedView = [[TWTransitionsViewController alloc]init];
+            break;
+            
     }
     if(selectedView){
+
         [self.navigationController pushViewController:selectedView animated:YES];
         //self.hidesBottomBarWhenPushed=YES;//要显示的viewController设置
     }

@@ -254,6 +254,8 @@
 		2425F6C01DBDF149006FEAFC /* TWForestGlassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2425F6BE1DBDF149006FEAFC /* TWForestGlassViewController.m */; };
 		2425F6C21DBDF239006FEAFC /* example.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2425F6C11DBDF239006FEAFC /* example.jpg */; };
 		2425F6C31DBDF239006FEAFC /* example.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2425F6C11DBDF239006FEAFC /* example.jpg */; };
+		2425F6C71DBE048C006FEAFC /* TWTransitionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2425F6C61DBE048C006FEAFC /* TWTransitionsViewController.m */; };
+		2425F6C81DBE048C006FEAFC /* TWTransitionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2425F6C61DBE048C006FEAFC /* TWTransitionsViewController.m */; };
 		242B4BF31D0124D600AD24A7 /* TWImageZoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 242B4BF11D0124D600AD24A7 /* TWImageZoomViewController.m */; };
 		242B4BF41D0124D600AD24A7 /* TWImageZoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 242B4BF11D0124D600AD24A7 /* TWImageZoomViewController.m */; };
 		242B4BF51D0124D600AD24A7 /* TWImageZoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 242B4BF21D0124D600AD24A7 /* TWImageZoomViewController.xib */; };
@@ -691,6 +693,8 @@
 		2425F6BD1DBDF149006FEAFC /* TWForestGlassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWForestGlassViewController.h; sourceTree = "<group>"; };
 		2425F6BE1DBDF149006FEAFC /* TWForestGlassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWForestGlassViewController.m; sourceTree = "<group>"; };
 		2425F6C11DBDF239006FEAFC /* example.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = example.jpg; sourceTree = "<group>"; };
+		2425F6C51DBE048C006FEAFC /* TWTransitionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTransitionsViewController.h; sourceTree = "<group>"; };
+		2425F6C61DBE048C006FEAFC /* TWTransitionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTransitionsViewController.m; sourceTree = "<group>"; };
 		242B4BF01D0124D600AD24A7 /* TWImageZoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWImageZoomViewController.h; sourceTree = "<group>"; };
 		242B4BF11D0124D600AD24A7 /* TWImageZoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWImageZoomViewController.m; sourceTree = "<group>"; };
 		242B4BF21D0124D600AD24A7 /* TWImageZoomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWImageZoomViewController.xib; sourceTree = "<group>"; };
@@ -1116,6 +1120,7 @@
 		240F1BCC1CB4AC1C000AC902 /* Advanced */ = {
 			isa = PBXGroup;
 			children = (
+				2425F6C41DBE0474006FEAFC /* Transitions */,
 				2425F6B41DBDF115006FEAFC /* FrostedGlass */,
 				2425F6AB1DBDA744006FEAFC /* UIBezierPath */,
 				24927B931D92CFF400C72359 /* BlockTest */,
@@ -1261,6 +1266,15 @@
 				2425F6BE1DBDF149006FEAFC /* TWForestGlassViewController.m */,
 			);
 			path = FrostedGlass;
+			sourceTree = "<group>";
+		};
+		2425F6C41DBE0474006FEAFC /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				2425F6C51DBE048C006FEAFC /* TWTransitionsViewController.h */,
+				2425F6C61DBE048C006FEAFC /* TWTransitionsViewController.m */,
+			);
+			path = Transitions;
 			sourceTree = "<group>";
 		};
 		242B4BEF1D0124BE00AD24A7 /* ImageZoom */ = {
@@ -2598,6 +2612,7 @@
 				243884BB1D07B60100D61198 /* TWLoginViewController.m in Sources */,
 				248226201CC76A8100D7A8C4 /* ProdTabelViewController.m in Sources */,
 				248226141CC76A8100D7A8C4 /* SegmentViewController.m in Sources */,
+				2425F6C81DBE048C006FEAFC /* TWTransitionsViewController.m in Sources */,
 				248225EE1CC76A8100D7A8C4 /* NSData+AES.m in Sources */,
 				24E963901D91229E0059D484 /* TWPersonA.m in Sources */,
 				248226121CC76A8100D7A8C4 /* ProgressViewController.m in Sources */,
@@ -2732,6 +2747,7 @@
 				2482260B1CC76A8100D7A8C4 /* RepeatCollectionViewCell.m in Sources */,
 				24E963861D91207C0059D484 /* UIImage+TWImage.m in Sources */,
 				247C033C1D9131C5002D7A53 /* TWSnake.m in Sources */,
+				2425F6C71DBE048C006FEAFC /* TWTransitionsViewController.m in Sources */,
 				24ED56B21C969AD1005405B4 /* main.m in Sources */,
 				248225F91CC76A8100D7A8C4 /* Model.xcdatamodeld in Sources */,
 				248225F31CC76A8100D7A8C4 /* CoredataViewController.m in Sources */,
