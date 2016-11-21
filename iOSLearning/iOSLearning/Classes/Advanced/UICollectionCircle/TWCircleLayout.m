@@ -52,7 +52,7 @@
     CGFloat radius = 70;
     // 圆心的位置
     CGFloat oX = self.collectionView.frame.size.width * 0.5;
-    CGFloat oY = self.collectionView.frame.size.height * 0.5;
+    CGFloat oY = self.collectionView.frame.size.height * 0.5 - 50;
     
     UICollectionViewLayoutAttributes *attrs = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
     

@@ -35,6 +35,7 @@
 		2426657C1DE2D2BA00BEB3CE /* TWCircleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2426657A1DE2D2BA00BEB3CE /* TWCircleCollectionViewCell.m */; };
 		2426657D1DE2D2BA00BEB3CE /* TWCircleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2426657B1DE2D2BA00BEB3CE /* TWCircleCollectionViewCell.xib */; };
 		242665801DE2F2C900BEB3CE /* TWCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2426657F1DE2F2C900BEB3CE /* TWCircleViewController.m */; };
+		242665831DE2FBDD00BEB3CE /* TWLineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 242665821DE2FBDD00BEB3CE /* TWLineLayout.m */; };
 		242B4BF31D0124D600AD24A7 /* TWImageZoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 242B4BF11D0124D600AD24A7 /* TWImageZoomViewController.m */; };
 		242B4BF51D0124D600AD24A7 /* TWImageZoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 242B4BF21D0124D600AD24A7 /* TWImageZoomViewController.xib */; };
 		242B4BF91D01608100AD24A7 /* TWBtnTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 242B4BF81D01608100AD24A7 /* TWBtnTestViewController.m */; };
@@ -388,6 +389,8 @@
 		2426657B1DE2D2BA00BEB3CE /* TWCircleCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWCircleCollectionViewCell.xib; sourceTree = "<group>"; };
 		2426657E1DE2F2C900BEB3CE /* TWCircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWCircleViewController.h; sourceTree = "<group>"; };
 		2426657F1DE2F2C900BEB3CE /* TWCircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWCircleViewController.m; sourceTree = "<group>"; };
+		242665811DE2FBDD00BEB3CE /* TWLineLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWLineLayout.h; sourceTree = "<group>"; };
+		242665821DE2FBDD00BEB3CE /* TWLineLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWLineLayout.m; sourceTree = "<group>"; };
 		242B4BF01D0124D600AD24A7 /* TWImageZoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWImageZoomViewController.h; sourceTree = "<group>"; };
 		242B4BF11D0124D600AD24A7 /* TWImageZoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWImageZoomViewController.m; sourceTree = "<group>"; };
 		242B4BF21D0124D600AD24A7 /* TWImageZoomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWImageZoomViewController.xib; sourceTree = "<group>"; };
@@ -978,6 +981,8 @@
 				2426657B1DE2D2BA00BEB3CE /* TWCircleCollectionViewCell.xib */,
 				2426657E1DE2F2C900BEB3CE /* TWCircleViewController.h */,
 				2426657F1DE2F2C900BEB3CE /* TWCircleViewController.m */,
+				242665811DE2FBDD00BEB3CE /* TWLineLayout.h */,
+				242665821DE2FBDD00BEB3CE /* TWLineLayout.m */,
 			);
 			path = UICollectionCircle;
 			sourceTree = "<group>";
@@ -2110,6 +2115,7 @@
 				241F9E1A1CFC295C00D26998 /* TWReflectionViewController.m in Sources */,
 				24CF635F1D06B4480067C16C /* TWNotificationtest01ViewController.m in Sources */,
 				2482260B1CC76A8100D7A8C4 /* RepeatCollectionViewCell.m in Sources */,
+				242665831DE2FBDD00BEB3CE /* TWLineLayout.m in Sources */,
 				24E963861D91207C0059D484 /* UIImage+TWImage.m in Sources */,
 				247C033C1D9131C5002D7A53 /* TWSnake.m in Sources */,
 				2425F6C71DBE048C006FEAFC /* TWTransitionsViewController.m in Sources */,

@@ -9,6 +9,7 @@
 #import "TWCircleViewController.h"
 #import "TWCircleLayout.h"
 #import "TWCircleCollectionViewCell.h"
+#import "TWLineLayout.h"
 
 @interface TWCircleViewController ()<UICollectionViewDataSource, UICollectionViewDelegate>
 
@@ -43,8 +44,8 @@ static NSString * const XMGPhotoId = @"photoCell";
     
     // 创建CollectionView
     CGFloat collectionW = self.view.frame.size.width;
-    CGFloat collectionH = 400;
-    CGRect frame = CGRectMake(0, 0, collectionW, collectionH);
+    CGFloat collectionH = 300;
+    CGRect frame = CGRectMake(0, 64, collectionW, collectionH);
     UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:frame collectionViewLayout:layout];
     collectionView.dataSource = self;
     collectionView.delegate = self;
@@ -58,16 +59,16 @@ static NSString * const XMGPhotoId = @"photoCell";
     // 继承UICollectionViewFlowLayout
 }
 
-//- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
-//{
-//    if ([self.collectionView.collectionViewLayout isKindOfClass:[XMGLineLayout class]]) {
-//        [self.collectionView setCollectionViewLayout:[[XMGCircleLayout alloc] init] animated:YES];
-//    } else {
-//        XMGLineLayout *layout = [[XMGLineLayout alloc] init];
-//        layout.itemSize = CGSizeMake(100, 100);
-//        [self.collectionView setCollectionViewLayout:layout animated:YES];
-//    }
-//}
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    if ([self.collectionView.collectionViewLayout isKindOfClass:[TWLineLayout class]]) {
+        [self.collectionView setCollectionViewLayout:[[TWCircleLayout alloc] init] animated:YES];
+    } else {
+        TWLineLayout *layout = [[TWLineLayout alloc] init];
+        layout.itemSize = CGSizeMake(100, 100);
+        [self.collectionView setCollectionViewLayout:layout animated:YES];
+    }
+}
 
 #pragma mark - <UICollectionViewDataSource>
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
