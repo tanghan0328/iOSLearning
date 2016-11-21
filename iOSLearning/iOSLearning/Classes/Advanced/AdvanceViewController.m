@@ -18,6 +18,7 @@
 #import "TWForestGlassViewController.h"
 #import "TWTransitionsViewController.h"
 #import "TWCollectionLayoutViewController.h"
+#import "TWCircleViewController.h"
 
 
 @interface AdvanceViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -54,6 +55,7 @@
                         @"毛玻璃效果",
                         @"转场",
                         @"UICollection的layout自定义",
+                        @"复杂的CollectionLayout",
                         nil];
 }
 
@@ -121,6 +123,8 @@
         case 9:selectedView = [[TWTransitionsViewController alloc]init];
             break;
         case 10:selectedView = [[TWCollectionLayoutViewController alloc]initWithTitle:title];
+            break;
+        case 11:selectedView = [[TWCircleViewController alloc]init];
             break;
             
     }

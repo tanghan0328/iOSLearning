@@ -13,7 +13,7 @@
 
 @interface RepeatCellViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 
-@property (nonatomic,retain)UICollectionView *collection;
+@property (nonatomic,strong)UICollectionView *collection;
 
 @end
 
