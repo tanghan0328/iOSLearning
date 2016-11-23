@@ -107,7 +107,9 @@
 		2498F61F1CCA013B00368401 /* TWPThreadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2498F61C1CCA013B00368401 /* TWPThreadViewController.xib */; };
 		2498F6241CCA179D00368401 /* TWThreadSynchronizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2498F6221CCA179D00368401 /* TWThreadSynchronizeViewController.m */; };
 		2498F6261CCA179D00368401 /* TWThreadSynchronizeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2498F6231CCA179D00368401 /* TWThreadSynchronizeViewController.xib */; };
+		249FF63E1DE486AB00B4F755 /* TWPWDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 249FF63D1DE486AB00B4F755 /* TWPWDViewController.m */; };
 		24A5D6231CD333C2002573B3 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A5D6221CD333C2002573B3 /* libsqlite3.0.tbd */; };
+		24A7BC0F1DE43E34000AD91F /* TWFingerprintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A7BC0E1DE43E34000AD91F /* TWFingerprintViewController.m */; };
 		24BD777B1C9A3E6B000CC066 /* bo.png in Resources */ = {isa = PBXBuildFile; fileRef = 24BD76BC1C9A3E6B000CC066 /* bo.png */; };
 		24BD777C1C9A3E6B000CC066 /* btn_back_click@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24BD76BD1C9A3E6B000CC066 /* btn_back_click@2x.png */; };
 		24BD777D1C9A3E6B000CC066 /* btn_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 24BD76BE1C9A3E6B000CC066 /* btn_back.png */; };
@@ -516,9 +518,13 @@
 		2498F6211CCA179D00368401 /* TWThreadSynchronizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWThreadSynchronizeViewController.h; sourceTree = "<group>"; };
 		2498F6221CCA179D00368401 /* TWThreadSynchronizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWThreadSynchronizeViewController.m; sourceTree = "<group>"; };
 		2498F6231CCA179D00368401 /* TWThreadSynchronizeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWThreadSynchronizeViewController.xib; sourceTree = "<group>"; };
+		249FF63C1DE486AB00B4F755 /* TWPWDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWPWDViewController.h; sourceTree = "<group>"; };
+		249FF63D1DE486AB00B4F755 /* TWPWDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWPWDViewController.m; sourceTree = "<group>"; };
 		24A3DDD01DDDFB720034E012 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		24A5D6221CD333C2002573B3 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		24A5D6241CD333CD002573B3 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		24A7BC0D1DE43E34000AD91F /* TWFingerprintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWFingerprintViewController.h; sourceTree = "<group>"; };
+		24A7BC0E1DE43E34000AD91F /* TWFingerprintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWFingerprintViewController.m; sourceTree = "<group>"; };
 		24BD76BC1C9A3E6B000CC066 /* bo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bo.png; sourceTree = "<group>"; };
 		24BD76BD1C9A3E6B000CC066 /* btn_back_click@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_back_click@2x.png"; sourceTree = "<group>"; };
 		24BD76BE1C9A3E6B000CC066 /* btn_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_back.png; sourceTree = "<group>"; };
@@ -812,6 +818,8 @@
 		240F1BCC1CB4AC1C000AC902 /* Advanced */ = {
 			isa = PBXGroup;
 			children = (
+				249FF63B1DE4868200B4F755 /* PasswordKeyBoard */,
+				24A7BC0C1DE43E16000AD91F /* Fingerprint */,
 				2426656F1DE2989200BEB3CE /* UICollectionCircle */,
 				24F1CFBA1DDED65F00FA903A /* UICollectionLayout */,
 				2425F6C41DBE0474006FEAFC /* Transitions */,
@@ -1341,6 +1349,24 @@
 				2498F6231CCA179D00368401 /* TWThreadSynchronizeViewController.xib */,
 			);
 			path = Thread;
+			sourceTree = "<group>";
+		};
+		249FF63B1DE4868200B4F755 /* PasswordKeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				249FF63C1DE486AB00B4F755 /* TWPWDViewController.h */,
+				249FF63D1DE486AB00B4F755 /* TWPWDViewController.m */,
+			);
+			path = PasswordKeyBoard;
+			sourceTree = "<group>";
+		};
+		24A7BC0C1DE43E16000AD91F /* Fingerprint */ = {
+			isa = PBXGroup;
+			children = (
+				24A7BC0D1DE43E34000AD91F /* TWFingerprintViewController.h */,
+				24A7BC0E1DE43E34000AD91F /* TWFingerprintViewController.m */,
+			);
+			path = Fingerprint;
 			sourceTree = "<group>";
 		};
 		24CAB4041CB35BB500AFB56C /* Frameworks */ = {
@@ -2150,6 +2176,7 @@
 				242B4C0C1D017BB800AD24A7 /* TWNotificationViewController.m in Sources */,
 				2498F6171CC9CF5200368401 /* TWWKWebViewController.m in Sources */,
 				2480A5B41D050F000041263A /* TWUIWebViewController.m in Sources */,
+				24A7BC0F1DE43E34000AD91F /* TWFingerprintViewController.m in Sources */,
 				2482261B1CC76A8100D7A8C4 /* StepperViewController.m in Sources */,
 				248225FD1CC76A8100D7A8C4 /* Student.m in Sources */,
 				243E5A111D6C267400E4193A /* TWImageSenderViewController.m in Sources */,
@@ -2165,6 +2192,7 @@
 				24D206CA1CDB3F860008790F /* TWPlistRWViewController.m in Sources */,
 				24E963821D9116DC0059D484 /* TWNavigationBarHiddenController.m in Sources */,
 				248226091CC76A8100D7A8C4 /* RepeatCellViewController.m in Sources */,
+				249FF63E1DE486AB00B4F755 /* TWPWDViewController.m in Sources */,
 				2482260D1CC76A8100D7A8C4 /* ActivityIndicatorViewController.m in Sources */,
 				2466A24A1C9929D000B5C155 /* BaseViewController.m in Sources */,
 				241A4B001CE08C7500D55665 /* NSString+TWJSONToString.m in Sources */,

@@ -19,7 +19,8 @@
 #import "TWTransitionsViewController.h"
 #import "TWCollectionLayoutViewController.h"
 #import "TWCircleViewController.h"
-
+#import "TWPWDViewController.h"
+#import "TWFingerprintViewController.h"
 
 @interface AdvanceViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -56,6 +57,8 @@
                         @"转场",
                         @"UICollection的layout自定义",
                         @"复杂的CollectionLayout",
+                        @"微信支付的密码框",
+                        @"APPID的指纹",
                         nil];
 }
 
@@ -126,7 +129,10 @@
             break;
         case 11:selectedView = [[TWCircleViewController alloc]init];
             break;
-            
+        case 12:selectedView = [[TWPWDViewController alloc]initWithTitle:title];
+            break;
+        case 13:selectedView = [[TWFingerprintViewController alloc]initWithTitle:title];
+            break;
     }
     if(selectedView){
 
