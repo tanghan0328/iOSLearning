@@ -62,6 +62,7 @@
                                              @"Block测试",
                                              //@"签名的测试",
                                              @"KVO的测试",
+                                             @"自适应的label",
                                              @"刮刮乐",
                                              @"加载同一个控件",
                                              nil];
@@ -167,13 +168,11 @@
             selectedView = [[TWKVOViewController alloc]initWithTitle:self.nameList[indexPath.row]];
             break;
         case 17:
-            NSLog(@"测试====》selectedView    %d",17);
             selectedView =[[TWLabelViewController alloc] initWithTitle:self.nameList[indexPath.row]];
             break;
         case 18:
-            NSLog(@"测试====》selectedView    %d",18);
             selectedView =[[TWGoldZoneViewController alloc] initWithTitle:self.nameList[indexPath.row]];
-            
+            break;
     }
     if (selectedView != nil) {
         //隐藏tabbar
