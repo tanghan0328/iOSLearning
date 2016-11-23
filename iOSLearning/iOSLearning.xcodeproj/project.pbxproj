@@ -12,6 +12,8 @@
 		2400EB821CC8BA7800E76741 /* TWFileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2400EB7F1CC8BA7800E76741 /* TWFileViewController.xib */; };
 		2408B71F1D226F2300C48D7D /* TWGoldZoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2408B71D1D226F2300C48D7D /* TWGoldZoneViewController.m */; };
 		2408B7211D226F2300C48D7D /* TWGoldZoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2408B71E1D226F2300C48D7D /* TWGoldZoneViewController.xib */; };
+		240B93681DE52CCD0021457F /* TWSCanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 240B93661DE52CCD0021457F /* TWSCanViewController.m */; };
+		240B93691DE52CCD0021457F /* TWSCanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 240B93671DE52CCD0021457F /* TWSCanViewController.xib */; };
 		240F1BCA1CB4AAFA000AC902 /* TabRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 240F1BC91CB4AAFA000AC902 /* TabRootViewController.m */; };
 		240F1BDE1CB4AC66000AC902 /* AdvanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 240F1BDD1CB4AC66000AC902 /* AdvanceViewController.m */; };
 		240F1BE21CB4ACBF000AC902 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 240F1BE11CB4ACBF000AC902 /* TestViewController.m */; };
@@ -349,6 +351,9 @@
 		2408B71C1D226F2300C48D7D /* TWGoldZoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWGoldZoneViewController.h; sourceTree = "<group>"; };
 		2408B71D1D226F2300C48D7D /* TWGoldZoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWGoldZoneViewController.m; sourceTree = "<group>"; };
 		2408B71E1D226F2300C48D7D /* TWGoldZoneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWGoldZoneViewController.xib; sourceTree = "<group>"; };
+		240B93651DE52CCD0021457F /* TWSCanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSCanViewController.h; sourceTree = "<group>"; };
+		240B93661DE52CCD0021457F /* TWSCanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSCanViewController.m; sourceTree = "<group>"; };
+		240B93671DE52CCD0021457F /* TWSCanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWSCanViewController.xib; sourceTree = "<group>"; };
 		240F1BC81CB4AAFA000AC902 /* TabRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabRootViewController.h; sourceTree = "<group>"; };
 		240F1BC91CB4AAFA000AC902 /* TabRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabRootViewController.m; sourceTree = "<group>"; };
 		240F1BDC1CB4AC66000AC902 /* AdvanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvanceViewController.h; sourceTree = "<group>"; };
@@ -815,9 +820,20 @@
 			path = GoldZone;
 			sourceTree = "<group>";
 		};
+		240B93641DE52CB40021457F /* ScanView */ = {
+			isa = PBXGroup;
+			children = (
+				240B93651DE52CCD0021457F /* TWSCanViewController.h */,
+				240B93661DE52CCD0021457F /* TWSCanViewController.m */,
+				240B93671DE52CCD0021457F /* TWSCanViewController.xib */,
+			);
+			path = ScanView;
+			sourceTree = "<group>";
+		};
 		240F1BCC1CB4AC1C000AC902 /* Advanced */ = {
 			isa = PBXGroup;
 			children = (
+				240B93641DE52CB40021457F /* ScanView */,
 				249FF63B1DE4868200B4F755 /* PasswordKeyBoard */,
 				24A7BC0C1DE43E16000AD91F /* Fingerprint */,
 				2426656F1DE2989200BEB3CE /* UICollectionCircle */,
@@ -2035,6 +2051,7 @@
 				24BD77B51C9A3E6B000CC066 /* btn_search_clicked@3x.png in Resources */,
 				24BD782C1C9A3E6B000CC066 /* Img_user_register@2x.png in Resources */,
 				24BD778B1C9A3E6B000CC066 /* btn_column_selected@3x.png in Resources */,
+				240B93691DE52CCD0021457F /* TWSCanViewController.xib in Resources */,
 				24BD77BF1C9A3E6B000CC066 /* btn_user_normal@2x.png in Resources */,
 				24BD78231C9A3E6B000CC066 /* Image_white_light@2x.png in Resources */,
 				24BD77D81C9A3E6B000CC066 /* btn_vdo_gif_click@3x.png in Resources */,
@@ -2107,6 +2124,7 @@
 				243884AC1D07B0C000D61198 /* TWDelegateViewController.m in Sources */,
 				248226151CC76A8100D7A8C4 /* MySlidersView.m in Sources */,
 				24E963931D91257A0059D484 /* NSObject+TWObject.m in Sources */,
+				240B93681DE52CCD0021457F /* TWSCanViewController.m in Sources */,
 				248225EF1CC76A8100D7A8C4 /* NSString+AES.m in Sources */,
 				24E9637C1D9116420059D484 /* TWAlphaViewController.m in Sources */,
 				241F9E201CFC2E7200D26998 /* TWImageView.m in Sources */,
