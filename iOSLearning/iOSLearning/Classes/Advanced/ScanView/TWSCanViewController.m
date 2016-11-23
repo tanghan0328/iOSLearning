@@ -23,7 +23,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"二维码扫描";
-    [self anmimationView];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -38,7 +37,7 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-//    [self anmimationView];
+    [self anmimationView];
 }
 
 
@@ -82,13 +81,14 @@
 //    }];
     
     [UIView animateWithDuration:1.0f delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
-        [UIView setAnimationRepeatCount:MAXFLOAT];
-        _bottomConstraint.constant = 0;
+        [UIView setAnimationRepeatCount:9999.5f];
+        _bottomConstraint.constant = 300;
         [self.view layoutIfNeeded];
 
     } completion:^(BOOL finished) {
-        _bottomConstraint.constant = 300;
+        _bottomConstraint.constant = 0;
         [self.view layoutIfNeeded];
+
     }];
     
     
