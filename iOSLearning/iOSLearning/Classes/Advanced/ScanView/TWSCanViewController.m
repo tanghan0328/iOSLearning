@@ -81,7 +81,8 @@
 //    }];
     
     [UIView animateWithDuration:1.0f delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
-        [UIView setAnimationRepeatCount:9999.5f];
+//        [UIView setAnimationRepeatCount:9999.5f];
+        [UIView setAnimationRepeatCount:MAXFLOAT];
         _bottomConstraint.constant = 300;
         [self.view layoutIfNeeded];
 

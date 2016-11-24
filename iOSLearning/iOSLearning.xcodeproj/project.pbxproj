@@ -305,6 +305,9 @@
 		24BD78391C9A3E6B000CC066 /* zhi.png in Resources */ = {isa = PBXBuildFile; fileRef = 24BD777A1C9A3E6B000CC066 /* zhi.png */; };
 		24BD78411C9A7B08000CC066 /* tag.png in Resources */ = {isa = PBXBuildFile; fileRef = 24BD78401C9A7B08000CC066 /* tag.png */; };
 		24BD78431C9A7EF5000CC066 /* max.png in Resources */ = {isa = PBXBuildFile; fileRef = 24BD78421C9A7EF5000CC066 /* max.png */; };
+		24C339C11DE6BAB100A62685 /* TWSunnyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C339C01DE6BAB100A62685 /* TWSunnyViewController.m */; };
+		24C339C41DE6BB0100A62685 /* TWSon.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C339C31DE6BB0100A62685 /* TWSon.m */; };
+		24C339C71DE6BB1E00A62685 /* TWFather.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C339C61DE6BB1E00A62685 /* TWFather.m */; };
 		24CAB4031CB35B8300AFB56C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24CAB4021CB35B8300AFB56C /* CoreData.framework */; };
 		24CF635F1D06B4480067C16C /* TWNotificationtest01ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24CF635D1D06B4480067C16C /* TWNotificationtest01ViewController.m */; };
 		24CF63611D06B4480067C16C /* TWNotificationtest01ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24CF635E1D06B4480067C16C /* TWNotificationtest01ViewController.xib */; };
@@ -723,6 +726,12 @@
 		24BD777A1C9A3E6B000CC066 /* zhi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zhi.png; sourceTree = "<group>"; };
 		24BD78401C9A7B08000CC066 /* tag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tag.png; sourceTree = "<group>"; };
 		24BD78421C9A7EF5000CC066 /* max.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = max.png; sourceTree = "<group>"; };
+		24C339BF1DE6BAB100A62685 /* TWSunnyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSunnyViewController.h; sourceTree = "<group>"; };
+		24C339C01DE6BAB100A62685 /* TWSunnyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSunnyViewController.m; sourceTree = "<group>"; };
+		24C339C21DE6BB0100A62685 /* TWSon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSon.h; sourceTree = "<group>"; };
+		24C339C31DE6BB0100A62685 /* TWSon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSon.m; sourceTree = "<group>"; };
+		24C339C51DE6BB1E00A62685 /* TWFather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWFather.h; sourceTree = "<group>"; };
+		24C339C61DE6BB1E00A62685 /* TWFather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWFather.m; sourceTree = "<group>"; };
 		24CAB4021CB35B8300AFB56C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		24CF635C1D06B4480067C16C /* TWNotificationtest01ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWNotificationtest01ViewController.h; sourceTree = "<group>"; };
 		24CF635D1D06B4480067C16C /* TWNotificationtest01ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWNotificationtest01ViewController.m; sourceTree = "<group>"; };
@@ -887,6 +896,7 @@
 		240F1BD51CB4AC1C000AC902 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				24C339BE1DE6BA7F00A62685 /* TestSunny */,
 				240F1BE01CB4ACBF000AC902 /* TestViewController.h */,
 				240F1BE11CB4ACBF000AC902 /* TestViewController.m */,
 			);
@@ -1383,6 +1393,19 @@
 				24A7BC0E1DE43E34000AD91F /* TWFingerprintViewController.m */,
 			);
 			path = Fingerprint;
+			sourceTree = "<group>";
+		};
+		24C339BE1DE6BA7F00A62685 /* TestSunny */ = {
+			isa = PBXGroup;
+			children = (
+				24C339BF1DE6BAB100A62685 /* TWSunnyViewController.h */,
+				24C339C01DE6BAB100A62685 /* TWSunnyViewController.m */,
+				24C339C21DE6BB0100A62685 /* TWSon.h */,
+				24C339C31DE6BB0100A62685 /* TWSon.m */,
+				24C339C51DE6BB1E00A62685 /* TWFather.h */,
+				24C339C61DE6BB1E00A62685 /* TWFather.m */,
+			);
+			path = TestSunny;
 			sourceTree = "<group>";
 		};
 		24CAB4041CB35BB500AFB56C /* Frameworks */ = {
@@ -2120,6 +2143,7 @@
 				2425F6B21DBDAF4E006FEAFC /* UIView+TWExtension.m in Sources */,
 				24CF63651D06B9A50067C16C /* NSNotificationCenter+TWRmoveTest.m in Sources */,
 				2441D7681CB793CA00059B56 /* TimerViewController.m in Sources */,
+				24C339C71DE6BB1E00A62685 /* TWFather.m in Sources */,
 				24F1CFC01DDED6AE00FA903A /* TWCollectionLayout.m in Sources */,
 				243884AC1D07B0C000D61198 /* TWDelegateViewController.m in Sources */,
 				248226151CC76A8100D7A8C4 /* MySlidersView.m in Sources */,
@@ -2205,9 +2229,11 @@
 				24EB62DA1CED8F0700BE6772 /* TWPDFReaderViewController.m in Sources */,
 				248225F11CC76A8100D7A8C4 /* TestAESViewController.m in Sources */,
 				248225ED1CC76A8100D7A8C4 /* NSData+AES.m in Sources */,
+				24C339C11DE6BAB100A62685 /* TWSunnyViewController.m in Sources */,
 				2426657C1DE2D2BA00BEB3CE /* TWCircleCollectionViewCell.m in Sources */,
 				2425F6B91DBDF134006FEAFC /* UIImage+ImageEffects.m in Sources */,
 				24D206CA1CDB3F860008790F /* TWPlistRWViewController.m in Sources */,
+				24C339C41DE6BB0100A62685 /* TWSon.m in Sources */,
 				24E963821D9116DC0059D484 /* TWNavigationBarHiddenController.m in Sources */,
 				248226091CC76A8100D7A8C4 /* RepeatCellViewController.m in Sources */,
 				249FF63E1DE486AB00B4F755 /* TWPWDViewController.m in Sources */,

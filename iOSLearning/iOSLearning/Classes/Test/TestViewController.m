@@ -7,8 +7,13 @@
 //
 
 #import "TestViewController.h"
+#import "TWSunnyViewController.h"
 
-@interface TestViewController ()
+
+@interface TestViewController ()<UITableViewDelegate,UITableViewDataSource>
+
+@property (nonatomic,retain) NSArray *stringArray;
+@property (nonatomic,retain) UITableView *tableView;
 
 @end
 
@@ -16,16 +21,89 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.title = @"测试新的东西";
     //设置status的颜色为白色
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-    
-    self.title = @"测试";
-    self.view.backgroundColor = [UIColor grayColor];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+    //设置UITableView的大小
+    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) style:UITableViewStyleGrouped];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    [self.view addSubview:_tableView];
+    [self initWithStringArray];
+}
+//初始化字符串数组
+- (void)initWithStringArray
+{
+    self.stringArray = [[NSArray alloc]initWithObjects:@"测试sunnyxx的问题",
+                        @"测试从相机取图片",
+                        @"测试多张相机照片",
+                        @"测试透明头",
+                        @"测试runtime",
+                        @"Snake测试问题",
+                        @"Block深究",
+                        @"三个小圆球",
+                        @"毛玻璃效果",
+                        @"转场",
+                        @"UICollection的layout自定义",
+                        @"复杂的CollectionLayout",
+                        @"微信支付的密码框",
+                        @"APPID的指纹",
+                        @"二维码扫描",
+                        nil];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return _stringArray.count;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 1.0f;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 44.0f;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *identifier = @"AdvanceCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    if(cell == nil){
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+    }
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.textLabel.font = [UIFont systemFontOfSize:13.0f];
+    cell.textLabel.text = self.stringArray[indexPath.row];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UIViewController *selectedView = nil;
+    NSString *title  = self.stringArray[indexPath.row];
+    switch (indexPath.row) {
+        case 0:selectedView = [[TWSunnyViewController alloc]initWithTitle:title];
+            break;
+    }
+    if(selectedView){
+        
+        [self.navigationController pushViewController:selectedView animated:YES];
+        //self.hidesBottomBarWhenPushed=YES;//要显示的viewController设置
+    }
+}
+
 @end
+

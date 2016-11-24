@@ -56,7 +56,7 @@
     NSString *filePath2= [documentsDirectory
                           stringByAppendingPathComponent:@"file3.txt"];
     if ([filemanager moveItemAtPath:myFilePath toPath:filePath2 error:&twerror] != YES){
-        TWLog(@"移动文件失败，原因为：%@",[twerror localizedDescription])
+        TWLog(@"移动文件失败，原因为：%@",[twerror localizedDescription]);
     }
     TWLog(@"文件地址为：%@",[filemanager contentsOfDirectoryAtPath:documentsDirectory error:&twerror]);
     
