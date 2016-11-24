@@ -12,13 +12,24 @@
 
 @interface TWSunnyViewController ()
 
+typedef NSString*(^WXYTestBlock)(NSString *name,int age);
+
 @end
 
 @implementation TWSunnyViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    TWSon *son = [[TWSon alloc]init];
+    
+    
+    WXYTestBlock myBlock = ^ (NSString *name, int age){
+        return [NSString stringWithFormat:@"%@的年龄是%d",name,age];
+    };
+    
+    TWLog(@"独立block--->%@", myBlock(@"小宇", 16));
+    
+    
+    TWSon *son = [[TWSon alloc]init];
     
 //    TWFather *father = [TWFather new];
 //    
@@ -44,6 +55,9 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
+
+
+
 
 
 @end
