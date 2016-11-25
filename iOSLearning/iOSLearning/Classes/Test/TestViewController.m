@@ -23,7 +23,7 @@
     [super viewDidLoad];
     self.title = @"测试新的东西";
     //设置status的颜色为白色
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+//    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
     //设置UITableView的大小
     self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) style:UITableViewStyleGrouped];
     self.tableView.delegate = self;
@@ -31,6 +31,13 @@
     [self.view addSubview:_tableView];
     [self initWithStringArray];
 }
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    [super viewWillAppear:animated];
+}
+
 //初始化字符串数组
 - (void)initWithStringArray
 {
