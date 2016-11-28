@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "TableListViewController.h"
 #import "TabRootViewController.h"
+#import "JPEngine.h"
 
 @interface AppDelegate ()
 
@@ -30,6 +31,12 @@
 
     NSLog(@"app started.");
     NSLog(@"%@",NSStringFromCGSize([UIScreen mainScreen].bounds.size));
+    
+    //测试JSPath
+    [JPEngine startEngine];
+    NSString* path = [[NSBundle mainBundle]pathForResource:@"JSPathTest" ofType:@"js"];
+    NSString* js = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+    [JPEngine evaluateScript:js];
     
     return YES;
 }

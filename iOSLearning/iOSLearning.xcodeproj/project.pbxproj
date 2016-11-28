@@ -57,6 +57,9 @@
 		2441D7691CB793CA00059B56 /* TimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2441D7671CB793CA00059B56 /* TimerViewController.xib */; };
 		2441D76D1CB796E400059B56 /* PlistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2441D76B1CB796E400059B56 /* PlistViewController.m */; };
 		2441D76F1CB796E400059B56 /* PlistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2441D76C1CB796E400059B56 /* PlistViewController.xib */; };
+		244A97BD1DEC07D100CA484C /* TWJSPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 244A97BC1DEC07D100CA484C /* TWJSPathViewController.m */; };
+		245345FC1DEC0DD50050364E /* JSPathTest.js in Resources */ = {isa = PBXBuildFile; fileRef = 245345FB1DEC0DD50050364E /* JSPathTest.js */; };
+		245345FF1DEC11C60050364E /* TWAFNetWorkingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E963751D9116420059D484 /* TWAFNetWorkingController.m */; };
 		2466A24A1C9929D000B5C155 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2466A2491C9929D000B5C155 /* BaseViewController.m */; };
 		2466A24C1C992C2C00B5C155 /* ugc_btn_time_click@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2466A24B1C992C2C00B5C155 /* ugc_btn_time_click@2x.png */; };
 		247C033C1D9131C5002D7A53 /* TWSnake.m in Sources */ = {isa = PBXBuildFile; fileRef = 247C033B1D9131C5002D7A53 /* TWSnake.m */; };
@@ -327,7 +330,6 @@
 		24DE82A81D0D3D6100191C35 /* TWSignatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE82A61D0D3D6100191C35 /* TWSignatureViewController.m */; };
 		24DE82AA1D0D3D6100191C35 /* TWSignatureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24DE82A71D0D3D6100191C35 /* TWSignatureViewController.xib */; };
 		24E157561D485F66004E72D1 /* TWLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E157551D485F66004E72D1 /* TWLabelViewController.m */; };
-		24E9637A1D9116420059D484 /* TWAFNetWorkingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E963751D9116420059D484 /* TWAFNetWorkingController.m */; };
 		24E9637C1D9116420059D484 /* TWAlphaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E963771D9116420059D484 /* TWAlphaViewController.m */; };
 		24E9637E1D9116420059D484 /* TWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E963791D9116420059D484 /* TWBaseViewController.m */; };
 		24E963821D9116DC0059D484 /* TWNavigationBarHiddenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E963811D9116DC0059D484 /* TWNavigationBarHiddenController.m */; };
@@ -433,6 +435,10 @@
 		2441D76A1CB796E400059B56 /* PlistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlistViewController.h; sourceTree = "<group>"; };
 		2441D76B1CB796E400059B56 /* PlistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlistViewController.m; sourceTree = "<group>"; };
 		2441D76C1CB796E400059B56 /* PlistViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlistViewController.xib; sourceTree = "<group>"; };
+		244A97BB1DEC07D100CA484C /* TWJSPathViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWJSPathViewController.h; sourceTree = "<group>"; };
+		244A97BC1DEC07D100CA484C /* TWJSPathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWJSPathViewController.m; sourceTree = "<group>"; };
+		245345FB1DEC0DD50050364E /* JSPathTest.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = JSPathTest.js; sourceTree = "<group>"; };
+		245345FD1DEC0FB30050364E /* JSONKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = Pods/JSONKit/JSONKit.m; sourceTree = "<group>"; };
 		2466A2391C98F2E200B5C155 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		2466A23B1C98F32500B5C155 /* GlobalFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalFile.h; sourceTree = "<group>"; };
 		2466A2481C9929D000B5C155 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -899,6 +905,7 @@
 		240F1BD51CB4AC1C000AC902 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				244A97BA1DEC07C100CA484C /* JSPath */,
 				24C339BE1DE6BA7F00A62685 /* TestSunny */,
 				240F1BE01CB4ACBF000AC902 /* TestViewController.h */,
 				240F1BE11CB4ACBF000AC902 /* TestViewController.m */,
@@ -1121,6 +1128,16 @@
 				2441D7671CB793CA00059B56 /* TimerViewController.xib */,
 			);
 			path = timer;
+			sourceTree = "<group>";
+		};
+		244A97BA1DEC07C100CA484C /* JSPath */ = {
+			isa = PBXGroup;
+			children = (
+				244A97BB1DEC07D100CA484C /* TWJSPathViewController.h */,
+				244A97BC1DEC07D100CA484C /* TWJSPathViewController.m */,
+				245345FB1DEC0DD50050364E /* JSPathTest.js */,
+			);
+			path = JSPath;
 			sourceTree = "<group>";
 		};
 		247C03391D9131B5002D7A53 /* Snake */ = {
@@ -1517,6 +1534,7 @@
 		24ED56A41C969AD0005405B4 = {
 			isa = PBXGroup;
 			children = (
+				245345FD1DEC0FB30050364E /* JSONKit.m */,
 				24ED56AF1C969AD1005405B4 /* iOSLearning */,
 				24CAB4041CB35BB500AFB56C /* Frameworks */,
 				24ED56AE1C969AD1005405B4 /* Products */,
@@ -1905,6 +1923,7 @@
 				24C339E41DE6D85400A62685 /* TWRegisteViewController.xib in Resources */,
 				24BD78041C9A3E6B000CC066 /* Image_history@2x.png in Resources */,
 				24BD77E01C9A3E6B000CC066 /* btn_vdo_send@2x.png in Resources */,
+				245345FC1DEC0DD50050364E /* JSPathTest.js in Resources */,
 				24BD777B1C9A3E6B000CC066 /* bo.png in Resources */,
 				24BD78131C9A3E6B000CC066 /* Image_remind@3x.png in Resources */,
 				24BD77D41C9A3E6B000CC066 /* btn_vdo_full@2x.png in Resources */,
@@ -2144,7 +2163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24E9637A1D9116420059D484 /* TWAFNetWorkingController.m in Sources */,
+				245345FF1DEC11C60050364E /* TWAFNetWorkingController.m in Sources */,
 				2425F6B21DBDAF4E006FEAFC /* UIView+TWExtension.m in Sources */,
 				24CF63651D06B9A50067C16C /* NSNotificationCenter+TWRmoveTest.m in Sources */,
 				2441D7681CB793CA00059B56 /* TimerViewController.m in Sources */,
@@ -2231,6 +2250,7 @@
 				248226211CC76A8100D7A8C4 /* TextFileViewController.m in Sources */,
 				242B4BF31D0124D600AD24A7 /* TWImageZoomViewController.m in Sources */,
 				24DA5D811D17E51C00F4BD36 /* TWDatePickerViewController.m in Sources */,
+				244A97BD1DEC07D100CA484C /* TWJSPathViewController.m in Sources */,
 				24EB62DA1CED8F0700BE6772 /* TWPDFReaderViewController.m in Sources */,
 				248225F11CC76A8100D7A8C4 /* TestAESViewController.m in Sources */,
 				248225ED1CC76A8100D7A8C4 /* NSData+AES.m in Sources */,

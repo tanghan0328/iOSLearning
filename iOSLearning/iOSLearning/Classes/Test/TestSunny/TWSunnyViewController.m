@@ -10,7 +10,7 @@
 #import "TWSon.h"
 #import "TWFather.h"
 
-@interface TWSunnyViewController ()
+@interface TWSunnyViewController ()<NSURLSessionDelegate>
 
 typedef NSString*(^WXYTestBlock)(NSString *name,int age);
 
@@ -33,8 +33,10 @@ typedef NSString*(^WXYTestBlock)(NSString *name,int age);
     
     TWSon *son = [[TWSon alloc]init];
     
-    [self getWithsharedSessionGet];
-    [self postWithSharedSession];
+//    [self getWithsharedSessionGet];
+//    [self postWithSharedSession];
+    
+    [self sessionDataDelegate];
     
     
     _label = [[UILabel alloc]initWithFrame:CGRectMake(20, 100, SCREEN_WIDTH - 40, 100)];
@@ -128,4 +130,59 @@ typedef NSString*(^WXYTestBlock)(NSString *name,int age);
     // 启动任务
     [task resume];
 }
+//创建有代理的session
+- (void)sessionDataDelegate
+{
+    // 创建带有代理方法的自定义 session
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:self delegateQueue:[NSOperationQueue mainQueue]];
+    
+    // 创建任务
+    NSURLSessionDataTask *task = [session dataTaskWithRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://120.25.226.186:32812/login?username=1234&pwd=4321"]]];
+    
+    // 启动任务
+    [task resume];
+}
+
+#pragma mark -
+#pragma mark - NSURLSessionDelegate
+
+// 1. 接收到服务器的响应
+- (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveResponse:(NSURLResponse *)response completionHandler:(void (^)(NSURLSessionResponseDisposition))completionHandler
+{
+    NSLog(@"接收到服务器的响应");
+    // 必须设置对响应进行允许处理才会执行后面两个操作。
+    completionHandler(NSURLSessionResponseAllow);
+}
+
+// 2. 接收到服务器的数据（可能调用多次）
+- (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveData:(NSData *)data {
+    // 处理每次接收的数据
+    NSLog(@"接受到服务器的数据%s",__func__);
+}
+
+// 3. 请求成功或者失败（如果失败，error有值）
+- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(NSError *)error {
+    // 请求完成,成功或者失败的处理
+    NSLog(@"SessionTask %s",__func__);
+}
+
+//该方法为UIView中的方法
+
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+    if (!self.view.isUserInteractionEnabled || self.view.isHidden || self.view.alpha <= 0.01) {
+        return nil;
+    }
+    if ([self.view pointInside:point withEvent:event]) {
+        for (UIView *subview in [self.view.subviews reverseObjectEnumerator]) {
+            CGPoint convertedPoint = [subview convertPoint:point fromView:self.view];
+            UIView *hitTestView = [subview hitTest:convertedPoint withEvent:event];
+            if (hitTestView) {
+                return hitTestView;
+            }
+        }
+        return self.view;
+    }
+    return nil;
+}
+
 @end

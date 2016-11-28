@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>JSPatch.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-iOSLearning.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,12 +32,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4206B9096464B278B0E789B9951D0DC8</key>
+		<key>26860CC503576891BB1247514A95C6FC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7BB7678197F722CA9B54E494DB064A0F</key>
+		<key>910F72A5586B9B48212C3CD54BC1440F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -43,6 +48,11 @@
 			<true/>
 		</dict>
 		<key>E421B7471C420C1C227C435C434E45A9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FD1D53461DE538B7C8DFE0B76D857587</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -8,6 +8,8 @@
 
 #import "TestViewController.h"
 #import "TWSunnyViewController.h"
+#import "TWJSPathViewController.h"
+
 
 
 @interface TestViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -42,7 +44,7 @@
 - (void)initWithStringArray
 {
     self.stringArray = [[NSArray alloc]initWithObjects:@"测试sunnyxx的问题",
-                        @"测试从相机取图片",
+                        @"JSPath测试",
                         @"测试多张相机照片",
                         @"测试透明头",
                         @"测试runtime",
@@ -103,6 +105,8 @@
     NSString *title  = self.stringArray[indexPath.row];
     switch (indexPath.row) {
         case 0:selectedView = [[TWSunnyViewController alloc]initWithTitle:title];
+            break;
+        case 1:selectedView = [[TWJSPathViewController alloc]initWithTitle:title];
             break;
     }
     if(selectedView){
