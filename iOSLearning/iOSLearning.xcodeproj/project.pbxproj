@@ -42,8 +42,6 @@
 		242A967C1DEEB6B3009565F9 /* CLPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 242A966E1DEEB6B3009565F9 /* CLPhoto.m */; };
 		242A967D1DEEB6B3009565F9 /* CLPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 242A96701DEEB6B3009565F9 /* CLPhotoBrowser.m */; };
 		242A967E1DEEB6B3009565F9 /* CLPhotoProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 242A96721DEEB6B3009565F9 /* CLPhotoProgressView.m */; };
-		242A967F1DEEB6B3009565F9 /* KNActionSheet.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 242A96741DEEB6B3009565F9 /* KNActionSheet.bundle */; };
-		242A96801DEEB6B3009565F9 /* KNActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 242A96761DEEB6B3009565F9 /* KNActionSheet.m */; };
 		242A96811DEEB6B3009565F9 /* PhotoBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 242A96781DEEB6B3009565F9 /* PhotoBrowserCell.m */; };
 		242A96821DEEB6B3009565F9 /* PhotoBrowserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 242A96791DEEB6B3009565F9 /* PhotoBrowserCell.xib */; };
 		242A96831DEEB6B3009565F9 /* dialog_load.png in Resources */ = {isa = PBXBuildFile; fileRef = 242A967B1DEEB6B3009565F9 /* dialog_load.png */; };
@@ -424,9 +422,6 @@
 		242A96701DEEB6B3009565F9 /* CLPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPhotoBrowser.m; sourceTree = "<group>"; };
 		242A96711DEEB6B3009565F9 /* CLPhotoProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPhotoProgressView.h; sourceTree = "<group>"; };
 		242A96721DEEB6B3009565F9 /* CLPhotoProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPhotoProgressView.m; sourceTree = "<group>"; };
-		242A96741DEEB6B3009565F9 /* KNActionSheet.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = KNActionSheet.bundle; sourceTree = "<group>"; };
-		242A96751DEEB6B3009565F9 /* KNActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNActionSheet.h; sourceTree = "<group>"; };
-		242A96761DEEB6B3009565F9 /* KNActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNActionSheet.m; sourceTree = "<group>"; };
 		242A96771DEEB6B3009565F9 /* PhotoBrowserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoBrowserCell.h; sourceTree = "<group>"; };
 		242A96781DEEB6B3009565F9 /* PhotoBrowserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoBrowserCell.m; sourceTree = "<group>"; };
 		242A96791DEEB6B3009565F9 /* PhotoBrowserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoBrowserCell.xib; sourceTree = "<group>"; };
@@ -1087,23 +1082,12 @@
 				242A96701DEEB6B3009565F9 /* CLPhotoBrowser.m */,
 				242A96711DEEB6B3009565F9 /* CLPhotoProgressView.h */,
 				242A96721DEEB6B3009565F9 /* CLPhotoProgressView.m */,
-				242A96731DEEB6B3009565F9 /* KNActionSheet */,
 				242A96771DEEB6B3009565F9 /* PhotoBrowserCell.h */,
 				242A96781DEEB6B3009565F9 /* PhotoBrowserCell.m */,
 				242A96791DEEB6B3009565F9 /* PhotoBrowserCell.xib */,
 				242A967A1DEEB6B3009565F9 /* Resouce */,
 			);
 			path = CLPhotoBrowser;
-			sourceTree = "<group>";
-		};
-		242A96731DEEB6B3009565F9 /* KNActionSheet */ = {
-			isa = PBXGroup;
-			children = (
-				242A96741DEEB6B3009565F9 /* KNActionSheet.bundle */,
-				242A96751DEEB6B3009565F9 /* KNActionSheet.h */,
-				242A96761DEEB6B3009565F9 /* KNActionSheet.m */,
-			);
-			path = KNActionSheet;
 			sourceTree = "<group>";
 		};
 		242A967A1DEEB6B3009565F9 /* Resouce */ = {
@@ -2033,7 +2017,6 @@
 				24BD78341C9A3E6B000CC066 /* quan.png in Resources */,
 				24BD78011C9A3E6B000CC066 /* Image_handle@2x.png in Resources */,
 				24BD77B41C9A3E6B000CC066 /* btn_search_clicked@2x.png in Resources */,
-				242A967F1DEEB6B3009565F9 /* KNActionSheet.bundle in Resources */,
 				24BD778D1C9A3E6B000CC066 /* btn_dismiss_clicked@2x.png in Resources */,
 				24ED56D51C96B908005405B4 /* Images.xcassets in Resources */,
 				24BD77B71C9A3E6B000CC066 /* btn_search@2x.png in Resources */,
@@ -2346,7 +2329,6 @@
 				248226071CC76A8100D7A8C4 /* ProdCollectionViewController.m in Sources */,
 				24C339CA1DE6D6D600A62685 /* UIViewController+swizzling.m in Sources */,
 				24E9637E1D9116420059D484 /* TWBaseViewController.m in Sources */,
-				242A96801DEEB6B3009565F9 /* KNActionSheet.m in Sources */,
 				24C339E71DE6D85400A62685 /* TWBlockRegisterViewController.m in Sources */,
 				248226111CC76A8100D7A8C4 /* ProgressViewController.m in Sources */,
 				242B4C0C1D017BB800AD24A7 /* TWNotificationViewController.m in Sources */,
