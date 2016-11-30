@@ -7,7 +7,9 @@
 //
 
 #import "BaseViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface TWImageSenderViewController : BaseViewController
+
+@interface TWImageSenderViewController : UIViewController
 
 @end

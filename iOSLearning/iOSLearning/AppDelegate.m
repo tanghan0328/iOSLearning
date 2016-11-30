@@ -28,7 +28,7 @@
     //self.window.backgroundColor = [UIColor redColor];
     self.window.rootViewController = rootController;
     [self.window makeKeyAndVisible];
-
+    self.window.backgroundColor = [UIColor whiteColor];
     NSLog(@"app started.");
     NSLog(@"%@",NSStringFromCGSize([UIScreen mainScreen].bounds.size));
     

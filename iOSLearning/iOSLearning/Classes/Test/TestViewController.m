@@ -10,6 +10,7 @@
 #import "TWSunnyViewController.h"
 #import "TWJSPathViewController.h"
 #import "TWCalendarViewController.h"
+#import "TWCLPhotoBrowserViewController.h"
 
 
 @interface TestViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -46,7 +47,7 @@
     self.stringArray = [[NSArray alloc]initWithObjects:@"测试sunnyxx的问题",
                         @"JSPath测试",
                         @"测试日历插入提醒",
-                        @"测试透明头",
+                        @"测试CLPhotoBrowser",
                         @"测试runtime",
                         @"Snake测试问题",
                         @"Block深究",
@@ -109,6 +110,8 @@
         case 1:selectedView = [[TWJSPathViewController alloc]initWithTitle:title];
             break;
         case 2:selectedView = [[TWCalendarViewController alloc]initWithTitle:title];
+            break;
+        case 3:selectedView = [[TWCLPhotoBrowserViewController alloc]initWithTitle:title];
             break;
     }
     if(selectedView){

@@ -38,6 +38,16 @@
 		2426657D1DE2D2BA00BEB3CE /* TWCircleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2426657B1DE2D2BA00BEB3CE /* TWCircleCollectionViewCell.xib */; };
 		242665801DE2F2C900BEB3CE /* TWCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2426657F1DE2F2C900BEB3CE /* TWCircleViewController.m */; };
 		242665831DE2FBDD00BEB3CE /* TWLineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 242665821DE2FBDD00BEB3CE /* TWLineLayout.m */; };
+		242A966A1DEEA5D2009565F9 /* TWUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 242A96691DEEA5D2009565F9 /* TWUserModel.m */; };
+		242A967C1DEEB6B3009565F9 /* CLPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 242A966E1DEEB6B3009565F9 /* CLPhoto.m */; };
+		242A967D1DEEB6B3009565F9 /* CLPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 242A96701DEEB6B3009565F9 /* CLPhotoBrowser.m */; };
+		242A967E1DEEB6B3009565F9 /* CLPhotoProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 242A96721DEEB6B3009565F9 /* CLPhotoProgressView.m */; };
+		242A967F1DEEB6B3009565F9 /* KNActionSheet.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 242A96741DEEB6B3009565F9 /* KNActionSheet.bundle */; };
+		242A96801DEEB6B3009565F9 /* KNActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 242A96761DEEB6B3009565F9 /* KNActionSheet.m */; };
+		242A96811DEEB6B3009565F9 /* PhotoBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 242A96781DEEB6B3009565F9 /* PhotoBrowserCell.m */; };
+		242A96821DEEB6B3009565F9 /* PhotoBrowserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 242A96791DEEB6B3009565F9 /* PhotoBrowserCell.xib */; };
+		242A96831DEEB6B3009565F9 /* dialog_load.png in Resources */ = {isa = PBXBuildFile; fileRef = 242A967B1DEEB6B3009565F9 /* dialog_load.png */; };
+		242A96861DEEB6E7009565F9 /* TWCLPhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 242A96851DEEB6E7009565F9 /* TWCLPhotoBrowserViewController.m */; };
 		242B4BF31D0124D600AD24A7 /* TWImageZoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 242B4BF11D0124D600AD24A7 /* TWImageZoomViewController.m */; };
 		242B4BF51D0124D600AD24A7 /* TWImageZoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 242B4BF21D0124D600AD24A7 /* TWImageZoomViewController.xib */; };
 		242B4BF91D01608100AD24A7 /* TWBtnTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 242B4BF81D01608100AD24A7 /* TWBtnTestViewController.m */; };
@@ -406,6 +416,23 @@
 		2426657F1DE2F2C900BEB3CE /* TWCircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWCircleViewController.m; sourceTree = "<group>"; };
 		242665811DE2FBDD00BEB3CE /* TWLineLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWLineLayout.h; sourceTree = "<group>"; };
 		242665821DE2FBDD00BEB3CE /* TWLineLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWLineLayout.m; sourceTree = "<group>"; };
+		242A96681DEEA5D2009565F9 /* TWUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWUserModel.h; sourceTree = "<group>"; };
+		242A96691DEEA5D2009565F9 /* TWUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWUserModel.m; sourceTree = "<group>"; };
+		242A966D1DEEB6B3009565F9 /* CLPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPhoto.h; sourceTree = "<group>"; };
+		242A966E1DEEB6B3009565F9 /* CLPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPhoto.m; sourceTree = "<group>"; };
+		242A966F1DEEB6B3009565F9 /* CLPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPhotoBrowser.h; sourceTree = "<group>"; };
+		242A96701DEEB6B3009565F9 /* CLPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPhotoBrowser.m; sourceTree = "<group>"; };
+		242A96711DEEB6B3009565F9 /* CLPhotoProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPhotoProgressView.h; sourceTree = "<group>"; };
+		242A96721DEEB6B3009565F9 /* CLPhotoProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPhotoProgressView.m; sourceTree = "<group>"; };
+		242A96741DEEB6B3009565F9 /* KNActionSheet.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = KNActionSheet.bundle; sourceTree = "<group>"; };
+		242A96751DEEB6B3009565F9 /* KNActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNActionSheet.h; sourceTree = "<group>"; };
+		242A96761DEEB6B3009565F9 /* KNActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNActionSheet.m; sourceTree = "<group>"; };
+		242A96771DEEB6B3009565F9 /* PhotoBrowserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoBrowserCell.h; sourceTree = "<group>"; };
+		242A96781DEEB6B3009565F9 /* PhotoBrowserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoBrowserCell.m; sourceTree = "<group>"; };
+		242A96791DEEB6B3009565F9 /* PhotoBrowserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoBrowserCell.xib; sourceTree = "<group>"; };
+		242A967B1DEEB6B3009565F9 /* dialog_load.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dialog_load.png; sourceTree = "<group>"; };
+		242A96841DEEB6E7009565F9 /* TWCLPhotoBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWCLPhotoBrowserViewController.h; sourceTree = "<group>"; };
+		242A96851DEEB6E7009565F9 /* TWCLPhotoBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWCLPhotoBrowserViewController.m; sourceTree = "<group>"; };
 		242B4BF01D0124D600AD24A7 /* TWImageZoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWImageZoomViewController.h; sourceTree = "<group>"; };
 		242B4BF11D0124D600AD24A7 /* TWImageZoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWImageZoomViewController.m; sourceTree = "<group>"; };
 		242B4BF21D0124D600AD24A7 /* TWImageZoomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWImageZoomViewController.xib; sourceTree = "<group>"; };
@@ -911,6 +938,7 @@
 		240F1BD51CB4AC1C000AC902 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				242A966B1DEEB61E009565F9 /* CLPhotoBrowser */,
 				245346001DEC1A9E0050364E /* Calendar */,
 				244A97BA1DEC07C100CA484C /* JSPath */,
 				24C339BE1DE6BA7F00A62685 /* TestSunny */,
@@ -1038,6 +1066,52 @@
 				242665821DE2FBDD00BEB3CE /* TWLineLayout.m */,
 			);
 			path = UICollectionCircle;
+			sourceTree = "<group>";
+		};
+		242A966B1DEEB61E009565F9 /* CLPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				242A966C1DEEB6B3009565F9 /* CLPhotoBrowser */,
+				242A96841DEEB6E7009565F9 /* TWCLPhotoBrowserViewController.h */,
+				242A96851DEEB6E7009565F9 /* TWCLPhotoBrowserViewController.m */,
+			);
+			path = CLPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		242A966C1DEEB6B3009565F9 /* CLPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				242A966D1DEEB6B3009565F9 /* CLPhoto.h */,
+				242A966E1DEEB6B3009565F9 /* CLPhoto.m */,
+				242A966F1DEEB6B3009565F9 /* CLPhotoBrowser.h */,
+				242A96701DEEB6B3009565F9 /* CLPhotoBrowser.m */,
+				242A96711DEEB6B3009565F9 /* CLPhotoProgressView.h */,
+				242A96721DEEB6B3009565F9 /* CLPhotoProgressView.m */,
+				242A96731DEEB6B3009565F9 /* KNActionSheet */,
+				242A96771DEEB6B3009565F9 /* PhotoBrowserCell.h */,
+				242A96781DEEB6B3009565F9 /* PhotoBrowserCell.m */,
+				242A96791DEEB6B3009565F9 /* PhotoBrowserCell.xib */,
+				242A967A1DEEB6B3009565F9 /* Resouce */,
+			);
+			path = CLPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		242A96731DEEB6B3009565F9 /* KNActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				242A96741DEEB6B3009565F9 /* KNActionSheet.bundle */,
+				242A96751DEEB6B3009565F9 /* KNActionSheet.h */,
+				242A96761DEEB6B3009565F9 /* KNActionSheet.m */,
+			);
+			path = KNActionSheet;
+			sourceTree = "<group>";
+		};
+		242A967A1DEEB6B3009565F9 /* Resouce */ = {
+			isa = PBXGroup;
+			children = (
+				242A967B1DEEB6B3009565F9 /* dialog_load.png */,
+			);
+			path = Resouce;
 			sourceTree = "<group>";
 		};
 		242B4BEF1D0124BE00AD24A7 /* ImageZoom */ = {
@@ -1412,6 +1486,8 @@
 				24C339C31DE6BB0100A62685 /* TWSon.m */,
 				24C339C51DE6BB1E00A62685 /* TWFather.h */,
 				24C339C61DE6BB1E00A62685 /* TWFather.m */,
+				242A96681DEEA5D2009565F9 /* TWUserModel.h */,
+				242A96691DEEA5D2009565F9 /* TWUserModel.m */,
 			);
 			path = TestSunny;
 			sourceTree = "<group>";
@@ -1870,6 +1946,11 @@
 					24ED56AC1C969AD1005405B4 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 779RM9YEFZ;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -1952,6 +2033,7 @@
 				24BD78341C9A3E6B000CC066 /* quan.png in Resources */,
 				24BD78011C9A3E6B000CC066 /* Image_handle@2x.png in Resources */,
 				24BD77B41C9A3E6B000CC066 /* btn_search_clicked@2x.png in Resources */,
+				242A967F1DEEB6B3009565F9 /* KNActionSheet.bundle in Resources */,
 				24BD778D1C9A3E6B000CC066 /* btn_dismiss_clicked@2x.png in Resources */,
 				24ED56D51C96B908005405B4 /* Images.xcassets in Resources */,
 				24BD77B71C9A3E6B000CC066 /* btn_search@2x.png in Resources */,
@@ -2041,6 +2123,7 @@
 				24BD78001C9A3E6B000CC066 /* Image_font_small@3x.png in Resources */,
 				24BD77AB1C9A3E6B000CC066 /* btn_normal@2x.png in Resources */,
 				24BD77FC1C9A3E6B000CC066 /* Image_font_big@2x.png in Resources */,
+				242A96831DEEB6B3009565F9 /* dialog_load.png in Resources */,
 				24BD77F61C9A3E6B000CC066 /* Image_bright_bg@2x.png in Resources */,
 				24BD77941C9A3E6B000CC066 /* btn_home_normal@2x.png in Resources */,
 				2498F6261CCA179D00368401 /* TWThreadSynchronizeViewController.xib in Resources */,
@@ -2095,6 +2178,7 @@
 				24BD78381C9A3E6B000CC066 /* zbar-back.png in Resources */,
 				24BD77ED1C9A3E6B000CC066 /* Image_alpha_small.png in Resources */,
 				24BD782D1C9A3E6B000CC066 /* Img_user.png in Resources */,
+				242A96821DEEB6B3009565F9 /* PhotoBrowserCell.xib in Resources */,
 				24C339E01DE6D85400A62685 /* TWDelegateViewController.xib in Resources */,
 				24BD77A81C9A3E6B000CC066 /* btn_nav_back.png in Resources */,
 				24BD77EC1C9A3E6B000CC066 /* Image_alpha_big@3x.png in Resources */,
@@ -2181,6 +2265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				242A96861DEEB6E7009565F9 /* TWCLPhotoBrowserViewController.m in Sources */,
 				245345FF1DEC11C60050364E /* TWAFNetWorkingController.m in Sources */,
 				2425F6B21DBDAF4E006FEAFC /* UIView+TWExtension.m in Sources */,
 				24CF63651D06B9A50067C16C /* NSNotificationCenter+TWRmoveTest.m in Sources */,
@@ -2188,8 +2273,10 @@
 				24C339C71DE6BB1E00A62685 /* TWFather.m in Sources */,
 				24F1CFC01DDED6AE00FA903A /* TWCollectionLayout.m in Sources */,
 				248226151CC76A8100D7A8C4 /* MySlidersView.m in Sources */,
+				242A96811DEEB6B3009565F9 /* PhotoBrowserCell.m in Sources */,
 				24E963931D91257A0059D484 /* NSObject+TWObject.m in Sources */,
 				240B93681DE52CCD0021457F /* TWSCanViewController.m in Sources */,
+				242A966A1DEEA5D2009565F9 /* TWUserModel.m in Sources */,
 				248225EF1CC76A8100D7A8C4 /* NSString+AES.m in Sources */,
 				24E9637C1D9116420059D484 /* TWAlphaViewController.m in Sources */,
 				241F9E201CFC2E7200D26998 /* TWImageView.m in Sources */,
@@ -2209,6 +2296,7 @@
 				24DA5D721D178B2A00F4BD36 /* TWPickerViewController.m in Sources */,
 				240F1BE71CB4B6E1000AC902 /* DevelopViewController.m in Sources */,
 				243BC60A1CFE6F5A0065D6A0 /* TWFoldingViewController.m in Sources */,
+				242A967C1DEEB6B3009565F9 /* CLPhoto.m in Sources */,
 				247C03401D913204002D7A53 /* TWSnakeViewController.m in Sources */,
 				248225F71CC76A8100D7A8C4 /* Grade.m in Sources */,
 				24DE82A81D0D3D6100191C35 /* TWSignatureViewController.m in Sources */,
@@ -2232,6 +2320,7 @@
 				248225F91CC76A8100D7A8C4 /* Model.xcdatamodeld in Sources */,
 				248225F31CC76A8100D7A8C4 /* CoredataViewController.m in Sources */,
 				24D029441D1BC097002CAF14 /* TWKVOViewController.m in Sources */,
+				242A967E1DEEB6B3009565F9 /* CLPhotoProgressView.m in Sources */,
 				248226271CC76BFA00D7A8C4 /* URLConnectionViewController.m in Sources */,
 				2482261D1CC76A8100D7A8C4 /* SwitchViewController.m in Sources */,
 				24C339E51DE6D85400A62685 /* TWBlockLoginViewController.m in Sources */,
@@ -2257,6 +2346,7 @@
 				248226071CC76A8100D7A8C4 /* ProdCollectionViewController.m in Sources */,
 				24C339CA1DE6D6D600A62685 /* UIViewController+swizzling.m in Sources */,
 				24E9637E1D9116420059D484 /* TWBaseViewController.m in Sources */,
+				242A96801DEEB6B3009565F9 /* KNActionSheet.m in Sources */,
 				24C339E71DE6D85400A62685 /* TWBlockRegisterViewController.m in Sources */,
 				248226111CC76A8100D7A8C4 /* ProgressViewController.m in Sources */,
 				242B4C0C1D017BB800AD24A7 /* TWNotificationViewController.m in Sources */,
@@ -2270,6 +2360,7 @@
 				248226211CC76A8100D7A8C4 /* TextFileViewController.m in Sources */,
 				242B4BF31D0124D600AD24A7 /* TWImageZoomViewController.m in Sources */,
 				24DA5D811D17E51C00F4BD36 /* TWDatePickerViewController.m in Sources */,
+				242A967D1DEEB6B3009565F9 /* CLPhotoBrowser.m in Sources */,
 				244A97BD1DEC07D100CA484C /* TWJSPathViewController.m in Sources */,
 				24EB62DA1CED8F0700BE6772 /* TWPDFReaderViewController.m in Sources */,
 				248225F11CC76A8100D7A8C4 /* TestAESViewController.m in Sources */,
@@ -2403,7 +2494,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSLearning/PrefixHeader.pch";
 				INFOPLIST_FILE = iOSLearning/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.iOSLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2421,7 +2512,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSLearning/PrefixHeader.pch";
 				INFOPLIST_FILE = iOSLearning/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.iOSLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";

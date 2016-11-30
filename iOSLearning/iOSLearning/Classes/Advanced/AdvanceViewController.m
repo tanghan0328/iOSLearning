@@ -22,6 +22,7 @@
 #import "TWPWDViewController.h"
 #import "TWFingerprintViewController.h"
 #import "TWSCanViewController.h"
+#import "TWImageSenderViewController.h"
 
 
 @interface AdvanceViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -108,17 +109,17 @@
     UIViewController *selectedView = nil;
     NSString *title  = self.stringArray[indexPath.row];
     switch (indexPath.row) {
-        case 0: selectedView = [[TWPDFReaderViewController alloc] initWithTitle:title];
+        case 0:selectedView = [[TWPDFReaderViewController alloc] initWithTitle:title];
             break;
-        case 1: selectedView = [[TWImageSenderViewController alloc] initWithTitle:title];
+        case 1:selectedView = [[TWImageSenderViewController alloc] init];
             break;
-        case 2: selectedView = [[TWMoreImagesViewController alloc] initWithTitle:title];
+        case 2:selectedView = [[TWMoreImagesViewController alloc] initWithTitle:title];
             break;
-        case 3: selectedView = [[TWAFNetWorkingController alloc] init];
+        case 3:selectedView = [[TWAFNetWorkingController alloc] init];
             break;
-        case 4: selectedView = [[TWImageRuntimeController alloc]initWithTitle:title];
+        case 4:selectedView = [[TWImageRuntimeController alloc]initWithTitle:title];
             break;
-        case 5: selectedView = [[TWSnakeViewController alloc]initWithTitle:title];
+        case 5:selectedView = [[TWSnakeViewController alloc]initWithTitle:title];
             break;
         case 6:selectedView = [[TWBlockTestController alloc] initWithTitle:title];
             break;
@@ -140,6 +141,10 @@
             break;
     }
     if(selectedView){
+        
+//        if([selectedView isKindOfClass:[TWImageSenderViewController class]]){
+//            self.navigationController
+//        }
 
         [self.navigationController pushViewController:selectedView animated:YES];
         //self.hidesBottomBarWhenPushed=YES;//要显示的viewController设置
