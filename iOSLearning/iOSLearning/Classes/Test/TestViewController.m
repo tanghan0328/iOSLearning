@@ -12,7 +12,7 @@
 #import "TWCalendarViewController.h"
 #import "TWRandomCodeViewController.h"
 #import "TWCLPhotoBrowserViewController.h"
-
+#import "TWLoadingViewController.h"
 
 @interface TestViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -52,7 +52,7 @@
                         @"测试日历插入提醒",
                         @"测试CLPhotoBrowser",
                         @"随机验证的字符码",
-                        @"随机验证的字符码",
+                        @"LoadingCircle",
                         @"Block深究",
                         @"三个小圆球",
                         @"毛玻璃效果",
@@ -117,6 +117,8 @@
         case 3:selectedView = [[TWCLPhotoBrowserViewController alloc]initWithTitle:title];
             break;
         case 4:selectedView = [[TWRandomCodeViewController alloc]initWithTitle:title];
+            break;
+        case 5:selectedView = [[TWLoadingViewController alloc]initWithTitle:title];
             break;
     }
     if(selectedView){
