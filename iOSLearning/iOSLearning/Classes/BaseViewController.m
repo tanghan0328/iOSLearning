@@ -84,6 +84,12 @@
     }
 }
 
+//- (void)saveUUID
+//{
+//    NSString *str = [SFHFkeychainUtils getPasswordForUsername:@"UUID" andServiceName:@"ceshi" error:nil];
+//}
+
+
 
 
 

@@ -10,6 +10,7 @@
 #import "TWSunnyViewController.h"
 #import "TWJSPathViewController.h"
 #import "TWCalendarViewController.h"
+#import "TWRandomCodeViewController.h"
 #import "TWCLPhotoBrowserViewController.h"
 
 
@@ -24,6 +25,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [UIApplication sharedApplication].applicationIconBadgeNumber=8;
+    
     self.title = @"测试新的东西";
     //设置status的颜色为白色
 //    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
@@ -48,8 +51,8 @@
                         @"JSPath测试",
                         @"测试日历插入提醒",
                         @"测试CLPhotoBrowser",
-                        @"测试runtime",
-                        @"Snake测试问题",
+                        @"随机验证的字符码",
+                        @"随机验证的字符码",
                         @"Block深究",
                         @"三个小圆球",
                         @"毛玻璃效果",
@@ -112,6 +115,8 @@
         case 2:selectedView = [[TWCalendarViewController alloc]initWithTitle:title];
             break;
         case 3:selectedView = [[TWCLPhotoBrowserViewController alloc]initWithTitle:title];
+            break;
+        case 4:selectedView = [[TWRandomCodeViewController alloc]initWithTitle:title];
             break;
     }
     if(selectedView){

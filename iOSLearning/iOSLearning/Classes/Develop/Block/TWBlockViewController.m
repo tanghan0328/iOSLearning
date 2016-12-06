@@ -10,6 +10,9 @@
 #import "TWBlockRegisterViewController.h"
 #import "TWBlockLoginViewController.h"
 
+
+void(^block)(int a, int b);
+
 @interface TWBlockViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *username;
@@ -54,6 +57,15 @@
     controller.passwordText = self.password.text;
     
     [self.navigationController pushViewController:controller animated:YES];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    block = ^(int a, int b){
+        a = a+b;
+        NSLog(@"++++++%d", a);
+    };
+    block(3, 4);
 }
 
 @end

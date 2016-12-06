@@ -20,6 +20,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    [UIApplication sharedApplication].applicationIconBadgeNumber=9;
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     //TableListViewController *rootController = [[TableListViewController alloc]init];
@@ -31,6 +34,8 @@
     self.window.backgroundColor = [UIColor whiteColor];
     NSLog(@"app started.");
     NSLog(@"%@",NSStringFromCGSize([UIScreen mainScreen].bounds.size));
+    
+    
     
     //测试JSPath
     [JPEngine startEngine];
@@ -61,6 +66,23 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options
+{
+    NSLog(@"url:%@",url.absoluteString);
+    NSLog(@"host:%@",url.host);
+    if ([url.host isEqualToString:@"more"]) {
+        NSLog(@"进入更多界面");
+        //到此做界面的跳转
+    }
+    
+    if ([url.host isEqualToString:@"set"]) {
+        NSLog(@"进入设置界面");
+        //到此做界面的跳转
+    }
+    
+    return YES;
 }
 
 @end

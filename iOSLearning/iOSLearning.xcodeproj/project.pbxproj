@@ -331,6 +331,7 @@
 		24D0294A1D1BC0FF002CAF14 /* TWStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D029491D1BC0FF002CAF14 /* TWStudent.m */; };
 		24D206CA1CDB3F860008790F /* TWPlistRWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D206C91CDB3F860008790F /* TWPlistRWViewController.m */; };
 		24D206CD1CDB42AE0008790F /* shops.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24D206CC1CDB42AE0008790F /* shops.plist */; };
+		24D24D4E1DF55D880099B994 /* TWCLTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D24D4D1DF55D880099B994 /* TWCLTestViewController.m */; };
 		24DA5D721D178B2A00F4BD36 /* TWPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DA5D701D178B2A00F4BD36 /* TWPickerViewController.m */; };
 		24DA5D741D178B2A00F4BD36 /* TWPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24DA5D711D178B2A00F4BD36 /* TWPickerViewController.xib */; };
 		24DA5D771D178E0500F4BD36 /* provinces.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24DA5D761D178E0500F4BD36 /* provinces.plist */; };
@@ -355,6 +356,8 @@
 		24ED56D51C96B908005405B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24ED56D41C96B908005405B4 /* Images.xcassets */; };
 		24F1CFBD1DDED67800FA903A /* TWCollectionLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F1CFBC1DDED67800FA903A /* TWCollectionLayoutViewController.m */; };
 		24F1CFC01DDED6AE00FA903A /* TWCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F1CFBF1DDED6AE00FA903A /* TWCollectionLayout.m */; };
+		24FE0A471DF6A23400F34DE7 /* TWRandomCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FE0A461DF6A23400F34DE7 /* TWRandomCodeViewController.m */; };
+		24FE0A4A1DF6A24B00F34DE7 /* TWRandomCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FE0A491DF6A24B00F34DE7 /* TWRandomCodeView.m */; };
 		4A3C9A5F53053E3625BE18FF /* libPods-iOSLearning.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA76C89798D463479A1BA09F /* libPods-iOSLearning.a */; };
 /* End PBXBuildFile section */
 
@@ -783,6 +786,8 @@
 		24D206C81CDB3F860008790F /* TWPlistRWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWPlistRWViewController.h; sourceTree = "<group>"; };
 		24D206C91CDB3F860008790F /* TWPlistRWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWPlistRWViewController.m; sourceTree = "<group>"; };
 		24D206CC1CDB42AE0008790F /* shops.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = shops.plist; sourceTree = "<group>"; };
+		24D24D4C1DF55D880099B994 /* TWCLTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWCLTestViewController.h; sourceTree = "<group>"; };
+		24D24D4D1DF55D880099B994 /* TWCLTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWCLTestViewController.m; sourceTree = "<group>"; };
 		24DA5D6F1D178B2A00F4BD36 /* TWPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWPickerViewController.h; sourceTree = "<group>"; };
 		24DA5D701D178B2A00F4BD36 /* TWPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWPickerViewController.m; sourceTree = "<group>"; };
 		24DA5D711D178B2A00F4BD36 /* TWPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWPickerViewController.xib; sourceTree = "<group>"; };
@@ -828,6 +833,10 @@
 		24F1CFBC1DDED67800FA903A /* TWCollectionLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWCollectionLayoutViewController.m; sourceTree = "<group>"; };
 		24F1CFBE1DDED6AE00FA903A /* TWCollectionLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWCollectionLayout.h; sourceTree = "<group>"; };
 		24F1CFBF1DDED6AE00FA903A /* TWCollectionLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWCollectionLayout.m; sourceTree = "<group>"; };
+		24FE0A451DF6A23400F34DE7 /* TWRandomCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRandomCodeViewController.h; sourceTree = "<group>"; };
+		24FE0A461DF6A23400F34DE7 /* TWRandomCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRandomCodeViewController.m; sourceTree = "<group>"; };
+		24FE0A481DF6A24B00F34DE7 /* TWRandomCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRandomCodeView.h; sourceTree = "<group>"; };
+		24FE0A491DF6A24B00F34DE7 /* TWRandomCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRandomCodeView.m; sourceTree = "<group>"; };
 		48E28CE1CB15FEB9B19B15F4 /* Pods-iOSLearning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearning.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearning/Pods-iOSLearning.release.xcconfig"; sourceTree = "<group>"; };
 		AA76C89798D463479A1BA09F /* libPods-iOSLearning.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSLearning.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E99DB7FA3EB0CFBC6628B7BE /* Pods-iOSLearning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearning.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearning/Pods-iOSLearning.debug.xcconfig"; sourceTree = "<group>"; };
@@ -933,6 +942,7 @@
 		240F1BD51CB4AC1C000AC902 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				24FE0A441DF6A21300F34DE7 /* RandomCode */,
 				242A966B1DEEB61E009565F9 /* CLPhotoBrowser */,
 				245346001DEC1A9E0050364E /* Calendar */,
 				244A97BA1DEC07C100CA484C /* JSPath */,
@@ -1472,6 +1482,8 @@
 				24C339C61DE6BB1E00A62685 /* TWFather.m */,
 				242A96681DEEA5D2009565F9 /* TWUserModel.h */,
 				242A96691DEEA5D2009565F9 /* TWUserModel.m */,
+				24D24D4C1DF55D880099B994 /* TWCLTestViewController.h */,
+				24D24D4D1DF55D880099B994 /* TWCLTestViewController.m */,
 			);
 			path = TestSunny;
 			sourceTree = "<group>";
@@ -1883,6 +1895,17 @@
 				24F1CFBF1DDED6AE00FA903A /* TWCollectionLayout.m */,
 			);
 			path = UICollectionLayout;
+			sourceTree = "<group>";
+		};
+		24FE0A441DF6A21300F34DE7 /* RandomCode */ = {
+			isa = PBXGroup;
+			children = (
+				24FE0A451DF6A23400F34DE7 /* TWRandomCodeViewController.h */,
+				24FE0A461DF6A23400F34DE7 /* TWRandomCodeViewController.m */,
+				24FE0A481DF6A24B00F34DE7 /* TWRandomCodeView.h */,
+				24FE0A491DF6A24B00F34DE7 /* TWRandomCodeView.m */,
+			);
+			path = RandomCode;
 			sourceTree = "<group>";
 		};
 		DCBFF738E0684ED25E4BA796 /* Pods */ = {
@@ -2297,6 +2320,7 @@
 				24C339E31DE6D85400A62685 /* TWRegisteViewController.m in Sources */,
 				242665831DE2FBDD00BEB3CE /* TWLineLayout.m in Sources */,
 				24E963861D91207C0059D484 /* UIImage+TWImage.m in Sources */,
+				24FE0A471DF6A23400F34DE7 /* TWRandomCodeViewController.m in Sources */,
 				247C033C1D9131C5002D7A53 /* TWSnake.m in Sources */,
 				2425F6C71DBE048C006FEAFC /* TWTransitionsViewController.m in Sources */,
 				24ED56B21C969AD1005405B4 /* main.m in Sources */,
@@ -2304,6 +2328,7 @@
 				248225F31CC76A8100D7A8C4 /* CoredataViewController.m in Sources */,
 				24D029441D1BC097002CAF14 /* TWKVOViewController.m in Sources */,
 				242A967E1DEEB6B3009565F9 /* CLPhotoProgressView.m in Sources */,
+				24D24D4E1DF55D880099B994 /* TWCLTestViewController.m in Sources */,
 				248226271CC76BFA00D7A8C4 /* URLConnectionViewController.m in Sources */,
 				2482261D1CC76A8100D7A8C4 /* SwitchViewController.m in Sources */,
 				24C339E51DE6D85400A62685 /* TWBlockLoginViewController.m in Sources */,
@@ -2314,6 +2339,7 @@
 				24C339E11DE6D85400A62685 /* TWLoginViewController.m in Sources */,
 				248226191CC76A8100D7A8C4 /* SliderViewController.m in Sources */,
 				243E5A161D6C369100E4193A /* TWMoreImagesViewController.m in Sources */,
+				24FE0A4A1DF6A24B00F34DE7 /* TWRandomCodeView.m in Sources */,
 				24927B961D92D00F00C72359 /* TWBlockTestController.m in Sources */,
 				241A4AFB1CE05ABE00D55665 /* TWUser.m in Sources */,
 				2425F6BF1DBDF149006FEAFC /* TWForestGlassViewController.m in Sources */,
