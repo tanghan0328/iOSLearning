@@ -356,6 +356,8 @@
 		24ED56D51C96B908005405B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24ED56D41C96B908005405B4 /* Images.xcassets */; };
 		24F1CFBD1DDED67800FA903A /* TWCollectionLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F1CFBC1DDED67800FA903A /* TWCollectionLayoutViewController.m */; };
 		24F1CFC01DDED6AE00FA903A /* TWCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F1CFBF1DDED6AE00FA903A /* TWCollectionLayout.m */; };
+		24F3D7AD1DF806820064B807 /* TWButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F3D7AC1DF806820064B807 /* TWButton.m */; };
+		24F3D7B01DF806A40064B807 /* TWCountdownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F3D7AF1DF806A40064B807 /* TWCountdownViewController.m */; };
 		24FE0A471DF6A23400F34DE7 /* TWRandomCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FE0A461DF6A23400F34DE7 /* TWRandomCodeViewController.m */; };
 		24FE0A4A1DF6A24B00F34DE7 /* TWRandomCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FE0A491DF6A24B00F34DE7 /* TWRandomCodeView.m */; };
 		24FE0A4E1DF6AF4300F34DE7 /* TWLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FE0A4D1DF6AF4300F34DE7 /* TWLoadingViewController.m */; };
@@ -835,6 +837,10 @@
 		24F1CFBC1DDED67800FA903A /* TWCollectionLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWCollectionLayoutViewController.m; sourceTree = "<group>"; };
 		24F1CFBE1DDED6AE00FA903A /* TWCollectionLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWCollectionLayout.h; sourceTree = "<group>"; };
 		24F1CFBF1DDED6AE00FA903A /* TWCollectionLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWCollectionLayout.m; sourceTree = "<group>"; };
+		24F3D7AB1DF806820064B807 /* TWButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWButton.h; sourceTree = "<group>"; };
+		24F3D7AC1DF806820064B807 /* TWButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWButton.m; sourceTree = "<group>"; };
+		24F3D7AE1DF806A40064B807 /* TWCountdownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWCountdownViewController.h; sourceTree = "<group>"; };
+		24F3D7AF1DF806A40064B807 /* TWCountdownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWCountdownViewController.m; sourceTree = "<group>"; };
 		24FE0A451DF6A23400F34DE7 /* TWRandomCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRandomCodeViewController.h; sourceTree = "<group>"; };
 		24FE0A461DF6A23400F34DE7 /* TWRandomCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRandomCodeViewController.m; sourceTree = "<group>"; };
 		24FE0A481DF6A24B00F34DE7 /* TWRandomCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRandomCodeView.h; sourceTree = "<group>"; };
@@ -948,6 +954,7 @@
 		240F1BD51CB4AC1C000AC902 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				24F3D7AA1DF806530064B807 /* Countdown */,
 				24FE0A4B1DF6AF1D00F34DE7 /* LoadingCircle */,
 				24FE0A441DF6A21300F34DE7 /* RandomCode */,
 				242A966B1DEEB61E009565F9 /* CLPhotoBrowser */,
@@ -1904,6 +1911,17 @@
 			path = UICollectionLayout;
 			sourceTree = "<group>";
 		};
+		24F3D7AA1DF806530064B807 /* Countdown */ = {
+			isa = PBXGroup;
+			children = (
+				24F3D7AB1DF806820064B807 /* TWButton.h */,
+				24F3D7AC1DF806820064B807 /* TWButton.m */,
+				24F3D7AE1DF806A40064B807 /* TWCountdownViewController.h */,
+				24F3D7AF1DF806A40064B807 /* TWCountdownViewController.m */,
+			);
+			path = Countdown;
+			sourceTree = "<group>";
+		};
 		24FE0A441DF6A21300F34DE7 /* RandomCode */ = {
 			isa = PBXGroup;
 			children = (
@@ -2375,6 +2393,7 @@
 				24C339CA1DE6D6D600A62685 /* UIViewController+swizzling.m in Sources */,
 				24E9637E1D9116420059D484 /* TWBaseViewController.m in Sources */,
 				24C339E71DE6D85400A62685 /* TWBlockRegisterViewController.m in Sources */,
+				24F3D7B01DF806A40064B807 /* TWCountdownViewController.m in Sources */,
 				248226111CC76A8100D7A8C4 /* ProgressViewController.m in Sources */,
 				242B4C0C1D017BB800AD24A7 /* TWNotificationViewController.m in Sources */,
 				2498F6171CC9CF5200368401 /* TWWKWebViewController.m in Sources */,
@@ -2399,6 +2418,7 @@
 				24D206CA1CDB3F860008790F /* TWPlistRWViewController.m in Sources */,
 				24C339C41DE6BB0100A62685 /* TWSon.m in Sources */,
 				24E963821D9116DC0059D484 /* TWNavigationBarHiddenController.m in Sources */,
+				24F3D7AD1DF806820064B807 /* TWButton.m in Sources */,
 				248226091CC76A8100D7A8C4 /* RepeatCellViewController.m in Sources */,
 				249FF63E1DE486AB00B4F755 /* TWPWDViewController.m in Sources */,
 				2482260D1CC76A8100D7A8C4 /* ActivityIndicatorViewController.m in Sources */,

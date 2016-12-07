@@ -13,6 +13,7 @@
 #import "TWRandomCodeViewController.h"
 #import "TWCLPhotoBrowserViewController.h"
 #import "TWLoadingViewController.h"
+#import "TWCountdownViewController.h"
 
 @interface TestViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -53,7 +54,7 @@
                         @"测试CLPhotoBrowser",
                         @"随机验证的字符码",
                         @"LoadingCircle",
-                        @"Block深究",
+                        @"倒计时的button封装",
                         @"三个小圆球",
                         @"毛玻璃效果",
                         @"转场",
@@ -119,6 +120,8 @@
         case 4:selectedView = [[TWRandomCodeViewController alloc]initWithTitle:title];
             break;
         case 5:selectedView = [[TWLoadingViewController alloc]initWithTitle:title];
+            break;
+        case 6:selectedView = [[TWCountdownViewController alloc]initWithTitle:title];
             break;
     }
     if(selectedView){
