@@ -12,4 +12,6 @@
 
 @property(nonatomic, strong) NSString *TWname;
 
+//+(UIImage *)compressImageWith:(UIImage *)image;
+
 @end

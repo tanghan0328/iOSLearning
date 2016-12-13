@@ -39,7 +39,13 @@
 - (void)BtnClick:(id)sender
 {
     NSLog(@"我曹测试");
+    
+    //注册一个runloop一直在运行
+    NSRunLoop *loop = [NSRunLoop currentRunLoop];
+    [loop addPort:[NSMachPort port] forMode:NSDefaultRunLoopMode];
+    [loop run];
 }
+
 
 
 @end

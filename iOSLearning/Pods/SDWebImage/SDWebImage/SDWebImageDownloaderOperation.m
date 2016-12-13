@@ -415,7 +415,9 @@ didReceiveResponse:(NSURLResponse *)response
                 UIImage *image = [UIImage sd_imageWithData:self.imageData];
                 NSString *key = [[SDWebImageManager sharedManager] cacheKeyForURL:self.request.URL];
                 image = [self scaledImageForKey:key image:image];
-                
+                //将等比压缩过的image在赋在转成data赋给self.imageData
+                NSData *data = UIImageJPEGRepresentation(image, 1);
+                self.imageData = [NSMutableData dataWithData:data];
                 // Do not force decoding animated GIFs
                 if (!image.images) {
                     if (self.shouldDecompressImages) {

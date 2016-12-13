@@ -136,7 +136,7 @@
         return self.provinces.count;
     }else{
         TWProvince *p  = self.provinces[_provinceIndex];
-        NSLog(@"count==%d",p.cities.count);
+        NSLog(@"count=测试的信息与方法=%d",p.cities.count);
         return p.cities.count;
     }
 }

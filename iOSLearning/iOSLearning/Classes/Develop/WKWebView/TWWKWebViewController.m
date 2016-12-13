@@ -9,7 +9,6 @@
 /// 控件高度
 #define kSearchBarH  44
 #define kBottomViewH 44
-
 /// 屏幕大小尺寸
 #define kScreenWidth  [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
@@ -19,35 +18,40 @@
 #import "ViewController.h"
 #import <WebKit/WebKit.h>
 
-
 @interface TWWKWebViewController () <UISearchBarDelegate, WKNavigationDelegate,WKScriptMessageHandler>
 
 @property (nonatomic, strong) UISearchBar *searchBar;
 /// 网页控制导航栏
-@property (weak, nonatomic) UIView *bottomView;
-
+@property (nonatomic, weak) UIView *bottomView;
 @property (nonatomic, strong) WKWebView *wkWebView;
-
-@property (weak, nonatomic) UIButton *backBtn;
-@property (weak, nonatomic) UIButton *forwardBtn;
-@property (weak, nonatomic) UIButton *reloadBtn;
-@property (weak, nonatomic) UIButton *browserBtn;
-
-@property (weak, nonatomic) NSString *baseURLString;
+@property (nonatomic, weak) UIButton *backBtn;
+@property (nonatomic, weak) UIButton *forwardBtn;
+@property (nonatomic, weak) UIButton *reloadBtn;
+@property (nonatomic, weak) UIButton *browserBtn;
+@property (nonatomic, weak) NSString *baseURLString;
+//进度条
+@property (nonatomic, strong) UIProgressView *progressView;
+//加载的进度值
+@property (nonatomic, assign) NSUInteger loadCount;
 
 @end
 
 @implementation TWWKWebViewController
 
+- (void)dealloc {
+    [_wkWebView removeObserver:self forKeyPath:@"estimatedProgress"];
+    // if you have set either WKWebView delegate also set these to nil here
+    [_wkWebView setNavigationDelegate:nil];
+    [_wkWebView setUIDelegate:nil];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     //    [self simpleExampleTest];
-    
     [self addSubViews];
     [self refreshBottomButtonState];
-    
+    [_wkWebView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:nil];
     [self.wkWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.cnblogs.com/mddblog/"]]];
-    
 }
 - (void)simpleExampleTest {
     // 1.创建webview，并设置大小，"20"为状态栏高度
@@ -71,12 +75,13 @@
     // 最后将webView添加到界面
     [self.view addSubview:webView];
 }
-- (void)addSubViews {
+- (void)addSubViews
+{
     [self addBottomViewButtons];
-    
     [self.view addSubview:self.searchBar];
-    
     [self.view addSubview:self.wkWebView];
+    _progressView = [[UIProgressView alloc]initWithFrame:CGRectMake(0, 65, CGRectGetWidth(self.view.frame),2)];
+    [self.view addSubview:_progressView];
 }
 
 - (void)addBottomViewButtons {
@@ -225,11 +230,13 @@
 /// 2 页面开始加载
 - (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation
 {
-     NSLog(@"didStartProvisionalNavigation=====>");
+    self.loadCount ++;
+    NSLog(@"didStartProvisionalNavigation=====>");
 }
 /// 4 开始获取到网页内容时返回
 - (void)webView:(WKWebView *)webView didCommitNavigation:(WKNavigation *)navigation
 {
+    self.loadCount --;
     NSLog(@"didCommitNavigation=====>");
 }
 /// 5 页面加载完成之后调用
@@ -240,6 +247,7 @@
 /// 页面加载失败时调用
 - (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(WKNavigation *)navigation
 {
+    self.loadCount --;
     NSLog(@"didFailProvisionalNavigation=====>");
 }
 
@@ -317,6 +325,49 @@
             NSString *urlString = [message.body stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
             NSLog(@"===urlString====>%@",urlString);
         }
+    }
+}
+
+//计算进度条
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
+    
+    if ([keyPath isEqualToString:@"loading"]) {
+        
+    } else if ([keyPath isEqualToString:@"title"]) {
+        self.title = self.wkWebView.title;
+    } else if ([keyPath isEqualToString:@"URL"]) {
+        
+    } else if ([keyPath isEqualToString:@"estimatedProgress"]) {
+        
+        self.progressView.progress = self.wkWebView.estimatedProgress;
+    }
+    
+    if (object == self.wkWebView && [keyPath isEqualToString:@"estimatedProgress"]) {
+        CGFloat newprogress = [[change objectForKey:NSKeyValueChangeNewKey] doubleValue];
+        if (newprogress == 1) {
+            self.progressView.hidden = YES;
+            [self.progressView setProgress:0 animated:NO];
+        }else {
+            self.progressView.hidden = NO;
+            [self.progressView setProgress:newprogress animated:YES];
+        }
+    }
+}
+
+- (void)setLoadCount:(NSUInteger)loadCount {
+    _loadCount = loadCount;
+    if (loadCount == 0) {
+        self.progressView.hidden = YES;
+        [self.progressView setProgress:0 animated:NO];
+    }else {
+        self.progressView.hidden = NO;
+        CGFloat oldP = self.progressView.progress;
+        CGFloat newP = (1.0 - oldP) / (loadCount + 1) + oldP;
+        if (newP > 0.95) {
+            newP = 0.95;
+        }
+        [self.progressView setProgress:newP animated:YES];
+        
     }
 }
 
