@@ -114,7 +114,7 @@
     return orientation;
 }
 
-+(UIImage *)compressImageWith:(UIImage *)image
++ (UIImage *)compressImageWith:(UIImage *)image
 {
     float imageWidth = image.size.width;
     float imageHeight = image.size.height;

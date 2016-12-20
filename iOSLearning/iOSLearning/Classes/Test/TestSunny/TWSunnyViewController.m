@@ -30,6 +30,9 @@ typedef NSString*(^WXYTestBlock)(NSString *name,int age);
     
     TWLog(@"独立block--->%@", myBlock(@"小宇", 16));
     
+    [self eatA];
+    [self eatB];
+    [self eatC];
     
     TWSon *son = [[TWSon alloc]init];
     
@@ -184,5 +187,44 @@ typedef NSString*(^WXYTestBlock)(NSString *name,int age);
     }
     return nil;
 }
-
+//int类型的不会变化  因为是常量
+- (void)eatA
+{
+    int a = 3;
+    void (^myBlock)(int b)  = ^(int b){
+        b= 6;
+        NSLog(@"测试商品===》%d",a);
+    };
+    
+    myBlock(a);
+    
+}
+//NSString类型的不会变化
+- (void)eatB
+{
+    NSString *a = @"哈哈哈abc";
+    NSLog(@"测试字符串的长度===>%d",a.length);
+    void (^myBlock)(NSString  *b)  = ^(NSString *b){
+        b= @"abc";
+        NSLog(@"测试商品===》%@",b);
+        NSLog(@"测试字符串的长度11111===>%d",b.length);
+    };
+    
+    myBlock(a);
+    NSLog(@"测试商品1111===》%@",a);
+}
+//数组类型的会变化  why 找找原因吧
+- (void)eatC
+{
+    NSMutableArray *a = [NSMutableArray arrayWithObject:@"1111"];
+    NSMutableArray *(^myBlock)(NSMutableArray  *b)  = ^(NSMutableArray *b){
+        NSString *c= @"abc";
+        [b addObject:c];
+        NSLog(@"测试商品===》%@",b);
+        return b;
+    };
+    
+    myBlock(a);
+    NSLog(@"测试商品1111===》%@",a);
+}
 @end
