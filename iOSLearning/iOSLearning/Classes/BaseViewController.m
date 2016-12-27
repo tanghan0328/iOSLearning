@@ -36,6 +36,7 @@
 - (void)viewDidLoad {
     NSLog(@"是不是所有的人都在这里");
     [super viewDidLoad];
+    self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
     [self testCLanguage];
 }
 

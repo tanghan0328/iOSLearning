@@ -15,6 +15,8 @@
 typedef NSString*(^WXYTestBlock)(NSString *name,int age);
 
 @property (nonatomic, strong) UILabel *label;
+@property (nonatomic,strong) dispatch_group_t disGroup;
+
 
 @end
 
@@ -33,7 +35,9 @@ typedef NSString*(^WXYTestBlock)(NSString *name,int age);
     [self eatA];
     [self eatB];
     [self eatC];
-    
+    [self eatD];
+    _disGroup = dispatch_group_create();
+    [self requestDatas];
     TWSon *son = [[TWSon alloc]init];
     
 //    [self getWithsharedSessionGet];
@@ -226,5 +230,61 @@ typedef NSString*(^WXYTestBlock)(NSString *name,int age);
     
     myBlock(a);
     NSLog(@"测试商品1111===》%@",a);
+}
+
+- (void)eatD
+{
+    NSString *aa = @"a.b";
+    NSLog(@"sssss===>%@",aa);
+    NSString *ss = @"a b";
+    NSLog(@"sssss111===>%@",ss);
+    NSString *kk = @"a@b";
+    NSLog(@"sssss222===>%@",kk);
+    NSString *mm = @"1a@b";
+    NSLog(@"sssss333===>%@",mm);
+}
+
+- (void)requestDatas {
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_group_enter(self.disGroup);
+    dispatch_group_enter(self.disGroup);
+    dispatch_group_enter(self.disGroup);
+    
+    dispatch_group_async(self.disGroup, queue, ^{
+        [self requestHomeWorks];
+    });
+    
+    dispatch_group_async(self.disGroup, queue, ^{
+        [self requestHomeBanner];
+    });
+    
+    dispatch_group_async(self.disGroup, queue, ^{
+        [self requestHomeAdvInfos];
+    });
+    
+    dispatch_group_notify(self.disGroup, dispatch_get_main_queue(), ^{
+        NSLog(@"4");
+    });
+}
+
+- (void)requestHomeWorks {
+   [UIView animateWithDuration:0.1F animations:^{
+       NSLog(@"1");
+       dispatch_group_leave(self.disGroup);
+   }];
+}
+
+- (void) requestHomeBanner {
+    [UIView animateWithDuration:0.1F animations:^{
+        NSLog(@"2");
+        dispatch_group_leave(self.disGroup);
+    }];
+}
+
+- (void) requestHomeAdvInfos {
+    [UIView animateWithDuration:0.1F animations:^{
+        NSLog(@"3");
+        dispatch_group_leave(self.disGroup);
+    }];
 }
 @end

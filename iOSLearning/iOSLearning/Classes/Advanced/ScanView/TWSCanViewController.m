@@ -55,7 +55,11 @@
     AVCaptureMetadataOutput *output = [[AVCaptureMetadataOutput alloc] init];
     [output setMetadataObjectsDelegate:self queue:dispatch_get_main_queue()];
     [_session addOutput:output];
-    [output setMetadataObjectTypes:@[AVMetadataObjectTypeQRCode]];
+//    [output setMetadataObjectTypes:@[AVMetadataObjectTypeQRCode]];
+    [output setMetadataObjectTypes:@[AVMetadataObjectTypeEAN13Code,
+                                     AVMetadataObjectTypeEAN8Code,
+                                     AVMetadataObjectTypeCode128Code,
+                                     AVMetadataObjectTypeQRCode]];
     
     // 4.添加一个显示的layer
     AVCaptureVideoPreviewLayer *layer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:_session];

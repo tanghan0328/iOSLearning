@@ -39,6 +39,7 @@
 @implementation TWWKWebViewController
 
 - (void)dealloc {
+    //移除监听事件
     [_wkWebView removeObserver:self forKeyPath:@"estimatedProgress"];
     // if you have set either WKWebView delegate also set these to nil here
     [_wkWebView setNavigationDelegate:nil];
@@ -50,6 +51,7 @@
     //    [self simpleExampleTest];
     [self addSubViews];
     [self refreshBottomButtonState];
+    //添加监听事件
     [_wkWebView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:nil];
     [self.wkWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.cnblogs.com/mddblog/"]]];
 }
