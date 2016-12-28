@@ -22,12 +22,33 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"二维码扫描";
+    self.navigationItem.title=@"我的关注";
+    
+//    //选择自己喜欢的颜色
+//    UIColor * color = [UIColor whiteColor];
+//    //这里我们设置的是颜色，还可以设置shadow等，具体可以参见api
+//    NSDictionary * dict = [NSDictionary dictionaryWithObject:color forKey:NSForegroundColorAttributeName];
+//    //大功告成
+//    self.navigationController.navigationBar.titleTextAttributes = dict;
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    
+    //设置成透明色的navigation
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
+                                                  forBarMetrics:UIBarMetricsDefault];
+    //给navigationBar设置一个空的背景图片即可实现透明，而且标题按钮都在
+    
+    self.navigationController.navigationBar.shadowImage = [UIImage new];
+    
+    UIColor * color = [UIColor whiteColor];
+    //这里我们设置的是颜色，还可以设置shadow等，具体可以参见api
+    NSDictionary * dict = [NSDictionary dictionaryWithObject:color forKey:NSForegroundColorAttributeName];
+    //大功告成
+    self.navigationController.navigationBar.titleTextAttributes = dict;
+    
     [self startScan];
 //    NSTimer *splashTimer = nil;
 //    splashTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(anmimationView) userInfo:nil repeats:YES];
@@ -38,6 +59,19 @@
 {
     [super viewDidAppear:animated];
     [self anmimationView];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [self.navigationController.navigationBar setBackgroundImage:nil
+                                                  forBarMetrics:UIBarMetricsDefault];
+    self.navigationController.navigationBar.shadowImage = nil;
+    UIColor * color = [UIColor blackColor];
+    //这里我们设置的是颜色，还可以设置shadow等，具体可以参见api
+    NSDictionary * dict = [NSDictionary dictionaryWithObject:color forKey:NSForegroundColorAttributeName];
+    //大功告成
+    self.navigationController.navigationBar.titleTextAttributes = dict;
 }
 
 
@@ -87,11 +121,11 @@
     [UIView animateWithDuration:1.0f delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
 //        [UIView setAnimationRepeatCount:9999.5f];
         [UIView setAnimationRepeatCount:MAXFLOAT];
-        _bottomConstraint.constant = 300;
+        _bottomConstraint.constant = 0;
         [self.view layoutIfNeeded];
 
     } completion:^(BOOL finished) {
-        _bottomConstraint.constant = 0;
+        _bottomConstraint.constant = 200;
         [self.view layoutIfNeeded];
 
     }];
@@ -107,8 +141,24 @@
 //        [UIView setAnimationRepeatAutoreverses:YES];    // default = NO. used if repeat count is non-zero
 //
 //    }];
-
 }
+
+- (IBAction)turnLiagth:(id)sender
+{
+    AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    if ([device hasTorch]) {
+        if (device.torchMode == AVCaptureTorchModeOff) {
+            [device lockForConfiguration:nil];
+            [device setTorchMode: AVCaptureTorchModeOn];
+            [device unlockForConfiguration];
+        }else{
+            [device lockForConfiguration:nil];
+            [device setTorchMode: AVCaptureTorchModeOff];
+            [device unlockForConfiguration];
+        }
+    }   
+} 
+
 
 #pragma mark - 获取扫描结果
 - (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection

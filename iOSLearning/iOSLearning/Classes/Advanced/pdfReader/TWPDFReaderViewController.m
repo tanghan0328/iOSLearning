@@ -56,6 +56,12 @@
     }
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+}
+
 - (void)setupBackButtonForNavigationBar
 {
     UIButton *backButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 20, 44)];

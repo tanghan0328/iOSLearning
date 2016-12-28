@@ -32,6 +32,11 @@
     [self initPwdTextField];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+}
+
 - (void)initPwdTextField
 {
     //每个密码输入框的宽度

@@ -140,15 +140,20 @@
         case 14:selectedView = [[TWSCanViewController alloc]initWithTitle:title];
             break;
     }
-    if(selectedView){
-        
+//    if(selectedView){
+    
 //        if([selectedView isKindOfClass:[TWImageSenderViewController class]]){
 //            self.navigationController
 //        }
 
-        [self.navigationController pushViewController:selectedView animated:YES];
+        if(selectedView){
+            self.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:selectedView animated:YES];
+            self.hidesBottomBarWhenPushed = NO;
+        }
+
         //self.hidesBottomBarWhenPushed=YES;//要显示的viewController设置
-    }
+//    }
 }
 
 @end
