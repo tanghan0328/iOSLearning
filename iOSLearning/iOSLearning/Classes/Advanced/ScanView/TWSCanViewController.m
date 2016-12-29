@@ -88,6 +88,32 @@
     // 3.设置输入方式
     AVCaptureMetadataOutput *output = [[AVCaptureMetadataOutput alloc] init];
     [output setMetadataObjectsDelegate:self queue:dispatch_get_main_queue()];
+
+    
+    
+    
+    CGSize size = self.view.bounds.size;
+    CGRect cropRect = CGRectMake((SCREEN_HEIGHT-300)/2, (SCREEN_HEIGHT -300)/2, 300, 300);
+    CGFloat p1 = size.height/size.width;
+    CGFloat p2 = 1920./1080.;  //使用了1080p的图像输出
+    if (p1 < p2) {
+        CGFloat fixHeight = size.width * 1920. / 1080.;
+        CGFloat fixPadding = (fixHeight - size.height)/2;
+        output.rectOfInterest = CGRectMake((cropRect.origin.y + fixPadding)/fixHeight,
+                                                  cropRect.origin.x/size.width,
+                                                  cropRect.size.height/fixHeight,
+                                                  cropRect.size.width/size.width);
+    } else {
+        CGFloat fixWidth = size.height * 1080. / 1920.;
+        CGFloat fixPadding = (fixWidth - size.width)/2;
+        output.rectOfInterest = CGRectMake(cropRect.origin.y/size.height,
+                                                  (cropRect.origin.x + fixPadding)/fixWidth,
+                                                  cropRect.size.height/size.height,
+                                                  cropRect.size.width/fixWidth);
+    }
+    
+    
+    NSLog(@"测试的frame大小=》%@",NSStringFromCGRect(CGRectMake(_borderView.bounds.origin.x/SCREEN_HEIGHT, _borderView.bounds.origin.y/SCREEN_WIDTH, _borderView.bounds.size.width/SCREEN_HEIGHT, _borderView.bounds.size.height/SCREEN_WIDTH)));
     [_session addOutput:output];
 //    [output setMetadataObjectTypes:@[AVMetadataObjectTypeQRCode]];
     [output setMetadataObjectTypes:@[AVMetadataObjectTypeEAN13Code,
@@ -97,6 +123,7 @@
     
     // 4.添加一个显示的layer
     AVCaptureVideoPreviewLayer *layer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:_session];
+    layer.videoGravity=AVLayerVideoGravityResizeAspectFill;
     layer.frame = self.view.bounds;
     NSLog(@"测试的页面大小=====》%@",NSStringFromCGRect(self.view.bounds));
     [self.view.layer insertSublayer:layer atIndex:0];
@@ -173,9 +200,11 @@
         AVMetadataMachineReadableCodeObject *object = [metadataObjects lastObject];
         UIAlertController *alertView =[UIAlertController alertControllerWithTitle:nil message:object.stringValue preferredStyle:UIAlertControllerStyleAlert];
         
-        UIAlertAction *cancleAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+        UIAlertAction *cancleAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+            [_session startRunning];
+        }];
         UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"再次扫描" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-            [self startScan];
+            [_session startRunning];
         }];
         
         [alertView addAction:cancleAction];

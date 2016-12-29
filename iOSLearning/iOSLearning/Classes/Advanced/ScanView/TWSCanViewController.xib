@@ -47,12 +47,12 @@
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sY-pN-B95">
-                    <rect key="frame" x="184" y="483" width="46" height="30"/>
+                    <rect key="frame" x="184" y="498" width="46" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="T5N-9u-Qh1"/>
                         <constraint firstAttribute="width" constant="46" id="xB1-Gz-KiE"/>
                     </constraints>
-                    <state key="normal" backgroundImage="4">
+                    <state key="normal" backgroundImage="light">
                         <color key="titleColor" red="1" green="0.1226894751" blue="0.18009112369999999" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                     <connections>
@@ -60,7 +60,7 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="对准二维码/条形码到框内即可扫描" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xjH-7h-kQ4">
-                    <rect key="frame" x="105.33333333333334" y="229" width="203.66666666666666" height="21"/>
+                    <rect key="frame" x="105" y="229" width="204" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="Uzf-cB-3Qq"/>
                         <constraint firstAttribute="width" constant="204" id="yXE-Cj-UUf"/>
@@ -73,7 +73,7 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="IgS-lw-XBQ" firstAttribute="top" secondItem="xjH-7h-kQ4" secondAttribute="bottom" constant="18" id="7Ea-ej-rac"/>
-                <constraint firstItem="5sY-pN-B95" firstAttribute="top" secondItem="IgS-lw-XBQ" secondAttribute="bottom" constant="15" id="bJJ-dM-Ron"/>
+                <constraint firstItem="5sY-pN-B95" firstAttribute="top" secondItem="IgS-lw-XBQ" secondAttribute="bottom" constant="30" id="bJJ-dM-Ron"/>
                 <constraint firstItem="IgS-lw-XBQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cQS-jV-N1P"/>
                 <constraint firstItem="xjH-7h-kQ4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="chr-Mw-pT7"/>
                 <constraint firstItem="IgS-lw-XBQ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="eYw-Mw-bhP"/>
@@ -83,7 +83,7 @@
         </view>
     </objects>
     <resources>
-        <image name="4" width="413" height="306"/>
+        <image name="light" width="40" height="40"/>
         <image name="qrcode_border" width="51" height="50"/>
         <image name="qrcode_scanline_barcode" width="248" height="124"/>
     </resources>

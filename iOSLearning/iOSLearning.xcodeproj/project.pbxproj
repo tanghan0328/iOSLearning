@@ -349,6 +349,8 @@
 		24E9638F1D91229E0059D484 /* TWPersonA.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E9638E1D91229E0059D484 /* TWPersonA.m */; };
 		24E963931D91257A0059D484 /* NSObject+TWObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E963921D91257A0059D484 /* NSObject+TWObject.m */; };
 		24EB62DA1CED8F0700BE6772 /* TWPDFReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EB62D91CED8F0700BE6772 /* TWPDFReaderViewController.m */; };
+		24ED16B31E14EE8F00D5E47C /* TWLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ED16B21E14EE8F00D5E47C /* TWLocationViewController.m */; };
+		24ED16B61E14EF5A00D5E47C /* TWLocationUpdateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ED16B51E14EF5A00D5E47C /* TWLocationUpdateManager.m */; };
 		24ED56B21C969AD1005405B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ED56B11C969AD1005405B4 /* main.m */; };
 		24ED56B51C969AD1005405B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ED56B41C969AD1005405B4 /* AppDelegate.m */; };
 		24ED56B81C969AD1005405B4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ED56B71C969AD1005405B4 /* ViewController.m */; };
@@ -469,7 +471,7 @@
 		244A97BB1DEC07D100CA484C /* TWJSPathViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWJSPathViewController.h; sourceTree = "<group>"; };
 		244A97BC1DEC07D100CA484C /* TWJSPathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWJSPathViewController.m; sourceTree = "<group>"; };
 		245345FB1DEC0DD50050364E /* JSPathTest.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = JSPathTest.js; sourceTree = "<group>"; };
-		245345FD1DEC0FB30050364E /* JSONKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = Pods/JSONKit/JSONKit.m; sourceTree = "<group>"; };
+		245345FD1DEC0FB30050364E /* JSONKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = ../../Pods/JSONKit/JSONKit.m; sourceTree = "<group>"; };
 		245346011DEC1ABD0050364E /* TWCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWCalendarViewController.h; sourceTree = "<group>"; };
 		245346021DEC1ABD0050364E /* TWCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWCalendarViewController.m; sourceTree = "<group>"; };
 		245346041DEC1B8B0050364E /* TWEventCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWEventCalendar.h; sourceTree = "<group>"; };
@@ -824,6 +826,10 @@
 		24E963921D91257A0059D484 /* NSObject+TWObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TWObject.m"; sourceTree = "<group>"; };
 		24EB62D81CED8F0700BE6772 /* TWPDFReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWPDFReaderViewController.h; sourceTree = "<group>"; };
 		24EB62D91CED8F0700BE6772 /* TWPDFReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWPDFReaderViewController.m; sourceTree = "<group>"; };
+		24ED16B11E14EE8F00D5E47C /* TWLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWLocationViewController.h; sourceTree = "<group>"; };
+		24ED16B21E14EE8F00D5E47C /* TWLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWLocationViewController.m; sourceTree = "<group>"; };
+		24ED16B41E14EF5A00D5E47C /* TWLocationUpdateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWLocationUpdateManager.h; sourceTree = "<group>"; };
+		24ED16B51E14EF5A00D5E47C /* TWLocationUpdateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWLocationUpdateManager.m; sourceTree = "<group>"; };
 		24ED56AD1C969AD1005405B4 /* iOSLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24ED56B11C969AD1005405B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		24ED56B31C969AD1005405B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -961,6 +967,7 @@
 		240F1BD51CB4AC1C000AC902 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				24ED16B01E14EE7F00D5E47C /* Location */,
 				240473151E13887900A43FB7 /* ColorCricle */,
 				24F3D7AA1DF806530064B807 /* Countdown */,
 				24FE0A4B1DF6AF1D00F34DE7 /* LoadingCircle */,
@@ -1545,6 +1552,7 @@
 		24CAB4041CB35BB500AFB56C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				245345FD1DEC0FB30050364E /* JSONKit.m */,
 				24A5D6241CD333CD002573B3 /* libsqlite3.tbd */,
 				24A5D6221CD333C2002573B3 /* libsqlite3.0.tbd */,
 				24CAB4021CB35B8300AFB56C /* CoreData.framework */,
@@ -1643,10 +1651,20 @@
 			path = pdfReader;
 			sourceTree = "<group>";
 		};
+		24ED16B01E14EE7F00D5E47C /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				24ED16B11E14EE8F00D5E47C /* TWLocationViewController.h */,
+				24ED16B21E14EE8F00D5E47C /* TWLocationViewController.m */,
+				24ED16B41E14EF5A00D5E47C /* TWLocationUpdateManager.h */,
+				24ED16B51E14EF5A00D5E47C /* TWLocationUpdateManager.m */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
 		24ED56A41C969AD0005405B4 = {
 			isa = PBXGroup;
 			children = (
-				245345FD1DEC0FB30050364E /* JSONKit.m */,
 				24ED56AF1C969AD1005405B4 /* iOSLearning */,
 				24CAB4041CB35BB500AFB56C /* Frameworks */,
 				24ED56AE1C969AD1005405B4 /* Products */,
@@ -2318,6 +2336,7 @@
 				242A96861DEEB6E7009565F9 /* TWCLPhotoBrowserViewController.m in Sources */,
 				245345FF1DEC11C60050364E /* TWAFNetWorkingController.m in Sources */,
 				2425F6B21DBDAF4E006FEAFC /* UIView+TWExtension.m in Sources */,
+				24ED16B61E14EF5A00D5E47C /* TWLocationUpdateManager.m in Sources */,
 				24CF63651D06B9A50067C16C /* NSNotificationCenter+TWRmoveTest.m in Sources */,
 				2441D7681CB793CA00059B56 /* TimerViewController.m in Sources */,
 				24C339C71DE6BB1E00A62685 /* TWFather.m in Sources */,
@@ -2335,6 +2354,7 @@
 				2498F61D1CCA013B00368401 /* TWPThreadViewController.m in Sources */,
 				242665721DE298A800BEB3CE /* TWCircleLayout.m in Sources */,
 				24ED56B81C969AD1005405B4 /* ViewController.m in Sources */,
+				24ED16B31E14EE8F00D5E47C /* TWLocationViewController.m in Sources */,
 				24E9638B1D91218E0059D484 /* TWImageRuntimeController.m in Sources */,
 				24D0294A1D1BC0FF002CAF14 /* TWStudent.m in Sources */,
 				240F1BE21CB4ACBF000AC902 /* TestViewController.m in Sources */,

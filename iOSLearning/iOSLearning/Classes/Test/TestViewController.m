@@ -14,6 +14,7 @@
 #import "TWCLPhotoBrowserViewController.h"
 #import "TWLoadingViewController.h"
 #import "TWCountdownViewController.h"
+#import "TWLocationViewController.h"
 
 @interface TestViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -55,7 +56,7 @@
                         @"随机验证的字符码",
                         @"LoadingCircle",
                         @"倒计时的button封装",
-                        @"三个小圆球",
+                        @"手机的地址与时间",
                         @"毛玻璃效果",
                         @"转场",
                         @"UICollection的layout自定义",
@@ -122,6 +123,8 @@
         case 5:selectedView = [[TWLoadingViewController alloc]initWithTitle:title];
             break;
         case 6:selectedView = [[TWCountdownViewController alloc]initWithTitle:title];
+            break;
+        case 7:selectedView = [[TWLocationViewController alloc]initWithTitle:title];
             break;
     }
     if(selectedView){
