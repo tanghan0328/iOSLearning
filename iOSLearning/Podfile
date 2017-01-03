@@ -6,4 +6,5 @@ pod 'Reachability',  '~> 3.0'
 pod 'AFNetworking',  '~> 3.0.4'
 pod 'JSPatch'
 pod 'SDWebImage', '~>3.8'
+pod ‘MJRefresh’
 end
