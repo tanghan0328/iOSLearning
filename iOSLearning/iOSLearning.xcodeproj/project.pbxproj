@@ -57,6 +57,21 @@
 		242C40381CFD3B63008DC625 /* TWElasticViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 242C40361CFD3B63008DC625 /* TWElasticViewController.m */; };
 		242C403A1CFD3B63008DC625 /* TWElasticViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 242C40371CFD3B63008DC625 /* TWElasticViewController.xib */; };
 		242C40421CFD3DB8008DC625 /* TWGtoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 242C40411CFD3DB8008DC625 /* TWGtoView.m */; };
+		2431ABD51E1B8FA800C0A194 /* CollectionCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2431ABBC1E1B8FA800C0A194 /* CollectionCategoryModel.m */; };
+		2431ABD61E1B8FA800C0A194 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2431ABBE1E1B8FA800C0A194 /* CollectionViewCell.m */; };
+		2431ABD71E1B8FA800C0A194 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2431ABC01E1B8FA800C0A194 /* CollectionViewController.m */; };
+		2431ABD81E1B8FA800C0A194 /* CollectionViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2431ABC21E1B8FA800C0A194 /* CollectionViewHeaderView.m */; };
+		2431ABD91E1B8FA800C0A194 /* CategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2431ABC51E1B8FA800C0A194 /* CategoryModel.m */; };
+		2431ABDA1E1B8FA800C0A194 /* LeftTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2431ABC71E1B8FA800C0A194 /* LeftTableViewCell.m */; };
+		2431ABDB1E1B8FA800C0A194 /* RightTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2431ABC91E1B8FA800C0A194 /* RightTableViewCell.m */; };
+		2431ABDC1E1B8FA800C0A194 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2431ABCB1E1B8FA800C0A194 /* TableViewController.m */; };
+		2431ABDD1E1B8FA800C0A194 /* TableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2431ABCD1E1B8FA800C0A194 /* TableViewHeaderView.m */; };
+		2431ABDE1E1B8FA800C0A194 /* LJCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2431ABD01E1B8FA800C0A194 /* LJCollectionViewFlowLayout.m */; };
+		2431ABDF1E1B8FA800C0A194 /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = 2431ABD21E1B8FA800C0A194 /* NSObject+Property.m */; };
+		2431ABE01E1B8FA800C0A194 /* UIViewController+Dealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = 2431ABD41E1B8FA800C0A194 /* UIViewController+Dealloc.m */; };
+		2431ABE31E1B8FBF00C0A194 /* TWLinkageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2431ABE21E1B8FBF00C0A194 /* TWLinkageViewController.m */; };
+		2431ABE61E1B905800C0A194 /* liwushuo.json in Resources */ = {isa = PBXBuildFile; fileRef = 2431ABE41E1B905800C0A194 /* liwushuo.json */; };
+		2431ABE71E1B905800C0A194 /* meituan.json in Resources */ = {isa = PBXBuildFile; fileRef = 2431ABE51E1B905800C0A194 /* meituan.json */; };
 		243BC60A1CFE6F5A0065D6A0 /* TWFoldingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243BC6081CFE6F5A0065D6A0 /* TWFoldingViewController.m */; };
 		243BC60C1CFE6F5A0065D6A0 /* TWFoldingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 243BC6091CFE6F5A0065D6A0 /* TWFoldingViewController.xib */; };
 		243E5A111D6C267400E4193A /* TWImageSenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243E5A101D6C267400E4193A /* TWImageSenderViewController.m */; };
@@ -351,6 +366,7 @@
 		24EB62DA1CED8F0700BE6772 /* TWPDFReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EB62D91CED8F0700BE6772 /* TWPDFReaderViewController.m */; };
 		24ED16B31E14EE8F00D5E47C /* TWLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ED16B21E14EE8F00D5E47C /* TWLocationViewController.m */; };
 		24ED16B61E14EF5A00D5E47C /* TWLocationUpdateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ED16B51E14EF5A00D5E47C /* TWLocationUpdateManager.m */; };
+		24ED16B91E15149300D5E47C /* TWLiveThumbView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ED16B81E15149300D5E47C /* TWLiveThumbView.m */; };
 		24ED56B21C969AD1005405B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ED56B11C969AD1005405B4 /* main.m */; };
 		24ED56B51C969AD1005405B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ED56B41C969AD1005405B4 /* AppDelegate.m */; };
 		24ED56B81C969AD1005405B4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24ED56B71C969AD1005405B4 /* ViewController.m */; };
@@ -455,6 +471,34 @@
 		242C40371CFD3B63008DC625 /* TWElasticViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWElasticViewController.xib; sourceTree = "<group>"; };
 		242C40401CFD3DB8008DC625 /* TWGtoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWGtoView.h; sourceTree = "<group>"; };
 		242C40411CFD3DB8008DC625 /* TWGtoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWGtoView.m; sourceTree = "<group>"; };
+		2431ABBB1E1B8FA800C0A194 /* CollectionCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionCategoryModel.h; sourceTree = "<group>"; };
+		2431ABBC1E1B8FA800C0A194 /* CollectionCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionCategoryModel.m; sourceTree = "<group>"; };
+		2431ABBD1E1B8FA800C0A194 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		2431ABBE1E1B8FA800C0A194 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		2431ABBF1E1B8FA800C0A194 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		2431ABC01E1B8FA800C0A194 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		2431ABC11E1B8FA800C0A194 /* CollectionViewHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewHeaderView.h; sourceTree = "<group>"; };
+		2431ABC21E1B8FA800C0A194 /* CollectionViewHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewHeaderView.m; sourceTree = "<group>"; };
+		2431ABC41E1B8FA800C0A194 /* CategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryModel.h; sourceTree = "<group>"; };
+		2431ABC51E1B8FA800C0A194 /* CategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryModel.m; sourceTree = "<group>"; };
+		2431ABC61E1B8FA800C0A194 /* LeftTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftTableViewCell.h; sourceTree = "<group>"; };
+		2431ABC71E1B8FA800C0A194 /* LeftTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftTableViewCell.m; sourceTree = "<group>"; };
+		2431ABC81E1B8FA800C0A194 /* RightTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightTableViewCell.h; sourceTree = "<group>"; };
+		2431ABC91E1B8FA800C0A194 /* RightTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightTableViewCell.m; sourceTree = "<group>"; };
+		2431ABCA1E1B8FA800C0A194 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		2431ABCB1E1B8FA800C0A194 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		2431ABCC1E1B8FA800C0A194 /* TableViewHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewHeaderView.h; sourceTree = "<group>"; };
+		2431ABCD1E1B8FA800C0A194 /* TableViewHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewHeaderView.m; sourceTree = "<group>"; };
+		2431ABCF1E1B8FA800C0A194 /* LJCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		2431ABD01E1B8FA800C0A194 /* LJCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		2431ABD11E1B8FA800C0A194 /* NSObject+Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Property.h"; sourceTree = "<group>"; };
+		2431ABD21E1B8FA800C0A194 /* NSObject+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Property.m"; sourceTree = "<group>"; };
+		2431ABD31E1B8FA800C0A194 /* UIViewController+Dealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Dealloc.h"; sourceTree = "<group>"; };
+		2431ABD41E1B8FA800C0A194 /* UIViewController+Dealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Dealloc.m"; sourceTree = "<group>"; };
+		2431ABE11E1B8FBF00C0A194 /* TWLinkageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWLinkageViewController.h; sourceTree = "<group>"; };
+		2431ABE21E1B8FBF00C0A194 /* TWLinkageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWLinkageViewController.m; sourceTree = "<group>"; };
+		2431ABE41E1B905800C0A194 /* liwushuo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = liwushuo.json; sourceTree = "<group>"; };
+		2431ABE51E1B905800C0A194 /* meituan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = meituan.json; sourceTree = "<group>"; };
 		243BC6071CFE6F5A0065D6A0 /* TWFoldingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWFoldingViewController.h; sourceTree = "<group>"; };
 		243BC6081CFE6F5A0065D6A0 /* TWFoldingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWFoldingViewController.m; sourceTree = "<group>"; };
 		243BC6091CFE6F5A0065D6A0 /* TWFoldingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWFoldingViewController.xib; sourceTree = "<group>"; };
@@ -830,6 +874,8 @@
 		24ED16B21E14EE8F00D5E47C /* TWLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWLocationViewController.m; sourceTree = "<group>"; };
 		24ED16B41E14EF5A00D5E47C /* TWLocationUpdateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWLocationUpdateManager.h; sourceTree = "<group>"; };
 		24ED16B51E14EF5A00D5E47C /* TWLocationUpdateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWLocationUpdateManager.m; sourceTree = "<group>"; };
+		24ED16B71E15149300D5E47C /* TWLiveThumbView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWLiveThumbView.h; sourceTree = "<group>"; };
+		24ED16B81E15149300D5E47C /* TWLiveThumbView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWLiveThumbView.m; sourceTree = "<group>"; };
 		24ED56AD1C969AD1005405B4 /* iOSLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24ED56B11C969AD1005405B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		24ED56B31C969AD1005405B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -967,6 +1013,7 @@
 		240F1BD51CB4AC1C000AC902 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				2431ABB91E1B8F6900C0A194 /* Linkage */,
 				24ED16B01E14EE7F00D5E47C /* Location */,
 				240473151E13887900A43FB7 /* ColorCricle */,
 				24F3D7AA1DF806530064B807 /* Countdown */,
@@ -1173,6 +1220,63 @@
 				242C40411CFD3DB8008DC625 /* TWGtoView.m */,
 			);
 			path = QQElastic;
+			sourceTree = "<group>";
+		};
+		2431ABB91E1B8F6900C0A194 /* Linkage */ = {
+			isa = PBXGroup;
+			children = (
+				2431ABBA1E1B8FA800C0A194 /* CollectionView */,
+				2431ABC31E1B8FA800C0A194 /* TableView */,
+				2431ABCE1E1B8FA800C0A194 /* Tools */,
+				2431ABE11E1B8FBF00C0A194 /* TWLinkageViewController.h */,
+				2431ABE21E1B8FBF00C0A194 /* TWLinkageViewController.m */,
+			);
+			path = Linkage;
+			sourceTree = "<group>";
+		};
+		2431ABBA1E1B8FA800C0A194 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				2431ABBB1E1B8FA800C0A194 /* CollectionCategoryModel.h */,
+				2431ABBC1E1B8FA800C0A194 /* CollectionCategoryModel.m */,
+				2431ABBD1E1B8FA800C0A194 /* CollectionViewCell.h */,
+				2431ABBE1E1B8FA800C0A194 /* CollectionViewCell.m */,
+				2431ABBF1E1B8FA800C0A194 /* CollectionViewController.h */,
+				2431ABC01E1B8FA800C0A194 /* CollectionViewController.m */,
+				2431ABC11E1B8FA800C0A194 /* CollectionViewHeaderView.h */,
+				2431ABC21E1B8FA800C0A194 /* CollectionViewHeaderView.m */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		2431ABC31E1B8FA800C0A194 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				2431ABC41E1B8FA800C0A194 /* CategoryModel.h */,
+				2431ABC51E1B8FA800C0A194 /* CategoryModel.m */,
+				2431ABC61E1B8FA800C0A194 /* LeftTableViewCell.h */,
+				2431ABC71E1B8FA800C0A194 /* LeftTableViewCell.m */,
+				2431ABC81E1B8FA800C0A194 /* RightTableViewCell.h */,
+				2431ABC91E1B8FA800C0A194 /* RightTableViewCell.m */,
+				2431ABCA1E1B8FA800C0A194 /* TableViewController.h */,
+				2431ABCB1E1B8FA800C0A194 /* TableViewController.m */,
+				2431ABCC1E1B8FA800C0A194 /* TableViewHeaderView.h */,
+				2431ABCD1E1B8FA800C0A194 /* TableViewHeaderView.m */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		2431ABCE1E1B8FA800C0A194 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				2431ABCF1E1B8FA800C0A194 /* LJCollectionViewFlowLayout.h */,
+				2431ABD01E1B8FA800C0A194 /* LJCollectionViewFlowLayout.m */,
+				2431ABD11E1B8FA800C0A194 /* NSObject+Property.h */,
+				2431ABD21E1B8FA800C0A194 /* NSObject+Property.m */,
+				2431ABD31E1B8FA800C0A194 /* UIViewController+Dealloc.h */,
+				2431ABD41E1B8FA800C0A194 /* UIViewController+Dealloc.m */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		24358B131D8E797C00907B4B /* AFNet */ = {
@@ -1658,6 +1762,8 @@
 				24ED16B21E14EE8F00D5E47C /* TWLocationViewController.m */,
 				24ED16B41E14EF5A00D5E47C /* TWLocationUpdateManager.h */,
 				24ED16B51E14EF5A00D5E47C /* TWLocationUpdateManager.m */,
+				24ED16B71E15149300D5E47C /* TWLiveThumbView.h */,
+				24ED16B81E15149300D5E47C /* TWLiveThumbView.m */,
 			);
 			path = Location;
 			sourceTree = "<group>";
@@ -1696,6 +1802,8 @@
 		24ED56B01C969AD1005405B4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2431ABE41E1B905800C0A194 /* liwushuo.json */,
+				2431ABE51E1B905800C0A194 /* meituan.json */,
 				24DA5D761D178E0500F4BD36 /* provinces.plist */,
 				24ED56C91C969D16005405B4 /* images */,
 				24ED56D41C96B908005405B4 /* Images.xcassets */,
@@ -2088,6 +2196,7 @@
 				24BD77E11C9A3E6B000CC066 /* btn_vdo_send@3x.png in Resources */,
 				24BD78151C9A3E6B000CC066 /* Image_request_fail@2x.png in Resources */,
 				24BD77BA1C9A3E6B000CC066 /* btn_task_refresh@3x.png in Resources */,
+				2431ABE61E1B905800C0A194 /* liwushuo.json in Resources */,
 				24C339E41DE6D85400A62685 /* TWRegisteViewController.xib in Resources */,
 				24BD78041C9A3E6B000CC066 /* Image_history@2x.png in Resources */,
 				24BD77E01C9A3E6B000CC066 /* btn_vdo_send@2x.png in Resources */,
@@ -2267,6 +2376,7 @@
 				24BD78031C9A3E6B000CC066 /* Image_history.png in Resources */,
 				24BD78301C9A3E6B000CC066 /* Img_viewer@2x.png in Resources */,
 				24BD77B51C9A3E6B000CC066 /* btn_search_clicked@3x.png in Resources */,
+				2431ABE71E1B905800C0A194 /* meituan.json in Resources */,
 				24BD782C1C9A3E6B000CC066 /* Img_user_register@2x.png in Resources */,
 				24BD778B1C9A3E6B000CC066 /* btn_column_selected@3x.png in Resources */,
 				240B93691DE52CCD0021457F /* TWSCanViewController.xib in Resources */,
@@ -2342,6 +2452,7 @@
 				24C339C71DE6BB1E00A62685 /* TWFather.m in Sources */,
 				24F1CFC01DDED6AE00FA903A /* TWCollectionLayout.m in Sources */,
 				248226151CC76A8100D7A8C4 /* MySlidersView.m in Sources */,
+				2431ABDF1E1B8FA800C0A194 /* NSObject+Property.m in Sources */,
 				242A96811DEEB6B3009565F9 /* PhotoBrowserCell.m in Sources */,
 				24E963931D91257A0059D484 /* NSObject+TWObject.m in Sources */,
 				240B93681DE52CCD0021457F /* TWSCanViewController.m in Sources */,
@@ -2369,16 +2480,19 @@
 				242A967C1DEEB6B3009565F9 /* CLPhoto.m in Sources */,
 				247C03401D913204002D7A53 /* TWSnakeViewController.m in Sources */,
 				248225F71CC76A8100D7A8C4 /* Grade.m in Sources */,
+				2431ABDD1E1B8FA800C0A194 /* TableViewHeaderView.m in Sources */,
 				24DE82A81D0D3D6100191C35 /* TWSignatureViewController.m in Sources */,
 				241F9E141CFBE06900D26998 /* TWDrawView.m in Sources */,
 				24ED56B51C969AD1005405B4 /* AppDelegate.m in Sources */,
 				248226131CC76A8100D7A8C4 /* SegmentViewController.m in Sources */,
+				2431ABD91E1B8FA800C0A194 /* CategoryModel.m in Sources */,
 				24C339DF1DE6D85400A62685 /* TWDelegateViewController.m in Sources */,
 				2498F6241CCA179D00368401 /* TWThreadSynchronizeViewController.m in Sources */,
 				245346031DEC1ABD0050364E /* TWCalendarViewController.m in Sources */,
 				2400EB801CC8BA7800E76741 /* TWFileViewController.m in Sources */,
 				248226011CC76A8100D7A8C4 /* TableListViewController.m in Sources */,
 				24FE0A511DF6AF7700F34DE7 /* TWLoadingCircleView.m in Sources */,
+				2431ABE31E1B8FBF00C0A194 /* TWLinkageViewController.m in Sources */,
 				241F9E1A1CFC295C00D26998 /* TWReflectionViewController.m in Sources */,
 				24CF635F1D06B4480067C16C /* TWNotificationtest01ViewController.m in Sources */,
 				2482260B1CC76A8100D7A8C4 /* RepeatCollectionViewCell.m in Sources */,
@@ -2397,8 +2511,10 @@
 				248226271CC76BFA00D7A8C4 /* URLConnectionViewController.m in Sources */,
 				2482261D1CC76A8100D7A8C4 /* SwitchViewController.m in Sources */,
 				24C339E51DE6D85400A62685 /* TWBlockLoginViewController.m in Sources */,
+				2431ABDC1E1B8FA800C0A194 /* TableViewController.m in Sources */,
 				2441D76D1CB796E400059B56 /* PlistViewController.m in Sources */,
 				248225F51CC76A8100D7A8C4 /* Grade+CoreDataProperties.m in Sources */,
+				2431ABDB1E1B8FA800C0A194 /* RightTableViewCell.m in Sources */,
 				240F1BCA1CB4AAFA000AC902 /* TabRootViewController.m in Sources */,
 				242C40381CFD3B63008DC625 /* TWElasticViewController.m in Sources */,
 				24C339E11DE6D85400A62685 /* TWLoginViewController.m in Sources */,
@@ -2413,12 +2529,15 @@
 				248226171CC76A8100D7A8C4 /* MySliderView.m in Sources */,
 				245346061DEC1B8B0050364E /* TWEventCalendar.m in Sources */,
 				242B4BFD1D01755600AD24A7 /* UIImage+TWColor.m in Sources */,
+				2431ABE01E1B8FA800C0A194 /* UIViewController+Dealloc.m in Sources */,
 				24E9638F1D91229E0059D484 /* TWPersonA.m in Sources */,
 				2400EB7B1CC8B42F00E76741 /* TWDateViewController.m in Sources */,
 				248225FB1CC76A8100D7A8C4 /* Student+CoreDataProperties.m in Sources */,
 				24E157561D485F66004E72D1 /* TWLabelViewController.m in Sources */,
 				248226071CC76A8100D7A8C4 /* ProdCollectionViewController.m in Sources */,
 				24C339CA1DE6D6D600A62685 /* UIViewController+swizzling.m in Sources */,
+				2431ABDE1E1B8FA800C0A194 /* LJCollectionViewFlowLayout.m in Sources */,
+				2431ABD61E1B8FA800C0A194 /* CollectionViewCell.m in Sources */,
 				24E9637E1D9116420059D484 /* TWBaseViewController.m in Sources */,
 				24C339E71DE6D85400A62685 /* TWBlockRegisterViewController.m in Sources */,
 				24F3D7B01DF806A40064B807 /* TWCountdownViewController.m in Sources */,
@@ -2428,13 +2547,16 @@
 				2480A5B41D050F000041263A /* TWUIWebViewController.m in Sources */,
 				24A7BC0F1DE43E34000AD91F /* TWFingerprintViewController.m in Sources */,
 				2482261B1CC76A8100D7A8C4 /* StepperViewController.m in Sources */,
+				2431ABD51E1B8FA800C0A194 /* CollectionCategoryModel.m in Sources */,
 				248225FD1CC76A8100D7A8C4 /* Student.m in Sources */,
+				2431ABD81E1B8FA800C0A194 /* CollectionViewHeaderView.m in Sources */,
 				24FE0A4E1DF6AF4300F34DE7 /* TWLoadingViewController.m in Sources */,
 				243E5A111D6C267400E4193A /* TWImageSenderViewController.m in Sources */,
 				24DA5D7B1D178E9800F4BD36 /* TWProvince.m in Sources */,
 				248226211CC76A8100D7A8C4 /* TextFileViewController.m in Sources */,
 				242B4BF31D0124D600AD24A7 /* TWImageZoomViewController.m in Sources */,
 				24DA5D811D17E51C00F4BD36 /* TWDatePickerViewController.m in Sources */,
+				2431ABD71E1B8FA800C0A194 /* CollectionViewController.m in Sources */,
 				242A967D1DEEB6B3009565F9 /* CLPhotoBrowser.m in Sources */,
 				244A97BD1DEC07D100CA484C /* TWJSPathViewController.m in Sources */,
 				24EB62DA1CED8F0700BE6772 /* TWPDFReaderViewController.m in Sources */,
@@ -2444,7 +2566,9 @@
 				2426657C1DE2D2BA00BEB3CE /* TWCircleCollectionViewCell.m in Sources */,
 				2425F6B91DBDF134006FEAFC /* UIImage+ImageEffects.m in Sources */,
 				24D206CA1CDB3F860008790F /* TWPlistRWViewController.m in Sources */,
+				2431ABDA1E1B8FA800C0A194 /* LeftTableViewCell.m in Sources */,
 				24C339C41DE6BB0100A62685 /* TWSon.m in Sources */,
+				24ED16B91E15149300D5E47C /* TWLiveThumbView.m in Sources */,
 				24E963821D9116DC0059D484 /* TWNavigationBarHiddenController.m in Sources */,
 				24F3D7AD1DF806820064B807 /* TWButton.m in Sources */,
 				248226091CC76A8100D7A8C4 /* RepeatCellViewController.m in Sources */,

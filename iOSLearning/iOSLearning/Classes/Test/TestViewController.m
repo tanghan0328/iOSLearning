@@ -15,6 +15,8 @@
 #import "TWLoadingViewController.h"
 #import "TWCountdownViewController.h"
 #import "TWLocationViewController.h"
+#import "TWLinkageViewController.h"
+
 
 @interface TestViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -57,7 +59,7 @@
                         @"LoadingCircle",
                         @"倒计时的button封装",
                         @"手机的地址与时间",
-                        @"毛玻璃效果",
+                        @"分类联动",
                         @"转场",
                         @"UICollection的layout自定义",
                         @"复杂的CollectionLayout",
@@ -125,6 +127,8 @@
         case 6:selectedView = [[TWCountdownViewController alloc]initWithTitle:title];
             break;
         case 7:selectedView = [[TWLocationViewController alloc]initWithTitle:title];
+            break;
+        case 8:selectedView = [[TWLinkageViewController alloc]initWithTitle:title];
             break;
     }
     if(selectedView){
