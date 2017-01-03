@@ -60,12 +60,6 @@
                         @"倒计时的button封装",
                         @"手机的地址与时间",
                         @"分类联动",
-                        @"转场",
-                        @"UICollection的layout自定义",
-                        @"复杂的CollectionLayout",
-                        @"微信支付的密码框",
-                        @"APPID的指纹",
-                        @"二维码扫描",
                         nil];
 }
 
@@ -131,11 +125,17 @@
         case 8:selectedView = [[TWLinkageViewController alloc]initWithTitle:title];
             break;
     }
+//    if(selectedView){
+//        
+//        [self.navigationController pushViewController:selectedView animated:YES];
+//        //self.hidesBottomBarWhenPushed=YES;//要显示的viewController设置
+//    }
     if(selectedView){
-        
+        self.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:selectedView animated:YES];
-        //self.hidesBottomBarWhenPushed=YES;//要显示的viewController设置
+        self.hidesBottomBarWhenPushed = NO;
     }
+
 }
 
 @end
