@@ -4,7 +4,7 @@
 //
 //  Created by tang on 17/1/4.
 //  Copyright © 2017年 tang. All rights reserved.
-//
+//参考了 https://github.com/FTCcheV/LineAndCircleScaleView 这个地址的作者东西，谢谢
 
 #import "TWColorCircleViewController.h"
 #import "TWScaleView.h"
