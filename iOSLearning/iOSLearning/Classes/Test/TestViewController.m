@@ -16,12 +16,14 @@
 #import "TWCountdownViewController.h"
 #import "TWLocationViewController.h"
 #import "TWLinkageViewController.h"
+#import "TWRefreshViewController.h"
+#import "TWCollectionRefreshController.h"
 
 
 @interface TestViewController ()<UITableViewDelegate,UITableViewDataSource>
 
-@property (nonatomic,retain) NSArray *stringArray;
-@property (nonatomic,retain) UITableView *tableView;
+@property (nonatomic, strong) NSArray *stringArray;
+@property (nonatomic, strong) UITableView *tableView;
 
 @end
 
@@ -31,7 +33,7 @@
     [super viewDidLoad];
     [UIApplication sharedApplication].applicationIconBadgeNumber=8;
     
-    self.title = @"测试新的东西";
+    self.title = @"测试";
     //设置status的颜色为白色
 //    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
     //设置UITableView的大小
@@ -60,6 +62,7 @@
                         @"倒计时的button封装",
                         @"手机的地址与时间",
                         @"分类联动",
+                        @"MJRefresh刷新",
                         nil];
 }
 
@@ -123,6 +126,9 @@
         case 7:selectedView = [[TWLocationViewController alloc]initWithTitle:title];
             break;
         case 8:selectedView = [[TWLinkageViewController alloc]initWithTitle:title];
+            break;
+//        case 9:selectedView = [[TWRefreshViewController alloc]initWithTitle:title];
+        case 9:selectedView = [[TWCollectionRefreshController alloc]initWithTitle:title];
             break;
     }
 //    if(selectedView){
