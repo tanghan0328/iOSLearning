@@ -343,6 +343,8 @@
 		24CF63651D06B9A50067C16C /* NSNotificationCenter+TWRmoveTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 24CF63641D06B9A50067C16C /* NSNotificationCenter+TWRmoveTest.m */; };
 		24CFD7FD1E1C958600DA5046 /* TWRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24CFD7FC1E1C958600DA5046 /* TWRefreshViewController.m */; };
 		24CFD8001E1C9F4C00DA5046 /* TWCollectionRefreshController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24CFD7FF1E1C9F4C00DA5046 /* TWCollectionRefreshController.m */; };
+		24CFD8031E1CD84D00DA5046 /* TWColorCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24CFD8021E1CD84D00DA5046 /* TWColorCircleViewController.m */; };
+		24CFD8061E1CD9C300DA5046 /* TWScaleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24CFD8051E1CD9C300DA5046 /* TWScaleView.m */; };
 		24D029441D1BC097002CAF14 /* TWKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D029421D1BC097002CAF14 /* TWKVOViewController.m */; };
 		24D029461D1BC097002CAF14 /* TWKVOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24D029431D1BC097002CAF14 /* TWKVOViewController.xib */; };
 		24D0294A1D1BC0FF002CAF14 /* TWStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D029491D1BC0FF002CAF14 /* TWStudent.m */; };
@@ -834,6 +836,10 @@
 		24CFD7FC1E1C958600DA5046 /* TWRefreshViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRefreshViewController.m; sourceTree = "<group>"; };
 		24CFD7FE1E1C9F4C00DA5046 /* TWCollectionRefreshController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWCollectionRefreshController.h; sourceTree = "<group>"; };
 		24CFD7FF1E1C9F4C00DA5046 /* TWCollectionRefreshController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWCollectionRefreshController.m; sourceTree = "<group>"; };
+		24CFD8011E1CD84D00DA5046 /* TWColorCircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWColorCircleViewController.h; sourceTree = "<group>"; };
+		24CFD8021E1CD84D00DA5046 /* TWColorCircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWColorCircleViewController.m; sourceTree = "<group>"; };
+		24CFD8041E1CD9C300DA5046 /* TWScaleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWScaleView.h; sourceTree = "<group>"; };
+		24CFD8051E1CD9C300DA5046 /* TWScaleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWScaleView.m; sourceTree = "<group>"; };
 		24D029411D1BC097002CAF14 /* TWKVOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWKVOViewController.h; sourceTree = "<group>"; };
 		24D029421D1BC097002CAF14 /* TWKVOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWKVOViewController.m; sourceTree = "<group>"; };
 		24D029431D1BC097002CAF14 /* TWKVOViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWKVOViewController.xib; sourceTree = "<group>"; };
@@ -938,6 +944,10 @@
 		240473151E13887900A43FB7 /* ColorCricle */ = {
 			isa = PBXGroup;
 			children = (
+				24CFD8011E1CD84D00DA5046 /* TWColorCircleViewController.h */,
+				24CFD8021E1CD84D00DA5046 /* TWColorCircleViewController.m */,
+				24CFD8041E1CD9C300DA5046 /* TWScaleView.h */,
+				24CFD8051E1CD9C300DA5046 /* TWScaleView.m */,
 			);
 			path = ColorCricle;
 			sourceTree = "<group>";
@@ -2508,6 +2518,7 @@
 				2498F6241CCA179D00368401 /* TWThreadSynchronizeViewController.m in Sources */,
 				245346031DEC1ABD0050364E /* TWCalendarViewController.m in Sources */,
 				2400EB801CC8BA7800E76741 /* TWFileViewController.m in Sources */,
+				24CFD8031E1CD84D00DA5046 /* TWColorCircleViewController.m in Sources */,
 				248226011CC76A8100D7A8C4 /* TableListViewController.m in Sources */,
 				24FE0A511DF6AF7700F34DE7 /* TWLoadingCircleView.m in Sources */,
 				2431ABE31E1B8FBF00C0A194 /* TWLinkageViewController.m in Sources */,
@@ -2519,6 +2530,7 @@
 				24E963861D91207C0059D484 /* UIImage+TWImage.m in Sources */,
 				24FE0A471DF6A23400F34DE7 /* TWRandomCodeViewController.m in Sources */,
 				247C033C1D9131C5002D7A53 /* TWSnake.m in Sources */,
+				24CFD8061E1CD9C300DA5046 /* TWScaleView.m in Sources */,
 				2425F6C71DBE048C006FEAFC /* TWTransitionsViewController.m in Sources */,
 				24ED56B21C969AD1005405B4 /* main.m in Sources */,
 				248225F91CC76A8100D7A8C4 /* Model.xcdatamodeld in Sources */,

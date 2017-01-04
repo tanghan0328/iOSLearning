@@ -18,6 +18,7 @@
 #import "TWLinkageViewController.h"
 #import "TWRefreshViewController.h"
 #import "TWCollectionRefreshController.h"
+#import "TWColorCircleViewController.h"
 
 
 @interface TestViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -63,6 +64,7 @@
                         @"手机的地址与时间",
                         @"分类联动",
                         @"MJRefresh刷新",
+                        @"直线比例",
                         nil];
 }
 
@@ -129,6 +131,8 @@
             break;
 //        case 9:selectedView = [[TWRefreshViewController alloc]initWithTitle:title];
         case 9:selectedView = [[TWCollectionRefreshController alloc]initWithTitle:title];
+            break;
+        case 10:selectedView = [[TWColorCircleViewController alloc]initWithTitle:title];
             break;
     }
 //    if(selectedView){
