@@ -240,6 +240,26 @@
 {
     self.loadCount --;
     NSLog(@"didCommitNavigation=====>");
+    //清除Wkwebview的缓存信息
+    if([[UIDevice currentDevice].systemVersion floatValue]>= 9.0){
+        NSSet *types = [NSSet setWithArray:@[WKWebsiteDataTypeMemoryCache,
+                                             WKWebsiteDataTypeDiskCache,
+                                             WKWebsiteDataTypeOfflineWebApplicationCache,
+                                             WKWebsiteDataTypeLocalStorage,
+                                             WKWebsiteDataTypeCookies,
+                                             WKWebsiteDataTypeSessionStorage,
+                                             WKWebsiteDataTypeIndexedDBDatabases,
+                                             WKWebsiteDataTypeWebSQLDatabases]];
+    
+        NSDate *dataFrom = [NSDate date];
+        [[WKWebsiteDataStore defaultDataStore]removeDataOfTypes:types modifiedSince:dataFrom completionHandler:^{
+            NSLog(@"clear webview cache");
+        }];
+    }else{
+        NSString *libraryPath = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES).firstObject;
+        NSString *cookiesFolderPath = [libraryPath stringByAppendingString:@"/Cookies"];
+        [[NSFileManager defaultManager] removeItemAtPath:cookiesFolderPath error:nil];
+    }
 }
 /// 5 页面加载完成之后调用
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation
