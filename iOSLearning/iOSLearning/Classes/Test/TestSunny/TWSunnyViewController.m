@@ -10,13 +10,15 @@
 #import "TWSon.h"
 #import "TWFather.h"
 
+static NSString *AA1 =@"ceshiaaa";
+
 @interface TWSunnyViewController ()<NSURLSessionDelegate>
 
 typedef NSString*(^WXYTestBlock)(NSString *name,int age);
 
 @property (nonatomic, strong) UILabel *label;
-@property (nonatomic,strong) dispatch_group_t disGroup;
-
+@property (nonatomic, strong) dispatch_group_t disGroup;
+@property (nonatomic, strong) NSString *AA;
 
 @end
 
@@ -24,7 +26,7 @@ typedef NSString*(^WXYTestBlock)(NSString *name,int age);
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    _AA = @"ceshibbbb";
     
     WXYTestBlock myBlock = ^ (NSString *name, int age){
         return [NSString stringWithFormat:@"%@的年龄是%d",name,age];
@@ -36,6 +38,7 @@ typedef NSString*(^WXYTestBlock)(NSString *name,int age);
     [self eatB];
     [self eatC];
     [self eatD];
+    [self testBlock];
     _disGroup = dispatch_group_create();
     [self requestDatas];
     TWSon *son = [[TWSon alloc]init];
@@ -197,21 +200,20 @@ typedef NSString*(^WXYTestBlock)(NSString *name,int age);
     int a = 3;
     void (^myBlock)(int b)  = ^(int b){
         b= 6;
-        NSLog(@"测试商品===》%d",a);
+        NSLog(@"测试商品eatA=111111==》%d",a);
     };
-    
     myBlock(a);
-    
+    NSLog(@"测试商品eatA===》%d",a);
 }
 //NSString类型的不会变化
 - (void)eatB
 {
     NSString *a = @"哈哈哈abc";
-    NSLog(@"测试字符串的长度===>%d",a.length);
+    NSLog(@"测试字符串的长度===>%lu",(unsigned long)a.length);
     void (^myBlock)(NSString  *b)  = ^(NSString *b){
         b= @"abc";
         NSLog(@"测试商品===》%@",b);
-        NSLog(@"测试字符串的长度11111===>%d",b.length);
+        NSLog(@"测试字符串的长度11111===>%lu",(unsigned long)b.length);
     };
     
     myBlock(a);
@@ -286,5 +288,51 @@ typedef NSString*(^WXYTestBlock)(NSString *name,int age);
         NSLog(@"3");
         dispatch_group_leave(self.disGroup);
     }];
+}
+NSString *AA5 = @"ceshiAAAA9";//全局变量
+//测试block的问题
+- (void)testBlock
+{
+    NSString *AA2 =@"111";
+    static NSString *AA3 = @"dddd";
+    __block NSString *AA4 = @"ggg";
+    
+    NSLog(@"测试的testBlock11111=_AA==》%@=====&=》%p", _AA, &_AA);
+    NSLog(@"测试的testBlock11111=AA1==》%@=====&=》%p", AA1, &AA1);
+    NSLog(@"测试的testBlock11111==AA2=》%@=====&=》%p", AA2, &AA2);
+    NSLog(@"测试的testBlock11111==AA3=》%@=====&=》%p", AA3,&AA3);
+    NSLog(@"测试的testBlock11111==AA4=》%@=====&=》%p", AA4,&AA4);
+    NSLog(@"测试的testBlock11111==AA5=》%@=====&=》%p", AA5,&AA5);
+    
+    void (^myBLockA)(NSString *a) = ^(NSString *a)
+    {
+        _AA = @"6666";
+        AA1 = @"7777";
+        AA5 = @"0000";
+//        AA2= @"";
+        a = @"222";
+        AA3 = @"ffff";
+        AA4 = @"ppppp";
+        
+        NSLog(@"测试的testBlock22222=_AA==》%@=====&=》%p", _AA, &_AA);
+        NSLog(@"测试的testBlock22222=AA1==》%@=====&=》%p", AA1, &AA1);
+        NSLog(@"测试的testBlock22222==aaa=》%@=====&=》%p", a, &a);
+        NSLog(@"测试的testBlock22222==AA2=》%@=====&=》%p", AA2, &AA2);
+        NSLog(@"测试的testBlock22222==AA3=》%@=====&=》%p", AA3,&AA3);
+        NSLog(@"测试的testBlock22222==AA4=》%@=====&=》%p", AA4,&AA4);
+        NSLog(@"测试的testBlock22222==AA5=》%@=====&=》%p", AA5,&AA5);
+
+    };
+    myBLockA(AA2);
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSLog(@"测试的testBlock33333=_AA==》%@=====&=》%p", _AA, &_AA);
+        NSLog(@"测试的testBlock33333=AA1==》%@=====&=》%p", AA1, &AA1);
+        NSLog(@"测试的testBlock33333==AA2=》%@=====&=》%p", AA2, &AA2);
+        NSLog(@"测试的testBlock33333==AA3=》%@=====&=》%p", AA3,&AA3);
+        NSLog(@"测试的testBlock33333==AA4=》%@=====&=》%p", AA4,&AA4);
+        NSLog(@"测试的testBlock55555==AA5=》%@=====&=》%p", AA5,&AA5);
+
+//    });
+
 }
 @end

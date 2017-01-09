@@ -1,9 +1,9 @@
 //
-//  Grade.h
+//  Grade+CoreDataClass.h
 //  iOSLearning
 //
-//  Created by tang on 16/4/5.
-//  Copyright © 2016年 tang. All rights reserved.
+//  Created by tang on 17/1/9.
+//  Copyright © 2017年 tang. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -12,8 +12,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Grade : NSManagedObject
-
-// Insert code here to declare functionality of your managed object subclass
 
 @end
 

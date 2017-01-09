@@ -2,24 +2,26 @@
 //  Student+CoreDataProperties.h
 //  iOSLearning
 //
-//  Created by tang on 16/4/5.
-//  Copyright © 2016年 tang. All rights reserved.
-//
-//  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
-//  to delete and recreate this implementation file for your updated model.
+//  Created by tang on 17/1/9.
+//  Copyright © 2017年 tang. All rights reserved.
 //
 
-#import "Student.h"
+#import "Student+CoreDataClass.h"
+
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Student (CoreDataProperties)
 
-@property (nullable, nonatomic, retain) NSString *id;
-@property (nullable, nonatomic, retain) NSString *name;
-@property (nullable, nonatomic, retain) NSNumber *sex;
-@property (nullable, nonatomic, retain) NSDate *brithday;
-@property (nullable, nonatomic, retain) NSNumber *aum;
++ (NSFetchRequest<Student *> *)fetchRequest;
+
+@property (nullable, nonatomic, copy) NSNumber *aum;
+@property (nullable, nonatomic, copy) NSDate *brithday;
+@property (nullable, nonatomic, copy) NSString *descstudent;
+@property (nullable, nonatomic, copy) NSNumber *id;
+@property (nullable, nonatomic, copy) NSString *stuname;
+@property (nullable, nonatomic, copy) NSNumber *sex;
+@property (nullable, nonatomic, copy) NSString *ceshi;
 
 @end
 

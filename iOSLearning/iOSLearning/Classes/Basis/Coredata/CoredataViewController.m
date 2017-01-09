@@ -7,8 +7,8 @@
 //
 #import <CoreData/CoreData.h>
 #import "CoredataViewController.h"
-#import "Student.h"
-#import "Grade.h"
+#import "Student+CoreDataClass.h"
+#import "Grade+CoreDataClass.h"
 
 @interface CoredataViewController ()
 
@@ -107,7 +107,12 @@
     
     NSError *error = nil;
     self.persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc]initWithManagedObjectModel:[self managedObjectModel]];
-    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
+    
+    NSDictionary *optionsDictionary = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithBool:YES],
+                                       NSMigratePersistentStoresAutomaticallyOption, [NSNumber numberWithBool:YES],
+                                       NSInferMappingModelAutomaticallyOption, nil];
+    
+    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:optionsDictionary error:&error]) {
         NSLog(@"Unresolvederror %@, %@", error, [error userInfo]);
         abort();
     }
@@ -127,11 +132,13 @@
 {
     Student *stu = [NSEntityDescription insertNewObjectForEntityForName:@"Student"
                                                      inManagedObjectContext:self.managedObjectContext];
-    stu.name = @"张三";
+    stu.id = @123;
     stu.sex = [NSNumber numberWithInteger:1];
     stu.brithday = [NSDate dateWithTimeIntervalSinceNow:0.0];
     stu.aum = [NSNumber numberWithFloat:1111.0f];
-    
+    stu.descstudent = @"测试";
+    stu.stuname = @"张三";
+    stu.ceshi = @"旺达";
     NSError *error;
     //保存上下文,这里需要注意，增、删、改操作完最后必须调用管理对象上下文的保存方法，否则操作不会执行。
     if (![self.managedObjectContext save:&error]) {
@@ -145,14 +152,14 @@
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Student"];
     
     // 2. 设置谓词条件
-    request.predicate = [NSPredicate predicateWithFormat:@"name = '张三'"];
+    request.predicate = [NSPredicate predicateWithFormat:@"stuname = '张三'"];
     
     // 3. 由上下文查询数据
     NSArray *result = [self.managedObjectContext executeFetchRequest:request error:nil];
     
     // 4. 输出结果
     for (Student *student in result) {
-        NSLog(@"%@ %@ %@", student.name, student.sex, student.brithday);
+        NSLog(@"%@ %@ %@", student.stuname, student.sex, student.brithday);
         // 删除一条记录
         [self.managedObjectContext deleteObject:student];
         break;
@@ -172,7 +179,7 @@
     //创建查询请求
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Student"];
     //设置查询条件
-    request.predicate = [NSPredicate predicateWithFormat:@"name  = %@",@"张三"];
+    request.predicate = [NSPredicate predicateWithFormat:@"stuname  = %@",@"张三"];
     //获取查询结果
     NSArray *users = [self.managedObjectContext executeFetchRequest:request error:nil];
 //    //下面是用谓词对上面的结果进行过滤
@@ -181,9 +188,9 @@
 //    NSArray *users = [statuses filteredArrayUsingPredicate:userPredicate];
     for (int i = 0; i<users.count; i++) {
         Student *stu = users[i];
-        NSLog(@"====Student.name==%@====",stu.name);
+        NSLog(@"=Student==%@===%@==%@====%@===%@",stu.stuname,stu.id,stu.aum,stu.descstudent, stu.ceshi);
     }
-    NSLog(@"====getStudent.count===%d=",users.count);
+    NSLog(@"====getStudent.count===%ld=",users.count);
     return users;
 }
 

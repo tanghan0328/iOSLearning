@@ -26,6 +26,12 @@
 		241F9E1A1CFC295C00D26998 /* TWReflectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 241F9E181CFC295C00D26998 /* TWReflectionViewController.m */; };
 		241F9E1C1CFC295C00D26998 /* TWReflectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 241F9E191CFC295C00D26998 /* TWReflectionViewController.xib */; };
 		241F9E201CFC2E7200D26998 /* TWImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 241F9E1F1CFC2E7200D26998 /* TWImageView.m */; };
+		2422929C1E233261004F4DBB /* TWTitleScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2422929B1E233261004F4DBB /* TWTitleScrollViewController.m */; };
+		2422929F1E23380B004F4DBB /* TWSegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2422929E1E23380B004F4DBB /* TWSegmentControl.m */; };
+		242292CE1E237B39004F4DBB /* Student+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 242292C71E237B39004F4DBB /* Student+CoreDataClass.m */; };
+		242292CF1E237B39004F4DBB /* Student+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 242292C91E237B39004F4DBB /* Student+CoreDataProperties.m */; };
+		242292D01E237B39004F4DBB /* Grade+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 242292CB1E237B39004F4DBB /* Grade+CoreDataClass.m */; };
+		242292D11E237B39004F4DBB /* Grade+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 242292CD1E237B39004F4DBB /* Grade+CoreDataProperties.m */; };
 		2425F6AE1DBDA777006FEAFC /* TWBezierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2425F6AD1DBDA777006FEAFC /* TWBezierViewController.m */; };
 		2425F6B21DBDAF4E006FEAFC /* UIView+TWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2425F6B11DBDAF4E006FEAFC /* UIView+TWExtension.m */; };
 		2425F6B91DBDF134006FEAFC /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 2425F6B61DBDF134006FEAFC /* UIImage+ImageEffects.m */; };
@@ -95,11 +101,7 @@
 		248225EF1CC76A8100D7A8C4 /* NSString+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 248225AD1CC76A8100D7A8C4 /* NSString+AES.m */; };
 		248225F11CC76A8100D7A8C4 /* TestAESViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 248225AF1CC76A8100D7A8C4 /* TestAESViewController.m */; };
 		248225F31CC76A8100D7A8C4 /* CoredataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 248225B21CC76A8100D7A8C4 /* CoredataViewController.m */; };
-		248225F51CC76A8100D7A8C4 /* Grade+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 248225B41CC76A8100D7A8C4 /* Grade+CoreDataProperties.m */; };
-		248225F71CC76A8100D7A8C4 /* Grade.m in Sources */ = {isa = PBXBuildFile; fileRef = 248225B61CC76A8100D7A8C4 /* Grade.m */; };
 		248225F91CC76A8100D7A8C4 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 248225B71CC76A8100D7A8C4 /* Model.xcdatamodeld */; };
-		248225FB1CC76A8100D7A8C4 /* Student+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 248225BA1CC76A8100D7A8C4 /* Student+CoreDataProperties.m */; };
-		248225FD1CC76A8100D7A8C4 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 248225BC1CC76A8100D7A8C4 /* Student.m */; };
 		248225FF1CC76A8100D7A8C4 /* DeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 248225BF1CC76A8100D7A8C4 /* DeviceViewController.m */; };
 		248226011CC76A8100D7A8C4 /* TableListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 248225C11CC76A8100D7A8C4 /* TableListViewController.m */; };
 		248226031CC76A8100D7A8C4 /* TableListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 248225C21CC76A8100D7A8C4 /* TableListViewController.xib */; };
@@ -337,6 +339,10 @@
 		24C339E81DE6D85400A62685 /* TWBlockRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24C339DB1DE6D85400A62685 /* TWBlockRegisterViewController.xib */; };
 		24C339E91DE6D85400A62685 /* TWBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C339DD1DE6D85400A62685 /* TWBlockViewController.m */; };
 		24C339EA1DE6D85400A62685 /* TWBlockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24C339DE1DE6D85400A62685 /* TWBlockViewController.xib */; };
+		24C6B60A1E1DDAC300419BC0 /* TWMJExtensionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C6B6091E1DDAC300419BC0 /* TWMJExtensionController.m */; };
+		24C6B60D1E1DDB9700419BC0 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C6B60C1E1DDB9700419BC0 /* User.m */; };
+		24C6B6101E1DDDC100419BC0 /* Status.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C6B60F1E1DDDC100419BC0 /* Status.m */; };
+		24C6B6191E1DE4A100419BC0 /* TWStudentB.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C6B6181E1DE4A100419BC0 /* TWStudentB.m */; };
 		24CAB4031CB35B8300AFB56C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24CAB4021CB35B8300AFB56C /* CoreData.framework */; };
 		24CF635F1D06B4480067C16C /* TWNotificationtest01ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24CF635D1D06B4480067C16C /* TWNotificationtest01ViewController.m */; };
 		24CF63611D06B4480067C16C /* TWNotificationtest01ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24CF635E1D06B4480067C16C /* TWNotificationtest01ViewController.xib */; };
@@ -421,6 +427,20 @@
 		241F9E191CFC295C00D26998 /* TWReflectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWReflectionViewController.xib; sourceTree = "<group>"; };
 		241F9E1E1CFC2E7200D26998 /* TWImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWImageView.h; sourceTree = "<group>"; };
 		241F9E1F1CFC2E7200D26998 /* TWImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWImageView.m; sourceTree = "<group>"; };
+		2422929A1E233261004F4DBB /* TWTitleScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTitleScrollViewController.h; sourceTree = "<group>"; };
+		2422929B1E233261004F4DBB /* TWTitleScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTitleScrollViewController.m; sourceTree = "<group>"; };
+		2422929D1E23380B004F4DBB /* TWSegmentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSegmentControl.h; sourceTree = "<group>"; };
+		2422929E1E23380B004F4DBB /* TWSegmentControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSegmentControl.m; sourceTree = "<group>"; };
+		242292A01E2362FE004F4DBB /* Model 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model 2.xcdatamodel"; sourceTree = "<group>"; };
+		242292C51E237ADB004F4DBB /* Model3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model3.xcdatamodel; sourceTree = "<group>"; };
+		242292C61E237B39004F4DBB /* Student+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Student+CoreDataClass.h"; sourceTree = "<group>"; };
+		242292C71E237B39004F4DBB /* Student+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Student+CoreDataClass.m"; sourceTree = "<group>"; };
+		242292C81E237B39004F4DBB /* Student+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Student+CoreDataProperties.h"; sourceTree = "<group>"; };
+		242292C91E237B39004F4DBB /* Student+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Student+CoreDataProperties.m"; sourceTree = "<group>"; };
+		242292CA1E237B39004F4DBB /* Grade+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Grade+CoreDataClass.h"; sourceTree = "<group>"; };
+		242292CB1E237B39004F4DBB /* Grade+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Grade+CoreDataClass.m"; sourceTree = "<group>"; };
+		242292CC1E237B39004F4DBB /* Grade+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Grade+CoreDataProperties.h"; sourceTree = "<group>"; };
+		242292CD1E237B39004F4DBB /* Grade+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Grade+CoreDataProperties.m"; sourceTree = "<group>"; };
 		2425F6AC1DBDA777006FEAFC /* TWBezierViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWBezierViewController.h; sourceTree = "<group>"; };
 		2425F6AD1DBDA777006FEAFC /* TWBezierViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWBezierViewController.m; sourceTree = "<group>"; };
 		2425F6B01DBDAF4E006FEAFC /* UIView+TWExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TWExtension.h"; sourceTree = "<group>"; };
@@ -544,15 +564,7 @@
 		248225AF1CC76A8100D7A8C4 /* TestAESViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAESViewController.m; sourceTree = "<group>"; };
 		248225B11CC76A8100D7A8C4 /* CoredataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoredataViewController.h; sourceTree = "<group>"; };
 		248225B21CC76A8100D7A8C4 /* CoredataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoredataViewController.m; sourceTree = "<group>"; };
-		248225B31CC76A8100D7A8C4 /* Grade+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Grade+CoreDataProperties.h"; sourceTree = "<group>"; };
-		248225B41CC76A8100D7A8C4 /* Grade+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Grade+CoreDataProperties.m"; sourceTree = "<group>"; };
-		248225B51CC76A8100D7A8C4 /* Grade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Grade.h; sourceTree = "<group>"; };
-		248225B61CC76A8100D7A8C4 /* Grade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Grade.m; sourceTree = "<group>"; };
 		248225B81CC76A8100D7A8C4 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		248225B91CC76A8100D7A8C4 /* Student+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Student+CoreDataProperties.h"; sourceTree = "<group>"; };
-		248225BA1CC76A8100D7A8C4 /* Student+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Student+CoreDataProperties.m"; sourceTree = "<group>"; };
-		248225BB1CC76A8100D7A8C4 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
-		248225BC1CC76A8100D7A8C4 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		248225BE1CC76A8100D7A8C4 /* DeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceViewController.h; sourceTree = "<group>"; };
 		248225BF1CC76A8100D7A8C4 /* DeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceViewController.m; sourceTree = "<group>"; };
 		248225C01CC76A8100D7A8C4 /* TableListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableListViewController.h; sourceTree = "<group>"; };
@@ -826,6 +838,14 @@
 		24C339DC1DE6D85400A62685 /* TWBlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWBlockViewController.h; sourceTree = "<group>"; };
 		24C339DD1DE6D85400A62685 /* TWBlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWBlockViewController.m; sourceTree = "<group>"; };
 		24C339DE1DE6D85400A62685 /* TWBlockViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TWBlockViewController.xib; sourceTree = "<group>"; };
+		24C6B6081E1DDAC300419BC0 /* TWMJExtensionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWMJExtensionController.h; sourceTree = "<group>"; };
+		24C6B6091E1DDAC300419BC0 /* TWMJExtensionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWMJExtensionController.m; sourceTree = "<group>"; };
+		24C6B60B1E1DDB9700419BC0 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		24C6B60C1E1DDB9700419BC0 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		24C6B60E1E1DDDC100419BC0 /* Status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Status.h; sourceTree = "<group>"; };
+		24C6B60F1E1DDDC100419BC0 /* Status.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Status.m; sourceTree = "<group>"; };
+		24C6B6171E1DE4A100419BC0 /* TWStudentB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWStudentB.h; sourceTree = "<group>"; };
+		24C6B6181E1DE4A100419BC0 /* TWStudentB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWStudentB.m; sourceTree = "<group>"; };
 		24CAB4021CB35B8300AFB56C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		24CF635C1D06B4480067C16C /* TWNotificationtest01ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWNotificationtest01ViewController.h; sourceTree = "<group>"; };
 		24CF635D1D06B4480067C16C /* TWNotificationtest01ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWNotificationtest01ViewController.m; sourceTree = "<group>"; };
@@ -1029,6 +1049,8 @@
 		240F1BD51CB4AC1C000AC902 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				242292991E233243004F4DBB /* TitleScroll */,
+				24C6B6071E1DDA9C00419BC0 /* MJExtension */,
 				24CFD7FA1E1C956A00DA5046 /* MJRefresh */,
 				2431ABB91E1B8F6900C0A194 /* Linkage */,
 				24ED16B01E14EE7F00D5E47C /* Location */,
@@ -1114,6 +1136,17 @@
 				241F9E1F1CFC2E7200D26998 /* TWImageView.m */,
 			);
 			path = Reflection;
+			sourceTree = "<group>";
+		};
+		242292991E233243004F4DBB /* TitleScroll */ = {
+			isa = PBXGroup;
+			children = (
+				2422929A1E233261004F4DBB /* TWTitleScrollViewController.h */,
+				2422929B1E233261004F4DBB /* TWTitleScrollViewController.m */,
+				2422929D1E23380B004F4DBB /* TWSegmentControl.h */,
+				2422929E1E23380B004F4DBB /* TWSegmentControl.m */,
+			);
+			path = TitleScroll;
 			sourceTree = "<group>";
 		};
 		2425F6AB1DBDA744006FEAFC /* UIBezierPath */ = {
@@ -1413,17 +1446,17 @@
 		248225B01CC76A8100D7A8C4 /* Coredata */ = {
 			isa = PBXGroup;
 			children = (
+				242292C61E237B39004F4DBB /* Student+CoreDataClass.h */,
+				242292C71E237B39004F4DBB /* Student+CoreDataClass.m */,
+				242292C81E237B39004F4DBB /* Student+CoreDataProperties.h */,
+				242292C91E237B39004F4DBB /* Student+CoreDataProperties.m */,
+				242292CA1E237B39004F4DBB /* Grade+CoreDataClass.h */,
+				242292CB1E237B39004F4DBB /* Grade+CoreDataClass.m */,
+				242292CC1E237B39004F4DBB /* Grade+CoreDataProperties.h */,
+				242292CD1E237B39004F4DBB /* Grade+CoreDataProperties.m */,
 				248225B11CC76A8100D7A8C4 /* CoredataViewController.h */,
 				248225B21CC76A8100D7A8C4 /* CoredataViewController.m */,
-				248225B31CC76A8100D7A8C4 /* Grade+CoreDataProperties.h */,
-				248225B41CC76A8100D7A8C4 /* Grade+CoreDataProperties.m */,
-				248225B51CC76A8100D7A8C4 /* Grade.h */,
-				248225B61CC76A8100D7A8C4 /* Grade.m */,
 				248225B71CC76A8100D7A8C4 /* Model.xcdatamodeld */,
-				248225B91CC76A8100D7A8C4 /* Student+CoreDataProperties.h */,
-				248225BA1CC76A8100D7A8C4 /* Student+CoreDataProperties.m */,
-				248225BB1CC76A8100D7A8C4 /* Student.h */,
-				248225BC1CC76A8100D7A8C4 /* Student.m */,
 			);
 			path = Coredata;
 			sourceTree = "<group>";
@@ -1668,6 +1701,21 @@
 				24C339DE1DE6D85400A62685 /* TWBlockViewController.xib */,
 			);
 			path = Block;
+			sourceTree = "<group>";
+		};
+		24C6B6071E1DDA9C00419BC0 /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				24C6B6081E1DDAC300419BC0 /* TWMJExtensionController.h */,
+				24C6B6091E1DDAC300419BC0 /* TWMJExtensionController.m */,
+				24C6B60B1E1DDB9700419BC0 /* User.h */,
+				24C6B60C1E1DDB9700419BC0 /* User.m */,
+				24C6B60E1E1DDDC100419BC0 /* Status.h */,
+				24C6B60F1E1DDDC100419BC0 /* Status.m */,
+				24C6B6171E1DE4A100419BC0 /* TWStudentB.h */,
+				24C6B6181E1DE4A100419BC0 /* TWStudentB.m */,
+			);
+			path = MJExtension;
 			sourceTree = "<group>";
 		};
 		24CAB4041CB35BB500AFB56C /* Frameworks */ = {
@@ -2486,6 +2534,7 @@
 				240B93681DE52CCD0021457F /* TWSCanViewController.m in Sources */,
 				242A966A1DEEA5D2009565F9 /* TWUserModel.m in Sources */,
 				248225EF1CC76A8100D7A8C4 /* NSString+AES.m in Sources */,
+				2422929F1E23380B004F4DBB /* TWSegmentControl.m in Sources */,
 				24E9637C1D9116420059D484 /* TWAlphaViewController.m in Sources */,
 				241F9E201CFC2E7200D26998 /* TWImageView.m in Sources */,
 				2408B71F1D226F2300C48D7D /* TWGoldZoneViewController.m in Sources */,
@@ -2507,7 +2556,7 @@
 				243BC60A1CFE6F5A0065D6A0 /* TWFoldingViewController.m in Sources */,
 				242A967C1DEEB6B3009565F9 /* CLPhoto.m in Sources */,
 				247C03401D913204002D7A53 /* TWSnakeViewController.m in Sources */,
-				248225F71CC76A8100D7A8C4 /* Grade.m in Sources */,
+				24C6B6101E1DDDC100419BC0 /* Status.m in Sources */,
 				2431ABDD1E1B8FA800C0A194 /* TableViewHeaderView.m in Sources */,
 				24DE82A81D0D3D6100191C35 /* TWSignatureViewController.m in Sources */,
 				241F9E141CFBE06900D26998 /* TWDrawView.m in Sources */,
@@ -2542,8 +2591,8 @@
 				2482261D1CC76A8100D7A8C4 /* SwitchViewController.m in Sources */,
 				24C339E51DE6D85400A62685 /* TWBlockLoginViewController.m in Sources */,
 				2431ABDC1E1B8FA800C0A194 /* TableViewController.m in Sources */,
+				24C6B60A1E1DDAC300419BC0 /* TWMJExtensionController.m in Sources */,
 				2441D76D1CB796E400059B56 /* PlistViewController.m in Sources */,
-				248225F51CC76A8100D7A8C4 /* Grade+CoreDataProperties.m in Sources */,
 				2431ABDB1E1B8FA800C0A194 /* RightTableViewCell.m in Sources */,
 				240F1BCA1CB4AAFA000AC902 /* TabRootViewController.m in Sources */,
 				242C40381CFD3B63008DC625 /* TWElasticViewController.m in Sources */,
@@ -2561,8 +2610,8 @@
 				242B4BFD1D01755600AD24A7 /* UIImage+TWColor.m in Sources */,
 				2431ABE01E1B8FA800C0A194 /* UIViewController+Dealloc.m in Sources */,
 				24E9638F1D91229E0059D484 /* TWPersonA.m in Sources */,
+				242292CE1E237B39004F4DBB /* Student+CoreDataClass.m in Sources */,
 				2400EB7B1CC8B42F00E76741 /* TWDateViewController.m in Sources */,
-				248225FB1CC76A8100D7A8C4 /* Student+CoreDataProperties.m in Sources */,
 				24E157561D485F66004E72D1 /* TWLabelViewController.m in Sources */,
 				248226071CC76A8100D7A8C4 /* ProdCollectionViewController.m in Sources */,
 				24C339CA1DE6D6D600A62685 /* UIViewController+swizzling.m in Sources */,
@@ -2573,13 +2622,16 @@
 				24F3D7B01DF806A40064B807 /* TWCountdownViewController.m in Sources */,
 				248226111CC76A8100D7A8C4 /* ProgressViewController.m in Sources */,
 				242B4C0C1D017BB800AD24A7 /* TWNotificationViewController.m in Sources */,
+				242292CF1E237B39004F4DBB /* Student+CoreDataProperties.m in Sources */,
 				2498F6171CC9CF5200368401 /* TWWKWebViewController.m in Sources */,
 				2480A5B41D050F000041263A /* TWUIWebViewController.m in Sources */,
 				24A7BC0F1DE43E34000AD91F /* TWFingerprintViewController.m in Sources */,
 				2482261B1CC76A8100D7A8C4 /* StepperViewController.m in Sources */,
 				2431ABD51E1B8FA800C0A194 /* CollectionCategoryModel.m in Sources */,
-				248225FD1CC76A8100D7A8C4 /* Student.m in Sources */,
+				242292D11E237B39004F4DBB /* Grade+CoreDataProperties.m in Sources */,
 				2431ABD81E1B8FA800C0A194 /* CollectionViewHeaderView.m in Sources */,
+				2422929C1E233261004F4DBB /* TWTitleScrollViewController.m in Sources */,
+				242292D01E237B39004F4DBB /* Grade+CoreDataClass.m in Sources */,
 				24FE0A4E1DF6AF4300F34DE7 /* TWLoadingViewController.m in Sources */,
 				243E5A111D6C267400E4193A /* TWImageSenderViewController.m in Sources */,
 				24DA5D7B1D178E9800F4BD36 /* TWProvince.m in Sources */,
@@ -2599,6 +2651,7 @@
 				24CFD8001E1C9F4C00DA5046 /* TWCollectionRefreshController.m in Sources */,
 				24D206CA1CDB3F860008790F /* TWPlistRWViewController.m in Sources */,
 				2431ABDA1E1B8FA800C0A194 /* LeftTableViewCell.m in Sources */,
+				24C6B6191E1DE4A100419BC0 /* TWStudentB.m in Sources */,
 				24C339C41DE6BB0100A62685 /* TWSon.m in Sources */,
 				24ED16B91E15149300D5E47C /* TWLiveThumbView.m in Sources */,
 				24E963821D9116DC0059D484 /* TWNavigationBarHiddenController.m in Sources */,
@@ -2610,6 +2663,7 @@
 				241A4B001CE08C7500D55665 /* NSString+TWJSONToString.m in Sources */,
 				2482261F1CC76A8100D7A8C4 /* ProdTabelViewController.m in Sources */,
 				24C339E91DE6D85400A62685 /* TWBlockViewController.m in Sources */,
+				24C6B60D1E1DDB9700419BC0 /* User.m in Sources */,
 				240F1BDE1CB4AC66000AC902 /* AdvanceViewController.m in Sources */,
 				242B4C171D01848800AD24A7 /* TWTestNotificationViewController.m in Sources */,
 				242B4BF91D01608100AD24A7 /* TWBtnTestViewController.m in Sources */,
@@ -2781,9 +2835,11 @@
 		248225B71CC76A8100D7A8C4 /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				242292C51E237ADB004F4DBB /* Model3.xcdatamodel */,
+				242292A01E2362FE004F4DBB /* Model 2.xcdatamodel */,
 				248225B81CC76A8100D7A8C4 /* Model.xcdatamodel */,
 			);
-			currentVersion = 248225B81CC76A8100D7A8C4 /* Model.xcdatamodel */;
+			currentVersion = 242292C51E237ADB004F4DBB /* Model3.xcdatamodel */;
 			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

@@ -19,6 +19,7 @@
 #import "TWRefreshViewController.h"
 #import "TWCollectionRefreshController.h"
 #import "TWColorCircleViewController.h"
+#import "TWMJExtensionController.h"
 
 
 @interface TestViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -65,6 +66,7 @@
                         @"分类联动",
                         @"MJRefresh刷新",
                         @"直线比例",
+                        @"MJExtension转化",
                         nil];
 }
 
@@ -133,6 +135,8 @@
         case 9:selectedView = [[TWCollectionRefreshController alloc]initWithTitle:title];
             break;
         case 10:selectedView = [[TWColorCircleViewController alloc]initWithTitle:title];
+            break;
+        case 11:selectedView = [[TWMJExtensionController alloc]initWithTitle:title];
             break;
     }
 //    if(selectedView){
