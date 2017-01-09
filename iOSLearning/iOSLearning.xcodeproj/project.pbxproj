@@ -32,6 +32,7 @@
 		242292CF1E237B39004F4DBB /* Student+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 242292C91E237B39004F4DBB /* Student+CoreDataProperties.m */; };
 		242292D01E237B39004F4DBB /* Grade+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 242292CB1E237B39004F4DBB /* Grade+CoreDataClass.m */; };
 		242292D11E237B39004F4DBB /* Grade+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 242292CD1E237B39004F4DBB /* Grade+CoreDataProperties.m */; };
+		242292D41E2388B4004F4DBB /* UIView+TWFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 242292D31E2388B4004F4DBB /* UIView+TWFrame.m */; };
 		2425F6AE1DBDA777006FEAFC /* TWBezierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2425F6AD1DBDA777006FEAFC /* TWBezierViewController.m */; };
 		2425F6B21DBDAF4E006FEAFC /* UIView+TWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2425F6B11DBDAF4E006FEAFC /* UIView+TWExtension.m */; };
 		2425F6B91DBDF134006FEAFC /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 2425F6B61DBDF134006FEAFC /* UIImage+ImageEffects.m */; };
@@ -441,6 +442,8 @@
 		242292CB1E237B39004F4DBB /* Grade+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Grade+CoreDataClass.m"; sourceTree = "<group>"; };
 		242292CC1E237B39004F4DBB /* Grade+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Grade+CoreDataProperties.h"; sourceTree = "<group>"; };
 		242292CD1E237B39004F4DBB /* Grade+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Grade+CoreDataProperties.m"; sourceTree = "<group>"; };
+		242292D21E2388B4004F4DBB /* UIView+TWFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TWFrame.h"; sourceTree = "<group>"; };
+		242292D31E2388B4004F4DBB /* UIView+TWFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TWFrame.m"; sourceTree = "<group>"; };
 		2425F6AC1DBDA777006FEAFC /* TWBezierViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWBezierViewController.h; sourceTree = "<group>"; };
 		2425F6AD1DBDA777006FEAFC /* TWBezierViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWBezierViewController.m; sourceTree = "<group>"; };
 		2425F6B01DBDAF4E006FEAFC /* UIView+TWExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TWExtension.h"; sourceTree = "<group>"; };
@@ -1145,6 +1148,8 @@
 				2422929B1E233261004F4DBB /* TWTitleScrollViewController.m */,
 				2422929D1E23380B004F4DBB /* TWSegmentControl.h */,
 				2422929E1E23380B004F4DBB /* TWSegmentControl.m */,
+				242292D21E2388B4004F4DBB /* UIView+TWFrame.h */,
+				242292D31E2388B4004F4DBB /* UIView+TWFrame.m */,
 			);
 			path = TitleScroll;
 			sourceTree = "<group>";
@@ -2628,6 +2633,7 @@
 				24A7BC0F1DE43E34000AD91F /* TWFingerprintViewController.m in Sources */,
 				2482261B1CC76A8100D7A8C4 /* StepperViewController.m in Sources */,
 				2431ABD51E1B8FA800C0A194 /* CollectionCategoryModel.m in Sources */,
+				242292D41E2388B4004F4DBB /* UIView+TWFrame.m in Sources */,
 				242292D11E237B39004F4DBB /* Grade+CoreDataProperties.m in Sources */,
 				2431ABD81E1B8FA800C0A194 /* CollectionViewHeaderView.m in Sources */,
 				2422929C1E233261004F4DBB /* TWTitleScrollViewController.m in Sources */,

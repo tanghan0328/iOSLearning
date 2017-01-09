@@ -20,6 +20,7 @@
 #import "TWCollectionRefreshController.h"
 #import "TWColorCircleViewController.h"
 #import "TWMJExtensionController.h"
+#import "TWTitleScrollViewController.h"
 
 
 @interface TestViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -67,6 +68,7 @@
                         @"MJRefresh刷新",
                         @"直线比例",
                         @"MJExtension转化",
+                        @"网易新闻头部",
                         nil];
 }
 
@@ -137,6 +139,8 @@
         case 10:selectedView = [[TWColorCircleViewController alloc]initWithTitle:title];
             break;
         case 11:selectedView = [[TWMJExtensionController alloc]initWithTitle:title];
+            break;
+        case 12:selectedView = [[TWTitleScrollViewController alloc]initWithTitle:title];
             break;
     }
 //    if(selectedView){

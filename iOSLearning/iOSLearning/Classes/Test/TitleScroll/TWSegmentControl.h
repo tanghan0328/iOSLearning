@@ -14,10 +14,11 @@ typedef NS_ENUM(NSInteger, TWSegmentControlType)
     TWSegmentControlTypeEndScroll,
 };
 
+@class TWSegmentControl;
 
 @protocol LXSegmentControlDelegate<NSObject>
 
--(void)LXSegmentControl:(TWSegmentControlType *)segmentControl didSelectBtnAtIndex:(NSInteger)index;
+-(void)LXSegmentControl:(TWSegmentControl *)segmentControl didSelectBtnAtIndex:(NSInteger)index;
 
 @end;
 
@@ -28,9 +29,9 @@ typedef NS_ENUM(NSInteger, TWSegmentControlType)
 //类方法创建 LXSegmentControl
 +(instancetype)segmentControlWithFrame:(CGRect)frame delegate:(id <LXSegmentControlDelegate>)delegate titleArr:(NSArray *)titleArr;
 
-@property(nonatomic,weak)id <LXSegmentControlDelegate> SeDelegate;
+@property(nonatomic, weak)id <LXSegmentControlDelegate> SeDelegate;
 
-@property(nonatomic,assign)TWSegmentControlType scrollType;
+@property(nonatomic, assign)TWSegmentControlType scrollType;
 
 ///** 滚动Conrolller的时候 SegmentControl需要做的处理 */
 - (void)titleBtnSelectedWithScrollView:(UIScrollView *)scrollView;
