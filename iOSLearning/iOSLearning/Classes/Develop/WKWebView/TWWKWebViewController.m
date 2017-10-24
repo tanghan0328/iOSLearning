@@ -38,6 +38,15 @@
 
 @implementation TWWKWebViewController
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        [self setupBackButtonForNavigationBar];
+    }
+    return self;
+}
+
 - (void)dealloc {
     //移除监听事件
     [_wkWebView removeObserver:self forKeyPath:@"estimatedProgress"];
@@ -48,18 +57,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self setupBackButtonForNavigationBar];
+
     //    [self simpleExampleTest];
     [self addSubViews];
     [self refreshBottomButtonState];
     //添加监听事件
     [_wkWebView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:nil];
-    [self.wkWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.cnblogs.com/mddblog/"]]];
+    [self.wkWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://192.168.199.218:8002/month-product/ongoing/?sid=c8a6f9260adc49a8900c8a645531006b"]]];
 }
 - (void)simpleExampleTest {
     // 1.创建webview，并设置大小，"20"为状态栏高度
     WKWebView *webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 20, self.view.frame.size.width, self.view.frame.size.height - 20)];
     // 2.创建请求
-    NSMutableURLRequest *request =[NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://www.cnblogs.com/mddblog/"]];
+    NSMutableURLRequest *request =[NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://192.168.199.218:8002/month-product/ongoing/?sid=c8a6f9260adc49a8900c8a645531006b"]];
     //    // 3.加载网页
     [webView loadRequest:request];
     //    [webView loadFileURL:[NSURL fileURLWithPath:@"/Users/userName/Desktop/bigIcon.png"] allowingReadAccessToURL:[NSURL fileURLWithPath:@"/Users/userName/Desktop/bigIcon.png"]];
@@ -392,5 +404,25 @@
         
     }
 }
+
+- (void)setupBackButtonForNavigationBar
+{
+    UIButton *backButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 20, 44)];
+    [backButton setImage:[UIImage imageNamed:@"nav_back"] forState:UIControlStateNormal];
+    [backButton addTarget:self action:@selector(onBackButtonClicked) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:backButton];
+    self.navigationItem.leftBarButtonItem = item;
+}
+
+- (void)onBackButtonClicked
+{
+    if([_wkWebView canGoBack]){
+        [_wkWebView goBack];
+    }else{
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+}
+
+
 
 @end

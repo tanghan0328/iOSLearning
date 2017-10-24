@@ -2203,7 +2203,7 @@
 				TargetAttributes = {
 					24ED56AC1C969AD1005405B4 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 779RM9YEFZ;
+						DevelopmentTeam = TUKA9PCUN3;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -2784,12 +2784,12 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 779RM9YEFZ;
+				DEVELOPMENT_TEAM = TUKA9PCUN3;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSLearning/PrefixHeader.pch";
 				INFOPLIST_FILE = iOSLearning/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.iOSLearning;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.vancl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -2803,12 +2803,12 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 779RM9YEFZ;
+				DEVELOPMENT_TEAM = TUKA9PCUN3;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSLearning/PrefixHeader.pch";
 				INFOPLIST_FILE = iOSLearning/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.iOSLearning;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.vancl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
