@@ -23,7 +23,7 @@
 #import "TWFingerprintViewController.h"
 #import "TWSCanViewController.h"
 #import "TWImageSenderViewController.h"
-
+#import "TWAdjacentCollectionViewController.h"
 
 @interface AdvanceViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -36,7 +36,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"进阶";
+    self.customTitle = @"进阶";
     self.view.backgroundColor = [UIColor greenColor];
     //设置UITableView的大小
     self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) style:UITableViewStyleGrouped];
@@ -63,6 +63,7 @@
                         @"微信支付的密码框",
                         @"APPID的指纹",
                         @"二维码扫描",
+                        @"自适应的collectionviewcell",
                         nil];
 }
 
@@ -117,28 +118,29 @@
             break;
         case 3:selectedView = [[TWAFNetWorkingController alloc] init];
             break;
-        case 4:selectedView = [[TWImageRuntimeController alloc]initWithTitle:title];
+        case 4:selectedView = [[TWImageRuntimeController alloc] initWithTitle:title];
             break;
-        case 5:selectedView = [[TWSnakeViewController alloc]initWithTitle:title];
+        case 5:selectedView = [[TWSnakeViewController alloc] initWithTitle:title];
             break;
         case 6:selectedView = [[TWBlockTestController alloc] initWithTitle:title];
             break;
-        case 7:selectedView = [[TWBezierViewController alloc]initWithTitle:title];
+        case 7:selectedView = [[TWBezierViewController alloc] initWithTitle:title];
             break;
-        case 8:selectedView = [[TWForestGlassViewController alloc]initWithTitle:title];
+        case 8:selectedView = [[TWForestGlassViewController alloc] initWithTitle:title];
             break;
         case 9:selectedView = [[TWTransitionsViewController alloc]init];
             break;
-        case 10:selectedView = [[TWCollectionLayoutViewController alloc]initWithTitle:title];
+        case 10:selectedView = [[TWCollectionLayoutViewController alloc] initWithTitle:title];
             break;
         case 11:selectedView = [[TWCircleViewController alloc]init];
             break;
-        case 12:selectedView = [[TWPWDViewController alloc]initWithTitle:title];
+        case 12:selectedView = [[TWPWDViewController alloc] initWithTitle:title];
             break;
-        case 13:selectedView = [[TWFingerprintViewController alloc]initWithTitle:title];
+        case 13:selectedView = [[TWFingerprintViewController alloc] initWithTitle:title];
             break;
-        case 14:selectedView = [[TWSCanViewController alloc]initWithTitle:title];
+        case 14:selectedView = [[TWSCanViewController alloc] initWithTitle:title];
             break;
+        case 15:selectedView = [[TWAdjacentCollectionViewController alloc] initWithTitle:title];
     }
 //    if(selectedView){
     

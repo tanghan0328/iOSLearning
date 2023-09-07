@@ -396,6 +396,11 @@
 		667B4D7A2AA84FCD00637FC0 /* TWAdjacentCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 667B4D792AA84FCD00637FC0 /* TWAdjacentCollectionViewController.m */; };
 		667B4D7D2AA858DA00637FC0 /* TWAdjacentCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 667B4D7C2AA858DA00637FC0 /* TWAdjacentCollectionViewCell.m */; };
 		667B4D802AA859A300637FC0 /* UIColor+TWColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 667B4D7F2AA859A300637FC0 /* UIColor+TWColor.m */; };
+		66A437E62AA9A11F001D8992 /* TWUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A437E52AA9A11F001D8992 /* TWUtility.m */; };
+		66A437E82AA9B0FD001D8992 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66A437E72AA9B0FD001D8992 /* LaunchScreen.storyboard */; };
+		66A437EC2AA9B2F2001D8992 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66A437EA2AA9B2F2001D8992 /* Default@2x.png */; };
+		66A437ED2AA9B2F2001D8992 /* Default@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66A437EB2AA9B2F2001D8992 /* Default@3x.png */; };
+		66A437F32AA9D374001D8992 /* TWBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A437F22AA9D374001D8992 /* TWBaseNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -949,6 +954,13 @@
 		667B4D7C2AA858DA00637FC0 /* TWAdjacentCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWAdjacentCollectionViewCell.m; sourceTree = "<group>"; };
 		667B4D7E2AA859A300637FC0 /* UIColor+TWColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+TWColor.h"; sourceTree = "<group>"; };
 		667B4D7F2AA859A300637FC0 /* UIColor+TWColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TWColor.m"; sourceTree = "<group>"; };
+		66A437E42AA9A11F001D8992 /* TWUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWUtility.h; sourceTree = "<group>"; };
+		66A437E52AA9A11F001D8992 /* TWUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWUtility.m; sourceTree = "<group>"; };
+		66A437E72AA9B0FD001D8992 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		66A437EA2AA9B2F2001D8992 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		66A437EB2AA9B2F2001D8992 /* Default@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@3x.png"; sourceTree = "<group>"; };
+		66A437F12AA9D374001D8992 /* TWBaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWBaseNavigationController.h; sourceTree = "<group>"; };
+		66A437F22AA9D374001D8992 /* TWBaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWBaseNavigationController.m; sourceTree = "<group>"; };
 		AA76C89798D463479A1BA09F /* libPods-iOSLearning.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSLearning.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E99DB7FA3EB0CFBC6628B7BE /* Pods-iOSLearning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearning.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearning/Pods-iOSLearning.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1128,6 +1140,8 @@
 				24C339C91DE6D6D600A62685 /* UIViewController+swizzling.m */,
 				667B4D7E2AA859A300637FC0 /* UIColor+TWColor.h */,
 				667B4D7F2AA859A300637FC0 /* UIColor+TWColor.m */,
+				66A437E42AA9A11F001D8992 /* TWUtility.h */,
+				66A437E52AA9A11F001D8992 /* TWUtility.m */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -1898,6 +1912,7 @@
 		24ED56B01C969AD1005405B4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				66A437E92AA9B1B2001D8992 /* LaunchScreen */,
 				2431ABE41E1B905800C0A194 /* liwushuo.json */,
 				2431ABE51E1B905800C0A194 /* meituan.json */,
 				24DA5D761D178E0500F4BD36 /* provinces.plist */,
@@ -1909,6 +1924,7 @@
 				2466A2391C98F2E200B5C155 /* PrefixHeader.pch */,
 				2466A23B1C98F32500B5C155 /* GlobalFile.h */,
 				24ED56B11C969AD1005405B4 /* main.m */,
+				66A437E72AA9B0FD001D8992 /* LaunchScreen.storyboard */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1920,6 +1936,8 @@
 				2466A2491C9929D000B5C155 /* BaseViewController.m */,
 				240F1BC81CB4AAFA000AC902 /* TabRootViewController.h */,
 				240F1BC91CB4AAFA000AC902 /* TabRootViewController.m */,
+				66A437F12AA9D374001D8992 /* TWBaseNavigationController.h */,
+				66A437F22AA9D374001D8992 /* TWBaseNavigationController.m */,
 				241A4AFD1CE08BBC00D55665 /* common */,
 				240F1BD41CB4AC1C000AC902 /* Basis */,
 				240F1BE41CB4B6CB000AC902 /* Develop */,
@@ -2187,6 +2205,15 @@
 			path = UICollectionAdjacent;
 			sourceTree = "<group>";
 		};
+		66A437E92AA9B1B2001D8992 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				66A437EA2AA9B2F2001D8992 /* Default@2x.png */,
+				66A437EB2AA9B2F2001D8992 /* Default@3x.png */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
 		DCBFF738E0684ED25E4BA796 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -2293,6 +2320,7 @@
 				24BD780C1C9A3E6B000CC066 /* Image_online@2x.png in Resources */,
 				24BD77A51C9A3E6B000CC066 /* btn_nav_back_click.png in Resources */,
 				24DE82AA1D0D3D6100191C35 /* TWSignatureViewController.xib in Resources */,
+				66A437EC2AA9B2F2001D8992 /* Default@2x.png in Resources */,
 				242B4BF51D0124D600AD24A7 /* TWImageZoomViewController.xib in Resources */,
 				241F9E101CFBDE8500D26998 /* TWParticlesViewController.xib in Resources */,
 				24BD779F1C9A3E6B000CC066 /* btn_live_selected.png in Resources */,
@@ -2396,6 +2424,7 @@
 				24BD781F1C9A3E6B000CC066 /* Image_time@2x.png in Resources */,
 				24BD77F91C9A3E6B000CC066 /* Image_focus@2x.png in Resources */,
 				24BD77911C9A3E6B000CC066 /* btn_drop@2x.png in Resources */,
+				66A437E82AA9B0FD001D8992 /* LaunchScreen.storyboard in Resources */,
 				24BD777D1C9A3E6B000CC066 /* btn_back.png in Resources */,
 				243BC60C1CFE6F5A0065D6A0 /* TWFoldingViewController.xib in Resources */,
 				24BD782B1C9A3E6B000CC066 /* Img_orange@3x.png in Resources */,
@@ -2483,6 +2512,7 @@
 				24BD78431C9A7EF5000CC066 /* max.png in Resources */,
 				24BD77841C9A3E6B000CC066 /* btn_close_danmu@2x.png in Resources */,
 				24BD77C81C9A3E6B000CC066 /* btn_vdo_back@2x.png in Resources */,
+				66A437ED2AA9B2F2001D8992 /* Default@3x.png in Resources */,
 				24BD78031C9A3E6B000CC066 /* Image_history.png in Resources */,
 				24BD78301C9A3E6B000CC066 /* Img_viewer@2x.png in Resources */,
 				24BD77B51C9A3E6B000CC066 /* btn_search_clicked@3x.png in Resources */,
@@ -2547,6 +2577,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				242A96861DEEB6E7009565F9 /* TWCLPhotoBrowserViewController.m in Sources */,
+				66A437F32AA9D374001D8992 /* TWBaseNavigationController.m in Sources */,
 				245345FF1DEC11C60050364E /* TWAFNetWorkingController.m in Sources */,
 				2425F6B21DBDAF4E006FEAFC /* UIView+TWExtension.m in Sources */,
 				24ED16B61E14EF5A00D5E47C /* TWLocationUpdateManager.m in Sources */,
@@ -2604,6 +2635,7 @@
 				2482260B1CC76A8100D7A8C4 /* RepeatCollectionViewCell.m in Sources */,
 				24C339E31DE6D85400A62685 /* TWRegisteViewController.m in Sources */,
 				242665831DE2FBDD00BEB3CE /* TWLineLayout.m in Sources */,
+				66A437E62AA9A11F001D8992 /* TWUtility.m in Sources */,
 				24E963861D91207C0059D484 /* UIImage+TWImage.m in Sources */,
 				24FE0A471DF6A23400F34DE7 /* TWRandomCodeViewController.m in Sources */,
 				247C033C1D9131C5002D7A53 /* TWSnake.m in Sources */,
@@ -2807,7 +2839,7 @@
 			baseConfigurationReference = E99DB7FA3EB0CFBC6628B7BE /* Pods-iOSLearning.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = TUKA9PCUN3;
@@ -2826,7 +2858,7 @@
 			baseConfigurationReference = 48E28CE1CB15FEB9B19B15F4 /* Pods-iOSLearning.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = TUKA9PCUN3;

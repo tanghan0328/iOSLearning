@@ -41,14 +41,11 @@
         }
         
         CGRect newLeftAlignedFrame = attribute.frame;
-
         if (attribute.representedElementKind == nil) {
             if (thisX + attribute.frame.size.width + margin_H <= rect.size.width) {
                 //能放则放
-
             }else{//不能放换行new
                 thisX = margin_H;
-
                 if (attribute.frame.size.width > rect.size.width - section_padding_H){
                     newLeftAlignedFrame.size.width = rect.size.width - section_padding_H;
                     if (attribute.indexPath.row != rowCount) {

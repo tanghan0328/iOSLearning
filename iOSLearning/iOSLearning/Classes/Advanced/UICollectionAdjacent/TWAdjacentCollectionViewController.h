@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "TWAdjacentCollectionLayout.h"
+#import "BaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TWAdjacentCollectionViewController : UIViewController
+@interface TWAdjacentCollectionViewController : BaseViewController
 
 @end
 

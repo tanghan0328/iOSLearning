@@ -22,6 +22,7 @@
 #define MEDIUM_FONT(s)   ([UIFont fontWithName:@"PingFangSC-Medium" size:s] ? : [UIFont boldSystemFontOfSize:s])
 #define Semibold_FONT(s)   ([UIFont fontWithName:@"PingFangSC-Semibold" size:s] ? : MEDIUM_FONT(s))
 
+
 #import "GlobalFile.h"
 #import "BaseViewController.h"
 #import "NSString+TWJSONToString.h"
@@ -30,8 +31,22 @@
 #import <UIKit/UIKit.h>
 #import "UIColor+TWColor.h"
 #import <Masonry/Masonry.h>
+#import "TWUtility.h"
 
-// Include any system framework and library headers here that should be included in all compilation units.
-// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+//keywindow
+#define YTKEY_WINDOW [UIApplication sharedApplication].delegate.window
+
+#define IPHONE_5 ([UIScreen mainScreen].bounds.size.width == 320)
+#define IPHONE_X [TWUtility screenHasNotch]
+#define IPHONE_X_STATUS_BAR_H [[UIApplication sharedApplication] statusBarFrame].size.height
+#define IPHONE_X_NAVIGATION_BAR_H  (IPHONE_X ? 88 : 64)
+#define IPHONE_X_NAVIGATION_TabBarH (CGFloat)(IPHONE_X?(49.0 + 34.0):(49.0))
+#define BACK_BTN_TOP (IPHONE_X ? 44 : 20)
+#define IPHONE_X_TOOLBAR_BOTTOM  (IPHONE_X ? 34 : 0)
+
+//一个像素的线的宏
+#define SINGLE_LINE_WIDTH           (1 / [UIScreen mainScreen].scale)
+#define SINGLE_LINE_ADJUST_OFFSET   ((1 / [UIScreen mainScreen].scale) / 2)
+#define SINGLE_LINE_ADJUST_OFFSET_RETINA ((((int)([UIScreen mainScreen].scale) + 1) % 2 == 0) ? 0 : (1 / [UIScreen mainScreen].scale) / 2)
 
 #endif /* PrefixHeader_pch */

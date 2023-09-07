@@ -21,7 +21,7 @@
 {
     self = [super init];
     if (self) {
-        [self setupBackButtonForNavigationBar];
+        [self showBackBtn];
     }
     return self;
 }
@@ -62,14 +62,6 @@
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
 }
 
-- (void)setupBackButtonForNavigationBar
-{
-    UIButton *backButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 20, 44)];
-    [backButton setImage:[UIImage imageNamed:@"nav_back"] forState:UIControlStateNormal];
-    [backButton addTarget:self action:@selector(onBackButtonClicked) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:backButton];
-    self.navigationItem.leftBarButtonItem = item;
-}
 
 - (void)viewWillLayoutSubviews
 {

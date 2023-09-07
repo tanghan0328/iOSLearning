@@ -22,7 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title=@"我的关注";
+    self.customTitle=@"我的关注";
     
 //    //选择自己喜欢的颜色
 //    UIColor * color = [UIColor whiteColor];

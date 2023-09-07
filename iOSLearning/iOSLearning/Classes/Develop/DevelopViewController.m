@@ -39,7 +39,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"开发";    
+    self.customTitle = @"开发";    
     self.view.backgroundColor = [UIColor yellowColor];
     //设置status 颜色为黑色
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];

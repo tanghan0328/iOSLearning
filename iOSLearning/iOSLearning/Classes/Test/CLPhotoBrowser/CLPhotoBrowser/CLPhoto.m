@@ -6,6 +6,7 @@
 
 #import "CLPhoto.h"
 #import <UIImageView+WebCache.h>
+#import "SDImageCache.h"
 
 @implementation CLPhoto
 
@@ -34,13 +35,13 @@
     }else{
         
         __weak typeof(self)weakself = self;
-        [[SDWebImageManager sharedManager] downloadImageWithURL:[NSURL URLWithString:self.url] options:SDWebImageRetryFailed progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+        [[SDWebImageManager sharedManager] loadImageWithURL:[NSURL URLWithString:self.url] options:SDWebImageRetryFailed progress:^(NSInteger receivedSize, NSInteger expectedSize, NSURL * _Nullable targetURL) {
             if (weakself.progressBlock != nil) {
 
                 CGFloat f = receivedSize*1.0 / expectedSize;
                 weakself.progressBlock(f);
             }
-        } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
+        } completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, SDImageCacheType cacheType, BOOL finished, NSURL * _Nullable imageURL) {
             weakself.downLoad = YES;
         }];
         UIImage *thumbImage = [CLPhoto existImageWithUrl:self.thumbUrl];
@@ -83,9 +84,9 @@
     UIImage *image = nil;
     NSURL *url = [NSURL URLWithString:urlStr];
     NSString *key = [manager cacheKeyForURL:url];
-    image = [manager.imageCache imageFromMemoryCacheForKey:key]; //先看看内存在是否存在图片
+    image = [((SDImageCache *)manager.imageCache) imageFromMemoryCacheForKey:key]; //先看看内存在是否存在图片
     if (!image) {
-        image = [manager.imageCache imageFromDiskCacheForKey:key]; //重缓存中取出改图片
+        image = [((SDImageCache *)manager.imageCache) imageFromDiskCacheForKey:key]; //重缓存中取出改图片
     }
     return image;
 }
