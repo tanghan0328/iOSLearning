@@ -1,4 +1,7 @@
 # iOSLearning
+2023年9月7日
+优化了APP的启动图和APP的小图标及展示UI
+
 iOS学习过程中的遇到的问题及简单应用
 
 参考了  https://github.com/leejayID/Linkage 两个TableView之间的联动，
