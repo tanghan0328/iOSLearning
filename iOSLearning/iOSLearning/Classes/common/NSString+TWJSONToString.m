@@ -585,4 +585,27 @@
     return dashedLine;
 }
 
+- (CGSize) boundsRectWithSize:(CGSize)size andFont:(UIFont *)fontName {
+    return [NSString string:self boundsRectWithSize:size andFont:fontName] ;
+}
+
++ (CGSize)string:(NSString *)string boundsRectWithSize:(CGSize)size andFont:(UIFont *)fontName
+{
+    if (fontName == nil) {
+        NSAssert(NO, @"字体大小不能为nil");
+        return CGSizeZero;
+    }
+    NSDictionary *dict = @{NSFontAttributeName : fontName};
+    return [string boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin attributes:dict context:nil].size;
+}
+
+- (CGSize)string:(NSString *)string boundsRectWithSize:(CGSize)size andFontAttributeName:(CGFloat)fontSize andLineSpace:(CGFloat)space
+{
+    NSMutableParagraphStyle *paraStyle = [[NSMutableParagraphStyle alloc] init];
+    paraStyle.lineSpacing = space;
+    UIFont *fontName = [UIFont systemFontOfSize:fontSize];
+    NSDictionary *dict = @{NSFontAttributeName : fontName,NSParagraphStyleAttributeName : paraStyle};
+    return [string boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin attributes:dict context:nil].size;
+}
+
 @end

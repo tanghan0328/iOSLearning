@@ -14,8 +14,7 @@
 
 //load方法会在类第一次加载的时候被调用
 //调用的时间比较靠前，适合在这个方法里做方法交换
-+ (void)load
-{
++ (void)load {
     //方法交换应该被保证，在程序中只会执行一次
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -44,8 +43,7 @@
     
 }
 
-- (void)swiz_viewWillAppear:(BOOL)animated
-{
+- (void)swiz_viewWillAppear:(BOOL)animated {
     //这时候调用自己，看起来像是死循环
     //但是其实自己的实现已经被替换了
     [self swiz_viewWillAppear:animated];

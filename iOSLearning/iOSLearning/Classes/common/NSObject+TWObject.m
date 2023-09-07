@@ -13,13 +13,11 @@
 static const char *key = "name";
 @implementation NSObject (TWObject)
 
-- (NSString *)name
-{
+- (NSString *)name {
     // 根据关联的key，获取关联的值。
     return objc_getAssociatedObject(self, key);
 }
-- (void)setName:(NSString *)name
-{
+- (void)setName:(NSString *)name {
     // 第一个参数：给哪个对象添加关联
     // 第二个参数：关联的key，通过这个key获取
     // 第三个参数：关联的value
@@ -28,7 +26,7 @@ static const char *key = "name";
 }
 
 //自动根据一个字典，生成对应的属性，和字典中的key一一对应。
-+(void)resolveDict:(NSDictionary* )dict{
++ (void)resolveDict:(NSDictionary* )dict {
 
     NSMutableString *strM = [NSMutableString string];
     [dict enumerateKeysAndObjectsUsingBlock:^(id _Nonnull key, id _Nonnull obj, BOOL * _Nonnull stop) {

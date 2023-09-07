@@ -110,4 +110,8 @@
                           lineSpacing:(int)spacing
                             lineColor:(UIColor *)color;
 
+- (CGSize) boundsRectWithSize:(CGSize)size andFont:(UIFont *)fontName;
+
++ (CGSize)string:(NSString *)string boundsRectWithSize:(CGSize)size andFont:(UIFont *)fontName;
+
 @end

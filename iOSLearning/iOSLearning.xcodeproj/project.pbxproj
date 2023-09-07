@@ -392,6 +392,10 @@
 		24FE0A4E1DF6AF4300F34DE7 /* TWLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FE0A4D1DF6AF4300F34DE7 /* TWLoadingViewController.m */; };
 		24FE0A511DF6AF7700F34DE7 /* TWLoadingCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24FE0A501DF6AF7700F34DE7 /* TWLoadingCircleView.m */; };
 		4A3C9A5F53053E3625BE18FF /* libPods-iOSLearning.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA76C89798D463479A1BA09F /* libPods-iOSLearning.a */; };
+		667B4D762AA84EA800637FC0 /* TWAdjacentCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 667B4D752AA84EA800637FC0 /* TWAdjacentCollectionLayout.m */; };
+		667B4D7A2AA84FCD00637FC0 /* TWAdjacentCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 667B4D792AA84FCD00637FC0 /* TWAdjacentCollectionViewController.m */; };
+		667B4D7D2AA858DA00637FC0 /* TWAdjacentCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 667B4D7C2AA858DA00637FC0 /* TWAdjacentCollectionViewCell.m */; };
+		667B4D802AA859A300637FC0 /* UIColor+TWColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 667B4D7F2AA859A300637FC0 /* UIColor+TWColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -937,6 +941,14 @@
 		24FE0A4F1DF6AF7700F34DE7 /* TWLoadingCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWLoadingCircleView.h; sourceTree = "<group>"; };
 		24FE0A501DF6AF7700F34DE7 /* TWLoadingCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWLoadingCircleView.m; sourceTree = "<group>"; };
 		48E28CE1CB15FEB9B19B15F4 /* Pods-iOSLearning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearning.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearning/Pods-iOSLearning.release.xcconfig"; sourceTree = "<group>"; };
+		667B4D742AA84EA800637FC0 /* TWAdjacentCollectionLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWAdjacentCollectionLayout.h; sourceTree = "<group>"; };
+		667B4D752AA84EA800637FC0 /* TWAdjacentCollectionLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWAdjacentCollectionLayout.m; sourceTree = "<group>"; };
+		667B4D782AA84FCD00637FC0 /* TWAdjacentCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWAdjacentCollectionViewController.h; sourceTree = "<group>"; };
+		667B4D792AA84FCD00637FC0 /* TWAdjacentCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWAdjacentCollectionViewController.m; sourceTree = "<group>"; };
+		667B4D7B2AA858DA00637FC0 /* TWAdjacentCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWAdjacentCollectionViewCell.h; sourceTree = "<group>"; };
+		667B4D7C2AA858DA00637FC0 /* TWAdjacentCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWAdjacentCollectionViewCell.m; sourceTree = "<group>"; };
+		667B4D7E2AA859A300637FC0 /* UIColor+TWColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+TWColor.h"; sourceTree = "<group>"; };
+		667B4D7F2AA859A300637FC0 /* UIColor+TWColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TWColor.m"; sourceTree = "<group>"; };
 		AA76C89798D463479A1BA09F /* libPods-iOSLearning.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSLearning.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E99DB7FA3EB0CFBC6628B7BE /* Pods-iOSLearning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLearning.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLearning/Pods-iOSLearning.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -998,6 +1010,7 @@
 		240F1BCC1CB4AC1C000AC902 /* Advanced */ = {
 			isa = PBXGroup;
 			children = (
+				667B4D772AA84F8300637FC0 /* UICollectionAdjacent */,
 				240B93641DE52CB40021457F /* ScanView */,
 				249FF63B1DE4868200B4F755 /* PasswordKeyBoard */,
 				24A7BC0C1DE43E16000AD91F /* Fingerprint */,
@@ -1113,6 +1126,8 @@
 				24E963921D91257A0059D484 /* NSObject+TWObject.m */,
 				24C339C81DE6D6D600A62685 /* UIViewController+swizzling.h */,
 				24C339C91DE6D6D600A62685 /* UIViewController+swizzling.m */,
+				667B4D7E2AA859A300637FC0 /* UIColor+TWColor.h */,
+				667B4D7F2AA859A300637FC0 /* UIColor+TWColor.m */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -2159,6 +2174,19 @@
 			path = LoadingCircle;
 			sourceTree = "<group>";
 		};
+		667B4D772AA84F8300637FC0 /* UICollectionAdjacent */ = {
+			isa = PBXGroup;
+			children = (
+				667B4D742AA84EA800637FC0 /* TWAdjacentCollectionLayout.h */,
+				667B4D752AA84EA800637FC0 /* TWAdjacentCollectionLayout.m */,
+				667B4D782AA84FCD00637FC0 /* TWAdjacentCollectionViewController.h */,
+				667B4D792AA84FCD00637FC0 /* TWAdjacentCollectionViewController.m */,
+				667B4D7B2AA858DA00637FC0 /* TWAdjacentCollectionViewCell.h */,
+				667B4D7C2AA858DA00637FC0 /* TWAdjacentCollectionViewCell.m */,
+			);
+			path = UICollectionAdjacent;
+			sourceTree = "<group>";
+		};
 		DCBFF738E0684ED25E4BA796 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -2179,7 +2207,6 @@
 				24ED56A91C969AD1005405B4 /* Sources */,
 				24ED56AA1C969AD1005405B4 /* Frameworks */,
 				24ED56AB1C969AD1005405B4 /* Resources */,
-				8E3A81D09F96C599B7205F00 /* [CP] Embed Pods Frameworks */,
 				286A567E896A11885174C004 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -2217,7 +2244,9 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 24ED56A41C969AD0005405B4;
 			productRefGroup = 24ED56AE1C969AD1005405B4 /* Products */;
@@ -2478,13 +2507,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSLearning-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		286A567E896A11885174C004 /* [CP] Copy Pods Resources */ = {
@@ -2493,28 +2525,18 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSLearning/Pods-iOSLearning-resources.sh",
+				"${PODS_ROOT}/JSPatch/JSPatch/JSPatch.js",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/JSPatch.js",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearning/Pods-iOSLearning-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8E3A81D09F96C599B7205F00 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSLearning/Pods-iOSLearning-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSLearning/Pods-iOSLearning-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2531,6 +2553,7 @@
 				24CF63651D06B9A50067C16C /* NSNotificationCenter+TWRmoveTest.m in Sources */,
 				2441D7681CB793CA00059B56 /* TimerViewController.m in Sources */,
 				24C339C71DE6BB1E00A62685 /* TWFather.m in Sources */,
+				667B4D7A2AA84FCD00637FC0 /* TWAdjacentCollectionViewController.m in Sources */,
 				24F1CFC01DDED6AE00FA903A /* TWCollectionLayout.m in Sources */,
 				248226151CC76A8100D7A8C4 /* MySlidersView.m in Sources */,
 				2431ABDF1E1B8FA800C0A194 /* NSObject+Property.m in Sources */,
@@ -2604,6 +2627,7 @@
 				24C339E11DE6D85400A62685 /* TWLoginViewController.m in Sources */,
 				248226191CC76A8100D7A8C4 /* SliderViewController.m in Sources */,
 				243E5A161D6C369100E4193A /* TWMoreImagesViewController.m in Sources */,
+				667B4D7D2AA858DA00637FC0 /* TWAdjacentCollectionViewCell.m in Sources */,
 				24FE0A4A1DF6A24B00F34DE7 /* TWRandomCodeView.m in Sources */,
 				24927B961D92D00F00C72359 /* TWBlockTestController.m in Sources */,
 				241A4AFB1CE05ABE00D55665 /* TWUser.m in Sources */,
@@ -2612,6 +2636,7 @@
 				24F1CFBD1DDED67800FA903A /* TWCollectionLayoutViewController.m in Sources */,
 				248226171CC76A8100D7A8C4 /* MySliderView.m in Sources */,
 				245346061DEC1B8B0050364E /* TWEventCalendar.m in Sources */,
+				667B4D802AA859A300637FC0 /* UIColor+TWColor.m in Sources */,
 				242B4BFD1D01755600AD24A7 /* UIImage+TWColor.m in Sources */,
 				2431ABE01E1B8FA800C0A194 /* UIViewController+Dealloc.m in Sources */,
 				24E9638F1D91229E0059D484 /* TWPersonA.m in Sources */,
@@ -2654,6 +2679,7 @@
 				24C339C11DE6BAB100A62685 /* TWSunnyViewController.m in Sources */,
 				2426657C1DE2D2BA00BEB3CE /* TWCircleCollectionViewCell.m in Sources */,
 				2425F6B91DBDF134006FEAFC /* UIImage+ImageEffects.m in Sources */,
+				667B4D762AA84EA800637FC0 /* TWAdjacentCollectionLayout.m in Sources */,
 				24CFD8001E1C9F4C00DA5046 /* TWCollectionRefreshController.m in Sources */,
 				24D206CA1CDB3F860008790F /* TWPlistRWViewController.m in Sources */,
 				2431ABDA1E1B8FA800C0A194 /* LeftTableViewCell.m in Sources */,
