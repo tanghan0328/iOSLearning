@@ -24,6 +24,15 @@
     self.datasourceArray = @[@"开采辅助活动",@"其他采矿业",@"黑色金属矿采选业",@"有色金属矿采选业",@"非金属矿采选业",@"制造业",@"计算机、通信和其他电子设备制造业",
                              @"铁路、船舶",@"电气机械和器材制造业",@"废弃资源综合利用业",@"其他制造业",@"仪器仪表制造业"];
     [self initCollectionView];
+    [self.collectionView layoutIfNeeded];
+    NSLog(@"self.collectionView===>%@",NSStringFromCGRect(self.collectionView.frame));
+    [self.collectionView reloadData];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    NSLog(@"self.collectionView===>%@",NSStringFromCGRect(self.collectionView.frame));
+    [self.collectionView reloadData];
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewFlowLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -69,12 +78,13 @@
     [self.collectionView registerClass:TWAdjacentCollectionViewCell.class forCellWithReuseIdentifier:NSStringFromClass(TWAdjacentCollectionViewCell.class)];
     [self.collectionView registerClass:UICollectionReusableView.class forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:UICollectionElementKindSectionHeader];
     [self.collectionView registerClass:UICollectionReusableView.class forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:UICollectionElementKindSectionFooter];
-    [self.view addSubview:self.collectionView];
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
+    self.automaticallyAdjustsScrollViewInsets = NO;
     if (@available(iOS 11.0, *)) {
         self.collectionView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     }
+    [self.contentContainer addSubview:self.collectionView];
 }
 
 @end

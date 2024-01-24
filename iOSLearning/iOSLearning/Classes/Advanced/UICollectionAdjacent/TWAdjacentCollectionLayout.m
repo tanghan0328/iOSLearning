@@ -10,7 +10,13 @@
 
 @implementation TWAdjacentCollectionLayout
 
+- (void)prepareLayout {
+    [super prepareLayout];
+}
+
 - (NSArray<UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect {
+    NSLog(@"====>rect===>%@",NSStringFromCGRect(rect));
+//    rect = CGRectMake(0,0, 393,852);
     NSArray<UICollectionViewLayoutAttributes *> *attributes = [super layoutAttributesForElementsInRect:rect];
     NSMutableArray<UICollectionViewLayoutAttributes *> *allAttributes = [NSMutableArray arrayWithArray:attributes];
     CGFloat padding_H = self.minimumLineSpacing;//item 行距
@@ -25,13 +31,19 @@
     
     for (UICollectionViewLayoutAttributes *attribute in attributes) {
         if ([self.delegate respondsToSelector:@selector(collectionView:layout:minimumLineSpacingForSectionAtIndex:)]) {
-            padding_H = [self.delegate collectionView:self.collectionView layout:self minimumLineSpacingForSectionAtIndex:attribute.indexPath.section];
+            padding_H = [self.delegate collectionView:self.collectionView
+                                               layout:self
+                  minimumLineSpacingForSectionAtIndex:attribute.indexPath.section];
         }
         if ([self.delegate respondsToSelector:@selector(collectionView:layout:minimumInteritemSpacingForSectionAtIndex:)]) {
-            padding_V = [self.delegate collectionView:self.collectionView layout:self minimumInteritemSpacingForSectionAtIndex:attribute.indexPath.section];
+            padding_V = [self.delegate collectionView:self.collectionView
+                                               layout:self
+             minimumInteritemSpacingForSectionAtIndex:attribute.indexPath.section];
         }
         if ([self.delegate respondsToSelector:@selector(collectionView:layout:insetForSectionAtIndex:)]) {
-            sectionInset = [self.delegate collectionView:self.collectionView layout:self insetForSectionAtIndex:attribute.indexPath.section];
+            sectionInset = [self.delegate collectionView:self.collectionView
+                                                  layout:self
+                                  insetForSectionAtIndex:attribute.indexPath.section];
             margin_H = sectionInset.left;//左边距 右边距
             section_padding_H = sectionInset.left + sectionInset.right;
         }
@@ -41,6 +53,7 @@
         }
         
         CGRect newLeftAlignedFrame = attribute.frame;
+
         if (attribute.representedElementKind == nil) {
             if (thisX + attribute.frame.size.width + margin_H <= rect.size.width) {
                 //能放则放
@@ -76,4 +89,7 @@
     return (id<UICollectionViewDelegateFlowLayout>)self.collectionView.delegate;
 }
 
+- (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds {
+    return YES;
+}
 @end
